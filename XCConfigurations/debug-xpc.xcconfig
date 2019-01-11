@@ -1,0 +1,2 @@
+LD_RUNPATH_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/Carthage/Build/Mac $(BUILT_PRODUCTS_DIR)/SylvesterXPCTests.xctest/Contents/Frameworks $(BUILT_PRODUCTS_DIR)/Sandbox.app/Contents/Frameworks
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG XPC

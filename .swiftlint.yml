@@ -1,0 +1,21 @@
+included:
+  - Source
+  - SylvesterCommon
+  - SylvesterXPCService
+  - Tests
+  - Sandbox
+  - SandboxTests
+
+excluded:
+  - Carthage
+  - Tests/Fixtures/Test Project
+#  - Source/Enumerations/Generated/GenerateBoilerplate.swift
+
+disabled_rules:
+  - type_body_length
+  - function_body_length
+  - file_length
+
+identifier_name:
+  excluded:
+    - id

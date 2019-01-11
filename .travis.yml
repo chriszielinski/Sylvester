@@ -1,0 +1,21 @@
+language: swift
+osx_image: xcode10.1
+addons:
+  sonarcloud:
+    organization: chriszielinski-github
+before_script:
+- "./Scripts/add_key.sh"
+- gem install xcpretty-travis-formatter
+script:
+- if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./Scripts/run_on_pull_requests.sh;
+  fi
+- if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./Scripts/run_on_non_pull_requests.sh;
+  fi
+- make swiftlint
+- sonar-scanner
+after_script:
+- "./Scripts/remove_key.sh"
+env:
+  global:
+  - secure: LgoIplm9kTNsvYZTLaJWDSj4pMb0W8s7OuIW+Wvoa7clJ078UqNtM4C1fjq5kT/d09B91uhqahelX6VeEsrH2csparbjCs+ZMv2j296fftdG7pwykc249RaMdRlO2v64tfdj89m3z1ejWyoAnymRNgtSgskPkShI6hpxuZkCnN70s3QxiAu+Swt5xwAo5Xe10Ms0dACNcdbhggYMdqKzDPTjtI+F64nB4xHgTjH3HQhivUcCV9Wdztr7jca0GSPMI0puSzwrAFlDZVGjQb889dyYXjUFqxOiJjZobB5UqDsROg9kQCZju723XkVm46Jt3f40eRgYqDn2jpaTezBdHqtsWEmyHiB1wEj4kazHtfVNdx9nEZkVmRYuf3CwetPSCxb9nLzLewR0m8NHHoojxRfOM8SC9E2xd5PuwWVsbSCayQcNW2oB195jg1a7O27IPaoLMUb5sFTpPkki9hNVsdZX/XT1yhiyUcl4P8KD8ITzsQ11Ct9gB8XoI4XtuqFv+5u3ix0i5d1bCFzyRO3wXeK4rQoNysrAL6kti2iK4t4kbG+ovbXLqYML7LIAX40MyDFk0TdaWsbsHasqhUKt/kWy+f6r1dMpLF7UU/YtJTR3WgSoiWujXOuNpVQk9PA6qbG8bIxllVcOjrIjNBvRD8ltf7Gaad9IqceIocpolyI=
+  - secure: L0/3lLZy8bwB5t3AuqOn1rS/AbPv6Jxloy/mS0L3GODf1UtGxdePucf6J9aKJoxqpghkXAyR4DwVCX29ozHflB+u/cpF9MuKaUZzEancFoKVBJL4cCyxKxaiy4kqzfkTl8sZE7+W0t8SBdqVgY3A0SaC+1qi7gdn/UWkCYpeDkUdGxy2M3+1cR6sm/x/9wElhv0C0Osklj33gB+1Cjnz2U1gI/e9Xd0eDrzCBKHqpbB+hXVSCIWx6pNRyYsH6xT3GvUNUe3sAfnHViNWDywqMCLvEX8vs0LR2BNQGXQb98m6kDSs0UQ489QnSYS9DC/NR5hHadcwCVGIhlBWrZ9XZCgVTRkJFcX1Is8G+8EWD+SgBevuPhZ/IBndcKrEneKx+7Yj6QtgQ+qgibcObIfcHqs3pXJSm2T/EH1xOSrGWOQZgomXAFE/GlmOPC1yemQBkxCbq/xR282wgr/uJYueoO92FJ9o4nx+DvwnPC4g5kJFke8v0317/VUOTtNU07x7z7SNiiOZxCDxhnM9FU7ZnkmlTqK+lMV2paG+bhLhjGMz3bm6IoWF1zvXMO3eSKrd4zl1+oK0KWRGaYIaPEB23UMVgrHbrWVbBiKA58oYejwAhV8y7CHzeOydC4FHVzpfGMjIbA2UVCHhRSjfRW7A5Jp5qfknVdczcY768UB+VSo=
