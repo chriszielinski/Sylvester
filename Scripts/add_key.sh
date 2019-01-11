@@ -17,7 +17,7 @@ security set-keychain-settings -lut 1200
 security show-keychain-info build.keychain
 
 # Add certificates to keychain and allow codesign to access them.
-security import ./Scripts/apple.cer -k build.keychain -A
-security import mac_developer_cert.p12 -k build.keychain -P $CERT_PASS -A
+security import ./Scripts/apple.cer -k build.keychain -T /usr/bin/codesign
+security import mac_developer_cert.p12 -k build.keychain -P $CERT_PASS -T /usr/bin/codesign
 
 security set-key-partition-list -S apple-tool:,apple: -s -k travis build.keychain
