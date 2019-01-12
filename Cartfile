@@ -1,7 +1,6 @@
-# github "chriszielinski/SourceKitten" "master"
 github "jpsim/SourceKitten"
 github "macmade/AtomicKit" "master"
 
 # Testing Frameworks/Libraries
 github "groue/GRMustache.swift"
-github "chriszielinski/Regex"
+github "chriszielinski/Regex" "master"
