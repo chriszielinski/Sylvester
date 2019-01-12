@@ -41,7 +41,7 @@ Sylvester 😼
 Features
 ========
 
-- [x] Type-safe, no more `SourceKitRepresentable`.
+- [x] Type-safe, no more dictionaries and `SourceKitRepresentable`s.
 - [x] Optional XPC service, sandbox-friendly.
 - [x] Subclassable interface.
 - [x] Comprehensive test suite.
@@ -58,7 +58,7 @@ Installation
 github "chriszielinski/Sylvester"
 ```
 
-### ~~Using [CocoaPods](http://cocoapods.org/)~~
+### ~~Using [CocoaPods](http://cocoapods.org/)~~ (not currently available)
 
 ```ruby
 pod "Sylvester"
@@ -73,7 +73,7 @@ Requirements
 Modules
 =======
 
-The `Sylvester` framework has two build configurations that differ in their communications with `SourceKit`:
+The `Sylvester` framework has two build configurations that differ in their method of communicating with `SourceKit`:
 
  - `Sylvester` — Communicates directly from within the embedding application or process. This module is not sandbox-friendly.
  - `SylvesterXPC` — Communicates through a XPC service. This module provides privilege separation, enhanced stability, and is sandbox-friendly.
