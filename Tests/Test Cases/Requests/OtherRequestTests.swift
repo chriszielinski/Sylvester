@@ -41,7 +41,7 @@ class OtherRequestTests: XCTestCase {
         let echoString = "nice"
         continueAfterFailure = false
 
-        let output = SourceKittenInterface.shared.executeBash("echo '\(echoString)'")
+        let output = SourceKittenInterface.shared.executeBash(command: "echo '\(echoString)'")
 
         XCTAssertNotNil(output)
         XCTAssertEqual(output, echoString)

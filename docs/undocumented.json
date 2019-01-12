@@ -1011,7 +1011,7 @@
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
       "line": 304,
-      "symbol": "SourceKittenInterface.executeBash(_:currentDirectoryPath:)",
+      "symbol": "SourceKittenInterface.executeBash(command:currentDirectoryPath:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },

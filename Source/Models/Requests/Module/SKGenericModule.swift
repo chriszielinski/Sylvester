@@ -9,7 +9,7 @@
 import SourceKittenFramework
 import SylvesterCommon
 
-/// Represents a _SourceKitten_ documentation request for a given module.
+/// Represents a generic _SourceKitten_ documentation request for a given module.
 open class SKGenericModule<T: SKSwiftDocs> {
 
     // MARK: - Public Stored Properties

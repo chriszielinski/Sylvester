@@ -171,7 +171,7 @@ class SandboxTests: XCTestCase {
         let echoString = "nice"
         continueAfterFailure = false
 
-        let output = SylvesterInterface.executeBash("echo '\(echoString)'")
+        let output = SylvesterInterface.executeBash(command: "echo '\(echoString)'")
 
         XCTAssertNotNil(output)
         XCTAssertEqual(output, echoString)

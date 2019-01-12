@@ -1,5 +1,5 @@
 Sylvester 😼
-=====
+===========
 
 <p align="center">
     <a href="https://travis-ci.org/chriszielinski/Sylvester" style="text-decoration:none" target="_blank">
@@ -41,9 +41,10 @@ Sylvester 😼
 Features
 ========
 
-- [x] Super cool feature 1.
-- [x] Kinda cool feature 2.
-- [x] Not cool, but usable feature 3.
+- [x] Type-safe, no more `SourceKitRepresentable`.
+- [x] Optional XPC service, sandbox-friendly.
+- [x] Subclassable interface.
+- [x] Comprehensive test suite.
 
 
 Installation
@@ -64,7 +65,40 @@ pod "Sylvester"
 ```
 
 Requirements
-===========
+============
 
-- macOS 10.12+ 
+- macOS 10.12+
 
+
+Modules
+=======
+
+The `Sylvester` framework has two build configurations that differ in their communications with `SourceKit`:
+
+ - `Sylvester` — Communicates directly from within the embedding application or process. This module is not sandbox-friendly.
+ - `SylvesterXPC` — Communicates through a XPC service. This module provides privilege separation, enhanced stability, and is sandbox-friendly.
+
+ > 📌 **Note:** The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional code signing step.
+
+
+# Supported Requests
+
+| Request | Class |
+| -------------:|:------------- |
+| Code Completion | [`SKCodeCompletion`](https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletion.html) |
+| Code Completion Session | [`SKCodeCompletionSession`](https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletionSession.html) |
+| Module Info | [`SKModule`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:9Sylvester8SKModuleC)|
+| Editor Open | [`SKEditorOpen`](https://chriszielinski.github.io/Sylvester/Classes/SKEditorOpen.html) |
+| Swift Documentation | [`SKSwiftDocs`](https://chriszielinski.github.io/Sylvester/Classes/SKSwiftDocs.html) |
+| Syntax Map | [`SKSyntaxMap`](https://chriszielinski.github.io/Sylvester/Classes/SKSyntaxMap.html) |
+| Custom YAML | [`SKYAMLRequest`](https://chriszielinski.github.io/Sylvester/Classes/SKYAMLRequest.html) |
+
+
+# Other Fun Things
+
+| Type | Class |
+| -------------:|:------------- |
+| XCRun | [`SourceKittenInterface.shared.xcRun(arguments:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF) |
+| XcodeBuild | [`SourceKittenInterface.shared.xcodeBuild(arguments:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF) |
+| Bash Command | [`SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF) |
+| Shell Command | [`SourceKittenInterface.shared.executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF) |

@@ -62,8 +62,8 @@ public class SylvesterInterface {
                                                        currentDirectoryPath: currentDirectoryPath)
     }
 
-    public static func executeBash(_ command: String, currentDirectoryPath: String? = nil) -> String? {
-        return SourceKittenInterface.shared.executeBash(command, currentDirectoryPath: currentDirectoryPath)
+    public static func executeBash(command: String, currentDirectoryPath: String? = nil) -> String? {
+        return SourceKittenInterface.shared.executeBash(command: command, currentDirectoryPath: currentDirectoryPath)
     }
 
     public static func executeShell(launchPath: String,

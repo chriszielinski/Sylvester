@@ -301,7 +301,7 @@ open class SourceKittenInterface {
         #endif
     }
 
-    public func executeBash(_ command: String,
+    public func executeBash(command: String,
                             currentDirectoryPath: String? = nil) -> String? {
         #if XPC
         var response: String?

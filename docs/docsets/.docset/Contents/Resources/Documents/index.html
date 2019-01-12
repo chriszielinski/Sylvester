@@ -179,14 +179,144 @@
         <section>
           <section class="section">
             
-            <h1 id='sylvester' class='heading'>Sylvester</h1>
+            <h1 id='sylvester' class='heading'>Sylvester 😼</h1>
 
-<p>😼 — A typed SourceKitten (SourceKit) interface with some sugar.</p>
+<p align="center">
+    <a href="https://travis-ci.org/chriszielinski/Sylvester" style="text-decoration:none" target="_blank">
+        <img src="https://travis-ci.org/chriszielinski/Sylvester.svg?branch=master">
+    </a>
+    <a href="https://sonarcloud.io/dashboard?id=chriszielinski_Sylvester" style="text-decoration:none" target="_blank">
+        <img src="https://sonarcloud.io/api/project_badges/measure?project=chriszielinski_Sylvester&metric=alert_status">
+    </a>
+    <a href="https://sonarcloud.io/component_measures?id=chriszielinski_Sylvester&metric=Coverage" style="text-decoration:none" target="_blank">
+      <img src="https://sonarcloud.io/api/project_badges/measure?project=chriszielinski_Sylvester&metric=coverage">
+    </a>
+    <a href="https://codebeat.co/projects/github-com-chriszielinski-sylvester-master" style="text-decoration:none" target="_blank">
+        <img alt="codebeat badge" src="https://codebeat.co/badges/66095cd2-8a09-4662-a31d-d8f7a0e86f3f"/>
+    </a>
+    <a href="https://developer.apple.com/swift" style="text-decoration:none" target="_blank">
+        <img alt="Swift Version" src ="https://img.shields.io/badge/language-swift%204.2-brightgreen.svg"/>
+    </a>
+    <a href="https://github.com/chriszielinski/Sylvester/blob/master/LICENSE" style="text-decoration:none" target="_blank">
+        <img alt="GitHub license" src ="https://img.shields.io/badge/license-MIT-blue.svg"/>
+    </a>
+    <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
+    <br>
+    <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/header.png?raw=true" alt="Header">
+    <br>
+    <br>
+    <b>A type-safe, XPC-available <a href="https://github.com/jpsim/SourceKitten"> SourceKitten</a> (SourceKit) interface with some sugar.</b>
+    <br>
+</p>
+
+<hr>
+<h3 id='looking-for' class='heading'>Looking for&hellip;</h3>
+
+<ul>
+<li>A Floating Action Button for macOS? Check out <a href="https://github.com/chriszielinski/Fab">Fab.</a> 🛍️.</li>
+<li>An Expanding Bubble Text Field for macOS? Check out <a href="https://github.com/chriszielinski/BubbleTextField">BubbleTextField</a> 💬.</li>
+<li>An integrated spotlight-based onboarding and help library for macOS? Check out <a href="https://github.com/chriszielinski/Enlighten">Enlighten</a> 💡.</li>
+</ul>
+<h1 id='features' class='heading'>Features</h1>
+
+<ul>
+<li>[x] Type-safe, no more <code>SourceKitRepresentable</code>.</li>
+<li>[x] Optional XPC service, sandbox-friendly.</li>
+<li>[x] Comprehensive test suite.</li>
+</ul>
+<h1 id='installation' class='heading'>Installation</h1>
+
+<p><code>Sylvester</code> is available for installation using <del>CocoaPods</del> or Carthage.</p>
+<h3 id='using-a-href-https-github-com-carthage-carthage-carthage-a' class='heading'>Using <a href="https://github.com/Carthage/Carthage">Carthage</a></h3>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"chriszielinski/Sylvester"</span>
+</code></pre>
+<h3 id='del-using-a-href-http-cocoapods-org-cocoapods-a-del' class='heading'><del>Using <a href="http://cocoapods.org/">CocoaPods</a></del></h3>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"Sylvester"</span>
+</code></pre>
+<h1 id='requirements' class='heading'>Requirements</h1>
+
+<ul>
+<li>macOS 10.12+</li>
+</ul>
+<h1 id='modules' class='heading'>Modules</h1>
+
+<p>The <code>Sylvester</code> framework has two build configurations that differ in their communications with <code>SourceKit</code>:</p>
+
+<ul>
+<li><code>Sylvester</code> — Communicates directly from within the embedding application or process. This module is not sandbox-friendly.</li>
+<li><code>SylvesterXPC</code> — Communicates through a XPC service. This module provides privilege separation, enhanced stability, and is sandbox-friendly.</li>
+</ul>
+
+<blockquote>
+<p>📌 <strong>Note:</strong> The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional code signing step.</p>
+</blockquote>
+<h1 id='supported-requests' class='heading'>Supported Requests</h1>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Request</th>
+<th style="text-align: left">Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right">Code Completion</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletion.html">SKCodeCompletion</a></td>
+</tr>
+<tr>
+<td style="text-align: right">Code Completion Session</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a></td>
+</tr>
+<tr>
+<td style="text-align: right">Module Info</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes.html#/s:9Sylvester8SKModuleC">SKModule</a></td>
+</tr>
+<tr>
+<td style="text-align: right">Editor Open</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKEditorOpen.html">SKEditorOpen</a></td>
+</tr>
+<tr>
+<td style="text-align: right">Swift Documentation</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKSwiftDocs.html">SKSwiftDocs</a></td>
+</tr>
+<tr>
+<td style="text-align: right">Syntax Map</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKSyntaxMap.html">SKSyntaxMap</a></td>
+</tr>
+<tr>
+<td style="text-align: right">Custom YAML</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKYAMLRequest.html">SKYAMLRequest</a></td>
+</tr>
+</tbody></table>
+<h1 id='other-fun-things' class='heading'>Other Fun Things</h1>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Type</th>
+<th style="text-align: left">Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right">XCRun</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF"><code>SourceKittenInterface.shared.xcRun(arguments:)</code></a></td>
+</tr>
+<tr>
+<td style="text-align: right">XcodeBuild</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF"><code>SourceKittenInterface.shared.xcodeBuild(arguments:currentDirectoryPath:)</code></a></td>
+</tr>
+<tr>
+<td style="text-align: right">Bash Command</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC11executeBash_20currentDirectoryPathSSSgSS_AFtF"><code>SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)</code></a></td>
+</tr>
+<tr>
+<td style="text-align: right">Shell Command</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF"><code>SourceKittenInterface.shared.executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)</code></a></td>
+</tr>
+</tbody></table>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-10)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-12)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
