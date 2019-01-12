@@ -78,7 +78,7 @@ The `Sylvester` framework has two build configurations that differ in their comm
  - `Sylvester` — Communicates directly from within the embedding application or process. This module is not sandbox-friendly.
  - `SylvesterXPC` — Communicates through a XPC service. This module provides privilege separation, enhanced stability, and is sandbox-friendly.
 
- > 📌 **Note:** The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional code signing step.
+ > 📌 **Note:** The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional [code signing step](#code-signing).
 
 
 # Supported Requests
@@ -102,3 +102,59 @@ The `Sylvester` framework has two build configurations that differ in their comm
 | XcodeBuild | [`SourceKittenInterface.shared.xcodeBuild(arguments:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF) |
 | Bash Command | [`SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF) |
 | Shell Command | [`SourceKittenInterface.shared.executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF) |
+
+
+# Code Signing
+
+If you decide to use the `SylvesterXPC` module, you will need to add a '_Run Script_' phase before embedding the _SylvesterXPC.framework_ (i.e. before the '_Embed Frameworks_' phase). Ensure the shell launch path is `/bin/sh` (default). Then for the script, execute the `code_sign.sh` shell script in the repository's _Scripts_ directory.
+
+For Carthage installations, the script should look like:
+
+```shell
+$SRCROOT/Carthage/Checkouts/Sylvester/Scripts/code_sign.sh
+```
+
+
+Documentation
+=============
+
+You can explore the docs [here](http://chriszielinski.github.io/Sylvester/).
+
+
+// ToDo:
+========
+
+- [ ] Add support for other requests.
+
+
+Community
+=========
+
+- Found a bug? Open an [issue](https://github.com/chriszielinski/sylvester/issues).
+- Feature idea? ~~Open an [issue](https://github.com/chriszielinski/sylvester/issues).~~ Do it yourself & PR when done 😅 (or you can open an issue 🙄).
+- Want to contribute? Submit a [pull request](https://github.com/chriszielinski/sylvester/pulls).
+
+
+Contributors
+============
+
+- [Chris Zielinski](https://github.com/chriszielinski) — Original author.
+
+
+Frameworks & Libraries
+=====================
+
+`Sylvester` depends on the wonderful contributions of the Swift community, namely:
+
+* **[jpsim/SourceKitten](https://github.com/jpsim/SourceKitten)** — An adorable little framework and command line tool for interacting with SourceKit.
+* **[macmade/AtomicKit](https://github.com/macmade/AtomicKit)** — Concurrency made simple in Swift.
+* **[groue/GRMustache.swift](https://github.com/groue/GRMustache.swift)** — Flexible Mustache templates for Swift.
+* **[crossroadlabs/Regex](https://github.com/crossroadlabs/Regex)** — Regular expressions for Swift.
+* **[realm/jazzy](https://github.com/realm/jazzy)** — Soulful docs for Swift & Objective-C.
+* **[realm/SwiftLint](https://github.com/realm/SwiftLint)** — A tool to enforce Swift style and conventions.
+
+
+License
+=======
+
+`Sylvester` is available under the MIT license, see the [LICENSE](https://github.com/chriszielinski/sylvester/blob/master/LICENSE) file for more information.
