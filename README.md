@@ -104,6 +104,16 @@ The `Sylvester` framework has two build configurations that differ in their comm
 | Shell Command | [`SourceKittenInterface.shared.executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF) |
 
 
+# Dependencies
+
+`Sylvester` depends on the following frameworks/libraries, so ensure they are also embedded in the '_Embed Frameworks_' phase:
+
+ - `AtomicKit.framework`
+ - `SourceKittenFramework.framework`
+ - `SWXMLHash.framework`
+ - `Yams.framework`
+
+
 # Code Signing
 
 If you decide to use the `SylvesterXPC` module, you will need to add a '_Run Script_' phase before embedding the _SylvesterXPC.framework_ (i.e. before the '_Embed Frameworks_' phase). Ensure the shell launch path is `/bin/sh` (default). Then for the script, execute the `code_sign.sh` shell script in the repository's _Scripts_ directory.
