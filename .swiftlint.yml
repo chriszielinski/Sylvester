@@ -9,7 +9,6 @@ included:
 excluded:
   - Carthage
   - Tests/Fixtures/Test Project
-#  - Source/Enumerations/Generated/GenerateBoilerplate.swift
 
 disabled_rules:
   - type_body_length
