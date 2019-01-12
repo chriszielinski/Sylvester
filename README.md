@@ -81,7 +81,8 @@ The `Sylvester` framework has two build configurations that differ in their meth
  > 📌 **Note:** The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional [code signing step](#code-signing).
 
 
-# Supported Requests
+Supported Requests
+==================
 
 | Request | Class |
 | -------------:|:------------- |
@@ -94,7 +95,8 @@ The `Sylvester` framework has two build configurations that differ in their meth
 | Custom YAML | [`SKYAMLRequest`](https://chriszielinski.github.io/Sylvester/Classes/SKYAMLRequest.html) |
 
 
-# Other Fun Things
+Other Fun Things
+================
 
 | Type | Class |
 | -------------:|:------------- |
@@ -104,7 +106,8 @@ The `Sylvester` framework has two build configurations that differ in their meth
 | Shell Command | [`SourceKittenInterface.shared.executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF) |
 
 
-# Dependencies
+Dependencies
+============
 
 `Sylvester` depends on the following frameworks/libraries, so ensure they are also embedded in the '_Embed Frameworks_' phase:
 
@@ -113,8 +116,13 @@ The `Sylvester` framework has two build configurations that differ in their meth
  - `SWXMLHash.framework`
  - `Yams.framework`
 
+ <p align="center">
+     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/embed-frameworks.png?raw=true" alt="Embed Frameworks Phase">
+ </p>
 
-# Code Signing
+
+Code Signing
+============
 
 If you decide to use the `SylvesterXPC` module, you will need to add a '_Run Script_' phase before embedding the _SylvesterXPC.framework_ (i.e. before the '_Embed Frameworks_' phase). Ensure the shell launch path is `/bin/sh` (default). Then for the script, execute the `code_sign.sh` shell script in the repository's _Scripts_ directory.
 
@@ -123,6 +131,10 @@ For Carthage installations, the script should look like:
 ```shell
 $SRCROOT/Carthage/Checkouts/Sylvester/Scripts/code_sign.sh
 ```
+
+<p align="center">
+     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/code-sign.png?raw=true" alt="Code Sign Phase">
+ </p>
 
 
 Documentation
@@ -152,7 +164,7 @@ Contributors
 
 
 Frameworks & Libraries
-=====================
+======================
 
 `Sylvester` depends on the wonderful contributions of the Swift community, namely:
 

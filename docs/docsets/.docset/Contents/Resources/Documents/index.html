@@ -220,8 +220,9 @@
 <h1 id='features' class='heading'>Features</h1>
 
 <ul>
-<li>[x] Type-safe, no more <code>SourceKitRepresentable</code>.</li>
+<li>[x] Type-safe, no more dictionaries and <code>SourceKitRepresentable</code>s.</li>
 <li>[x] Optional XPC service, sandbox-friendly.</li>
+<li>[x] Subclassable interface.</li>
 <li>[x] Comprehensive test suite.</li>
 </ul>
 <h1 id='installation' class='heading'>Installation</h1>
@@ -230,7 +231,7 @@
 <h3 id='using-a-href-https-github-com-carthage-carthage-carthage-a' class='heading'>Using <a href="https://github.com/Carthage/Carthage">Carthage</a></h3>
 <pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"chriszielinski/Sylvester"</span>
 </code></pre>
-<h3 id='del-using-a-href-http-cocoapods-org-cocoapods-a-del' class='heading'><del>Using <a href="http://cocoapods.org/">CocoaPods</a></del></h3>
+<h3 id='del-using-a-href-http-cocoapods-org-cocoapods-a-del-not-currently-available' class='heading'><del>Using <a href="http://cocoapods.org/">CocoaPods</a></del> (not currently available)</h3>
 <pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"Sylvester"</span>
 </code></pre>
 <h1 id='requirements' class='heading'>Requirements</h1>
@@ -240,7 +241,7 @@
 </ul>
 <h1 id='modules' class='heading'>Modules</h1>
 
-<p>The <code>Sylvester</code> framework has two build configurations that differ in their communications with <code>SourceKit</code>:</p>
+<p>The <code>Sylvester</code> framework has two build configurations that differ in their method of communicating with <code>SourceKit</code>:</p>
 
 <ul>
 <li><code>Sylvester</code> — Communicates directly from within the embedding application or process. This module is not sandbox-friendly.</li>
@@ -248,7 +249,7 @@
 </ul>
 
 <blockquote>
-<p>📌 <strong>Note:</strong> The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional code signing step.</p>
+<p>📌 <strong>Note:</strong> The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional <a href="#code-signing">code signing step</a>.</p>
 </blockquote>
 <h1 id='supported-requests' class='heading'>Supported Requests</h1>
 
@@ -260,31 +261,31 @@
 </thead><tbody>
 <tr>
 <td style="text-align: right">Code Completion</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletion.html">SKCodeCompletion</a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletion.html"><code><a href="Classes/SKCodeCompletion.html">SKCodeCompletion</a></code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Code Completion Session</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletionSession.html"><code><a href="Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a></code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Module Info</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes.html#/s:9Sylvester8SKModuleC">SKModule</a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes.html#/s:9Sylvester8SKModuleC"><code><a href="Classes.html#/s:9Sylvester8SKModuleC">SKModule</a></code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Editor Open</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKEditorOpen.html">SKEditorOpen</a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKEditorOpen.html"><code><a href="Classes/SKEditorOpen.html">SKEditorOpen</a></code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Swift Documentation</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKSwiftDocs.html">SKSwiftDocs</a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKSwiftDocs.html"><code><a href="Classes/SKSwiftDocs.html">SKSwiftDocs</a></code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Syntax Map</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKSyntaxMap.html">SKSyntaxMap</a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKSyntaxMap.html"><code><a href="Classes/SKSyntaxMap.html">SKSyntaxMap</a></code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Custom YAML</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKYAMLRequest.html">SKYAMLRequest</a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKYAMLRequest.html"><code><a href="Classes/SKYAMLRequest.html">SKYAMLRequest</a></code></a></td>
 </tr>
 </tbody></table>
 <h1 id='other-fun-things' class='heading'>Other Fun Things</h1>
@@ -305,13 +306,73 @@
 </tr>
 <tr>
 <td style="text-align: right">Bash Command</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC11executeBash_20currentDirectoryPathSSSgSS_AFtF"><code>SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)</code></a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF"><code>SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)</code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Shell Command</td>
 <td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF"><code>SourceKittenInterface.shared.executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)</code></a></td>
 </tr>
 </tbody></table>
+<h1 id='dependencies' class='heading'>Dependencies</h1>
+
+<p><code>Sylvester</code> depends on the following frameworks/libraries, so ensure they are also embedded in the &lsquo;<em>Embed Frameworks</em>&rsquo; phase:</p>
+
+<ul>
+<li><code>AtomicKit.framework</code></li>
+<li><code>SourceKittenFramework.framework</code></li>
+<li><code>SWXMLHash.framework</code></li>
+<li><code>Yams.framework</code></li>
+</ul>
+
+<p><p align="center">
+     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/embed-frameworks.png?raw=true" alt="Embed Frameworks Phase">
+ </p></p>
+<h1 id='code-signing' class='heading'>Code Signing</h1>
+
+<p>If you decide to use the <code>SylvesterXPC</code> module, you will need to add a &lsquo;<em>Run Script</em>&rsquo; phase before embedding the <em>SylvesterXPC.framework</em> (i.e. before the &lsquo;<em>Embed Frameworks</em>&rsquo; phase). Ensure the shell launch path is <code>/bin/sh</code> (default). Then for the script, execute the <code>code_sign.sh</code> shell script in the repository&rsquo;s <em>Scripts</em> directory.</p>
+
+<p>For Carthage installations, the script should look like:</p>
+<pre class="highlight shell"><code><span class="nv">$SRCROOT</span>/Carthage/Checkouts/Sylvester/Scripts/code_sign.sh
+</code></pre>
+
+<p align="center">
+     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/code-sign.png?raw=true" alt="Code Sign Phase">
+ </p>
+<h1 id='documentation' class='heading'>Documentation</h1>
+
+<p>You can explore the docs <a href="http://chriszielinski.github.io/Sylvester/">here</a>.</p>
+<h1 id='todo' class='heading'>// ToDo:</h1>
+
+<ul>
+<li>[ ] Add support for other requests.</li>
+</ul>
+<h1 id='community' class='heading'>Community</h1>
+
+<ul>
+<li>Found a bug? Open an <a href="https://github.com/chriszielinski/sylvester/issues">issue</a>.</li>
+<li>Feature idea? <del>Open an <a href="https://github.com/chriszielinski/sylvester/issues">issue</a>.</del> Do it yourself &amp; PR when done 😅 (or you can open an issue 🙄).</li>
+<li>Want to contribute? Submit a <a href="https://github.com/chriszielinski/sylvester/pulls">pull request</a>.</li>
+</ul>
+<h1 id='contributors' class='heading'>Contributors</h1>
+
+<ul>
+<li><a href="https://github.com/chriszielinski">Chris Zielinski</a> — Original author.</li>
+</ul>
+<h1 id='frameworks-amp-libraries' class='heading'>Frameworks &amp; Libraries</h1>
+
+<p><code>Sylvester</code> depends on the wonderful contributions of the Swift community, namely:</p>
+
+<ul>
+<li><strong><a href="https://github.com/jpsim/SourceKitten">jpsim/SourceKitten</a></strong> — An adorable little framework and command line tool for interacting with SourceKit.</li>
+<li><strong><a href="https://github.com/macmade/AtomicKit">macmade/AtomicKit</a></strong> — Concurrency made simple in Swift.</li>
+<li><strong><a href="https://github.com/groue/GRMustache.swift">groue/GRMustache.swift</a></strong> — Flexible Mustache templates for Swift.</li>
+<li><strong><a href="https://github.com/crossroadlabs/Regex">crossroadlabs/Regex</a></strong> — Regular expressions for Swift.</li>
+<li><strong><a href="https://github.com/realm/jazzy">realm/jazzy</a></strong> — Soulful docs for Swift &amp; Objective-C.</li>
+<li><strong><a href="https://github.com/realm/SwiftLint">realm/SwiftLint</a></strong> — A tool to enforce Swift style and conventions.</li>
+</ul>
+<h1 id='license' class='heading'>License</h1>
+
+<p><code>Sylvester</code> is available under the MIT license, see the <a href="https://github.com/chriszielinski/sylvester/blob/master/LICENSE">LICENSE</a> file for more information.</p>
 
           </section>
         </section>

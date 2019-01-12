@@ -303,11 +303,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				14724D3521CED38A005CD5C9 /* Yams.framework in Embed Frameworks */,
 				14149BB521DFC534007A1AF5 /* SylvesterXPC.framework in Embed Frameworks */,
+				14724D3721CED3AD005CD5C9 /* AtomicKit.framework in Embed Frameworks */,
 				14724D3121CED389005CD5C9 /* SourceKittenFramework.framework in Embed Frameworks */,
 				14724D3321CED38A005CD5C9 /* SWXMLHash.framework in Embed Frameworks */,
-				14724D3721CED3AD005CD5C9 /* AtomicKit.framework in Embed Frameworks */,
+				14724D3521CED38A005CD5C9 /* Yams.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
