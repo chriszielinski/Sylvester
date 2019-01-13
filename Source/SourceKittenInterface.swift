@@ -22,8 +22,9 @@ open class SourceKittenInterface {
     // MARK: - Private Static Methods
 
     #if XPC
-    private static func errorHandler(_ error: Error) {
-        print("Received error:", error)
+    private static func handleXPC(error: Error) {
+        Utilities.print(error: error)
+        shared.xpcError = error
     }
     #endif
 
@@ -32,6 +33,7 @@ open class SourceKittenInterface {
     #if XPC
     private let xpcConnection: NSXPCConnection
     private let synchronousProxy: SylvesterXPCProtocol
+    private var xpcError: Error?
     #endif
 
     // MARK: - Private Initializers
@@ -43,7 +45,7 @@ open class SourceKittenInterface {
         xpcConnection.resume()
 
         synchronousProxy = xpcConnection
-            .synchronousRemoteObjectProxyWithErrorHandler(SourceKittenInterface.errorHandler(_:))
+            .synchronousRemoteObjectProxyWithErrorHandler(SourceKittenInterface.handleXPC(error:))
             // swiftlint:disable:next force_cast
             as! SylvesterXPCProtocol
         #endif
@@ -349,6 +351,9 @@ open class SourceKittenInterface {
             return response
         } else {
             // No response nor error, so it crashed.
+            if let xpcError = xpcError as NSError?, xpcError.code != 4097 {
+                throw SKError.unknown(error: xpcError)
+            }
             throw SKError.sourceKittenCrashed
         }
     }
