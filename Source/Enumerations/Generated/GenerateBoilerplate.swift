@@ -11,6 +11,10 @@ import Foundation
 
 let ignore: Set<String> = ["source.lang.swift.stmt"]
 let prefixes: Set<String> = ["NS", "UI", "LLDB"]
+let replacements: [String: String] = [
+    "source.lang.swift.keyword.self": "keywordSelf",
+    "source.lang.swift.keyword.Self": "keywordUppercaseSelf"
+]
 let keywords: Set<String> = [
     "associatedtype",
     "class",
@@ -138,6 +142,10 @@ struct Boilerplate {
         }
 
         lazy var name: String? = {
+            if let hardcodedName = replacements[key] {
+                return hardcodedName
+            }
+
             let keyComponents = uniqueComponent.components(separatedBy: .punctuationCharacters)
 
             // Filter out funky UIDs, such as `source.lang.swift.keyword._`.
