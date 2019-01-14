@@ -633,16 +633,17 @@
 		144ED42021B2105E00D0C19F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				1409B2C921B82DD200938856 /* Enumerations */,
-				1488977821B73BD7007F6C17 /* Protocols */,
+				1438C33A21C8353200081C02 /* Constants.swift */,
 				144ED4A021B23E8B00D0C19F /* Data Structures */,
+				1409B2C921B82DD200938856 /* Enumerations */,
 				144ED44421B2144800D0C19F /* Extensions */,
+				144ED42221B2105E00D0C19F /* Info.plist */,
 				144ED43821B2108D00D0C19F /* Models */,
+				1488977821B73BD7007F6C17 /* Protocols */,
+				1484CAEE21B593DD00EF8F09 /* Requests */,
+				14BF6C2321BC3E89006EAB11 /* SourceKittenInterface.swift */,
 				144ED42121B2105E00D0C19F /* Sylvester.h */,
 				14827A5121DF2B1B002D4440 /* SylvesterXPC.h */,
-				144ED42221B2105E00D0C19F /* Info.plist */,
-				14BF6C2321BC3E89006EAB11 /* SourceKittenInterface.swift */,
-				1438C33A21C8353200081C02 /* Constants.swift */,
 				1438196621D6F1EE00F58A0F /* TypeAlias.swift */,
 			);
 			path = Source;
@@ -664,7 +665,7 @@
 		144ED43821B2108D00D0C19F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1484CAEE21B593DD00EF8F09 /* Requests */,
+				14D1017821ED0A14002FF8D2 /* Code Completion */,
 				144ED49B21B23D8700D0C19F /* Substructure */,
 				144ED49521B23B5200D0C19F /* SKBaseResponse.swift */,
 			);
@@ -801,10 +802,7 @@
 			isa = PBXGroup;
 			children = (
 				144ED43921B2108D00D0C19F /* SKCodeCompletion.swift */,
-				1491902A21C6F43200F2F975 /* SKCodeCompletionItem.swift */,
 				14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */,
-				1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */,
-				1491902821C6F41700F2F975 /* SKCodeCompletionSubstructure.swift */,
 			);
 			path = "Code Completion";
 			sourceTree = "<group>";
@@ -865,6 +863,16 @@
 				1401286021CD801800141F44 /* Utilities.swift */,
 			);
 			path = SylvesterCommon;
+			sourceTree = "<group>";
+		};
+		14D1017821ED0A14002FF8D2 /* Code Completion */ = {
+			isa = PBXGroup;
+			children = (
+				1491902A21C6F43200F2F975 /* SKCodeCompletionItem.swift */,
+				1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */,
+				1491902821C6F41700F2F975 /* SKCodeCompletionSubstructure.swift */,
+			);
+			path = "Code Completion";
 			sourceTree = "<group>";
 		};
 		14D8382921CF083700996DF1 /* SandboxTests */ = {
