@@ -49,19 +49,13 @@ Features
 
 Installation
 ============
-`Sylvester` is available for installation using ~~CocoaPods~~ or Carthage.
+`Sylvester` is available for installation using Carthage.
 
 
 ### Using [Carthage](https://github.com/Carthage/Carthage)
 
 ```ruby
 github "chriszielinski/Sylvester"
-```
-
-### ~~Using [CocoaPods](http://cocoapods.org/)~~ (not currently available)
-
-```ruby
-pod "Sylvester"
 ```
 
 Requirements
