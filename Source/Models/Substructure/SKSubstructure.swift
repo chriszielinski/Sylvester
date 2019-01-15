@@ -59,7 +59,7 @@ open class SKSubstructure: NSObject, Codable {
     public typealias Element = SKElement
     public typealias InheritedType = SKInheritedType
     public typealias Override = SKOverride
-    public typealias Kind = SKKind
+    public typealias Kind = SKSubstructureKind
 
     // MARK: - Public Stored Properties
 

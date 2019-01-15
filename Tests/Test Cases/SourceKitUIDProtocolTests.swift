@@ -20,7 +20,7 @@ class SourceKitUIDProtocolTests: XCTestCase {
     func testDescription() {
         XCTAssertEqual(SKDiagnosticStage.parse.description, "parse")
         XCTAssertEqual(SKAccessLevel.internal.description, "internal")
-        XCTAssertEqual(SKKind.class.description, "class")
+        XCTAssertEqual(SKSubstructureKind.class.description, "class")
         XCTAssertEqual(SKCodeCompletionContext.thisclass.description, "thisclass")
     }
 

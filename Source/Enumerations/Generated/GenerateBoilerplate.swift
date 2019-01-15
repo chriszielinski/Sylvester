@@ -326,11 +326,9 @@ Boilerplate(enumerationName: "SKAccessLevel",
     ],
             enumerationCaseProtocols: []).generate()
 
-Boilerplate(enumerationName: "SKKind",
+Boilerplate(enumerationName: "SKSubstructureKind",
             enumerationCaseTuples: [
                 ("source.lang.swift.decl", "^source\\.lang\\.swift\\.decl\\.(.+)$"),
-//                ("source.lang.swift.decl", "^source\\.lang\\.swift\\.(.+)$"),
-//                ("source.lang.swift.ref", "^source\\.lang\\.swift\\.(.+)$"),
                 ("source.lang.swift.syntaxtype", "^source\\.lang\\.swift\\.syntaxtype\\.(.+)$"),
                 ("source.lang.swift.expr", "^source\\.lang\\.swift\\.(.+)$"),
                 ("source.lang.swift.stmt", "^source\\.lang\\.swift\\.(.+)$")

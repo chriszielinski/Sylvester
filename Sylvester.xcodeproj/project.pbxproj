@@ -50,7 +50,6 @@
 		1411B13721DEE58700CA071D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33A21C8353200081C02 /* Constants.swift */; };
 		1411B13821DEE58700CA071D /* SKDiagnosticStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */; };
 		1411B13921DEE58700CA071D /* SKInheritedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2E021B8A63E00938856 /* SKInheritedType.swift */; };
-		1411B13A21DEE58700CA071D /* SKKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1621B501C1008C02EB /* SKKind.swift */; };
 		1411B13B21DEE58700CA071D /* SKAccessLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */; };
 		1411B13C21DEE58700CA071D /* SKAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2DC21B8A5E500938856 /* SKAttribute.swift */; };
 		1411B13D21DEE58700CA071D /* SKCodeCompletionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A0D21B4A6E3008C02EB /* SKCodeCompletionContext.swift */; };
@@ -121,6 +120,8 @@
 		147B1BA721EE7A4700000842 /* SKSyntaxKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */; };
 		147B1BA821EE7B6D00000842 /* SyntaxToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA421EE76FD00000842 /* SyntaxToken.swift */; };
 		147B1BA921EE7C0F00000842 /* SKSyntaxKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */; };
+		147B1BAD21EE9A4A00000842 /* SKSubstructureKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BAC21EE9A4900000842 /* SKSubstructureKind.swift */; };
+		147B1BAE21EE9A4A00000842 /* SKSubstructureKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BAC21EE9A4900000842 /* SKSubstructureKind.swift */; };
 		14827A5221DF2B49002D4440 /* SylvesterXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 14827A5121DF2B1B002D4440 /* SylvesterXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1484CAF121B5946500EF8F09 /* SKSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAF021B5946500EF8F09 /* SKSwiftDocs.swift */; };
 		1484CAF321B5978200EF8F09 /* SKSwiftDocumentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAF221B5978200EF8F09 /* SKSwiftDocumentationTests.swift */; };
@@ -201,7 +202,6 @@
 		14FB4A0E21B4A6E3008C02EB /* SKCodeCompletionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A0D21B4A6E3008C02EB /* SKCodeCompletionContext.swift */; };
 		14FB4A1221B4FA5F008C02EB /* SKDiagnosticStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */; };
 		14FB4A1421B4FB23008C02EB /* SKAccessLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */; };
-		14FB4A1721B501C1008C02EB /* SKKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1621B501C1008C02EB /* SKKind.swift */; };
 		14FE8F0621ED97E8005231B6 /* SwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE8F0521ED97E8005231B6 /* SwiftDocs.swift */; };
 /* End PBXBuildFile section */
 
@@ -390,6 +390,7 @@
 		147ACB1F21C5B18000CA1CA9 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		147B1BA421EE76FD00000842 /* SyntaxToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxToken.swift; sourceTree = "<group>"; };
 		147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSyntaxKind.swift; sourceTree = "<group>"; };
+		147B1BAC21EE9A4900000842 /* SKSubstructureKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSubstructureKind.swift; sourceTree = "<group>"; };
 		14827A5121DF2B1B002D4440 /* SylvesterXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SylvesterXPC.h; sourceTree = "<group>"; };
 		1482FC2621DFE4C800CC796C /* release-xpc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "release-xpc.xcconfig"; sourceTree = "<group>"; };
 		1484CAF021B5946500EF8F09 /* SKSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSwiftDocs.swift; sourceTree = "<group>"; };
@@ -449,7 +450,6 @@
 		14FB4A0D21B4A6E3008C02EB /* SKCodeCompletionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionContext.swift; sourceTree = "<group>"; };
 		14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDiagnosticStage.swift; sourceTree = "<group>"; };
 		14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKAccessLevel.swift; sourceTree = "<group>"; };
-		14FB4A1621B501C1008C02EB /* SKKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKKind.swift; sourceTree = "<group>"; };
 		14FE8F0521ED97E8005231B6 /* SwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDocs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -915,15 +915,15 @@
 		14FB4A0821B49B17008C02EB /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */,
-				1409B2D221B8411C00938856 /* SKAttributeKind.swift */,
-				1409B2D121B8411C00938856 /* SKElementKind.swift */,
-				14FB4A1621B501C1008C02EB /* SKKind.swift */,
-				14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */,
-				14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */,
-				14FB4A0D21B4A6E3008C02EB /* SKCodeCompletionContext.swift */,
-				14FB4A0B21B49C5D008C02EB /* SKSourceKind.swift */,
 				14FB4A0921B49B17008C02EB /* GenerateBoilerplate.swift */,
+				14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */,
+				1409B2D221B8411C00938856 /* SKAttributeKind.swift */,
+				14FB4A0D21B4A6E3008C02EB /* SKCodeCompletionContext.swift */,
+				14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */,
+				1409B2D121B8411C00938856 /* SKElementKind.swift */,
+				14FB4A0B21B49C5D008C02EB /* SKSourceKind.swift */,
+				147B1BAC21EE9A4900000842 /* SKSubstructureKind.swift */,
+				147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -1384,10 +1384,10 @@
 				1411B13721DEE58700CA071D /* Constants.swift in Sources */,
 				1411B13821DEE58700CA071D /* SKDiagnosticStage.swift in Sources */,
 				1411B13921DEE58700CA071D /* SKInheritedType.swift in Sources */,
-				1411B13A21DEE58700CA071D /* SKKind.swift in Sources */,
 				147B1BA921EE7C0F00000842 /* SKSyntaxKind.swift in Sources */,
 				1411B13B21DEE58700CA071D /* SKAccessLevel.swift in Sources */,
 				1411B13C21DEE58700CA071D /* SKAttribute.swift in Sources */,
+				147B1BAE21EE9A4A00000842 /* SKSubstructureKind.swift in Sources */,
 				1411B13D21DEE58700CA071D /* SKCodeCompletionContext.swift in Sources */,
 				1411B13E21DEE58700CA071D /* SKYAMLRequest.swift in Sources */,
 				1411B13F21DEE58700CA071D /* SKGenericModule.swift in Sources */,
@@ -1431,10 +1431,10 @@
 				1438C33B21C8353200081C02 /* Constants.swift in Sources */,
 				14FB4A1221B4FA5F008C02EB /* SKDiagnosticStage.swift in Sources */,
 				1409B2E121B8A63E00938856 /* SKInheritedType.swift in Sources */,
-				14FB4A1721B501C1008C02EB /* SKKind.swift in Sources */,
 				147B1BA721EE7A4700000842 /* SKSyntaxKind.swift in Sources */,
 				14FB4A1421B4FB23008C02EB /* SKAccessLevel.swift in Sources */,
 				1409B2DD21B8A5E500938856 /* SKAttribute.swift in Sources */,
+				147B1BAD21EE9A4A00000842 /* SKSubstructureKind.swift in Sources */,
 				14FB4A0E21B4A6E3008C02EB /* SKCodeCompletionContext.swift in Sources */,
 				14D0CEDB21BF47D00000CB82 /* SKYAMLRequest.swift in Sources */,
 				14E4290821DD716000CEDF61 /* SKGenericModule.swift in Sources */,
