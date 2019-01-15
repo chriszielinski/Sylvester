@@ -9,7 +9,11 @@
 public struct Utilities {
 
     public static func print(error: Error) {
-        Swift.print("[Sylvester Error 😼] \(error)")
+        Swift.print(errorMessage(with: "\(error)"))
+    }
+
+    public static func errorMessage(with string: String) -> String {
+        return "[Sylvester Error 😼] \(string)"
     }
 
 }

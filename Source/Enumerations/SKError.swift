@@ -32,6 +32,31 @@ public enum SKError: LocalizedError {
     /// The associated value is a string that describes the error.
     case unknown(String)
 
+    // MARK: - Public Computed Properties
+
+    public var localizedDescription: String {
+        switch self {
+        case .sourceKitRequestFailed(let error):
+            return error.localizedDescription
+        case .jsonDecodingFailed(let errorDescription):
+            return errorDescription
+        case .jsonEncodingFailed(let errorDescription):
+            return errorDescription
+        case .jsonDataEncodingFailed:
+            return Utilities.errorMessage(with: "Encoding JSON string to `Data` failed.")
+        #if XPC
+        case .sourceKittenCrashed:
+            return Utilities.errorMessage(with: "SourceKitten crashed.")
+        #endif
+        case .unknown(let errorDescription):
+            return errorDescription
+        }
+    }
+
+    public var errorDescription: String? {
+        return localizedDescription
+    }
+
     // MARK: - Convenience Initializers
 
     /// Creates a `SKError.jsonDecodingFailed(_)` error from a `DecodingError`.
