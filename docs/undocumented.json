@@ -50,6 +50,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Extensions/SyntaxToken.swift",
+      "line": 13,
+      "symbol": "SyntaxToken.Kind",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Code Completion/SKCodeCompletionItem.swift",
       "line": null,
       "symbol": "SKCodeCompletionItem",
