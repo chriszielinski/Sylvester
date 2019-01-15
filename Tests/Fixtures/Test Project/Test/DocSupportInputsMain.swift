@@ -1,3 +1,11 @@
+//
+//  DocSupportInputsMain.swift
+//  Test
+//
+//  From the Swift Open Source Repository (https://github.com/apple/swift).
+//
+/// https://github.com/apple/swift/blob/master/test/SourceKit/DocSupport/Inputs/main.swift
+
 var globV: Int
 
 class CC0 {
