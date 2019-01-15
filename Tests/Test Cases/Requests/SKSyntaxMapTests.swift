@@ -41,11 +41,19 @@ class SKSyntaxMapTests: SylvesterTestCase {
     func testViewController() throws {
         let syntaxMap = try SKSyntaxMap(filePath: filePath(for: .viewController))
         try SylvesterAssert(syntaxMap, equalsTestFixture: .viewControllerSyntaxMapJSON)
+
+        for token in syntaxMap.tokens {
+            XCTAssertNotNil(token.kind)
+        }
     }
 
     func testPlaceholders() throws {
         let syntaxMap = try SKSyntaxMap(filePath: filePath(for: .placeholders))
         try SylvesterAssert(syntaxMap, equalsTestFixture: .placeholdersSyntaxMapJSON)
+
+        for token in syntaxMap.tokens {
+            XCTAssertNotNil(token.kind)
+        }
     }
 
     func testEquatable() throws {

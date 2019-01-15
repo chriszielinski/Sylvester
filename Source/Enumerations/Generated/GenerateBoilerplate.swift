@@ -13,7 +13,9 @@ let ignore: Set<String> = ["source.lang.swift.stmt"]
 let prefixes: Set<String> = ["NS", "UI", "LLDB"]
 let replacements: [String: String] = [
     "source.lang.swift.keyword.self": "keywordSelf",
-    "source.lang.swift.keyword.Self": "keywordUppercaseSelf"
+    "source.lang.swift.keyword.Self": "keywordUppercaseSelf",
+    "id": "ID",
+    "url": "URL"
 ]
 let keywords: Set<String> = [
     "associatedtype",
@@ -158,7 +160,13 @@ struct Boilerplate {
                 firstComponent.replaceSubrange(prefixRange, with: prefixString.lowercased())
             }
 
-            let name = firstComponent + keyComponents.dropFirst().map({ $0.invertFirstLetterCasing }).joined()
+            let name = firstComponent + keyComponents.dropFirst().map({
+                if let replacement = replacements[$0] {
+                    return replacement
+                } else {
+                    return $0.invertFirstLetterCasing
+                }
+            }).joined()
 
             guard !keywords.contains(name)
                 else { return "`\(name)`" }
@@ -338,5 +346,11 @@ Boilerplate(enumerationName: "SKAttributeKind",
 Boilerplate(enumerationName: "SKElementKind",
             enumerationCaseTuples: [
                 ("source.lang.swift.structure.elem", "^source\\.lang\\.swift\\.structure\\.elem\\.(.+)$")
+    ],
+            enumerationCaseProtocols: []).generate()
+
+Boilerplate(enumerationName: "SKSyntaxKind",
+            enumerationCaseTuples: [
+                ("source.lang.swift.syntaxtype", "^source\\.lang\\.swift\\.syntaxtype\\.(.+)$")
     ],
             enumerationCaseProtocols: []).generate()
