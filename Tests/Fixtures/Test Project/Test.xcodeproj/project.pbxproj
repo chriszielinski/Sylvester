@@ -13,6 +13,7 @@
 		144ED46721B21A0100D0C19F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144ED46521B21A0100D0C19F /* Main.storyboard */; };
 		144ED46921B21A0200D0C19F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144ED46821B21A0200D0C19F /* Assets.xcassets */; };
 		144ED46C21B21A0200D0C19F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144ED46A21B21A0200D0C19F /* LaunchScreen.storyboard */; };
+		147B1BAB21EE7E5E00000842 /* DocSupportInputsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BAA21EE7E5D00000842 /* DocSupportInputsMain.swift */; };
 		1484CAFB21B5D7A300EF8F09 /* Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAFA21B5D7A300EF8F09 /* Placeholders.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		144ED46821B21A0200D0C19F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		144ED46B21B21A0200D0C19F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		144ED46D21B21A0200D0C19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147B1BAA21EE7E5D00000842 /* DocSupportInputsMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocSupportInputsMain.swift; sourceTree = "<group>"; };
 		1484CAFA21B5D7A300EF8F09 /* Placeholders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placeholders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 		144ED46021B21A0100D0C19F /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				147B1BAA21EE7E5D00000842 /* DocSupportInputsMain.swift */,
 				1409B2DA21B856D500938856 /* AProtocol.swift */,
 				1484CAFA21B5D7A300EF8F09 /* Placeholders.swift */,
 				144ED46121B21A0100D0C19F /* AppDelegate.swift */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				144ED46421B21A0100D0C19F /* ViewController.swift in Sources */,
+				147B1BAB21EE7E5E00000842 /* DocSupportInputsMain.swift in Sources */,
 				144ED46221B21A0100D0C19F /* AppDelegate.swift in Sources */,
 				1484CAFB21B5D7A300EF8F09 /* Placeholders.swift in Sources */,
 				1409B2DB21B856D500938856 /* AProtocol.swift in Sources */,

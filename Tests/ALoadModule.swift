@@ -12,6 +12,7 @@ import XCTest
 #else
 @testable import Sylvester
 #endif
+import SourceKittenFramework
 
 /// Prefixed with 'A' in order to be the first test suite executed.
 class ALoadModule: SylvesterTestCase {
@@ -48,6 +49,7 @@ class ALoadModule: SylvesterTestCase {
         let viewControllerFilePath = filePath(for: .viewController)
         let placeholdersFilePath = filePath(for: .placeholders)
         let aProtocolFilePath = filePath(for: .aProtocol)
+        let docSupportInputsMainFilePath = filePath(for: .docSupportInputsMain)
 
         writeJSONFixture(for: try SKEditorOpen(filePath: appDelegateFilePath),
                          name: .appDelegateEditorOpenMustache)
@@ -57,20 +59,27 @@ class ALoadModule: SylvesterTestCase {
                          name: .placeholdersEditorOpenMustache)
         writeJSONFixture(for: try SKEditorOpen(filePath: aProtocolFilePath),
                          name: .aProtocolEditorOpenMustache)
+        writeJSONFixture(for: try SKEditorOpen(filePath: docSupportInputsMainFilePath),
+                         name: .docSupportInputsMainEditorOpenMustache)
 
         writeJSONFixture(for: try SKSwiftDocs(filePath: appDelegateFilePath,
-                                              compilerArguments: testModule.compilerArguments),
+                                              compilerArguments: testModuleCompilerArguments),
                          name: .appDelegateSwiftDocumentationMustache)
         writeJSONFixture(for: try SKSwiftDocs(filePath: viewControllerFilePath,
-                                              compilerArguments: testModule.compilerArguments),
+                                              compilerArguments: testModuleCompilerArguments),
                          name: .viewControllerSwiftDocumentationMustache)
         writeJSONFixture(for: try SKSwiftDocs(filePath: placeholdersFilePath,
-                                              compilerArguments: testModule.compilerArguments),
+                                              compilerArguments: testModuleCompilerArguments),
                          name: .placeholdersSwiftDocumentationMustache)
+        writeJSONFixture(for: try SKSwiftDocs(filePath: docSupportInputsMainFilePath,
+                                              compilerArguments: testModuleCompilerArguments),
+                         name: .docSupportInputsMainSwiftDocumentationMustache)
 
         writeJSONFixture(for: try SKSyntaxMap(filePath: viewControllerFilePath),
                          name: .viewControllerSyntaxMapJSON)
         writeJSONFixture(for: try SKSyntaxMap(filePath: placeholdersFilePath),
                          name: .placeholdersSyntaxMapJSON)
+        writeJSONFixture(for: try SKSyntaxMap(filePath: docSupportInputsMainFilePath),
+                         name: .docSupportInputsMainSyntaxMapJSON)
     }
 }

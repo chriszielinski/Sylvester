@@ -52,6 +52,13 @@ class SKSwiftDocumentationTests: SylvesterTestCase {
                             filePath: filePath(for: .placeholders))
     }
 
+    func testDocSupportInputsMain() throws {
+        let swiftDocumentationResponse = try sendSwiftDocumentationRequest(for: .docSupportInputsMain)
+        try SylvesterAssert(swiftDocumentationResponse,
+                            equalsTestFixture: .docSupportInputsMainSwiftDocumentationMustache,
+                            filePath: filePath(for: .docSupportInputsMain))
+    }
+
     // MARK: - Test Helper Methods
 
     func sendSwiftDocumentationRequest(for sourceFile: SourceFile) throws -> SKSwiftDocs {

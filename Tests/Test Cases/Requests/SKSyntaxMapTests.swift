@@ -56,6 +56,15 @@ class SKSyntaxMapTests: SylvesterTestCase {
         }
     }
 
+    func testDocSupportInputsMain() throws {
+        let syntaxMap = try SKSyntaxMap(filePath: filePath(for: .docSupportInputsMain))
+        try SylvesterAssert(syntaxMap, equalsTestFixture: .docSupportInputsMainSyntaxMapJSON)
+
+        for token in syntaxMap.tokens {
+            XCTAssertNotNil(token.kind)
+        }
+    }
+
     func testEquatable() throws {
         let viewControllerTestFixture: SKSyntaxMap = try decodeJSONTestFixture(name: .viewControllerSyntaxMapJSON)
         let viewControllerTestFixtureCopy: SKSyntaxMap = try decodeJSONTestFixture(name: .viewControllerSyntaxMapJSON)

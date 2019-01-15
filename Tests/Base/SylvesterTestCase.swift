@@ -28,6 +28,7 @@ class SylvesterTestCase: XCTestCase {
         case viewController = "ViewController"
         case placeholders = "Placeholders"
         case aProtocol = "AProtocol"
+        case docSupportInputsMain = "DocSupportInputsMain"
     }
 
     // swiftlint:disable nesting
@@ -48,11 +49,15 @@ class SylvesterTestCase: XCTestCase {
             case placeholdersSwiftDocumentationMustache = "placeholders-swift-documentation.mustache"
 
             case aProtocolEditorOpenMustache = "a-protocol-editor-open.mustache"
+
+            case docSupportInputsMainEditorOpenMustache = "doc-support-inputs-main-editor-open.mustache"
+            case docSupportInputsMainSwiftDocumentationMustache = "doc-support-inputs-main-swift-documentation.mustache"
         }
 
         enum JSON: String {
             case viewControllerSyntaxMapJSON = "view-controller-syntax-map.json"
             case placeholdersSyntaxMapJSON = "placeholders-syntax-map.json"
+            case docSupportInputsMainSyntaxMapJSON = "doc-support-inputs-main-syntax-map.json"
         }
     }
     // swiftlint:enable nesting
@@ -234,6 +239,8 @@ class SylvesterTestCase: XCTestCase {
                 sourceFile = .placeholders
             case .aProtocolEditorOpenMustache:
                 sourceFile = .aProtocol
+            case .docSupportInputsMainEditorOpenMustache, .docSupportInputsMainSwiftDocumentationMustache:
+                sourceFile = .docSupportInputsMain
             }
             let path = self.filePath(for: sourceFile).replacingOccurrences(of: "/", with: "\\/")
             return jsonString.replacingOccurrences(of: path, with: "{{ file_path }}")

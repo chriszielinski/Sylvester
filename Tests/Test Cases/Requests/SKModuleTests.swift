@@ -28,7 +28,7 @@ class SKModuleTests: SylvesterTestCase {
         XCTAssertEqual(module.sourceFiles, testModule.sourceFiles)
 
         let docs = module.docs
-        XCTAssertEqual(docs.count, 4)
+        XCTAssertEqual(docs.count, 5)
 
         XCTAssertNotNil(module.sdkPath)
         XCTAssertNotNil(module.target)
