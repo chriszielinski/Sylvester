@@ -41,21 +41,21 @@ class SKSwiftDocumentationTests: SylvesterTestCase {
     func testViewController() throws {
         let swiftDocumentationResponse = try sendSwiftDocumentationRequest(for: .viewController)
         try SylvesterAssert(swiftDocumentationResponse,
-                            equalsTestFixture: .viewControllerSwiftDocumentationMustache,
+                            equalsTestFixture: .viewControllerSwiftDocsMustache,
                             filePath: filePath(for: .viewController))
     }
 
     func testPlaceholders() throws {
         let swiftDocumentationResponse = try sendSwiftDocumentationRequest(for: .placeholders)
         try SylvesterAssert(swiftDocumentationResponse,
-                            equalsTestFixture: .placeholdersSwiftDocumentationMustache,
+                            equalsTestFixture: .placeholdersSwiftDocsMustache,
                             filePath: filePath(for: .placeholders))
     }
 
     func testDocSupportInputsMain() throws {
         let swiftDocumentationResponse = try sendSwiftDocumentationRequest(for: .docSupportInputsMain)
         try SylvesterAssert(swiftDocumentationResponse,
-                            equalsTestFixture: .docSupportInputsMainSwiftDocumentationMustache,
+                            equalsTestFixture: .docSupportInputsMainSwiftDocsMustache,
                             filePath: filePath(for: .docSupportInputsMain))
     }
 

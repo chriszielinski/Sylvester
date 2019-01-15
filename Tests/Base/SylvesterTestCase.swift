@@ -40,18 +40,18 @@ class SylvesterTestCase: XCTestCase {
 
         enum Mustache: String {
             case appDelegateEditorOpenMustache = "app-delegate-editor-open.mustache"
-            case appDelegateSwiftDocumentationMustache = "app-delegate-swift-documentation.mustache"
+            case appDelegateSwiftDocsMustache = "app-delegate-swift-documentation.mustache"
 
             case viewControllerEditorOpenMustache = "view-controller-editor-open.mustache"
-            case viewControllerSwiftDocumentationMustache = "view-controller-swift-documentation.mustache"
+            case viewControllerSwiftDocsMustache = "view-controller-swift-documentation.mustache"
 
             case placeholdersEditorOpenMustache = "placeholders-editor-open.mustache"
-            case placeholdersSwiftDocumentationMustache = "placeholders-swift-documentation.mustache"
+            case placeholdersSwiftDocsMustache = "placeholders-swift-documentation.mustache"
 
             case aProtocolEditorOpenMustache = "a-protocol-editor-open.mustache"
 
             case docSupportInputsMainEditorOpenMustache = "doc-support-inputs-main-editor-open.mustache"
-            case docSupportInputsMainSwiftDocumentationMustache = "doc-support-inputs-main-swift-documentation.mustache"
+            case docSupportInputsMainSwiftDocsMustache = "doc-support-inputs-main-swift-documentation.mustache"
         }
 
         enum JSON: String {
@@ -59,6 +59,7 @@ class SylvesterTestCase: XCTestCase {
             case placeholdersSyntaxMapJSON = "placeholders-syntax-map.json"
             case docSupportInputsMainSyntaxMapJSON = "doc-support-inputs-main-syntax-map.json"
         }
+
     }
     // swiftlint:enable nesting
 
@@ -231,15 +232,15 @@ class SylvesterTestCase: XCTestCase {
         writeJSONFixture(for: encodableObject, enumCase: name) { jsonString in
             let sourceFile: SourceFile
             switch name {
-            case .appDelegateEditorOpenMustache, .appDelegateSwiftDocumentationMustache:
+            case .appDelegateEditorOpenMustache, .appDelegateSwiftDocsMustache:
                 sourceFile = .appDelegate
-            case .viewControllerEditorOpenMustache, .viewControllerSwiftDocumentationMustache:
+            case .viewControllerEditorOpenMustache, .viewControllerSwiftDocsMustache:
                 sourceFile = .viewController
-            case .placeholdersEditorOpenMustache, .placeholdersSwiftDocumentationMustache:
+            case .placeholdersEditorOpenMustache, .placeholdersSwiftDocsMustache:
                 sourceFile = .placeholders
             case .aProtocolEditorOpenMustache:
                 sourceFile = .aProtocol
-            case .docSupportInputsMainEditorOpenMustache, .docSupportInputsMainSwiftDocumentationMustache:
+            case .docSupportInputsMainEditorOpenMustache, .docSupportInputsMainSwiftDocsMustache:
                 sourceFile = .docSupportInputsMain
             }
             let path = self.filePath(for: sourceFile).replacingOccurrences(of: "/", with: "\\/")

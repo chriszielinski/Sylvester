@@ -64,16 +64,16 @@ class ALoadModule: SylvesterTestCase {
 
         writeJSONFixture(for: try SKSwiftDocs(filePath: appDelegateFilePath,
                                               compilerArguments: testModuleCompilerArguments),
-                         name: .appDelegateSwiftDocumentationMustache)
+                         name: .appDelegateSwiftDocsMustache)
         writeJSONFixture(for: try SKSwiftDocs(filePath: viewControllerFilePath,
                                               compilerArguments: testModuleCompilerArguments),
-                         name: .viewControllerSwiftDocumentationMustache)
+                         name: .viewControllerSwiftDocsMustache)
         writeJSONFixture(for: try SKSwiftDocs(filePath: placeholdersFilePath,
                                               compilerArguments: testModuleCompilerArguments),
-                         name: .placeholdersSwiftDocumentationMustache)
+                         name: .placeholdersSwiftDocsMustache)
         writeJSONFixture(for: try SKSwiftDocs(filePath: docSupportInputsMainFilePath,
                                               compilerArguments: testModuleCompilerArguments),
-                         name: .docSupportInputsMainSwiftDocumentationMustache)
+                         name: .docSupportInputsMainSwiftDocsMustache)
 
         writeJSONFixture(for: try SKSyntaxMap(filePath: viewControllerFilePath),
                          name: .viewControllerSyntaxMapJSON)
