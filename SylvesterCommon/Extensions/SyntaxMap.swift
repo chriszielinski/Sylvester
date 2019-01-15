@@ -8,25 +8,6 @@
 
 import SourceKittenFramework
 
-public enum SwiftDocsCodingKey: String, CodingKey {
-    case file
-    case response
-}
-
-extension SwiftDocs: Encodable {
-
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: SwiftDocsCodingKey.self)
-        try container.encode(file, forKey: .file)
-
-        guard JSONSerialization.isValidJSONObject(docsDictionary),
-            let data = try? JSONSerialization.data(withJSONObject: docsDictionary)
-            else { throw SKError.jsonDataEncodingFailed }
-        try container.encode(data, forKey: .response)
-    }
-
-}
-
 extension SyntaxMap: Codable {
 
     public init(from decoder: Decoder) throws {

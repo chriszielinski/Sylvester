@@ -198,6 +198,7 @@
 		14FB4A1221B4FA5F008C02EB /* SKDiagnosticStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */; };
 		14FB4A1421B4FB23008C02EB /* SKAccessLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */; };
 		14FB4A1721B501C1008C02EB /* SKKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1621B501C1008C02EB /* SKKind.swift */; };
+		14FE8F0621ED97E8005231B6 /* SwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE8F0521ED97E8005231B6 /* SwiftDocs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -443,6 +444,7 @@
 		14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDiagnosticStage.swift; sourceTree = "<group>"; };
 		14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKAccessLevel.swift; sourceTree = "<group>"; };
 		14FB4A1621B501C1008C02EB /* SKKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKKind.swift; sourceTree = "<group>"; };
+		14FE8F0521ED97E8005231B6 /* SwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDocs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -842,6 +844,7 @@
 				148CB86221C19FCA002928DD /* Module.swift */,
 				1420E24B21C07E6500BEF13C /* Requests.swift */,
 				144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer.swift */,
+				14FE8F0521ED97E8005231B6 /* SwiftDocs.swift */,
 				1484CAFE21B5DABF00EF8F09 /* SyntaxMap.swift */,
 				1484CAFC21B5DAA900EF8F09 /* SyntaxToken.swift */,
 			);
@@ -1517,6 +1520,7 @@
 				1493780421D5D89700632B76 /* KeyedDecodingContainer.swift in Sources */,
 				1420E24721C0527600BEF13C /* SKCodeCompletionSessionOptions.swift in Sources */,
 				14BF6C4E21BC6C39006EAB11 /* SKError.swift in Sources */,
+				14FE8F0621ED97E8005231B6 /* SwiftDocs.swift in Sources */,
 				14BF6C3F21BC4FC4006EAB11 /* File.swift in Sources */,
 				1493780521D5D8A300632B76 /* SingleValueDecodingContainer.swift in Sources */,
 				148CB86721C1AC0C002928DD /* SKModuleWrapper.swift in Sources */,

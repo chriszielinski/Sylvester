@@ -267,7 +267,7 @@ open class SKCodeCompletionSession: NSObject {
 
         isOpen = false
 
-        func sendCloseRequest(_ session: SKCodeCompletionSession) {
+        let sendCloseRequest: (SKCodeCompletionSession) -> Void = { (session) in
             do {
                 let response = try SourceKittenInterface.shared.codeCompletionClose(name: session.file.name,
                                                                                     offset: session.offset)

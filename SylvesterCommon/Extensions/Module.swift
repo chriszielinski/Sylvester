@@ -16,15 +16,15 @@ enum ModuleCodingKeys: String, CodingKey {
 public extension Module {
 
     var sdkPath: String? {
-        guard let index = compilerArguments.firstIndex(of: "-sdk"),
-            // Make sure the value exists.
-            index + 1 < compilerArguments.count
-            else { return nil }
-        return compilerArguments[index + 1]
+        return value(of: "-sdk")
     }
 
     var target: String? {
-        guard let index = compilerArguments.firstIndex(of: "-target"),
+        return value(of: "-target")
+    }
+
+    func value(of compilerArgument: String) -> String? {
+        guard let index = compilerArguments.firstIndex(of: compilerArgument),
             // Make sure the value exists.
             index + 1 < compilerArguments.count
             else { return nil }

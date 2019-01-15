@@ -232,13 +232,12 @@ open class SourceKittenInterface {
                                    compilerArguments: [String]) throws -> SKCodeCompletionSession.Response {
         #if XPC
         var encodedOptions: SKDataWrapper?
+        var response: SKDataWrapper?
+        var responseError: SKXPCError?
 
         if let options = options {
             encodedOptions = try SKDataWrapper(object: options)
         }
-
-        var response: SKDataWrapper?
-        var responseError: SKXPCError?
 
         synchronousProxy.codeCompletionOpen(file: SKFileWrapper(file: file),
                                             offset: offset,
@@ -256,10 +255,9 @@ open class SourceKittenInterface {
                                                                      compilerArguments: compilerArguments)
         #endif
 
-        let codeCompletion: SKCodeCompletion = try dataWrapper.decodeData()
         return SKCodeCompletionSession.Response(kind: .open,
                                                options: options,
-                                               codeCompletion: codeCompletion)
+                                               codeCompletion: try dataWrapper.decodeData())
     }
 
     /// A _SourceKit_ code completion update request.
@@ -275,13 +273,12 @@ open class SourceKittenInterface {
                                      options: SKCodeCompletionSession.Options?)
                                      throws -> SKCodeCompletionSession.Response {
         #if XPC
-        let encodedOptions = try SKDataWrapper(object: options)
         var response: SKDataWrapper?
         var responseError: SKXPCError?
 
         synchronousProxy.codeCompletionUpdate(name: file.name,
                                               offset: offset,
-                                              options: encodedOptions) { (dataWrapper, error) in
+                                              options: try SKDataWrapper(object: options)) { (dataWrapper, error) in
                                                 response = dataWrapper
                                                 responseError = error
         }
@@ -293,10 +290,9 @@ open class SourceKittenInterface {
                                                                        options: options)
         #endif
 
-        let codeCompletion: SKCodeCompletion = try dataWrapper.decodeData()
         return SKCodeCompletionSession.Response(kind: .update,
-                                               options: options,
-                                               codeCompletion: codeCompletion)
+                                                options: options,
+                                                codeCompletion: try dataWrapper.decodeData())
     }
 
     /// A _SourceKit_ code completion close request.
