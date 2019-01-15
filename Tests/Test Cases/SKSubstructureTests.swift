@@ -100,10 +100,6 @@ class SKSubstructureTests: SylvesterMockEditorOpenTestCase {
                                 """)
                         // swiftlint:enable line_length
 
-        AssertRange(viewControllerClassSubstructure.declarationRange(in: viewControllerFile),
-                    in: viewControllerSource,
-                    equals: "class ViewController: UIViewController")
-
         XCTAssertFalse(viewControllerClassSubstructure.isReturningFunction,
                       "`isReturningFunction` returns incorrect value.")
         XCTAssertNil(viewControllerClassSubstructure.functionReturnType,
@@ -138,12 +134,6 @@ class SKSubstructureTests: SylvesterMockEditorOpenTestCase {
                                     }
                                 """)
                         // swiftlint:enable line_length
-
-        AssertRange(genericFuncSubstructure.declarationRange(in: viewControllerFile),
-                    in: viewControllerSource,
-                    // swiftlint:disable line_length
-                    equals: "func genericFunction<T: RawRepresentable>(with parameter: T) -> ((T) -> String)? where T.RawValue == String")
-                    // swiftlint:enable line_length
 
         XCTAssertTrue(genericFuncSubstructure.isReturningFunction,
                       "`isReturningFunction` returns incorrect value.")
@@ -191,13 +181,6 @@ class SKSubstructureTests: SylvesterMockEditorOpenTestCase {
                                 }
                                 """)
 
-        AssertRange(aProtocolProtocolSubstructure.declarationRange(in: aProtocolFile),
-                    in: aProtocolSource,
-                    equals: """
-                            @objc(AProtocol)
-                            public protocol AProtocol
-                            """)
-
         XCTAssertFalse(aProtocolProtocolSubstructure.isExtension,
                        "`isExtension` returns incorrect value.")
     }
@@ -214,10 +197,6 @@ class SKSubstructureTests: SylvesterMockEditorOpenTestCase {
         AssertByteRange(contentByteRange,
                         in: aProtocolSource,
                         equals: "var aVariable: Bool { get set }")
-
-        AssertEqual(byteRange: contentByteRange,
-                    range: varSubstructure.declarationRange(in: aProtocolFile),
-                    in: aProtocolSource)
 
         XCTAssertTrue(varSubstructure.isVariable, "Substructure returns incorrect `isVariable` value.")
         XCTAssertTrue(varSubstructure.isInsideProtocolDeclaration,
@@ -237,10 +216,6 @@ class SKSubstructureTests: SylvesterMockEditorOpenTestCase {
                         in: aProtocolSource,
                         equals: "var aClosure: (Int) -> Void { get set }")
 
-        AssertEqual(byteRange: contentByteRange,
-                    range: closureSubstructure.declarationRange(in: aProtocolFile),
-                    in: aProtocolSource)
-
         XCTAssertTrue(closureSubstructure.isInsideProtocolDeclaration,
                       "Substructure returns incorrect `isInsideProtocolDeclaration` value.")
     }
@@ -257,10 +232,6 @@ class SKSubstructureTests: SylvesterMockEditorOpenTestCase {
         AssertByteRange(contentByteRange,
                         in: aProtocolSource,
                         equals: "func aFunction() -> () -> String")
-
-        AssertEqual(byteRange: contentByteRange,
-                    range: funcSubstructure.declarationRange(in: aProtocolFile),
-                    in: aProtocolSource)
 
         XCTAssertTrue(funcSubstructure.isReturningFunction,
                       "`isReturningFunction` returns incorrect value.")

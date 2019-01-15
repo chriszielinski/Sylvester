@@ -14,7 +14,9 @@ public struct SKDocumentationParameter {
 
     // MARK: - Public Stored Properties
 
+    /// The name of the documented parameter.
     public let name: String
+    /// The documented parameter's documentation.
     public let discussion: [Paragraph]
 
 }

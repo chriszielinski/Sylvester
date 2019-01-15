@@ -16,6 +16,7 @@ public struct SKParagraph {
 
     // MARK: - Public Stored Properties
 
+    /// The paragraph text contents.
     public let paragraph: String
 
 }

@@ -54,15 +54,15 @@ public protocol SylvesterXPCProtocol {
 
     func customYAML(_ yaml: String, with reply: (SKDataWrapper?, SKXPCError?) -> Void)
 
-    // MARK: - Process Methods
+    // MARK: - Subprocess Methods
 
     func xcRun(arguments: [String], with reply: (String?) -> Void)
     func xcodeBuild(arguments: [String], currentDirectoryPath: String, with reply: (String?) -> Void)
     func executeBash(_ command: String, currentDirectoryPath: String?, with reply: (String?) -> Void)
-    func executeShell(launchPath: String,
-                      arguments: [String],
-                      currentDirectoryPath: String?,
-                      shouldPipeStandardError: Bool,
-                      with reply: (String?) -> Void)
+    func executeSubprocess(launchPath: String,
+                           arguments: [String],
+                           currentDirectoryPath: String?,
+                           shouldPipeStandardError: Bool,
+                           with reply: (String?) -> Void)
 
 }

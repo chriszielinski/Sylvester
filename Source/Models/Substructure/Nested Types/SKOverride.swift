@@ -16,6 +16,7 @@ public struct SKOverride {
 
     // MARK: - Public Stored Properties
 
+    /// The Unified Symbol Resolution (USR) of the overridden entity.
     public let usr: String
 
     // MARK: - Public Initializers

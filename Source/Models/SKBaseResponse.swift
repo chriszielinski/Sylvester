@@ -26,10 +26,16 @@ open class SKBaseResponse: NSObject, Codable {
 
     // MARK: - Public Stored Properties
 
+    // swiftlint:disable:next line_length
+    /// The compiler [diagnostic stage](https://github.com/apple/swift/blob/master/docs/SIL.rst#sil-in-the-swift-compiler).
     public let diagnosticStage: DiagnosticStage
+    /// The byte length of the analyzed source contents.
     public let length: Int
+    /// The starting byte offset of the analyzed source contents.
     public let offset: Int
+    /// The top-level substructures in the analyzed source contents.
     public let topLevelSubstructures: SKSubstructureChildren
+    /// The syntax map of the analyzed source contents.
     public let syntaxMap: SyntaxMap?
 
     // MARK: - Public Initializers
@@ -56,6 +62,15 @@ open class SKBaseResponse: NSObject, Codable {
 
     // MARK: - Public Methods
 
+    /// The entry point to a recursive resolution process that sets each child's `index`, `parent`, and
+    /// `filePath` properties.
+    ///
+    /// This method calls the `topLevelSubstructures`'s `SKSubstructureChildren.resolve(parent:index:filePath:)` method.
+    ///
+    /// - Note: If the resolution process is unnecessary, overriding this method with an empty body will
+    ///         suffice to omit it.
+    ///
+    /// - Parameter filePath: The absolute file path to the source file analyzed.
     open func resolve(from filePath: String?) {
         topLevelSubstructures.resolve(index: 0, filePath: filePath)
     }

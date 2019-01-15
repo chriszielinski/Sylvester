@@ -52,7 +52,16 @@ open class SourceKittenInterface {
     }
 
     // MARK: - Public SourceKitten Interface Methods
+    // MARK: Module Methods
 
+    /// A _SourceKitten_ module info request.
+    ///
+    /// - Parameters:
+    ///   - xcodeBuildArguments: The arguments necessary pass in to `xcodebuild` to build this module.
+    ///   - name: The module name. Will be parsed from `xcodebuild` output if nil.
+    ///   - path: The path to run `xcodebuild` from. Uses current path by default.
+    /// - Returns: The resulting `Module`.
+    /// - Throws: A `SKError`, if an error occurs.
     public func moduleInfo(xcodeBuildArguments: [String],
                            name: String? = nil,
                            in path: String) throws -> Module {
@@ -75,6 +84,11 @@ open class SourceKittenInterface {
         #endif
     }
 
+    /// A _SourceKitten_ module docs request.
+    ///
+    /// - Parameter module: The `Module` to get the module docs for.
+    /// - Returns: An array of the specified `SwiftDocs` type.
+    /// - Throws: A `SKError`, if an error occurs.
     public func moduleDocs<T: SKSwiftDocs>(module: Module) throws -> [T] {
         #if XPC
         var response: SKDataWrapper?
@@ -93,6 +107,13 @@ open class SourceKittenInterface {
         return try dataWrapper.decodeData()
     }
 
+    // MARK: Editor Methods
+
+    /// A _SourceKit_ editor open request.
+    ///
+    /// - Parameter file: The source file to open.
+    /// - Returns: The resulting `SKEditorOpen`.
+    /// - Throws: A `SKError`, if an error occurs.
     public func editorOpen(file: File) throws -> SKEditorOpen {
         #if XPC
         var response: SKDataWrapper?
@@ -111,6 +132,13 @@ open class SourceKittenInterface {
         return try dataWrapper.decodeData()
     }
 
+    // MARK: Syntax Methods
+
+    /// A _SourceKitten_ syntax map request.
+    ///
+    /// - Parameter file: The source file to get a syntax map for.
+    /// - Returns: The resulting `SyntaxMap`.
+    /// - Throws: A `SKError`, if an error occurs.
     public func syntaxMap(file: File) throws -> SyntaxMap {
         #if XPC
         var response: SKSyntaxMapWrapper?
@@ -127,6 +155,15 @@ open class SourceKittenInterface {
         #endif
     }
 
+    // MARK: Documentation Methods
+
+    /// A _SourceKitten_ swift documentation request.
+    ///
+    /// - Parameters:
+    ///   - file: The source file to gather documentation for.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Returns: The resulting `SKSwiftDocs`.
+    /// - Throws: A `SKError`, if an error occurs.
     public func swiftDocs(file: File, compilerArguments: [String]) throws -> SKSwiftDocs {
         #if XPC
         var response: SKDataWrapper?
@@ -146,6 +183,16 @@ open class SourceKittenInterface {
         return try dataWrapper.decodeData()
     }
 
+    // MARK: Code Completion Methods
+
+    /// A _SourceKit_ code completion request.
+    ///
+    /// - Parameters:
+    ///   - file: The `File` of the code completion.
+    ///   - offset: The byte offset of the code completion point inside the source contents.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Returns: The resulting `SKCodeCompletion`.
+    /// - Throws: A `SKError`, if an error occurs.
     public func codeCompletion(file: File,
                                offset: Offset,
                                compilerArguments: [String]) throws -> SKCodeCompletion {
@@ -170,6 +217,15 @@ open class SourceKittenInterface {
         return try dataWrapper.decodeData()
     }
 
+    /// A _SourceKit_ code completion open request.
+    ///
+    /// - Parameters:
+    ///   - file: The `File` of the code completion session.
+    ///   - offset: The byte offset of the code completion point inside the session's source contents.
+    ///   - options: The `SKCodeCompletionSession.Options` of the open request.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Returns: The request's `SKCodeCompletionSession.Response`.
+    /// - Throws: A `SKError`, if an error occurs.
     public func codeCompletionOpen(file: File,
                                    offset: Offset,
                                    options: SKCodeCompletionSession.Options?,
@@ -206,6 +262,14 @@ open class SourceKittenInterface {
                                                codeCompletion: codeCompletion)
     }
 
+    /// A _SourceKit_ code completion update request.
+    ///
+    /// - Parameters:
+    ///   - file: The `File` of the open code completion session.
+    ///   - offset: The byte offset of the code completion point inside the session's source contents.
+    ///   - options: The `SKCodeCompletionSession.Options` of the update request.
+    /// - Returns: The request's `SKCodeCompletionSession.Response`.
+    /// - Throws: A `SKError`, if an error occurs.
     public func codeCompletionUpdate(file: File,
                                      offset: Int,
                                      options: SKCodeCompletionSession.Options?)
@@ -235,6 +299,13 @@ open class SourceKittenInterface {
                                                codeCompletion: codeCompletion)
     }
 
+    /// A _SourceKit_ code completion close request.
+    ///
+    /// - Parameters:
+    ///   - name: The name of the open code completion session.
+    ///   - offset: The byte offset of the code completion point inside the session's source contents.
+    /// - Returns: The request's `SKCodeCompletionSession.Response`.
+    /// - Throws: A `SKError`, if an error occurs.
     public func codeCompletionClose(name: String, offset: Int) throws -> SKCodeCompletionSession.Response {
         #if XPC
         var responseError: SKXPCError?
@@ -253,6 +324,13 @@ open class SourceKittenInterface {
         return SKCodeCompletionSession.Response(kind: .close, options: nil, codeCompletion: nil)
     }
 
+    // MARK: Custom Request Methods
+
+    /// A custom YAML _SourceKit_ request.
+    ///
+    /// - Parameter yaml: The _SourceKit_ request in YAML representation.
+    /// - Returns: The decoded response as the specified type.
+    /// - Throws: A `SKError`, if an error occurs.
     public func customYAML<T: Decodable>(_ yaml: String) throws -> T {
         #if XPC
         var response: SKDataWrapper?
@@ -271,6 +349,12 @@ open class SourceKittenInterface {
         return try dataWrapper.decodeData()
     }
 
+    // MARK: Subprocess Methods
+
+    /// Run `xcrun` with the specified arguments.
+    ///
+    /// - Parameter arguments: The arguments to pass to `xcrun`.
+    /// - Returns: The `xcrun`'s standard out output.
     public func xcRun(arguments: [String]) -> String? {
         #if XPC
         var response: String?
@@ -286,9 +370,11 @@ open class SourceKittenInterface {
     }
 
     /// Run `xcodebuild clean build` along with any passed in build arguments.
-    /// parameter arguments: Arguments to pass to `xcodebuild`.
-    /// parameter path:      Path to run `xcodebuild` from.
-    /// - returns: `xcodebuild`'s STDERR+STDOUT output combined.
+    ///
+    /// - Parameters:
+    ///   - arguments: The arguments to pass to `xcodebuild`.
+    ///   - currentDirectoryPath: The path to run `xcodebuild` from.
+    /// - Returns: The `xcodebuild`'s combined standard error and standard out output.
     public func xcodeBuild(arguments: [String], currentDirectoryPath: String) -> String? {
         #if XPC
         var response: String?
@@ -303,13 +389,19 @@ open class SourceKittenInterface {
         #endif
     }
 
+    /// Executes a Bash command.
+    ///
+    /// - Parameters:
+    ///   - command: The command to execute.
+    ///   - currentDirectoryPath: The path to run the Bash command from.
+    /// - Returns: The Bash command's standard out output.
     public func executeBash(command: String,
                             currentDirectoryPath: String? = nil) -> String? {
         #if XPC
         var response: String?
 
         synchronousProxy.executeBash(command, currentDirectoryPath: currentDirectoryPath) { (output) in
-                                        response = output
+            response = output
         }
 
         return response
@@ -318,26 +410,35 @@ open class SourceKittenInterface {
         #endif
     }
 
-    public func executeShell(launchPath: String,
-                             arguments: [String] = [],
-                             currentDirectoryPath: String? = nil,
-                             shouldPipeStandardError: Bool = false) -> String? {
+    /// Executes another program as a subprocess.
+    ///
+    /// - Parameters:
+    ///   - launchPath: The path to the receiver’s executable.
+    ///   - arguments: The command arguments that should be used to launch the executable.
+    ///   - currentDirectoryPath: The current directory for the receiver. If `nil`, the current directory is
+    ///                           inherited from the process that created the receiver.
+    ///   - shouldPipeStandardError: Whether the standard error should also be piped to the output.
+    /// - Returns: The executable's standard out (and standard error, if `shouldPipeStandardError` is true) output.
+    public func executeSubprocess(launchPath: String,
+                                  arguments: [String] = [],
+                                  currentDirectoryPath: String? = nil,
+                                  shouldPipeStandardError: Bool = false) -> String? {
         #if XPC
         var response: String?
 
-        synchronousProxy.executeShell(launchPath: launchPath,
-                                      arguments: arguments,
-                                      currentDirectoryPath: currentDirectoryPath,
-                                      shouldPipeStandardError: shouldPipeStandardError) { (output) in
-                                        response = output
+        synchronousProxy.executeSubprocess(launchPath: launchPath,
+                                           arguments: arguments,
+                                           currentDirectoryPath: currentDirectoryPath,
+                                           shouldPipeStandardError: shouldPipeStandardError) { (output) in
+                                            response = output
         }
 
         return response
         #else
-        return SourceKittenAdapter.executeShell(launchPath: launchPath,
-                                                arguments: arguments,
-                                                currentDirectoryPath: currentDirectoryPath,
-                                                shouldPipeStandardError: shouldPipeStandardError)
+        return SourceKittenAdapter.executeSubprocess(launchPath: launchPath,
+                                                     arguments: arguments,
+                                                     currentDirectoryPath: currentDirectoryPath,
+                                                     shouldPipeStandardError: shouldPipeStandardError)
         #endif
     }
 

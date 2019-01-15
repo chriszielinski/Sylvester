@@ -41,8 +41,8 @@ open class SKCodeCompletion: Codable {
     /// - Parameters:
     ///   - file: The source file.
     ///   - offset: The byte offset of the code completion point inside the source contents.
-    ///   - compilerArguments: Array of `String`s for the compiler arguments (e.g `["-sdk", "/path/to/sdk"]`).
-    /// - Throws: A `SKError` if an error occurs.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Throws: A `SKError`, if an error occurs.
     public init(file: File, offset: Offset, compilerArguments: [String]) throws {
         let codeCompletion = try SourceKittenInterface.shared.codeCompletion(file: file,
                                                                              offset: offset,
@@ -60,7 +60,7 @@ open class SKCodeCompletion: Codable {
     ///   - offset: The byte offset of the code completion point inside the source contents.
     ///   - sdkPath: The path to the SDK to compile against.
     ///   - target: The target (triple) architecture to generate completions for (e.g. `"arm64-apple-ios12.1"`).
-    /// - Throws: A `SKError` if an error occurs.
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(file: File, offset: Offset, sdkPath: String, target: String? = nil) throws {
         var compilerArguments = ["-sdk", sdkPath]
 
@@ -78,8 +78,8 @@ open class SKCodeCompletion: Codable {
     /// - Parameters:
     ///   - filePath: The absolute file path to the source file.
     ///   - offset: The byte offset of the code completion point inside the source contents.
-    ///   - compilerArguments: Array of `String`s for the compiler arguments (e.g `["-sdk", "/path/to/sdk"]`).
-    /// - Throws: A `SKError` if an error occurs.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(filePath: String, offset: Offset, compilerArguments: [String]) throws {
         try self.init(file: File(pathDeferringReading: filePath), offset: offset, compilerArguments: compilerArguments)
     }
@@ -91,8 +91,8 @@ open class SKCodeCompletion: Codable {
     /// - Parameters:
     ///   - contents: The source code contents.
     ///   - offset: The byte offset of the code completion point inside the source contents.
-    ///   - compilerArguments: Array of `String`s for the compiler arguments (e.g `["-sdk", "/path/to/sdk"]`).
-    /// - Throws: A `SKError` if an error occurs.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(contents: String, offset: Offset, compilerArguments: [String]) throws {
         try self.init(file: File(contents: contents), offset: offset, compilerArguments: compilerArguments)
     }
@@ -106,7 +106,7 @@ open class SKCodeCompletion: Codable {
     ///   - offset: The byte offset of the code completion point inside the source contents.
     ///   - sdkPath: The path to the SDK to compile against.
     ///   - target: The target (triple) architecture to generate completions for (e.g. `"arm64-apple-ios12.1"`).
-    /// - Throws: A `SKError` if an error occurs.
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(filePath: String, offset: Offset, sdkPath: String, target: String? = nil) throws {
         try self.init(file: File(pathDeferringReading: filePath), offset: offset, sdkPath: sdkPath, target: target)
     }
@@ -120,7 +120,7 @@ open class SKCodeCompletion: Codable {
     ///   - offset: The byte offset of the code completion point inside the source contents.
     ///   - sdkPath: The path to the SDK to compile against.
     ///   - target: The target (triple) architecture to generate completions for (e.g. `"arm64-apple-ios12.1"`).
-    /// - Throws: A `SKError` if an error occurs.
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(contents: String, offset: Offset, sdkPath: String, target: String? = nil) throws {
         try self.init(file: File(contents: contents), offset: offset, sdkPath: sdkPath, target: target)
     }

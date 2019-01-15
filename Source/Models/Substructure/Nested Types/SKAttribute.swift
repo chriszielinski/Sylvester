@@ -20,6 +20,7 @@ open class SKAttribute: SKEntity {
 
     // MARK: - Public Stored Properties
 
+    /// The kind of the attribute.
     public let kind: Kind
 
     // MARK: - Public Initializers
@@ -72,10 +73,18 @@ extension SKAttribute: Equatable {
 
 extension SKEntities where Entity: SKAttribute {
 
+    /// Returns the attribute with the specified kind, or `nil` if nonexistent.
+    ///
+    /// - Parameter kind: The kind of the attribute to return.
+    /// - Returns: The `SKAttribute`, or `nil` if nonexistent.
     public func attribute(with kind: SKAttribute.Kind) -> SKAttribute? {
         return entities.first(where: { $0.kind == kind })
     }
 
+    /// Returns whether the specified attribute kind is a member of the array.
+    ///
+    /// - Parameter kind: The kind of the attribute.
+    /// - Returns: `true` if the attribute kind is a member of the array; otherwise, `false`.
     public func containsAttribute(with kind: SKAttribute.Kind) -> Bool {
         return attribute(with: kind) != nil
     }

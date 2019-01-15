@@ -31,7 +31,7 @@ open class SKSyntaxMap: Codable {
     ///
     /// - Parameters:
     ///   - file: The source file.
-    /// - Throws: A `SKError` if an error occurs.
+    /// - Throws: A `SKError`, if an error occurs.
     public init(file: File) throws {
         syntaxMap = try SourceKittenInterface.shared.syntaxMap(file: file)
     }
@@ -42,7 +42,7 @@ open class SKSyntaxMap: Codable {
     ///
     /// - Parameters:
     ///   - filePath: The absolute file path to the source file.
-    /// - Throws: A `SKError` if an error occurs.
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(filePath: String) throws {
         try self.init(file: File(pathDeferringReading: filePath))
     }

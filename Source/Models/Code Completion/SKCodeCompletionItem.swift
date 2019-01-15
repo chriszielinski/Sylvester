@@ -56,7 +56,7 @@ public struct SKCodeCompletionItem {
     ///
     /// Only present for `SKCodeCompletionSession` requests.
     public let substructure: Substructure?
-    /// The associated USRs of the item.
+    /// The associated Unified Symbol Resolutions (USRs) of the item.
     public let associatedUSRs: String?
     /// The name of the module the item belongs to.
     public let moduleName: String?

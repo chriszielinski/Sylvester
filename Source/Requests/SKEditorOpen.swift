@@ -19,7 +19,7 @@ open class SKEditorOpen: SKBaseResponse {
     ///
     /// - Parameters:
     ///   - file: The source file.
-    /// - Throws: A `SKError` if an error occurs.
+    /// - Throws: A `SKError`, if an error occurs.
     public init(file: File) throws {
         super.init(skInformation: try SourceKittenInterface.shared.editorOpen(file: file))
 
@@ -32,7 +32,7 @@ open class SKEditorOpen: SKBaseResponse {
     ///
     /// - Parameters:
     ///   - filePath: The absolute file path to the source file.
-    /// - Throws: A `SKError` if an error occurs.
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(filePath: String) throws {
         try self.init(file: File(pathDeferringReading: filePath))
     }

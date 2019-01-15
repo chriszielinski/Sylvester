@@ -17,7 +17,9 @@ open class SKEntity: Codable {
 
     // MARK: - Public Stored Properties
 
+    /// The byte offset of the entity inside the source contents.
     public let offset: Int
+    /// The byte length of the entity inside the source contents.
     public let length: Int
 
     // MARK: - Public Initializers

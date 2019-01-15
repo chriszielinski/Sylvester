@@ -68,6 +68,7 @@ open class SKSubstructure: NSObject, Codable {
     /// - Note: The first substructure in each source file will begin from zero.
     ///
     public var index: Int!
+    /// The parent substructure, or `nil` if this substructure is a root.
     public weak var parent: SKSubstructure?
 
     /// The [access level](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html) of the substructure.
@@ -85,17 +86,25 @@ open class SKSubstructure: NSObject, Codable {
     public let bodyOffset: Int?
     /// The byte length of the substructure's body inside the source contents.
     public let bodyLength: Int?
+    /// The column where the token's declaration begins (Int64).
     public let docColumn: Int?
+    /// The documentation comment.
     public let docComment: String?
+    /// The declaration of documented token.
     public let docDeclaration: String?
+    /// The file where the documented token is located.
     public let docFile: String?
     /// The XML representing the substructure and its documentation.
     ///
     /// Only present when the substructure is documented.
     public let docFullAsXML: String?
+    /// The line where the token's declaration begins (Int64).
     public let docLine: Int?
+    /// The name of the documented token (String).
     public let docName: String?
+    /// The parameters of the documented token.
     public let docParameters: [DocumentationParameter]?
+    /// The type of the documented token.
     public let docType: String?
     /// The byte offset of the substructure's documentation inside the source contents.
     public let docOffset: Int?
@@ -133,19 +142,25 @@ open class SKSubstructure: NSObject, Codable {
     /// For a function, the name encompasses everything up to the closing parameter `)`, including the generic
     /// parameter clause `<...>`.
     public let nameLength: Int?
+    /// The parsed declaration.
     public let parsedDeclaration: String?
+    /// The parsed scope end (Int64).
     public let parsedScopeEnd: Int?
+    /// The parsed scope start (Int64).
     public let parsedScopeStart: Int?
+    /// The objective-c runtime name.
     public let runtimeName: String?
     /// The overrides of the substructure.
     public let overrides: [Override]?
+    /// The setter access level.
     public let setterAccessibility: AccessLevel?
+    /// The substructure children of the substructure.
     public var children: SKSubstructureChildren?
     /// A string describing the type of the substructure.
     public let typeName: String?
-    /// The USR for the substructure's type.
+    /// The Unified Symbol Resolution (USR) for the substructure's type.
     public let typeUSR: String?
-    /// The USR for the substructure.
+    /// The Unified Symbol Resolution (USR) for the substructure.
     public let usr: String?
 
     // MARK: - Public Lazy Stored Properties
@@ -296,38 +311,6 @@ open class SKSubstructure: NSObject, Codable {
             else { return false }
         return parentKind == .protocol
     }()
-
-    // MARK: - Public Methods
-
-    // FIXME: Remove?
-    /// The byte range encompassing the substructure declaration.
-    func declarationRange(in sourceFile: File) -> Range<Substring.Index>? {
-        let startingOffset = attributes?.first?.offset ?? offset
-
-        let byteNSRange: NSRange
-        // Covers declarations with elements (e.g. classes, etc.).
-        if let lastElement = elements?.last {
-            let upperBoundIndex = lastElement.offset + lastElement.length
-            byteNSRange = NSRange(location: startingOffset, length: upperBoundIndex - startingOffset)
-        } else if isInsideProtocolDeclaration {
-            //            if isVariable {
-            byteNSRange = NSRange(location: startingOffset,
-                                  length: byteRange.upperBound - startingOffset)
-        } else if let bodyRange = bodyByteRange {
-            let nsRange = NSRange(location: startingOffset, length: (bodyRange.lowerBound - 1) - startingOffset)
-            let range = sourceFile.contents.range(from: nsRange)!
-            let tmp = sourceFile.contents[range]
-            return tmp.rangeAfterTrimmingCharacters(in: .whitespaces)
-        } else if let nameRange = nameByteRange {
-            // No elements, so the declaration ends with the name.
-            let upperBoundIndex = nameRange.upperBound
-            byteNSRange = NSRange(location: startingOffset, length: upperBoundIndex - startingOffset)
-        } else {
-            byteNSRange = contentByteRange
-        }
-
-        return sourceFile.contents.range(from: byteNSRange)
-    }
 
 }
 

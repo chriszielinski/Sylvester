@@ -63,10 +63,10 @@ open class SKGenericModule<T: SKSwiftDocs> {
     /// - Warning: The request is sent synchronously, so ensure this initializer is not called on the main thread.
     ///
     /// - Parameters:
-    ///   - xcodeBuildArguments: The arguments necessary pass in to `xcodebuild` to build this Module.
-    ///   - name:  Module name. Will be parsed from `xcodebuild` output if nil.
-    ///   - path: Path to run `xcodebuild` from. Uses current path by default.
-    /// - Throws: A `SKError` if an error occurs.
+    ///   - xcodeBuildArguments: The arguments necessary pass in to `xcodebuild` to build this module.
+    ///   - name: The module name. Will be parsed from `xcodebuild` output if nil.
+    ///   - path: The path to run `xcodebuild` from. Uses current path by default.
+    /// - Throws: A `SKError`, if an error occurs.
     public init(xcodeBuildArguments: [String],
                 name: String? = nil,
                 inPath path: String = FileManager.default.currentDirectoryPath) throws {

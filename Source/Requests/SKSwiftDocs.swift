@@ -24,9 +24,9 @@ open class SKSwiftDocs: SKBaseResponse {
     /// - Warning: The request is sent synchronously, so ensure this initializer is not called on the main thread.
     ///
     /// - Parameters:
-    ///   - file: The source file.
-    ///   - compilerArguments: Array of `String`s for the compiler arguments (e.g `["-sdk", "/path/to/sdk"]`).
-    /// - Throws: A `SKError` if an error occurs.
+    ///   - file: The source file to gather documentation for.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Throws: A `SKError`, if an error occurs.
     public init(file: File, compilerArguments: [String]) throws {
         self.file = file
 
@@ -41,9 +41,9 @@ open class SKSwiftDocs: SKBaseResponse {
     /// - Warning: The request is sent synchronously, so ensure this initializer is not called on the main thread.
     ///
     /// - Parameters:
-    ///   - filePath: The absolute file path to the source file.
-    ///   - compilerArguments: Array of `String`s for the compiler arguments (e.g `["-sdk", "/path/to/sdk"]`).
-    /// - Throws: A `SKError` if an error occurs.
+    ///   - filePath: The absolute file path to the source file to gather documentation for.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(filePath: String, compilerArguments: [String]) throws {
         try self.init(file: File(pathDeferringReading: filePath), compilerArguments: compilerArguments)
     }
@@ -53,7 +53,7 @@ open class SKSwiftDocs: SKBaseResponse {
     /// - Warning: The request is sent synchronously, so ensure this initializer is not called on the main thread.
     ///
     /// - Parameters:
-    ///   - filePath: The absolute file path to the source file.
+    ///   - filePath: The absolute file path to the source file to gather documentation for.
     ///   - module: The module that contains the source file.
     public convenience init(filePath: String, module: SKModule) throws {
         try self.init(filePath: filePath, compilerArguments: module.compilerArguments)
@@ -64,9 +64,9 @@ open class SKSwiftDocs: SKBaseResponse {
     /// - Warning: The request is sent synchronously, so ensure this initializer is not called on the main thread.
     ///
     /// - Parameters:
-    ///   - file: The source file.
+    ///   - file: The source file to gather documentation for.
     ///   - module: The module that contains the source file.
-    /// - Throws: A `SKError` if an error occurs.
+    /// - Throws: A `SKError`, if an error occurs.
     public convenience init(file: File, module: SKModule) throws {
         try self.init(file: file, compilerArguments: module.compilerArguments)
     }

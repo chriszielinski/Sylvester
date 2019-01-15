@@ -58,7 +58,6 @@
 		1411B13F21DEE58700CA071D /* SKGenericModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4290721DD716000CEDF61 /* SKGenericModule.swift */; };
 		1411B14021DEE58700CA071D /* SKElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2DE21B8A61900938856 /* SKElement.swift */; };
 		1411B14121DEE58700CA071D /* SKDocumentationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2E421B8A66C00938856 /* SKDocumentationParameter.swift */; };
-		1411B14221DEE58700CA071D /* Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438196421D6EBF200F58A0F /* Substring.swift */; };
 		1411B14421DEE58700CA071D /* SylvesterCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; };
 		1411B14521DEE58700CA071D /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
 		1411B14621DEE58700CA071D /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; };
@@ -79,7 +78,6 @@
 		1420E25521C0A5EB00BEF13C /* SKFileWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420E25421C0A5EB00BEF13C /* SKFileWrapper.swift */; };
 		142A52C021E00E5700325A71 /* JSONDebugStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A52BF21E00E5700325A71 /* JSONDebugStringConvertable.swift */; };
 		142A52C121E0104200325A71 /* JSONDebugStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A52BF21E00E5700325A71 /* JSONDebugStringConvertable.swift */; };
-		1438196521D6EBF200F58A0F /* Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438196421D6EBF200F58A0F /* Substring.swift */; };
 		1438196721D6F1EE00F58A0F /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438196621D6F1EE00F58A0F /* TypeAlias.swift */; };
 		1438C33B21C8353200081C02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33A21C8353200081C02 /* Constants.swift */; };
 		1438C33D21C8449200081C02 /* SKCodeCompletionSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */; };
@@ -348,7 +346,6 @@
 		1420E25221C0A5C300BEF13C /* SKSyntaxMapWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSyntaxMapWrapper.swift; sourceTree = "<group>"; };
 		1420E25421C0A5EB00BEF13C /* SKFileWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKFileWrapper.swift; sourceTree = "<group>"; };
 		142A52BF21E00E5700325A71 /* JSONDebugStringConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDebugStringConvertable.swift; sourceTree = "<group>"; };
-		1438196421D6EBF200F58A0F /* Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Substring.swift; sourceTree = "<group>"; };
 		1438196621D6F1EE00F58A0F /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		1438C33A21C8353200081C02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionSessionResponse.swift; sourceTree = "<group>"; };
@@ -690,7 +687,6 @@
 			children = (
 				14BEB8DB21BA417C00C7B052 /* NSString.swift */,
 				14BEB8D821B9A0C600C7B052 /* String.swift */,
-				1438196421D6EBF200F58A0F /* Substring.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1384,7 +1380,6 @@
 				1411B13F21DEE58700CA071D /* SKGenericModule.swift in Sources */,
 				1411B14021DEE58700CA071D /* SKElement.swift in Sources */,
 				1411B14121DEE58700CA071D /* SKDocumentationParameter.swift in Sources */,
-				1411B14221DEE58700CA071D /* Substring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1430,7 +1425,6 @@
 				14E4290821DD716000CEDF61 /* SKGenericModule.swift in Sources */,
 				1409B2DF21B8A61900938856 /* SKElement.swift in Sources */,
 				1409B2E521B8A66C00938856 /* SKDocumentationParameter.swift in Sources */,
-				1438196521D6EBF200F58A0F /* Substring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

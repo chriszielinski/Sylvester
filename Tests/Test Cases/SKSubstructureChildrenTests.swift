@@ -48,64 +48,54 @@ class SKSubstructureChildrenTests: SylvesterMockEditorOpenTestCase {
         XCTAssertEqual(substructureChildren, decodedSubstructureChildren)
     }
 
-    // FIXME: Add failure message.
     func testCount() {
         XCTAssertEqual(mockViewControllerSubstructureChildren.count, 1,
-                       "")
+                       "the mock ViewController top-level substructure has an incorrect count")
         XCTAssertEqual(mockViewControllerSubstructureChildren.substructures.first?.children?.count, 2,
-                       "")
+                       "the mock ViewController substructure has an incorrect children count")
     }
 
-    // FIXME: Add failure message.
     func testFirst() {
         XCTAssertEqual(mockViewControllerSubstructureChildren.first?.name, "ViewController",
-                       "")
+                       "the mock ViewController substructure's first substructure has the incorrect name")
     }
 
-    // FIXME: Add failure message.
     func testLast() {
         XCTAssertEqual(mockViewControllerSubstructureChildren.first?.children?.last?.name, "genericFunction(with:)",
-                       "")
+                       "the mock ViewController's first substructure's last child has the incorrect name")
     }
 
-    // FIXME: Add failure message.
     func testIndexOfSubstructure() {
+        continueAfterFailure = false
+
         let innerInnerSubstructureChildren = mockAtLeastTwoSubstructureChildren
-        XCTAssertTrue(innerInnerSubstructureChildren.count >= 2,
-                      "")
+        XCTAssertTrue(innerInnerSubstructureChildren.count >= 2)
         XCTAssertEqual(innerInnerSubstructureChildren.index(of: innerInnerSubstructureChildren[1]), 1)
     }
 
-    // FIXME: Add failure message.
     func testRemoveSubstructure() {
+        continueAfterFailure = false
+
         let innerInnerSubstructureChildren = mockAtLeastTwoSubstructureChildren
         let substructureCount = innerInnerSubstructureChildren.count
         let firstSubstructure = innerInnerSubstructureChildren[0]
         let secondSubstructure = innerInnerSubstructureChildren[1]
 
-        XCTAssertTrue(innerInnerSubstructureChildren.remove(substructure: firstSubstructure),
-                      "")
-        XCTAssertEqual(innerInnerSubstructureChildren.count, substructureCount - 1,
-                       "")
-        XCTAssertEqual(innerInnerSubstructureChildren.first, secondSubstructure,
-                       "")
-        XCTAssertFalse(innerInnerSubstructureChildren.remove(substructure: firstSubstructure),
-                       "")
-        XCTAssertEqual(innerInnerSubstructureChildren.count, substructureCount - 1,
-                       "")
+        XCTAssertTrue(innerInnerSubstructureChildren.remove(substructure: firstSubstructure))
+        XCTAssertEqual(innerInnerSubstructureChildren.count, substructureCount - 1)
+        XCTAssertEqual(innerInnerSubstructureChildren.first, secondSubstructure)
+        XCTAssertFalse(innerInnerSubstructureChildren.remove(substructure: firstSubstructure))
+        XCTAssertEqual(innerInnerSubstructureChildren.count, substructureCount - 1)
     }
 
-    // FIXME: Add failure message.
     func testSubstructureSetter() {
-        let innerInnerSubstructureChildren = mockAtLeastTwoSubstructureChildren
+        continueAfterFailure = false
 
-        XCTAssertNotEqual(innerInnerSubstructureChildren[0], innerInnerSubstructureChildren[1],
-                          "")
+        let innerInnerSubstructureChildren = mockAtLeastTwoSubstructureChildren
+        XCTAssertNotEqual(innerInnerSubstructureChildren[0], innerInnerSubstructureChildren[1])
 
         innerInnerSubstructureChildren[1] = innerInnerSubstructureChildren[0]
-
-        XCTAssertEqual(innerInnerSubstructureChildren[0], innerInnerSubstructureChildren[1],
-                       "")
+        XCTAssertEqual(innerInnerSubstructureChildren[0], innerInnerSubstructureChildren[1])
     }
 
 }

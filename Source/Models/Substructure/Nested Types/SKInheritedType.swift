@@ -16,6 +16,7 @@ public struct SKInheritedType {
 
     // MARK: - Public Stored Properties
 
+    /// The name of the inherited type.
     public let name: String
 
     // MARK: - Public Initializers

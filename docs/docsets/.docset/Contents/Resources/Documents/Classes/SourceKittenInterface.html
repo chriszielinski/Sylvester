@@ -14,7 +14,7 @@
     <a title="SourceKittenInterface Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (77% documented)</p>
+        <p><a href="../index.html"> Docs</a> (84% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -55,7 +55,7 @@
                 <a href="../Classes/SKGenericModule.html">SKGenericModule</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes.html#/s:9Sylvester8SKModuleC">SKModule</a>
+                <a href="../Classes.html#/s:12SylvesterXPC8SKModuleC">SKModule</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SKSubstructure.html">SKSubstructure</a>
@@ -167,10 +167,10 @@
             <a href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Typealiases.html#/s:9Sylvester6Offseta">Offset</a>
+                <a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Typealiases.html#/SKError">SKError</a>
+                <a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a>
               </li>
             </ul>
           </li>
@@ -202,9 +202,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC6sharedACvpZ"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC6sharedACvpZ"></a>
                     <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC6sharedACvpZ">shared</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC6sharedACvpZ">shared</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -230,19 +230,19 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Public%20SourceKitten%20Interface%20Methods"></a>
-                <a name="//apple_ref/swift/Section/Public SourceKitten Interface Methods" class="dashAnchor"></a>
-                <a href="#/Public%20SourceKitten%20Interface%20Methods">
-                  <h3 class="section-name">Public SourceKitten Interface Methods</h3>
+                <a name="/Module%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Module Methods" class="dashAnchor"></a>
+                <a href="#/Module%20Methods">
+                  <h3 class="section-name">Module Methods</h3>
                 </a>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC10moduleInfo19xcodeBuildArguments4name2in0bC9Framework6ModuleVSaySSG_SSSgSStKF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC10moduleInfo19xcodeBuildArguments4name2in0cD9Framework6ModuleVSaySSG_SSSgSStKF"></a>
                     <a name="//apple_ref/swift/Method/moduleInfo(xcodeBuildArguments:name:in:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC10moduleInfo19xcodeBuildArguments4name2in0bC9Framework6ModuleVSaySSG_SSSgSStKF">moduleInfo(xcodeBuildArguments:name:in:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC10moduleInfo19xcodeBuildArguments4name2in0cD9Framework6ModuleVSaySSG_SSSgSStKF">moduleInfo(xcodeBuildArguments:name:in:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -250,7 +250,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKitten</em> module info request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -263,15 +268,62 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>xcodeBuildArguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The arguments necessary pass in to <code>xcodebuild</code> to build this module.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The module name. Will be parsed from <code>xcodebuild</code> output if nil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to run <code>xcodebuild</code> from. Uses current path by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The resulting <code>Module</code>.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC10moduleDocs0E0SayxG0bC9Framework6ModuleV_tKAA07SKSwiftF0CRbzlF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC10moduleDocs0F0SayxG0cD9Framework6ModuleV_tKAA07SKSwiftG0CRbzlF"></a>
                     <a name="//apple_ref/swift/Method/moduleDocs(module:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC10moduleDocs0E0SayxG0bC9Framework6ModuleV_tKAA07SKSwiftF0CRbzlF">moduleDocs(module:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC10moduleDocs0F0SayxG0cD9Framework6ModuleV_tKAA07SKSwiftG0CRbzlF">moduleDocs(module:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -279,7 +331,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKitten</em> module docs request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -290,15 +347,49 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>module</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Module</code> to get the module docs for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of the specified <code>SwiftDocs</code> type.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Editor%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Editor Methods" class="dashAnchor"></a>
+                <a href="#/Editor%20Methods">
+                  <h3 class="section-name">Editor Methods</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC10editorOpen4fileAA08SKEditorF0C0bC9Framework4FileC_tKF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC10editorOpen4fileAA08SKEditorG0C0cD9Framework4FileC_tKF"></a>
                     <a name="//apple_ref/swift/Method/editorOpen(file:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC10editorOpen4fileAA08SKEditorF0C0bC9Framework4FileC_tKF">editorOpen(file:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC10editorOpen4fileAA08SKEditorG0C0cD9Framework4FileC_tKF">editorOpen(file:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -306,7 +397,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKit</em> editor open request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -317,15 +413,49 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The source file to open.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The resulting <code><a href="../Classes/SKEditorOpen.html">SKEditorOpen</a></code>.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Syntax%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Syntax Methods" class="dashAnchor"></a>
+                <a href="#/Syntax%20Methods">
+                  <h3 class="section-name">Syntax Methods</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC9syntaxMap4file0bC9Framework06SyntaxF0VAF4FileC_tKF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC9syntaxMap4file0cD9Framework06SyntaxG0VAF4FileC_tKF"></a>
                     <a name="//apple_ref/swift/Method/syntaxMap(file:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC9syntaxMap4file0bC9Framework06SyntaxF0VAF4FileC_tKF">syntaxMap(file:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC9syntaxMap4file0cD9Framework06SyntaxG0VAF4FileC_tKF">syntaxMap(file:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -333,7 +463,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKitten</em> syntax map request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -344,15 +479,49 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The source file to get a syntax map for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The resulting <code>SyntaxMap</code>.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Documentation%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Documentation Methods" class="dashAnchor"></a>
+                <a href="#/Documentation%20Methods">
+                  <h3 class="section-name">Documentation Methods</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC9swiftDocs4file17compilerArgumentsAA07SKSwiftF0C0bC9Framework4FileC_SaySSGtKF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC9swiftDocs4file17compilerArgumentsAA07SKSwiftG0C0cD9Framework4FileC_SaySSGtKF"></a>
                     <a name="//apple_ref/swift/Method/swiftDocs(file:compilerArguments:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC9swiftDocs4file17compilerArgumentsAA07SKSwiftF0C0bC9Framework4FileC_SaySSGtKF">swiftDocs(file:compilerArguments:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC9swiftDocs4file17compilerArgumentsAA07SKSwiftG0C0cD9Framework4FileC_SaySSGtKF">swiftDocs(file:compilerArguments:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -360,7 +529,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKitten</em> swift documentation request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -371,15 +545,61 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The source file to gather documentation for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>compilerArguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The compiler arguments used to build the module (e.g <code>[&quot;-sdk&quot;, &quot;/path/to/sdk&quot;]</code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The resulting <code><a href="../Classes/SKSwiftDocs.html">SKSwiftDocs</a></code>.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Code%20Completion%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Code Completion Methods" class="dashAnchor"></a>
+                <a href="#/Code%20Completion%20Methods">
+                  <h3 class="section-name">Code Completion Methods</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC14codeCompletion4file6offset17compilerArgumentsAA06SKCodeF0C0bC9Framework4FileC_SiSaySSGtKF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC14codeCompletion4file6offset17compilerArgumentsAA06SKCodeG0C0cD9Framework4FileC_SiSaySSGtKF"></a>
                     <a name="//apple_ref/swift/Method/codeCompletion(file:offset:compilerArguments:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC14codeCompletion4file6offset17compilerArgumentsAA06SKCodeF0C0bC9Framework4FileC_SiSaySSGtKF">codeCompletion(file:offset:compilerArguments:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC14codeCompletion4file6offset17compilerArgumentsAA06SKCodeG0C0cD9Framework4FileC_SiSaySSGtKF">codeCompletion(file:offset:compilerArguments:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -387,7 +607,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKit</em> code completion request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -395,10 +620,57 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">codeCompletion</span><span class="p">(</span><span class="nv">file</span><span class="p">:</span> <span class="kt">File</span><span class="p">,</span>
-                           <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9Sylvester6Offseta">Offset</a></span><span class="p">,</span>
+                           <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">,</span>
                            <span class="nv">compilerArguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SKCodeCompletion.html">SKCodeCompletion</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>File</code> of the code completion.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of the code completion point inside the source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>compilerArguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The compiler arguments used to build the module (e.g <code>[&quot;-sdk&quot;, &quot;/path/to/sdk&quot;]</code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The resulting <code><a href="../Classes/SKCodeCompletion.html">SKCodeCompletion</a></code>.</p>
                       </div>
                     </section>
                   </div>
@@ -406,9 +678,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC18codeCompletionOpen4file6offset7options17compilerArgumentsAA06SKCodeG15SessionResponseV0cD9Framework4FileC_Si0A6Common0ngO7OptionsVSgSaySSGtKF"></a>
                     <a name="//apple_ref/swift/Method/codeCompletionOpen(file:offset:options:compilerArguments:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">codeCompletionOpen(file:offset:options:compilerArguments:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC18codeCompletionOpen4file6offset7options17compilerArgumentsAA06SKCodeG15SessionResponseV0cD9Framework4FileC_Si0A6Common0ngO7OptionsVSgSaySSGtKF">codeCompletionOpen(file:offset:options:compilerArguments:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -416,7 +688,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKit</em> code completion open request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -424,11 +701,70 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">codeCompletionOpen</span><span class="p">(</span><span class="nv">file</span><span class="p">:</span> <span class="kt">File</span><span class="p">,</span>
-                               <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9Sylvester6Offseta">Offset</a></span><span class="p">,</span>
+                               <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">,</span>
                                <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a></span><span class="o">.</span><span class="kt">Options</span><span class="p">?,</span>
                                <span class="nv">compilerArguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a></span><span class="o">.</span><span class="kt">Response</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>File</code> of the code completion session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of the code completion point inside the session&rsquo;s source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC7Optionsa">SKCodeCompletionSession.Options</a></code> of the open request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>compilerArguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The compiler arguments used to build the module (e.g <code>[&quot;-sdk&quot;, &quot;/path/to/sdk&quot;]</code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The request&rsquo;s <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC8Responsea">SKCodeCompletionSession.Response</a></code>.</p>
                       </div>
                     </section>
                   </div>
@@ -436,9 +772,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC20codeCompletionUpdate4file6offset7optionsAA06SKCodeG15SessionResponseV0cD9Framework4FileC_Si0A6Common0lgM7OptionsVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/codeCompletionUpdate(file:offset:options:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">codeCompletionUpdate(file:offset:options:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC20codeCompletionUpdate4file6offset7optionsAA06SKCodeG15SessionResponseV0cD9Framework4FileC_Si0A6Common0lgM7OptionsVSgtKF">codeCompletionUpdate(file:offset:options:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -446,7 +782,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKit</em> code completion update request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -460,15 +801,62 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>File</code> of the open code completion session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of the code completion point inside the session&rsquo;s source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC7Optionsa">SKCodeCompletionSession.Options</a></code> of the update request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The request&rsquo;s <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC8Responsea">SKCodeCompletionSession.Response</a></code>.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC19codeCompletionClose4name6offsetAA06SKCodeF15SessionResponseVSS_SitKF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC19codeCompletionClose4name6offsetAA06SKCodeG15SessionResponseVSS_SitKF"></a>
                     <a name="//apple_ref/swift/Method/codeCompletionClose(name:offset:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC19codeCompletionClose4name6offsetAA06SKCodeF15SessionResponseVSS_SitKF">codeCompletionClose(name:offset:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC19codeCompletionClose4name6offsetAA06SKCodeG15SessionResponseVSS_SitKF">codeCompletionClose(name:offset:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -476,7 +864,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <em>SourceKit</em> code completion close request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -487,15 +880,61 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the open code completion session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of the code completion point inside the session&rsquo;s source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The request&rsquo;s <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC8Responsea">SKCodeCompletionSession.Response</a></code>.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Custom%20Request%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Custom Request Methods" class="dashAnchor"></a>
+                <a href="#/Custom%20Request%20Methods">
+                  <h3 class="section-name">Custom Request Methods</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC10customYAMLyxSSKSeRzlF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC10customYAMLyxSSKSeRzlF"></a>
                     <a name="//apple_ref/swift/Method/customYAML(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC10customYAMLyxSSKSeRzlF">customYAML(_:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC10customYAMLyxSSKSeRzlF">customYAML(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -503,7 +942,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A custom YAML <em>SourceKit</em> request.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></code>, if an error occurs.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -514,15 +958,49 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>yaml</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <em>SourceKit</em> request in YAML representation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The decoded response as the specified type.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Subprocess%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Subprocess Methods" class="dashAnchor"></a>
+                <a href="#/Subprocess%20Methods">
+                  <h3 class="section-name">Subprocess Methods</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF"></a>
                     <a name="//apple_ref/swift/Method/xcRun(arguments:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF">xcRun(arguments:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF">xcRun(arguments:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -530,7 +1008,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Run <code>xcrun</code> with the specified arguments.</p>
 
                       </div>
                       <div class="declaration">
@@ -541,15 +1019,38 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>arguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The arguments to pass to <code>xcrun</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>xcrun</code>&lsquo;s standard out output.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF"></a>
                     <a name="//apple_ref/swift/Method/xcodeBuild(arguments:currentDirectoryPath:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF">xcodeBuild(arguments:currentDirectoryPath:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF">xcodeBuild(arguments:currentDirectoryPath:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -557,9 +1058,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Run <code>xcodebuild clean build</code> along with any passed in build arguments.
-parameter arguments: Arguments to pass to <code>xcodebuild</code>.
-parameter path:      Path to run <code>xcodebuild</code> from.</p>
+                        <p>Run <code>xcodebuild clean build</code> along with any passed in build arguments.</p>
 
                       </div>
                       <div class="declaration">
@@ -571,8 +1070,39 @@ parameter path:      Path to run <code>xcodebuild</code> from.</p>
                         </div>
                       </div>
                       <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>arguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The arguments to pass to <code>xcodebuild</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currentDirectoryPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to run <code>xcodebuild</code> from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
                         <h4>Return Value</h4>
-                        <p><code>xcodebuild</code>&lsquo;s STDERR+STDOUT output combined.</p>
+                        <p>The <code>xcodebuild</code>&lsquo;s combined standard error and standard out output.</p>
                       </div>
                     </section>
                   </div>
@@ -580,9 +1110,9 @@ parameter path:      Path to run <code>xcodebuild</code> from.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF"></a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF"></a>
                     <a name="//apple_ref/swift/Method/executeBash(command:currentDirectoryPath:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF">executeBash(command:currentDirectoryPath:)</a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF">executeBash(command:currentDirectoryPath:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -590,7 +1120,7 @@ parameter path:      Path to run <code>xcodebuild</code> from.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Executes a Bash command.</p>
 
                       </div>
                       <div class="declaration">
@@ -602,15 +1132,50 @@ parameter path:      Path to run <code>xcodebuild</code> from.</p>
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>command</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The command to execute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currentDirectoryPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to run the Bash command from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Bash command&rsquo;s standard out output.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF"></a>
-                    <a name="//apple_ref/swift/Method/executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF">executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)</a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC17executeSubprocess10launchPath9arguments016currentDirectoryI023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF"></a>
+                    <a name="//apple_ref/swift/Method/executeSubprocess(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC17executeSubprocess10launchPath9arguments016currentDirectoryI023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF">executeSubprocess(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -618,19 +1183,79 @@ parameter path:      Path to run <code>xcodebuild</code> from.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Executes another program as a subprocess.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">executeShell</span><span class="p">(</span><span class="nv">launchPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                         <span class="nv">arguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
-                         <span class="nv">currentDirectoryPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-                         <span class="nv">shouldPipeStandardError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">executeSubprocess</span><span class="p">(</span><span class="nv">launchPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">arguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+                              <span class="nv">currentDirectoryPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                              <span class="nv">shouldPipeStandardError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>launchPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to the receiver’s executable.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>arguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The command arguments that should be used to launch the executable.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currentDirectoryPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current directory for the receiver. If <code>nil</code>, the current directory is
+                  inherited from the process that created the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shouldPipeStandardError</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the standard error should also be piped to the output.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The executable&rsquo;s standard out (and standard error, if <code>shouldPipeStandardError</code> is true) output.</p>
                       </div>
                     </section>
                   </div>
@@ -640,7 +1265,7 @@ parameter path:      Path to run <code>xcodebuild</code> from.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-12)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

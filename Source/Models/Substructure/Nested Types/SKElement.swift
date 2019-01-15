@@ -20,6 +20,7 @@ open class SKElement: SKEntity {
 
     // MARK: - Public Stored Properties
 
+    /// The kind of the element.
     public let kind: Kind
 
     // MARK: - Public Initializers
@@ -72,10 +73,18 @@ extension SKElement: Equatable {
 
 extension SKEntities where Entity: SKElement {
 
+    /// Returns the element with the specified kind, or `nil` if nonexistent.
+    ///
+    /// - Parameter kind: The kind of the element to return.
+    /// - Returns: The `SKElement`, or `nil` if nonexistent.
     public func element(with kind: SKElement.Kind) -> SKElement? {
         return entities.first(where: { $0.kind == kind })
     }
 
+    /// Returns whether the specified element kind is a member of the array.
+    ///
+    /// - Parameter kind: The kind of the element.
+    /// - Returns: `true` if the element kind is a member of the array; otherwise, `false`.
     public func containsElement(with kind: SKElement.Kind) -> Bool {
         return element(with: kind) != nil
     }

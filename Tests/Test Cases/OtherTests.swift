@@ -30,9 +30,6 @@ class OtherTests: SylvesterMockEditorOpenTestCase {
         let substring = testString[byteRange!]
         XCTAssertEqual(String(substring), " test string 👍 ",
                        "Incorrect range returned by String.")
-        let trimmedRange = substring.rangeAfterTrimmingCharacters(in: .whitespaces)
-        XCTAssertEqual(String(testString[trimmedRange]), "test string 👍",
-                       "`rangeAfterTrimmingCharacters(in:)` returns the incorrect range.")
 
         let byteRangeFromNSString = (testString as NSString).range(from: byteNSRange)
         XCTAssertNotNil(byteRangeFromNSString,

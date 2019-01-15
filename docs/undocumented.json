@@ -50,101 +50,52 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletion.swift",
-      "line": 23,
-      "symbol": "SKCodeCompletion.Item",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionItem.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Code Completion/SKCodeCompletionItem.swift",
       "line": null,
       "symbol": "SKCodeCompletionItem",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionItem.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Code Completion/SKCodeCompletionItem.swift",
       "line": 9,
       "symbol": "SKCodeCompletionItem",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionItem.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Code Completion/SKCodeCompletionItem.swift",
       "line": 30,
       "symbol": "SKCodeCompletionItem.Context",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionItem.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Code Completion/SKCodeCompletionItem.swift",
       "line": 31,
       "symbol": "SKCodeCompletionItem.Kind",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionItem.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Code Completion/SKCodeCompletionItem.swift",
       "line": 32,
       "symbol": "SKCodeCompletionItem.Substructure",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionSession.swift",
-      "line": 24,
-      "symbol": "SKCodeCompletionSession.CompletionHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionSession.swift",
-      "line": 25,
-      "symbol": "SKCodeCompletionSession.ErrorHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionSession.swift",
-      "line": 26,
-      "symbol": "SKCodeCompletionSession.Options",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionSession.swift",
-      "line": 27,
-      "symbol": "SKCodeCompletionSession.Response",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionSessionResponse.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Code Completion/SKCodeCompletionSessionResponse.swift",
       "line": 9,
       "symbol": "SKCodeCompletionSessionResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/Code Completion/SKCodeCompletionSubstructure.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Code Completion/SKCodeCompletionSubstructure.swift",
       "line": 9,
       "symbol": "SKCodeCompletionSubstructure",
       "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/SKEditorOpen.swift",
-      "line": 40,
-      "symbol": "SKEditorOpen.init(from:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Requests/SKSwiftDocs.swift",
-      "line": 74,
-      "symbol": "SKSwiftDocs.init(from:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -177,70 +128,28 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 29,
-      "symbol": "SKBaseResponse.diagnosticStage",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 30,
-      "symbol": "SKBaseResponse.length",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 31,
-      "symbol": "SKBaseResponse.offset",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 32,
-      "symbol": "SKBaseResponse.topLevelSubstructures",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 33,
-      "symbol": "SKBaseResponse.syntaxMap",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 37,
+      "line": 43,
       "symbol": "SKBaseResponse.init(diagnosticStage:length:offset:substructureChildren:syntaxMap:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 49,
+      "line": 55,
       "symbol": "SKBaseResponse.init(skInformation:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 59,
-      "symbol": "SKBaseResponse.resolve(from:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 69,
+      "line": 84,
       "symbol": "SKBaseResponse.debugDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 79,
+      "line": 94,
       "symbol": "SKBaseResponse.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -275,43 +184,22 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKAttribute.swift",
-      "line": 23,
-      "symbol": "SKAttribute.kind",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKAttribute.swift",
-      "line": 27,
+      "line": 28,
       "symbol": "SKAttribute.init(kind:offset:length:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKAttribute.swift",
-      "line": 33,
+      "line": 34,
       "symbol": "SKAttribute.init(from:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKAttribute.swift",
-      "line": 42,
+      "line": 43,
       "symbol": "SKAttribute.encode(to:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKAttribute.swift",
-      "line": 75,
-      "symbol": "SKEntities.attribute(with:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKAttribute.swift",
-      "line": 79,
-      "symbol": "SKEntities.containsAttribute(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -344,20 +232,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKDocumentationParameter.swift",
-      "line": 17,
-      "symbol": "SKDocumentationParameter.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKDocumentationParameter.swift",
-      "line": 18,
-      "symbol": "SKDocumentationParameter.discussion",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKElement.swift",
       "line": null,
       "symbol": "SKElement",
@@ -387,43 +261,22 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKElement.swift",
-      "line": 23,
-      "symbol": "SKElement.kind",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKElement.swift",
-      "line": 27,
+      "line": 28,
       "symbol": "SKElement.init(kind:offset:length:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKElement.swift",
-      "line": 33,
+      "line": 34,
       "symbol": "SKElement.init(from:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKElement.swift",
-      "line": 42,
+      "line": 43,
       "symbol": "SKElement.encode(to:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKElement.swift",
-      "line": 75,
-      "symbol": "SKEntities.element(with:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKElement.swift",
-      "line": 79,
-      "symbol": "SKEntities.containsElement(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -450,14 +303,7 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKInheritedType.swift",
-      "line": 19,
-      "symbol": "SKInheritedType.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKInheritedType.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "SKInheritedType.init(name:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -485,14 +331,7 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKOverride.swift",
-      "line": 19,
-      "symbol": "SKOverride.usr",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKOverride.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "SKOverride.init(usr:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -502,13 +341,6 @@
       "line": 9,
       "symbol": "SKParagraph",
       "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/Nested Types/SKParagraph.swift",
-      "line": 19,
-      "symbol": "SKParagraph.paragraph",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -611,21 +443,7 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKEntity.swift",
-      "line": 20,
-      "symbol": "SKEntity.offset",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKEntity.swift",
-      "line": 21,
-      "symbol": "SKEntity.length",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKEntity.swift",
-      "line": 25,
+      "line": 27,
       "symbol": "SKEntity.init(offset:length:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -695,112 +513,7 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 71,
-      "symbol": "SKSubstructure.parent",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 88,
-      "symbol": "SKSubstructure.docColumn",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 89,
-      "symbol": "SKSubstructure.docComment",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 90,
-      "symbol": "SKSubstructure.docDeclaration",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 91,
-      "symbol": "SKSubstructure.docFile",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 96,
-      "symbol": "SKSubstructure.docLine",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 97,
-      "symbol": "SKSubstructure.docName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 98,
-      "symbol": "SKSubstructure.docParameters",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 99,
-      "symbol": "SKSubstructure.docType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 136,
-      "symbol": "SKSubstructure.parsedDeclaration",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 137,
-      "symbol": "SKSubstructure.parsedScopeEnd",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 138,
-      "symbol": "SKSubstructure.parsedScopeStart",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 139,
-      "symbol": "SKSubstructure.runtimeName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 142,
-      "symbol": "SKSubstructure.setterAccessibility",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 143,
-      "symbol": "SKSubstructure.children",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 338,
+      "line": 321,
       "symbol": "SKSubstructure.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -918,6 +631,55 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletion.swift",
+      "line": 23,
+      "symbol": "SKCodeCompletion.Item",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletionSession.swift",
+      "line": 24,
+      "symbol": "SKCodeCompletionSession.CompletionHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletionSession.swift",
+      "line": 25,
+      "symbol": "SKCodeCompletionSession.ErrorHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletionSession.swift",
+      "line": 26,
+      "symbol": "SKCodeCompletionSession.Options",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletionSession.swift",
+      "line": 27,
+      "symbol": "SKCodeCompletionSession.Response",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/SKEditorOpen.swift",
+      "line": 40,
+      "symbol": "SKEditorOpen.init(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/SKSwiftDocs.swift",
+      "line": 74,
+      "symbol": "SKSwiftDocs.init(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
       "line": 16,
       "symbol": "SourceKittenInterface",
@@ -929,97 +691,6 @@
       "line": 20,
       "symbol": "SourceKittenInterface.shared",
       "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 54,
-      "symbol": "SourceKittenInterface.moduleInfo(xcodeBuildArguments:name:in:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 76,
-      "symbol": "SourceKittenInterface.moduleDocs(module:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 94,
-      "symbol": "SourceKittenInterface.editorOpen(file:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 112,
-      "symbol": "SourceKittenInterface.syntaxMap(file:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 128,
-      "symbol": "SourceKittenInterface.swiftDocs(file:compilerArguments:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 147,
-      "symbol": "SourceKittenInterface.codeCompletion(file:offset:compilerArguments:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 171,
-      "symbol": "SourceKittenInterface.codeCompletionOpen(file:offset:options:compilerArguments:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 207,
-      "symbol": "SourceKittenInterface.codeCompletionUpdate(file:offset:options:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 236,
-      "symbol": "SourceKittenInterface.codeCompletionClose(name:offset:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 254,
-      "symbol": "SourceKittenInterface.customYAML(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 272,
-      "symbol": "SourceKittenInterface.xcRun(arguments:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 304,
-      "symbol": "SourceKittenInterface.executeBash(command:currentDirectoryPath:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/SourceKittenInterface.swift",
-      "line": 319,
-      "symbol": "SourceKittenInterface.executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

@@ -123,39 +123,33 @@ public class SourceKittenAdapter {
         }
     }
 
-    // MARK: - Process Methods
+    // MARK: - Subprocess Methods
 
     public static func xcRun(arguments: [String]) -> String? {
-        return executeShell(launchPath: "/usr/bin/xcrun", arguments: arguments)
+        return executeSubprocess(launchPath: "/usr/bin/xcrun", arguments: arguments)
     }
 
-    /// Run `xcodebuild clean build` along with any passed in build arguments.
-    ///
-    /// - Parameters:
-    ///   - arguments: Arguments to pass to `xcodebuild`.
-    ///   - currentDirectoryPath: Path to run `xcodebuild` from.
-    /// - Returns: `xcodebuild`'s STDERR+STDOUT output combined.
     public static func xcodeBuild(arguments: [String], currentDirectoryPath: String) -> String? {
-        return executeShell(launchPath: "/usr/bin/xcodebuild",
-                            arguments: arguments + [
-                                "clean",
-                                "build",
-                                "CODE_SIGN_IDENTITY=",
-                                "CODE_SIGNING_REQUIRED=NO"],
-                            currentDirectoryPath: currentDirectoryPath,
-                            shouldPipeStandardError: true)
+        return executeSubprocess(launchPath: "/usr/bin/xcodebuild",
+                                 arguments: arguments + [
+                                    "clean",
+                                    "build",
+                                    "CODE_SIGN_IDENTITY=",
+                                    "CODE_SIGNING_REQUIRED=NO"],
+                                 currentDirectoryPath: currentDirectoryPath,
+                                 shouldPipeStandardError: true)
     }
 
     public static func executeBash(_ command: String, currentDirectoryPath: String? = nil) -> String? {
-        return executeShell(launchPath: "/bin/bash",
-                            arguments: ["-c", command],
-                            currentDirectoryPath: currentDirectoryPath)
+        return executeSubprocess(launchPath: "/bin/bash",
+                                 arguments: ["-c", command],
+                                 currentDirectoryPath: currentDirectoryPath)
     }
 
-    public static func executeShell(launchPath: String,
-                                    arguments: [String] = [],
-                                    currentDirectoryPath: String? = nil,
-                                    shouldPipeStandardError: Bool = false) -> String? {
+    public static func executeSubprocess(launchPath: String,
+                                         arguments: [String] = [],
+                                         currentDirectoryPath: String? = nil,
+                                         shouldPipeStandardError: Bool = false) -> String? {
         let task = Process()
         task.launchPath = launchPath
         task.arguments = arguments
