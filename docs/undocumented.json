@@ -106,52 +106,52 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Response/SKBaseResponse.swift",
+      "line": 9,
+      "symbol": "SKBaseResponse",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Response/SKGenericResponse.swift",
       "line": 11,
       "symbol": "SKGenericResponse",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Response/SKGenericResponse.swift",
       "line": 25,
       "symbol": "SKGenericResponse.DiagnosticStage",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Response/SKGenericResponse.swift",
       "line": 43,
       "symbol": "SKGenericResponse.init(diagnosticStage:length:offset:substructureChildren:syntaxMap:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Response/SKGenericResponse.swift",
       "line": 55,
       "symbol": "SKGenericResponse.init(skInformation:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Response/SKGenericResponse.swift",
       "line": 80,
       "symbol": "SKGenericResponse.debugDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Response/SKGenericResponse.swift",
       "line": 86,
       "symbol": "SKGenericResponse.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/SKBaseResponse.swift",
-      "line": 99,
-      "symbol": "SKBaseResponse",
-      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
