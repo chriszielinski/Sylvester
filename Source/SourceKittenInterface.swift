@@ -164,7 +164,9 @@ open class SourceKittenInterface {
     ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
     /// - Returns: The resulting `SKSwiftDocs`.
     /// - Throws: A `SKError`, if an error occurs.
-    public func swiftDocs<Substructure: SKSubstructure>(file: File, compilerArguments: [String]) throws -> SKGenericSwiftDocs<Substructure> {
+    public func swiftDocs<Substructure: SKSubstructure>(file: File,
+                                                        compilerArguments: [String]) throws
+                                                        -> SKGenericSwiftDocs<Substructure> {
         #if XPC
         var response: SKDataWrapper?
         var responseError: SKXPCError?
