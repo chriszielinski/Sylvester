@@ -41,7 +41,7 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.pattern` SourceKit key.
     case pattern = "source.lang.swift.pattern"
     /// The `source.lang.swift.keyword.associatedtype` SourceKit key.
-    case keywordAssociatedtype = "source.lang.swift.keyword.associatedtype"
+    case keywordAssociatedType = "source.lang.swift.keyword.associatedtype"
     /// The `source.lang.swift.keyword.class` SourceKit key.
     case keywordClass = "source.lang.swift.keyword.class"
     /// The `source.lang.swift.keyword.deinit` SourceKit key.
@@ -59,7 +59,7 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.keyword.operator` SourceKit key.
     case keywordOperator = "source.lang.swift.keyword.operator"
     /// The `source.lang.swift.keyword.precedencegroup` SourceKit key.
-    case keywordPrecedencegroup = "source.lang.swift.keyword.precedencegroup"
+    case keywordPrecedenceGroup = "source.lang.swift.keyword.precedencegroup"
     /// The `source.lang.swift.keyword.protocol` SourceKit key.
     case keywordProtocol = "source.lang.swift.keyword.protocol"
     /// The `source.lang.swift.keyword.struct` SourceKit key.
@@ -67,9 +67,9 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.keyword.subscript` SourceKit key.
     case keywordSubscript = "source.lang.swift.keyword.subscript"
     /// The `source.lang.swift.keyword.typealias` SourceKit key.
-    case keywordTypealias = "source.lang.swift.keyword.typealias"
+    case keywordTypeAlias = "source.lang.swift.keyword.typealias"
     /// The `source.lang.swift.keyword.fileprivate` SourceKit key.
-    case keywordFileprivate = "source.lang.swift.keyword.fileprivate"
+    case keywordFilePrivate = "source.lang.swift.keyword.fileprivate"
     /// The `source.lang.swift.keyword.internal` SourceKit key.
     case keywordInternal = "source.lang.swift.keyword.internal"
     /// The `source.lang.swift.keyword.private` SourceKit key.
@@ -97,7 +97,7 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.keyword.continue` SourceKit key.
     case keywordContinue = "source.lang.swift.keyword.continue"
     /// The `source.lang.swift.keyword.fallthrough` SourceKit key.
-    case keywordFallthrough = "source.lang.swift.keyword.fallthrough"
+    case keywordFallThrough = "source.lang.swift.keyword.fallthrough"
     /// The `source.lang.swift.keyword.switch` SourceKit key.
     case keywordSwitch = "source.lang.swift.keyword.switch"
     /// The `source.lang.swift.keyword.case` SourceKit key.
@@ -111,7 +111,7 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.keyword.as` SourceKit key.
     case keywordAs = "source.lang.swift.keyword.as"
     /// The `source.lang.swift.keyword.Any` SourceKit key.
-    case keywordany = "source.lang.swift.keyword.Any"
+    case keywordAny = "source.lang.swift.keyword.Any"
     /// The `source.lang.swift.keyword.false` SourceKit key.
     case keywordFalse = "source.lang.swift.keyword.false"
     /// The `source.lang.swift.keyword.is` SourceKit key.
@@ -134,12 +134,10 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     case keywordTry = "source.lang.swift.keyword.try"
     /// The `source.lang.swift.keyword.throws` SourceKit key.
     case keywordThrows = "source.lang.swift.keyword.throws"
-    /// The `source.lang.swift.codecomplete.group` SourceKit key.
-    case codecompleteGroup = "source.lang.swift.codecomplete.group"
     /// The `source.lang.swift.syntaxtype.argument` SourceKit key.
-    case syntaxtypeArgument = "source.lang.swift.syntaxtype.argument"
+    case syntaxTypeArgument = "source.lang.swift.syntaxtype.argument"
     /// The `source.lang.swift.syntaxtype.parameter` SourceKit key.
-    case syntaxtypeParameter = "source.lang.swift.syntaxtype.parameter"
+    case syntaxTypeParameter = "source.lang.swift.syntaxtype.parameter"
     /// The `source.lang.swift.attribute.availability` SourceKit key.
     case attributeAvailability = "source.lang.swift.attribute.availability"
     /// The `source.lang.swift.accessibility.open` SourceKit key.
@@ -149,7 +147,7 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.accessibility.internal` SourceKit key.
     case accessibilityInternal = "source.lang.swift.accessibility.internal"
     /// The `source.lang.swift.accessibility.fileprivate` SourceKit key.
-    case accessibilityFileprivate = "source.lang.swift.accessibility.fileprivate"
+    case accessibilityFilePrivate = "source.lang.swift.accessibility.fileprivate"
     /// The `source.lang.swift.accessibility.private` SourceKit key.
     case accessibilityPrivate = "source.lang.swift.accessibility.private"
     /// The `source.lang.swift.import.module.clang` SourceKit key.
@@ -181,21 +179,21 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.ref.function.accessor.setter` SourceKit key.
     case refFunctionAccessorSetter = "source.lang.swift.ref.function.accessor.setter"
     /// The `source.lang.swift.decl.function.accessor.willset` SourceKit key.
-    case declFunctionAccessorWillset = "source.lang.swift.decl.function.accessor.willset"
+    case declFunctionAccessorWillSet = "source.lang.swift.decl.function.accessor.willset"
     /// The `source.lang.swift.ref.function.accessor.willset` SourceKit key.
-    case refFunctionAccessorWillset = "source.lang.swift.ref.function.accessor.willset"
+    case refFunctionAccessorWillSet = "source.lang.swift.ref.function.accessor.willset"
     /// The `source.lang.swift.decl.function.accessor.didset` SourceKit key.
-    case declFunctionAccessorDidset = "source.lang.swift.decl.function.accessor.didset"
+    case declFunctionAccessorDidSet = "source.lang.swift.decl.function.accessor.didset"
     /// The `source.lang.swift.ref.function.accessor.didset` SourceKit key.
-    case refFunctionAccessorDidset = "source.lang.swift.ref.function.accessor.didset"
+    case refFunctionAccessorDidSet = "source.lang.swift.ref.function.accessor.didset"
     /// The `source.lang.swift.decl.function.accessor.address` SourceKit key.
     case declFunctionAccessorAddress = "source.lang.swift.decl.function.accessor.address"
     /// The `source.lang.swift.ref.function.accessor.address` SourceKit key.
     case refFunctionAccessorAddress = "source.lang.swift.ref.function.accessor.address"
     /// The `source.lang.swift.decl.function.accessor.mutableaddress` SourceKit key.
-    case declFunctionAccessorMutableaddress = "source.lang.swift.decl.function.accessor.mutableaddress"
+    case declFunctionAccessorMutableAddress = "source.lang.swift.decl.function.accessor.mutableaddress"
     /// The `source.lang.swift.ref.function.accessor.mutableaddress` SourceKit key.
-    case refFunctionAccessorMutableaddress = "source.lang.swift.ref.function.accessor.mutableaddress"
+    case refFunctionAccessorMutableAddress = "source.lang.swift.ref.function.accessor.mutableaddress"
     /// The `source.lang.swift.decl.function.constructor` SourceKit key.
     case declFunctionConstructor = "source.lang.swift.decl.function.constructor"
     /// The `source.lang.swift.ref.function.constructor` SourceKit key.
@@ -217,9 +215,9 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.ref.function.operator.infix` SourceKit key.
     case refFunctionOperatorInfix = "source.lang.swift.ref.function.operator.infix"
     /// The `source.lang.swift.decl.precedencegroup` SourceKit key.
-    case declPrecedencegroup = "source.lang.swift.decl.precedencegroup"
+    case declPrecedenceGroup = "source.lang.swift.decl.precedencegroup"
     /// The `source.lang.swift.ref.precedencegroup` SourceKit key.
-    case refPrecedencegroup = "source.lang.swift.ref.precedencegroup"
+    case refPrecedenceGroup = "source.lang.swift.ref.precedencegroup"
     /// The `source.lang.swift.decl.function.subscript` SourceKit key.
     case declFunctionSubscript = "source.lang.swift.decl.function.subscript"
     /// The `source.lang.swift.ref.function.subscript` SourceKit key.
@@ -261,11 +259,11 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.ref.enum` SourceKit key.
     case refEnum = "source.lang.swift.ref.enum"
     /// The `source.lang.swift.decl.enumcase` SourceKit key.
-    case declEnumcase = "source.lang.swift.decl.enumcase"
+    case declEnumCase = "source.lang.swift.decl.enumcase"
     /// The `source.lang.swift.decl.enumelement` SourceKit key.
-    case declEnumelement = "source.lang.swift.decl.enumelement"
+    case declEnumElement = "source.lang.swift.decl.enumelement"
     /// The `source.lang.swift.ref.enumelement` SourceKit key.
-    case refEnumelement = "source.lang.swift.ref.enumelement"
+    case refEnumElement = "source.lang.swift.ref.enumelement"
     /// The `source.lang.swift.decl.protocol` SourceKit key.
     case declProtocol = "source.lang.swift.decl.protocol"
     /// The `source.lang.swift.ref.protocol` SourceKit key.
@@ -281,13 +279,13 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.decl.extension.protocol` SourceKit key.
     case declExtensionProtocol = "source.lang.swift.decl.extension.protocol"
     /// The `source.lang.swift.decl.associatedtype` SourceKit key.
-    case declAssociatedtype = "source.lang.swift.decl.associatedtype"
+    case declAssociatedType = "source.lang.swift.decl.associatedtype"
     /// The `source.lang.swift.ref.associatedtype` SourceKit key.
-    case refAssociatedtype = "source.lang.swift.ref.associatedtype"
+    case refAssociatedType = "source.lang.swift.ref.associatedtype"
     /// The `source.lang.swift.decl.typealias` SourceKit key.
-    case declTypealias = "source.lang.swift.decl.typealias"
+    case declTypeAlias = "source.lang.swift.decl.typealias"
     /// The `source.lang.swift.ref.typealias` SourceKit key.
-    case refTypealias = "source.lang.swift.ref.typealias"
+    case refTypeAlias = "source.lang.swift.ref.typealias"
     /// The `source.lang.swift.decl.generic_type_param` SourceKit key.
     case declGenericTypeParam = "source.lang.swift.decl.generic_type_param"
     /// The `source.lang.swift.ref.generic_type_param` SourceKit key.
@@ -295,13 +293,13 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.ref.module` SourceKit key.
     case refModule = "source.lang.swift.ref.module"
     /// The `source.lang.swift.stmt.foreach` SourceKit key.
-    case stmtForeach = "source.lang.swift.stmt.foreach"
+    case stmtForEach = "source.lang.swift.stmt.foreach"
     /// The `source.lang.swift.stmt.for` SourceKit key.
     case stmtFor = "source.lang.swift.stmt.for"
     /// The `source.lang.swift.stmt.while` SourceKit key.
     case stmtWhile = "source.lang.swift.stmt.while"
     /// The `source.lang.swift.stmt.repeatwhile` SourceKit key.
-    case stmtRepeatwhile = "source.lang.swift.stmt.repeatwhile"
+    case stmtRepeatWhile = "source.lang.swift.stmt.repeatwhile"
     /// The `source.lang.swift.stmt.if` SourceKit key.
     case stmtIf = "source.lang.swift.stmt.if"
     /// The `source.lang.swift.stmt.guard` SourceKit key.
@@ -337,57 +335,57 @@ public enum SKSourceKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.structure.elem.pattern` SourceKit key.
     case structureElemPattern = "source.lang.swift.structure.elem.pattern"
     /// The `source.lang.swift.structure.elem.typeref` SourceKit key.
-    case structureElemTyperef = "source.lang.swift.structure.elem.typeref"
+    case structureElemTypeRef = "source.lang.swift.structure.elem.typeref"
     /// The `source.lang.swift.range.singlestatement` SourceKit key.
-    case rangeSinglestatement = "source.lang.swift.range.singlestatement"
+    case rangeSingleStatement = "source.lang.swift.range.singlestatement"
     /// The `source.lang.swift.range.singleexpression` SourceKit key.
-    case rangeSingleexpression = "source.lang.swift.range.singleexpression"
+    case rangeSingleExpression = "source.lang.swift.range.singleexpression"
     /// The `source.lang.swift.range.singledeclaration` SourceKit key.
-    case rangeSingledeclaration = "source.lang.swift.range.singledeclaration"
+    case rangeSingleDeclaration = "source.lang.swift.range.singledeclaration"
     /// The `source.lang.swift.range.multistatement` SourceKit key.
-    case rangeMultistatement = "source.lang.swift.range.multistatement"
+    case rangeMultiStatement = "source.lang.swift.range.multistatement"
     /// The `source.lang.swift.range.multitypememberdeclaration` SourceKit key.
-    case rangeMultitypememberdeclaration = "source.lang.swift.range.multitypememberdeclaration"
+    case rangeMultiTypeMemberDeclaration = "source.lang.swift.range.multitypememberdeclaration"
     /// The `source.lang.swift.range.invalid` SourceKit key.
     case rangeInvalid = "source.lang.swift.range.invalid"
     /// The `source.lang.swift.syntaxtype.keyword` SourceKit key.
-    case syntaxtypeKeyword = "source.lang.swift.syntaxtype.keyword"
+    case syntaxTypeKeyword = "source.lang.swift.syntaxtype.keyword"
     /// The `source.lang.swift.syntaxtype.identifier` SourceKit key.
-    case syntaxtypeIdentifier = "source.lang.swift.syntaxtype.identifier"
+    case syntaxTypeIdentifier = "source.lang.swift.syntaxtype.identifier"
     /// The `source.lang.swift.syntaxtype.typeidentifier` SourceKit key.
-    case syntaxtypeTypeidentifier = "source.lang.swift.syntaxtype.typeidentifier"
+    case syntaxTypeTypeIdentifier = "source.lang.swift.syntaxtype.typeidentifier"
     /// The `source.lang.swift.syntaxtype.buildconfig.keyword` SourceKit key.
-    case syntaxtypeBuildconfigKeyword = "source.lang.swift.syntaxtype.buildconfig.keyword"
+    case syntaxTypeBuildConfigKeyword = "source.lang.swift.syntaxtype.buildconfig.keyword"
     /// The `source.lang.swift.syntaxtype.buildconfig.id` SourceKit key.
-    case syntaxtypeBuildconfigID = "source.lang.swift.syntaxtype.buildconfig.id"
+    case syntaxTypeBuildConfigID = "source.lang.swift.syntaxtype.buildconfig.id"
     /// The `source.lang.swift.syntaxtype.pounddirective.keyword` SourceKit key.
-    case syntaxtypePounddirectiveKeyword = "source.lang.swift.syntaxtype.pounddirective.keyword"
+    case syntaxTypePoundDirectiveKeyword = "source.lang.swift.syntaxtype.pounddirective.keyword"
     /// The `source.lang.swift.syntaxtype.attribute.id` SourceKit key.
-    case syntaxtypeAttributeID = "source.lang.swift.syntaxtype.attribute.id"
+    case syntaxTypeAttributeID = "source.lang.swift.syntaxtype.attribute.id"
     /// The `source.lang.swift.syntaxtype.attribute.builtin` SourceKit key.
-    case syntaxtypeAttributeBuiltin = "source.lang.swift.syntaxtype.attribute.builtin"
+    case syntaxTypeAttributeBuiltIn = "source.lang.swift.syntaxtype.attribute.builtin"
     /// The `source.lang.swift.syntaxtype.number` SourceKit key.
-    case syntaxtypeNumber = "source.lang.swift.syntaxtype.number"
+    case syntaxTypeNumber = "source.lang.swift.syntaxtype.number"
     /// The `source.lang.swift.syntaxtype.string` SourceKit key.
-    case syntaxtypeString = "source.lang.swift.syntaxtype.string"
+    case syntaxTypeString = "source.lang.swift.syntaxtype.string"
     /// The `source.lang.swift.syntaxtype.string_interpolation_anchor` SourceKit key.
-    case syntaxtypeStringInterpolationAnchor = "source.lang.swift.syntaxtype.string_interpolation_anchor"
+    case syntaxTypeStringInterpolationAnchor = "source.lang.swift.syntaxtype.string_interpolation_anchor"
     /// The `source.lang.swift.syntaxtype.comment` SourceKit key.
-    case syntaxtypeComment = "source.lang.swift.syntaxtype.comment"
+    case syntaxTypeComment = "source.lang.swift.syntaxtype.comment"
     /// The `source.lang.swift.syntaxtype.doccomment` SourceKit key.
-    case syntaxtypeDoccomment = "source.lang.swift.syntaxtype.doccomment"
+    case syntaxTypeDocComment = "source.lang.swift.syntaxtype.doccomment"
     /// The `source.lang.swift.syntaxtype.doccomment.field` SourceKit key.
-    case syntaxtypeDoccommentField = "source.lang.swift.syntaxtype.doccomment.field"
+    case syntaxTypeDocCommentField = "source.lang.swift.syntaxtype.doccomment.field"
     /// The `source.lang.swift.syntaxtype.comment.mark` SourceKit key.
-    case syntaxtypeCommentMark = "source.lang.swift.syntaxtype.comment.mark"
+    case syntaxTypeCommentMark = "source.lang.swift.syntaxtype.comment.mark"
     /// The `source.lang.swift.syntaxtype.comment.url` SourceKit key.
-    case syntaxtypeCommentURL = "source.lang.swift.syntaxtype.comment.url"
+    case syntaxTypeCommentURL = "source.lang.swift.syntaxtype.comment.url"
     /// The `source.lang.swift.syntaxtype.placeholder` SourceKit key.
-    case syntaxtypePlaceholder = "source.lang.swift.syntaxtype.placeholder"
+    case syntaxTypePlaceholder = "source.lang.swift.syntaxtype.placeholder"
     /// The `source.lang.swift.syntaxtype.objectliteral` SourceKit key.
-    case syntaxtypeObjectliteral = "source.lang.swift.syntaxtype.objectliteral"
+    case syntaxTypeObjectLiteral = "source.lang.swift.syntaxtype.objectliteral"
     /// The `source.lang.swift.foreach.sequence` SourceKit key.
-    case foreachSequence = "source.lang.swift.foreach.sequence"
+    case forEachSequence = "source.lang.swift.foreach.sequence"
     /// The `source.lang.swift.type` SourceKit key.
     case type = "source.lang.swift.type"
     /// The `source.lang.swift.expr` SourceKit key.

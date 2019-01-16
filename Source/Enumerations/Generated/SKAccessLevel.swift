@@ -13,7 +13,7 @@ public enum SKAccessLevel: String, Equatable, Codable, CaseIterable, SourceKitUI
     /// The `source.lang.swift.accessibility.internal` SourceKit key.
     case `internal` = "source.lang.swift.accessibility.internal"
     /// The `source.lang.swift.accessibility.fileprivate` SourceKit key.
-    case `fileprivate` = "source.lang.swift.accessibility.fileprivate"
+    case filePrivate = "source.lang.swift.accessibility.fileprivate"
     /// The `source.lang.swift.accessibility.private` SourceKit key.
     case `private` = "source.lang.swift.accessibility.private"
 }

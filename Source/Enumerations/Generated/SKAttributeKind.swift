@@ -23,7 +23,7 @@ public enum SKAttributeKind: String, Equatable, Codable, CaseIterable, SourceKit
     /// The `source.decl.attribute.private` SourceKit key.
     case `private` = "source.decl.attribute.private"
     /// The `source.decl.attribute.fileprivate` SourceKit key.
-    case `fileprivate` = "source.decl.attribute.fileprivate"
+    case filePrivate = "source.decl.attribute.fileprivate"
     /// The `source.decl.attribute.internal` SourceKit key.
     case `internal` = "source.decl.attribute.internal"
     /// The `source.decl.attribute.public` SourceKit key.
@@ -33,7 +33,7 @@ public enum SKAttributeKind: String, Equatable, Codable, CaseIterable, SourceKit
     /// The `source.decl.attribute.setter_access.private` SourceKit key.
     case setterAccessPrivate = "source.decl.attribute.setter_access.private"
     /// The `source.decl.attribute.setter_access.fileprivate` SourceKit key.
-    case setterAccessFileprivate = "source.decl.attribute.setter_access.fileprivate"
+    case setterAccessFilePrivate = "source.decl.attribute.setter_access.fileprivate"
     /// The `source.decl.attribute.setter_access.internal` SourceKit key.
     case setterAccessInternal = "source.decl.attribute.setter_access.internal"
     /// The `source.decl.attribute.setter_access.public` SourceKit key.

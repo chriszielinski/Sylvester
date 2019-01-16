@@ -57,6 +57,9 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "ALoadModule/testGenerateRequestFixtures()">
+               </Test>
+               <Test
                   Identifier = "SylvesterMockEditorOpenTestCase">
                </Test>
                <Test

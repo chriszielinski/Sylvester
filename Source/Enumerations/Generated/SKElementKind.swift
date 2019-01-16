@@ -17,5 +17,5 @@ public enum SKElementKind: String, Equatable, Codable, CaseIterable, SourceKitUI
     /// The `source.lang.swift.structure.elem.pattern` SourceKit key.
     case pattern = "source.lang.swift.structure.elem.pattern"
     /// The `source.lang.swift.structure.elem.typeref` SourceKit key.
-    case typeref = "source.lang.swift.structure.elem.typeref"
+    case typeRef = "source.lang.swift.structure.elem.typeref"
 }

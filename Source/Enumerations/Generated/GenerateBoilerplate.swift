@@ -15,7 +15,32 @@ let replacements: [String: String] = [
     "source.lang.swift.keyword.self": "keywordSelf",
     "source.lang.swift.keyword.Self": "keywordUppercaseSelf",
     "id": "ID",
-    "url": "URL"
+    "url": "URL",
+    "typeidentifier": "TypeIdentifier",
+    "buildconfig": "BuildConfig",
+    "pounddirective": "PoundDirective",
+    "builtin": "BuiltIn",
+    "doccomment": "DocComment",
+    "objectliteral": "ObjectLiteral",
+    "associatedtype": "AssociatedType",
+    "precedencegroup": "PrecedenceGroup",
+    "typealias": "TypeAlias",
+    "fileprivate": "FilePrivate",
+    "fallthrough": "FallThrough",
+    "syntaxtype": "SyntaxType",
+    "willset": "WillSet",
+    "didset": "DidSet",
+    "mutableaddress": "MutableAddress",
+    "enumcase": "EnumCase",
+    "enumelement": "EnumElement",
+    "foreach": "ForEach",
+    "repeatwhile": "RepeatWhile",
+    "typeref": "TypeRef",
+    "singlestatement": "SingleStatement",
+    "singleexpression": "SingleExpression",
+    "singledeclaration": "SingleDeclaration",
+    "multistatement": "MultiStatement",
+    "multitypememberdeclaration": "MultiTypeMemberDeclaration"
 ]
 let keywords: Set<String> = [
     "associatedtype",
@@ -117,21 +142,33 @@ let keywords: Set<String> = [
 ]
 
 extension String {
-    var invertFirstLetterCasing: String {
-        let firstCharacterString = String(self.first!)
-        if firstCharacterString.lowercased() == firstCharacterString {
-            // First letter is lowercased.
-            return firstCharacterString.uppercased() + String(self.dropFirst())
-        } else {
-            // First letter is uppercased.
-            return firstCharacterString.lowercased() + String(self.dropFirst())
-        }
+
+//    var invertFirstLetterCasing: String {
+//        let firstCharacterString = String(self.first!)
+//        if firstCharacterString.lowercased() == firstCharacterString {
+//            // First letter is lowercased.
+//            return firstCharacterString.uppercased() + String(self.dropFirst())
+//        } else {
+//            // First letter is uppercased.
+//            return firstCharacterString.lowercased() + String(self.dropFirst())
+//        }
+//    }
+
+    var lowercaseFirstLetter: String {
+        return String(first!).lowercased() + String(self.dropFirst())
     }
+
+    var uppercaseFirstLetter: String {
+        return String(first!).uppercased() + String(self.dropFirst())
+    }
+
 }
 
 struct Boilerplate {
 
     class UID {
+
+        static var ignoreKeys: [String] = []
 
         let key: String
         let uniqueComponent: String
@@ -144,6 +181,9 @@ struct Boilerplate {
         }
 
         lazy var name: String? = {
+            guard !UID.ignoreKeys.contains(key)
+                else { print("Skipping key \"\(key)\""); return nil }
+
             if let hardcodedName = replacements[key] {
                 return hardcodedName
             }
@@ -160,13 +200,17 @@ struct Boilerplate {
                 firstComponent.replaceSubrange(prefixRange, with: prefixString.lowercased())
             }
 
-            let name = firstComponent + keyComponents.dropFirst().map({
+            var name = ((replacements[firstComponent] ?? firstComponent) + keyComponents.dropFirst().map({
                 if let replacement = replacements[$0] {
                     return replacement
                 } else {
-                    return $0.invertFirstLetterCasing
+                    return $0.uppercaseFirstLetter
                 }
-            }).joined()
+            }).joined()).lowercaseFirstLetter
+
+            if name.count <= 3 {
+                name = name.lowercased()
+            }
 
             guard !keywords.contains(name)
                 else { return "`\(name)`" }
@@ -190,9 +234,12 @@ struct Boilerplate {
     let enumerationName: String
     var enumerationCaseTuples: [EnumerationCase]
     var enumerationCaseProtocols: [String]
+    var ignoreKeys: [String]
 
     func generate() {
         var uidSets: [[UID]] = []
+
+        UID.ignoreKeys = ignoreKeys
 
         for (uniqueKeyComponent, regex) in enumerationCaseTuples {
             let stringsOutput = Pipe()
@@ -306,25 +353,29 @@ Boilerplate(enumerationName: "SKSourceKind",
             enumerationCaseTuples: [
                 ("source.lang.swift", "^source\\.lang\\.swift\\.(.+)$")
     ],
-            enumerationCaseProtocols: []).generate()
+            enumerationCaseProtocols: [],
+            ignoreKeys: ["source.lang.swift.codecomplete.group"]).generate()
 
 Boilerplate(enumerationName: "SKCodeCompletionContext",
             enumerationCaseTuples: [
                 ("source.codecompletion.context", "^source\\.codecompletion\\.context\\.(.+)$")
     ],
-            enumerationCaseProtocols: []).generate()
+            enumerationCaseProtocols: [],
+            ignoreKeys: []).generate()
 
 Boilerplate(enumerationName: "SKDiagnosticStage",
             enumerationCaseTuples: [
                 ("source.diagnostic.stage.swift", "^source\\.diagnostic\\.stage\\.swift\\.(.+)$")
     ],
-            enumerationCaseProtocols: []).generate()
+            enumerationCaseProtocols: [],
+            ignoreKeys: []).generate()
 
 Boilerplate(enumerationName: "SKAccessLevel",
             enumerationCaseTuples: [
                 ("source.lang.swift.accessibility", "^source\\.lang\\.swift\\.accessibility\\.(.+)$")
     ],
-            enumerationCaseProtocols: []).generate()
+            enumerationCaseProtocols: [],
+            ignoreKeys: []).generate()
 
 Boilerplate(enumerationName: "SKSubstructureKind",
             enumerationCaseTuples: [
@@ -333,22 +384,26 @@ Boilerplate(enumerationName: "SKSubstructureKind",
                 ("source.lang.swift.expr", "^source\\.lang\\.swift\\.(.+)$"),
                 ("source.lang.swift.stmt", "^source\\.lang\\.swift\\.(.+)$")
     ],
-            enumerationCaseProtocols: []).generate()
+            enumerationCaseProtocols: [],
+            ignoreKeys: []).generate()
 
 Boilerplate(enumerationName: "SKAttributeKind",
             enumerationCaseTuples: [
                 ("source.decl.attribute", "^source\\.decl\\.attribute\\.(.+)$")
     ],
-            enumerationCaseProtocols: []).generate()
+            enumerationCaseProtocols: [],
+            ignoreKeys: []).generate()
 
 Boilerplate(enumerationName: "SKElementKind",
             enumerationCaseTuples: [
                 ("source.lang.swift.structure.elem", "^source\\.lang\\.swift\\.structure\\.elem\\.(.+)$")
     ],
-            enumerationCaseProtocols: []).generate()
+            enumerationCaseProtocols: [],
+            ignoreKeys: []).generate()
 
 Boilerplate(enumerationName: "SKSyntaxKind",
             enumerationCaseTuples: [
                 ("source.lang.swift.syntaxtype", "^source\\.lang\\.swift\\.syntaxtype\\.(.+)$")
     ],
-            enumerationCaseProtocols: []).generate()
+            enumerationCaseProtocols: [],
+            ignoreKeys: []).generate()

@@ -73,7 +73,7 @@ class SKEntityTests: SylvesterTestCase {
     }
 
     func testElementEquatable() {
-        let elementKind: SKElement.Kind = .typeref
+        let elementKind: SKElement.Kind = .typeRef
         let element = SKElement(kind: elementKind, offset: offset, length: length)
         let sameElement = SKElement(kind: elementKind, offset: offset, length: length)
 

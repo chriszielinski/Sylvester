@@ -15,17 +15,17 @@ public enum SKSyntaxKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.syntaxtype.identifier` SourceKit key.
     case identifier = "source.lang.swift.syntaxtype.identifier"
     /// The `source.lang.swift.syntaxtype.typeidentifier` SourceKit key.
-    case typeidentifier = "source.lang.swift.syntaxtype.typeidentifier"
+    case typeIdentifier = "source.lang.swift.syntaxtype.typeidentifier"
     /// The `source.lang.swift.syntaxtype.buildconfig.keyword` SourceKit key.
-    case buildconfigKeyword = "source.lang.swift.syntaxtype.buildconfig.keyword"
+    case buildConfigKeyword = "source.lang.swift.syntaxtype.buildconfig.keyword"
     /// The `source.lang.swift.syntaxtype.buildconfig.id` SourceKit key.
-    case buildconfigID = "source.lang.swift.syntaxtype.buildconfig.id"
+    case buildConfigID = "source.lang.swift.syntaxtype.buildconfig.id"
     /// The `source.lang.swift.syntaxtype.pounddirective.keyword` SourceKit key.
-    case pounddirectiveKeyword = "source.lang.swift.syntaxtype.pounddirective.keyword"
+    case poundDirectiveKeyword = "source.lang.swift.syntaxtype.pounddirective.keyword"
     /// The `source.lang.swift.syntaxtype.attribute.id` SourceKit key.
     case attributeID = "source.lang.swift.syntaxtype.attribute.id"
     /// The `source.lang.swift.syntaxtype.attribute.builtin` SourceKit key.
-    case attributeBuiltin = "source.lang.swift.syntaxtype.attribute.builtin"
+    case attributeBuiltIn = "source.lang.swift.syntaxtype.attribute.builtin"
     /// The `source.lang.swift.syntaxtype.number` SourceKit key.
     case number = "source.lang.swift.syntaxtype.number"
     /// The `source.lang.swift.syntaxtype.string` SourceKit key.
@@ -35,9 +35,9 @@ public enum SKSyntaxKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.syntaxtype.comment` SourceKit key.
     case comment = "source.lang.swift.syntaxtype.comment"
     /// The `source.lang.swift.syntaxtype.doccomment` SourceKit key.
-    case doccomment = "source.lang.swift.syntaxtype.doccomment"
+    case docComment = "source.lang.swift.syntaxtype.doccomment"
     /// The `source.lang.swift.syntaxtype.doccomment.field` SourceKit key.
-    case doccommentField = "source.lang.swift.syntaxtype.doccomment.field"
+    case docCommentField = "source.lang.swift.syntaxtype.doccomment.field"
     /// The `source.lang.swift.syntaxtype.comment.mark` SourceKit key.
     case commentMark = "source.lang.swift.syntaxtype.comment.mark"
     /// The `source.lang.swift.syntaxtype.comment.url` SourceKit key.
@@ -45,5 +45,5 @@ public enum SKSyntaxKind: String, Equatable, Codable, CaseIterable, SourceKitUID
     /// The `source.lang.swift.syntaxtype.placeholder` SourceKit key.
     case placeholder = "source.lang.swift.syntaxtype.placeholder"
     /// The `source.lang.swift.syntaxtype.objectliteral` SourceKit key.
-    case objectliteral = "source.lang.swift.syntaxtype.objectliteral"
+    case objectLiteral = "source.lang.swift.syntaxtype.objectliteral"
 }
