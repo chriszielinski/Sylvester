@@ -307,9 +307,7 @@ open class SKSubstructure: NSObject, Codable {
 
     /// Whether the substructure's parent is a protocol declaration.
     open lazy var isInsideProtocolDeclaration: Bool = {
-        guard let parentKind = parent?.kind
-            else { return false }
-        return parentKind == .protocol
+        return parent?.kind == .protocol
     }()
 
 }
