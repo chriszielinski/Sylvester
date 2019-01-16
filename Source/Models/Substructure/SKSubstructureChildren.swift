@@ -8,19 +8,19 @@
 
 import Foundation
 
-open class SKSubstructureChildren {
+open class SKSubstructureChildren<Substructure: SKSubstructure> {
 
     // MARK: - Public Stored Properties
 
-    public var substructures: [SKSubstructure]
+    public var substructures: [Substructure]
 
     // MARK: - Public Computed Properties
 
-    public var first: SKSubstructure? {
+    public var first: Substructure? {
         return substructures.first
     }
 
-    public var last: SKSubstructure? {
+    public var last: Substructure? {
         return substructures.last
     }
 
@@ -30,7 +30,7 @@ open class SKSubstructureChildren {
 
     // MARK: - Public Initializers
 
-    public init(substructures: [SKSubstructure]) {
+    public init(substructures: [Substructure]) {
         self.substructures = substructures
     }
 
@@ -42,7 +42,7 @@ open class SKSubstructureChildren {
     // MARK: - Internal Helper Methods
 
     @discardableResult
-    func resolve(parent: SKSubstructure? = nil, index: Int, filePath: String?) -> Int {
+    func resolve(parent: Substructure? = nil, index: Int, filePath: String?) -> Int {
         var currentIndex = index
 
         substructures.forEach {
@@ -72,19 +72,19 @@ extension SKSubstructureChildren: Sequence {
         return SKSubstructureIterator(substructures)
     }
 
-    public func index(of substructure: SKSubstructure) -> Int? {
+    public func index(of substructure: Substructure) -> Int? {
         return substructures.index(of: substructure)
     }
 
     @discardableResult
-    public func remove(substructure: SKSubstructure) -> Bool {
+    public func remove(substructure: Substructure) -> Bool {
         guard let index = substructures.index(of: substructure)
             else { return false }
         substructures.remove(at: index)
         return true
     }
 
-    public subscript(index: Int) -> SKSubstructure {
+    public subscript(index: Int) -> Substructure {
         get { return substructures[index] }
         set { substructures[index] = newValue }
     }

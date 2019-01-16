@@ -8,7 +8,7 @@
 
 import SylvesterXPC
 
-public class CustomSwiftDocs: SKSwiftDocs {
+public class CustomSwiftDocs: SKGenericSwiftDocs<CustomSubstructure> {
 
     // Public Stored Properties
 

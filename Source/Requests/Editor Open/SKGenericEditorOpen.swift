@@ -1,15 +1,15 @@
 //
-//  SKEditorOpen.swift
+//  SKGenericEditorOpen.swift
 //  Sylvester 😼
 //
-//  Created by Chris Zielinski on 12/3/18.
-//  Copyright © 2018 Big Z Labs. All rights reserved.
+//  Created by Chris Zielinski on 1/16/19.
+//  Copyright © 2019 Big Z Labs. All rights reserved.
 //
 
 import SourceKittenFramework
 
-/// Represents a _SourceKit_ editor open request for a Swift file.
-open class SKEditorOpen: SKBaseResponse {
+/// Represents a generic _SourceKit_ editor open request for a Swift file.
+open class SKGenericEditorOpen<Substructure: SKSubstructure>: SKGenericResponse<Substructure> {
 
     // MARK: - Public Initializers
 

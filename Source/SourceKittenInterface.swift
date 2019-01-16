@@ -114,7 +114,7 @@ open class SourceKittenInterface {
     /// - Parameter file: The source file to open.
     /// - Returns: The resulting `SKEditorOpen`.
     /// - Throws: A `SKError`, if an error occurs.
-    public func editorOpen(file: File) throws -> SKEditorOpen {
+    public func editorOpen<Substructure: SKSubstructure>(file: File) throws -> SKGenericEditorOpen<Substructure> {
         #if XPC
         var response: SKDataWrapper?
         var responseError: SKXPCError?
@@ -164,7 +164,7 @@ open class SourceKittenInterface {
     ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
     /// - Returns: The resulting `SKSwiftDocs`.
     /// - Throws: A `SKError`, if an error occurs.
-    public func swiftDocs(file: File, compilerArguments: [String]) throws -> SKSwiftDocs {
+    public func swiftDocs<Substructure: SKSubstructure>(file: File, compilerArguments: [String]) throws -> SKGenericSwiftDocs<Substructure> {
         #if XPC
         var response: SKDataWrapper?
         var responseError: SKXPCError?

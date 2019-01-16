@@ -1,16 +1,16 @@
 //
-//  SKSwiftDocumentation.swift
+//  SKGenericSwiftDocs.swift
 //  Sylvester 😼
 //
-//  Created by Chris Zielinski on 12/3/18.
-//  Copyright © 2018 Big Z Labs. All rights reserved.
+//  Created by Chris Zielinski on 1/16/19.
+//  Copyright © 2019 Big Z Labs. All rights reserved.
 //
 
 import SourceKittenFramework
 import SylvesterCommon
 
-/// Represents a _SourceKitten_ Swift Documentation request for a Swift file.
-open class SKSwiftDocs: SKBaseResponse {
+/// Represents a generic _SourceKitten_ Swift Documentation request for a Swift file.
+open class SKGenericSwiftDocs<Substructure: SKSubstructure>: SKGenericResponse<Substructure> {
 
     // MARK: - Public Stored Properties
 
@@ -75,7 +75,7 @@ open class SKSwiftDocs: SKBaseResponse {
         let container = try decoder.container(keyedBy: SwiftDocsCodingKey.self)
 
         file = try container.decode(forKey: .file)
-        let decodedResponse = try JSONDecoder().decode(SKBaseResponse.self,
+        let decodedResponse = try JSONDecoder().decode(SKGenericResponse<Substructure>.self,
                                                        from: container.decode(forKey: .response))
         super.init(skInformation: decodedResponse)
     }

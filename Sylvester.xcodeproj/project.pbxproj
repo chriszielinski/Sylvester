@@ -150,6 +150,13 @@
 		149ABB5521DEEBDA00CE0351 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; };
 		149ABB5621DEEBDA00CE0351 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
 		149ABB6121DEEC0100CE0351 /* SylvesterXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; };
+		14B1804021EFC68D001E272A /* CustomSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1803F21EFC68D001E272A /* CustomSubstructure.swift */; };
+		14B1804221EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */; };
+		14B1804321EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */; };
+		14B1804621EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */; };
+		14B1804721EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */; };
+		14B1804A21EFCBCC001E272A /* GenericSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804921EFCBCC001E272A /* GenericSubstructure.swift */; };
+		14B1804B21EFCBCC001E272A /* GenericSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804921EFCBCC001E272A /* GenericSubstructure.swift */; };
 		14B1F18021DF068100ED3420 /* ALoadModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488977B21B74979007F6C17 /* ALoadModule.swift */; };
 		14B1F18121DF068100ED3420 /* SylvesterMockEditorOpenTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C0121BC207D006EAB11 /* SylvesterMockEditorOpenTestCase.swift */; };
 		14B1F18221DF068100ED3420 /* SylvesterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB49E121B44EF4008C02EB /* SylvesterTestCase.swift */; };
@@ -417,6 +424,10 @@
 		1493780021D5C92500632B76 /* SKParagraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKParagraph.swift; sourceTree = "<group>"; };
 		1493780221D5D51700632B76 /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
 		149ABB5D21DEEBDA00CE0351 /* SylvesterXPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SylvesterXPCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B1803F21EFC68D001E272A /* CustomSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubstructure.swift; sourceTree = "<group>"; };
+		14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericSwiftDocs.swift; sourceTree = "<group>"; };
+		14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericEditorOpen.swift; sourceTree = "<group>"; };
+		14B1804921EFCBCC001E272A /* GenericSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSubstructure.swift; sourceTree = "<group>"; };
 		14B6A9C121B60E74007E007A /* Mustache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mustache.framework; path = Carthage/Build/Mac/Mustache.framework; sourceTree = "<group>"; };
 		14B6A9C321B616E3007E007A /* AtomicKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtomicKit.framework; path = Carthage/Build/Mac/AtomicKit.framework; sourceTree = "<group>"; };
 		14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionSession.swift; sourceTree = "<group>"; };
@@ -590,6 +601,7 @@
 			children = (
 				141E979821DEC9DA00409B56 /* CustomEditorOpen.swift */,
 				141E979A21DECA0C00409B56 /* CustomSwiftDocs.swift */,
+				14B1803F21EFC68D001E272A /* CustomSubstructure.swift */,
 			);
 			path = Subclasses;
 			sourceTree = "<group>";
@@ -764,10 +776,10 @@
 		1484CAEE21B593DD00EF8F09 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				14B1804821EFC9B3001E272A /* Editor Open */,
+				14B1804421EFC85F001E272A /* Swift Docs */,
 				1491902721C6F40B00F2F975 /* Code Completion */,
 				14E4290921DD71B500CEDF61 /* Module */,
-				1484CB0021B5DD8B00EF8F09 /* SKEditorOpen.swift */,
-				1484CAF021B5946500EF8F09 /* SKSwiftDocs.swift */,
 				1484CB0421B5E1CD00EF8F09 /* SKSyntaxMap.swift */,
 				14D0CEDA21BF47D00000CB82 /* SKYAMLRequest.swift */,
 			);
@@ -785,8 +797,9 @@
 		1488977821B73BD7007F6C17 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				1488977921B73C05007F6C17 /* SourceKitUID.swift */,
+				14B1804921EFCBCC001E272A /* GenericSubstructure.swift */,
 				142A52BF21E00E5700325A71 /* JSONDebugStringConvertable.swift */,
+				1488977921B73C05007F6C17 /* SourceKitUID.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -810,6 +823,24 @@
 				14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */,
 			);
 			path = "Code Completion";
+			sourceTree = "<group>";
+		};
+		14B1804421EFC85F001E272A /* Swift Docs */ = {
+			isa = PBXGroup;
+			children = (
+				14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */,
+				1484CAF021B5946500EF8F09 /* SKSwiftDocs.swift */,
+			);
+			path = "Swift Docs";
+			sourceTree = "<group>";
+		};
+		14B1804821EFC9B3001E272A /* Editor Open */ = {
+			isa = PBXGroup;
+			children = (
+				1484CB0021B5DD8B00EF8F09 /* SKEditorOpen.swift */,
+				14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */,
+			);
+			path = "Editor Open";
 			sourceTree = "<group>";
 		};
 		14BF6C0021BC200F006EAB11 /* Test Cases */ = {
@@ -1369,6 +1400,7 @@
 				1411B12821DEE58700CA071D /* SKAttributeKind.swift in Sources */,
 				1411B12921DEE58700CA071D /* SKSubstructureIterator.swift in Sources */,
 				1411B12A21DEE58700CA071D /* SKSourceKind.swift in Sources */,
+				14B1804B21EFCBCC001E272A /* GenericSubstructure.swift in Sources */,
 				1411B12B21DEE58700CA071D /* Stack.swift in Sources */,
 				1411B12C21DEE58700CA071D /* SKModule.swift in Sources */,
 				1411B12D21DEE58700CA071D /* SKEditorOpen.swift in Sources */,
@@ -1381,6 +1413,7 @@
 				1411B13421DEE58700CA071D /* SourceKittenInterface.swift in Sources */,
 				1411B13521DEE58700CA071D /* SKBaseResponse.swift in Sources */,
 				1411B13621DEE58700CA071D /* SKSyntaxMap.swift in Sources */,
+				14B1804721EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */,
 				1411B13721DEE58700CA071D /* Constants.swift in Sources */,
 				1411B13821DEE58700CA071D /* SKDiagnosticStage.swift in Sources */,
 				1411B13921DEE58700CA071D /* SKInheritedType.swift in Sources */,
@@ -1391,6 +1424,7 @@
 				1411B13D21DEE58700CA071D /* SKCodeCompletionContext.swift in Sources */,
 				1411B13E21DEE58700CA071D /* SKYAMLRequest.swift in Sources */,
 				1411B13F21DEE58700CA071D /* SKGenericModule.swift in Sources */,
+				14B1804321EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */,
 				1411B14021DEE58700CA071D /* SKElement.swift in Sources */,
 				1411B14121DEE58700CA071D /* SKDocumentationParameter.swift in Sources */,
 			);
@@ -1416,6 +1450,7 @@
 				1409B2D421B8411C00938856 /* SKAttributeKind.swift in Sources */,
 				144ED49F21B23D8700D0C19F /* SKSubstructureIterator.swift in Sources */,
 				14FB4A0C21B49C5E008C02EB /* SKSourceKind.swift in Sources */,
+				14B1804A21EFCBCC001E272A /* GenericSubstructure.swift in Sources */,
 				144ED4A221B23E8B00D0C19F /* Stack.swift in Sources */,
 				148CB86121C19D5B002928DD /* SKModule.swift in Sources */,
 				1484CB0121B5DD8B00EF8F09 /* SKEditorOpen.swift in Sources */,
@@ -1428,6 +1463,7 @@
 				14BF6C2421BC3E89006EAB11 /* SourceKittenInterface.swift in Sources */,
 				144ED49821B23B5200D0C19F /* SKBaseResponse.swift in Sources */,
 				1484CB0521B5E1CD00EF8F09 /* SKSyntaxMap.swift in Sources */,
+				14B1804621EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */,
 				1438C33B21C8353200081C02 /* Constants.swift in Sources */,
 				14FB4A1221B4FA5F008C02EB /* SKDiagnosticStage.swift in Sources */,
 				1409B2E121B8A63E00938856 /* SKInheritedType.swift in Sources */,
@@ -1438,6 +1474,7 @@
 				14FB4A0E21B4A6E3008C02EB /* SKCodeCompletionContext.swift in Sources */,
 				14D0CEDB21BF47D00000CB82 /* SKYAMLRequest.swift in Sources */,
 				14E4290821DD716000CEDF61 /* SKGenericModule.swift in Sources */,
+				14B1804221EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */,
 				1409B2DF21B8A61900938856 /* SKElement.swift in Sources */,
 				1409B2E521B8A66C00938856 /* SKDocumentationParameter.swift in Sources */,
 			);
@@ -1481,6 +1518,7 @@
 				141E979B21DECA0C00409B56 /* CustomSwiftDocs.swift in Sources */,
 				14724D3921CED795005CD5C9 /* SylvesterInterface.swift in Sources */,
 				14724D0A21CECD61005CD5C9 /* AppDelegate.swift in Sources */,
+				14B1804021EFC68D001E272A /* CustomSubstructure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

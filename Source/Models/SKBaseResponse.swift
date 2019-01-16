@@ -8,7 +8,7 @@
 
 import SourceKittenFramework
 
-open class SKBaseResponse: NSObject, Codable {
+open class SKGenericResponse<Substructure: SKSubstructure>: NSObject, Codable, JSONDebugStringConvertable {
 
     // MARK: - Internal Declarations
 
@@ -34,7 +34,7 @@ open class SKBaseResponse: NSObject, Codable {
     /// The starting byte offset of the analyzed source contents.
     public let offset: Int
     /// The top-level substructures in the analyzed source contents.
-    public let topLevelSubstructures: SKSubstructureChildren
+    public let topLevelSubstructures: SKSubstructureChildren<Substructure>
     /// The syntax map of the analyzed source contents.
     public let syntaxMap: SyntaxMap?
 
@@ -43,7 +43,7 @@ open class SKBaseResponse: NSObject, Codable {
     public init(diagnosticStage: DiagnosticStage,
                 length: Int,
                 offset: Int,
-                substructureChildren: SKSubstructureChildren,
+                substructureChildren: SKSubstructureChildren<Substructure>,
                 syntaxMap: SyntaxMap?) {
         self.diagnosticStage = diagnosticStage
         self.length = length
@@ -52,7 +52,7 @@ open class SKBaseResponse: NSObject, Codable {
         self.syntaxMap = syntaxMap
     }
 
-    public init(skInformation: SKBaseResponse) {
+    public init(skInformation: SKGenericResponse<Substructure>) {
         diagnosticStage = skInformation.diagnosticStage
         length = skInformation.length
         offset = skInformation.offset
@@ -75,24 +75,16 @@ open class SKBaseResponse: NSObject, Codable {
         topLevelSubstructures.resolve(index: 0, filePath: filePath)
     }
 
-}
-
-// MARK: - JSON Debug String Convertable Protocol
-
-extension SKBaseResponse: JSONDebugStringConvertable {
+    // MARK: - JSON Debug String Convertable Protocol
 
     open override var debugDescription: String {
         return jsonDebugDescription
     }
 
-}
-
-// MARK: - Equatable Protocol
-
-extension SKBaseResponse {
+    // MARK: - Equatable Protocol
 
     open override func isEqual(_ object: Any?) -> Bool {
-        guard let rhs = object as? SKBaseResponse
+        guard let rhs = object as? SKGenericResponse<Substructure>
             else { return false }
 
         return diagnosticStage == rhs.diagnosticStage
@@ -103,3 +95,5 @@ extension SKBaseResponse {
     }
 
 }
+
+open class SKBaseResponse: SKGenericResponse<SKSubstructure> {}

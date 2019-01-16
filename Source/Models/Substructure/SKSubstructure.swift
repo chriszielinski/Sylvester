@@ -8,7 +8,7 @@
 
 import SourceKittenFramework
 
-open class SKSubstructure: NSObject, Codable {
+open class SKSubstructure: NSObject, Codable, GenericSubstructure {
 
     // MARK: - Internal Declarations
 
@@ -60,6 +60,7 @@ open class SKSubstructure: NSObject, Codable {
     public typealias InheritedType = SKInheritedType
     public typealias Override = SKOverride
     public typealias Kind = SKSubstructureKind
+    public typealias Substructure = SKSubstructure
 
     // MARK: - Public Stored Properties
 
@@ -69,7 +70,7 @@ open class SKSubstructure: NSObject, Codable {
     ///
     public var index: Int!
     /// The parent substructure, or `nil` if this substructure is a root.
-    public weak var parent: SKSubstructure?
+    public weak var parent: Substructure?
 
     /// The [access level](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html) of the substructure.
     public let accessibility: AccessLevel?
@@ -155,7 +156,7 @@ open class SKSubstructure: NSObject, Codable {
     /// The setter access level.
     public let setterAccessibility: AccessLevel?
     /// The substructure children of the substructure.
-    public var children: SKSubstructureChildren?
+    public var children: SKSubstructureChildren<Substructure>?
     /// A string describing the type of the substructure.
     public let typeName: String?
     /// The Unified Symbol Resolution (USR) for the substructure's type.

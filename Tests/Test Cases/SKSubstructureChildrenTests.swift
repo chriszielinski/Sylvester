@@ -17,12 +17,12 @@ class SKSubstructureChildrenTests: SylvesterMockEditorOpenTestCase {
 
     // MARK: - Computed Properties
 
-    var mockViewControllerSubstructureChildren: SKSubstructureChildren {
+    var mockViewControllerSubstructureChildren: SKSubstructureChildren<SKSubstructure> {
         return viewControllerEditorOpenResponse.topLevelSubstructures
     }
 
     /// Returns a `SKSubstructureChildren` with at least two substructures.
-    var mockAtLeastTwoSubstructureChildren: SKSubstructureChildren {
+    var mockAtLeastTwoSubstructureChildren: SKSubstructureChildren<SKSubstructure> {
         guard let substructureChildren = viewControllerClassSubstructure.children?.first?.children else {
             XCTFail("could not find a `SKSubstructureChildren` with at least two substructures")
             fatalError()

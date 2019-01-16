@@ -1,6 +1,6 @@
 //
 //  SyntaxToken.swift
-//  Sylvester
+//  Sylvester 😼
 //
 //  Created by Chris Zielinski on 1/15/19.
 //  Copyright © 2019 Big Z Labs. All rights reserved.

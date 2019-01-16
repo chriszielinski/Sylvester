@@ -90,6 +90,8 @@ class SandboxTests: XCTestCase {
     }
 
     func testCustomSwiftDocs() throws {
+        continueAfterFailure = false
+
         guard let compilerArguments = testCompilerArguments
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
@@ -97,6 +99,8 @@ class SandboxTests: XCTestCase {
                                                                      compilerArguments: compilerArguments)
 
         XCTAssertTrue(customSwiftDocs.overriddenResolveCalled)
+        XCTAssertNotNil(customSwiftDocs.topLevelSubstructures.first)
+        XCTAssertTrue(customSwiftDocs.topLevelSubstructures.first!.iAmASubclass)
     }
 
     func testSKCodeCompletion() throws {
