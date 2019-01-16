@@ -34,7 +34,7 @@
                 <a href="Classes/SKAttribute.html">SKAttribute</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SKBaseResponse.html">SKBaseResponse</a>
+                <a href="Classes.html#/s:12SylvesterXPC14SKBaseResponseC">SKBaseResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKCodeCompletion.html">SKCodeCompletion</a>
@@ -43,7 +43,7 @@
                 <a href="Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SKEditorOpen.html">SKEditorOpen</a>
+                <a href="Classes.html#/s:12SylvesterXPC12SKEditorOpenC">SKEditorOpen</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKElement.html">SKElement</a>
@@ -52,7 +52,16 @@
                 <a href="Classes/SKEntity.html">SKEntity</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/SKGenericEditorOpen.html">SKGenericEditorOpen</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/SKGenericModule.html">SKGenericModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKGenericResponse.html">SKGenericResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SKGenericSwiftDocs.html">SKGenericSwiftDocs</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes.html#/s:12SylvesterXPC8SKModuleC">SKModule</a>
@@ -64,7 +73,7 @@
                 <a href="Classes/SKSubstructureChildren.html">SKSubstructureChildren</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SKSwiftDocs.html">SKSwiftDocs</a>
+                <a href="Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SKSyntaxMap.html">SKSyntaxMap</a>
@@ -195,9 +204,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@SylvesterXPC@objc(cs)SKBaseResponse"></a>
-                    <a name="//apple_ref/swift/Class/SKBaseResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@SylvesterXPC@objc(cs)SKBaseResponse">SKBaseResponse</a>
+                    <a name="/s:12SylvesterXPC17SKGenericResponseC"></a>
+                    <a name="//apple_ref/swift/Class/SKGenericResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC17SKGenericResponseC">SKGenericResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -207,13 +216,40 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
-                        <a href="Classes/SKBaseResponse.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/SKGenericResponse.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKBaseResponse</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKGenericResponse</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">JSONDebugStringConvertable</span> <span class="k">where</span> <span class="kt">Substructure</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKSubstructure.html">SKSubstructure</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC14SKBaseResponseC"></a>
+                    <a name="//apple_ref/swift/Class/SKBaseResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC14SKBaseResponseC">SKBaseResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKBaseResponse</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKGenericResponse.html">SKGenericResponse</a></span><span class="o">&lt;</span><span class="kt"><a href="Classes/SKSubstructure.html">SKSubstructure</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -341,7 +377,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKSubstructure</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKSubstructure</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">GenericSubstructure</span></code></pre>
 
                         </div>
                       </div>
@@ -373,7 +409,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKSubstructureChildren</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKSubstructureChildren</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Substructure</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKSubstructure.html">SKSubstructure</a></span></code></pre>
 
                         </div>
                       </div>
@@ -451,6 +487,69 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:12SylvesterXPC12SKEditorOpenC"></a>
+                    <a name="//apple_ref/swift/Class/SKEditorOpen" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKEditorOpenC">SKEditorOpen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a <em>SourceKit</em> editor open request for a Swift file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKEditorOpen</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKGenericEditorOpen.html">SKGenericEditorOpen</a></span><span class="o">&lt;</span><span class="kt"><a href="Classes/SKSubstructure.html">SKSubstructure</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC19SKGenericEditorOpenC"></a>
+                    <a name="//apple_ref/swift/Class/SKGenericEditorOpen" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC19SKGenericEditorOpenC">SKGenericEditorOpen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a generic <em>SourceKit</em> editor open request for a Swift file.</p>
+
+                        <a href="Classes/SKGenericEditorOpen.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKGenericEditorOpen</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKGenericResponse.html">SKGenericResponse</a></span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Substructure</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKSubstructure.html">SKSubstructure</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:12SylvesterXPC15SKGenericModuleC"></a>
                     <a name="//apple_ref/swift/Class/SKGenericModule" class="dashAnchor"></a>
                     <a class="token" href="#/s:12SylvesterXPC15SKGenericModuleC">SKGenericModule</a>
@@ -469,7 +568,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKGenericModule</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKSwiftDocs.html">SKSwiftDocs</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKGenericModule</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a></span></code></pre>
 
                         </div>
                       </div>
@@ -500,71 +599,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKModule</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKGenericModule.html">SKGenericModule</a></span><span class="o">&lt;</span><span class="kt"><a href="Classes/SKSwiftDocs.html">SKSwiftDocs</a></span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@SylvesterXPC@objc(cs)SKEditorOpen"></a>
-                    <a name="//apple_ref/swift/Class/SKEditorOpen" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@SylvesterXPC@objc(cs)SKEditorOpen">SKEditorOpen</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Represents a <em>SourceKit</em> editor open request for a Swift file.</p>
-
-                        <a href="Classes/SKEditorOpen.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKEditorOpen</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKBaseResponse.html">SKBaseResponse</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@SylvesterXPC@objc(cs)SKSwiftDocs"></a>
-                    <a name="//apple_ref/swift/Class/SKSwiftDocs" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@SylvesterXPC@objc(cs)SKSwiftDocs">SKSwiftDocs</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Represents a <em>SourceKitten</em> Swift Documentation request for a Swift file.</p>
-
-                        <a href="Classes/SKSwiftDocs.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKSwiftDocs</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKBaseResponse.html">SKBaseResponse</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKModule</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKGenericModule.html">SKGenericModule</a></span><span class="o">&lt;</span><span class="kt"><a href="Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -642,6 +677,69 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:12SylvesterXPC18SKGenericSwiftDocsC"></a>
+                    <a name="//apple_ref/swift/Class/SKGenericSwiftDocs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKGenericSwiftDocsC">SKGenericSwiftDocs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a generic <em>SourceKitten</em> Swift Documentation request for a Swift file.</p>
+
+                        <a href="Classes/SKGenericSwiftDocs.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKGenericSwiftDocs</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKGenericResponse.html">SKGenericResponse</a></span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Substructure</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKSubstructure.html">SKSubstructure</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC11SKSwiftDocsC"></a>
+                    <a name="//apple_ref/swift/Class/SKSwiftDocs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a <em>SourceKitten</em> Swift Documentation request for a Swift file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKSwiftDocs</span> <span class="p">:</span> <span class="kt"><a href="Classes/SKGenericSwiftDocs.html">SKGenericSwiftDocs</a></span><span class="o">&lt;</span><span class="kt"><a href="Classes/SKSubstructure.html">SKSubstructure</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:12SylvesterXPC21SourceKittenInterfaceC"></a>
                     <a name="//apple_ref/swift/Class/SourceKittenInterface" class="dashAnchor"></a>
                     <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC">SourceKittenInterface</a>
@@ -672,7 +770,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-15)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-16)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
