@@ -77,6 +77,8 @@
 		1420E25521C0A5EB00BEF13C /* SKFileWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420E25421C0A5EB00BEF13C /* SKFileWrapper.swift */; };
 		142A52C021E00E5700325A71 /* JSONDebugStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A52BF21E00E5700325A71 /* JSONDebugStringConvertable.swift */; };
 		142A52C121E0104200325A71 /* JSONDebugStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A52BF21E00E5700325A71 /* JSONDebugStringConvertable.swift */; };
+		142D93A921EFE01C0014CFC2 /* SKGenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D93A821EFE01C0014CFC2 /* SKGenericResponse.swift */; };
+		142D93AA21EFE01C0014CFC2 /* SKGenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D93A821EFE01C0014CFC2 /* SKGenericResponse.swift */; };
 		1438196721D6F1EE00F58A0F /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438196621D6F1EE00F58A0F /* TypeAlias.swift */; };
 		1438C33B21C8353200081C02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33A21C8353200081C02 /* Constants.swift */; };
 		1438C33D21C8449200081C02 /* SKCodeCompletionSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */; };
@@ -358,6 +360,7 @@
 		1420E25221C0A5C300BEF13C /* SKSyntaxMapWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSyntaxMapWrapper.swift; sourceTree = "<group>"; };
 		1420E25421C0A5EB00BEF13C /* SKFileWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKFileWrapper.swift; sourceTree = "<group>"; };
 		142A52BF21E00E5700325A71 /* JSONDebugStringConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDebugStringConvertable.swift; sourceTree = "<group>"; };
+		142D93A821EFE01C0014CFC2 /* SKGenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericResponse.swift; sourceTree = "<group>"; };
 		1438196621D6F1EE00F58A0F /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		1438C33A21C8353200081C02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionSessionResponse.swift; sourceTree = "<group>"; };
@@ -616,6 +619,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		142D93AB21EFE03D0014CFC2 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				144ED49521B23B5200D0C19F /* SKBaseResponse.swift */,
+				142D93A821EFE01C0014CFC2 /* SKGenericResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		144ED41421B2105E00D0C19F = {
 			isa = PBXGroup;
 			children = (
@@ -683,8 +695,8 @@
 			isa = PBXGroup;
 			children = (
 				14D1017821ED0A14002FF8D2 /* Code Completion */,
+				142D93AB21EFE03D0014CFC2 /* Response */,
 				144ED49B21B23D8700D0C19F /* Substructure */,
-				144ED49521B23B5200D0C19F /* SKBaseResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1392,6 +1404,7 @@
 				1411B12221DEE58700CA071D /* SourceKitUID.swift in Sources */,
 				1411B12321DEE58700CA071D /* TypeAlias.swift in Sources */,
 				147B1BA821EE7B6D00000842 /* SyntaxToken.swift in Sources */,
+				142D93AA21EFE01C0014CFC2 /* SKGenericResponse.swift in Sources */,
 				1411B12421DEE58700CA071D /* SKSubstructureChildren.swift in Sources */,
 				1411B12521DEE58700CA071D /* String.swift in Sources */,
 				142A52C121E0104200325A71 /* JSONDebugStringConvertable.swift in Sources */,
@@ -1442,6 +1455,7 @@
 				1488977A21B73C05007F6C17 /* SourceKitUID.swift in Sources */,
 				1438196721D6F1EE00F58A0F /* TypeAlias.swift in Sources */,
 				147B1BA521EE76FD00000842 /* SyntaxToken.swift in Sources */,
+				142D93A921EFE01C0014CFC2 /* SKGenericResponse.swift in Sources */,
 				144ED49E21B23D8700D0C19F /* SKSubstructureChildren.swift in Sources */,
 				14BEB8D921B9A0C600C7B052 /* String.swift in Sources */,
 				142A52C021E00E5700325A71 /* JSONDebugStringConvertable.swift in Sources */,

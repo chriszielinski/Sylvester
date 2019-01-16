@@ -7,4 +7,4 @@
 //
 
 /// Represents a _SourceKit_ editor open request for a Swift file.
-open class SKEditorOpen: SKGenericEditorOpen<SKSubstructure> {}
+open class SKEditorOpen: SKBaseResponse {}

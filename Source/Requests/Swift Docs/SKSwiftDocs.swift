@@ -7,4 +7,4 @@
 //
 
 /// Represents a _SourceKitten_ Swift Documentation request for a Swift file.
-open class SKSwiftDocs: SKGenericSwiftDocs<SKSubstructure> {}
+open class SKSwiftDocs: SKBaseResponse {}
