@@ -12,8 +12,8 @@ Sylvester 😼
 	  <img src="https://sonarcloud.io/api/project_badges/measure?project=chriszielinski_Sylvester&metric=coverage">
 	</a>
 	<a href="https://codebeat.co/projects/github-com-chriszielinski-sylvester-master" style="text-decoration:none" target="_blank">
-		<img alt="codebeat badge" src="https://codebeat.co/badges/66095cd2-8a09-4662-a31d-d8f7a0e86f3f"/>
-	</a>
+	   <img alt="codebeat badge" src="https://codebeat.co/badges/94e83fa7-6299-4c3c-a364-5c3aa958cf8e" />
+   </a>
 	<a href="https://developer.apple.com/swift" style="text-decoration:none" target="_blank">
 		<img alt="Swift Version" src ="https://img.shields.io/badge/language-swift%204.2-brightgreen.svg"/>
 	</a>
