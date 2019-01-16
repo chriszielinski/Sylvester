@@ -70,6 +70,8 @@ class SandboxTests: XCTestCase {
         let customEditorOpen = try SylvesterInterface.customEditorOpen(file: testContentsFile)
 
         XCTAssertTrue(customEditorOpen.overriddenResolveCalled)
+        XCTAssertNotNil(customEditorOpen.topLevelSubstructures.first)
+        XCTAssertTrue(customEditorOpen.topLevelSubstructures.first!.iAmASubclass)
     }
 
     func testSKSyntaxMap() throws {

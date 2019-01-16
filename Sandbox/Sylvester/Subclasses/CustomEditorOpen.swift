@@ -8,7 +8,7 @@
 
 import SylvesterXPC
 
-public class CustomEditorOpen: SKEditorOpen {
+public class CustomEditorOpen: SKGenericEditorOpen<CustomSubstructure> {
 
     // Public Stored Properties
 
