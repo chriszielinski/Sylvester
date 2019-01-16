@@ -183,12 +183,12 @@ class SandboxTests: XCTestCase {
         XCTAssertEqual(output, echoString)
     }
 
-    func testExecuteShell() {
+    func testLaunchSubprocess() {
         continueAfterFailure = false
 
-        let output = SylvesterInterface.executeSubprocess(launchPath: "/usr/bin/swift",
-                                                          arguments: ["-version"],
-                                                          shouldPipeStandardError: true)
+        let output = SylvesterInterface.launchSubprocess(launchPath: "/usr/bin/swift",
+                                                         arguments: ["-version"],
+                                                         shouldPipeStandardError: true)
 
         XCTAssertNotNil(output)
         XCTAssertTrue(output!.hasPrefix("Apple Swift version"))

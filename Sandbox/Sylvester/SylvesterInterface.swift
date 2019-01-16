@@ -66,14 +66,14 @@ public class SylvesterInterface {
         return SourceKittenInterface.shared.executeBash(command: command, currentDirectoryPath: currentDirectoryPath)
     }
 
-    public static func executeSubprocess(launchPath: String,
-                                         arguments: [String] = [],
-                                         currentDirectoryPath: String? = nil,
-                                         shouldPipeStandardError: Bool = false) -> String? {
-        return SourceKittenInterface.shared.executeSubprocess(launchPath: launchPath,
-                                                              arguments: arguments,
-                                                              currentDirectoryPath: currentDirectoryPath,
-                                                              shouldPipeStandardError: shouldPipeStandardError)
+    public static func launchSubprocess(launchPath: String,
+                                        arguments: [String] = [],
+                                        currentDirectoryPath: String? = nil,
+                                        shouldPipeStandardError: Bool = false) -> String? {
+        return SourceKittenInterface.shared.launchSubprocess(launchPath: launchPath,
+                                                             arguments: arguments,
+                                                             currentDirectoryPath: currentDirectoryPath,
+                                                             shouldPipeStandardError: shouldPipeStandardError)
     }
 
 }

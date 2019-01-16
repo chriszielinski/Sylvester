@@ -126,30 +126,30 @@ public class SourceKittenAdapter {
     // MARK: - Subprocess Methods
 
     public static func xcRun(arguments: [String]) -> String? {
-        return executeSubprocess(launchPath: "/usr/bin/xcrun", arguments: arguments)
+        return launchSubprocess(launchPath: "/usr/bin/xcrun", arguments: arguments)
     }
 
     public static func xcodeBuild(arguments: [String], currentDirectoryPath: String) -> String? {
-        return executeSubprocess(launchPath: "/usr/bin/xcodebuild",
-                                 arguments: arguments + [
+        return launchSubprocess(launchPath: "/usr/bin/xcodebuild",
+                                arguments: arguments + [
                                     "clean",
                                     "build",
                                     "CODE_SIGN_IDENTITY=",
                                     "CODE_SIGNING_REQUIRED=NO"],
-                                 currentDirectoryPath: currentDirectoryPath,
-                                 shouldPipeStandardError: true)
+                                currentDirectoryPath: currentDirectoryPath,
+                                shouldPipeStandardError: true)
     }
 
     public static func executeBash(_ command: String, currentDirectoryPath: String? = nil) -> String? {
-        return executeSubprocess(launchPath: "/bin/bash",
-                                 arguments: ["-c", command],
-                                 currentDirectoryPath: currentDirectoryPath)
+        return launchSubprocess(launchPath: "/bin/bash",
+                                arguments: ["-c", command],
+                                currentDirectoryPath: currentDirectoryPath)
     }
 
-    public static func executeSubprocess(launchPath: String,
-                                         arguments: [String] = [],
-                                         currentDirectoryPath: String? = nil,
-                                         shouldPipeStandardError: Bool = false) -> String? {
+    public static func launchSubprocess(launchPath: String,
+                                        arguments: [String] = [],
+                                        currentDirectoryPath: String? = nil,
+                                        shouldPipeStandardError: Bool = false) -> String? {
         let task = Process()
         task.launchPath = launchPath
         task.arguments = arguments

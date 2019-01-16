@@ -167,15 +167,15 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
         reply(SourceKittenAdapter.executeBash(command, currentDirectoryPath: currentDirectoryPath))
     }
 
-    func executeSubprocess(launchPath: String,
-                           arguments: [String],
-                           currentDirectoryPath: String?,
-                           shouldPipeStandardError: Bool,
-                           with reply: (String?) -> Void) {
-        reply(SourceKittenAdapter.executeSubprocess(launchPath: launchPath,
-                                                    arguments: arguments,
-                                                    currentDirectoryPath: currentDirectoryPath,
-                                                    shouldPipeStandardError: shouldPipeStandardError))
+    func launchSubprocess(launchPath: String,
+                          arguments: [String],
+                          currentDirectoryPath: String?,
+                          shouldPipeStandardError: Bool,
+                          with reply: (String?) -> Void) {
+        reply(SourceKittenAdapter.launchSubprocess(launchPath: launchPath,
+                                                   arguments: arguments,
+                                                   currentDirectoryPath: currentDirectoryPath,
+                                                   shouldPipeStandardError: shouldPipeStandardError))
     }
 
     func decodeCodeCompletionOptions(from wrapper: SKDataWrapper) throws -> SKCodeCompletionSessionOptions {

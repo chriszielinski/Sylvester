@@ -82,9 +82,9 @@ Supported Requests
 | -------------:|:------------- |
 | Code Completion | [`SKCodeCompletion`](https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletion.html) |
 | Code Completion Session | [`SKCodeCompletionSession`](https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletionSession.html) |
-| Module Info | [`SKModule`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:9Sylvester8SKModuleC)|
-| Editor Open | [`SKEditorOpen`](https://chriszielinski.github.io/Sylvester/Classes/SKEditorOpen.html) |
-| Swift Documentation | [`SKSwiftDocs`](https://chriszielinski.github.io/Sylvester/Classes/SKSwiftDocs.html) |
+| Module Info | [`SKModule`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC8SKModuleC)|
+| Editor Open | [`SKEditorOpen`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC12SKEditorOpenC) |
+| Swift Documentation | [`SKSwiftDocs`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC11SKSwiftDocsC) |
 | Syntax Map | [`SKSyntaxMap`](https://chriszielinski.github.io/Sylvester/Classes/SKSyntaxMap.html) |
 | Custom YAML | [`SKYAMLRequest`](https://chriszielinski.github.io/Sylvester/Classes/SKYAMLRequest.html) |
 
@@ -92,12 +92,12 @@ Supported Requests
 Other Fun Things
 ================
 
-| Type | Class |
+| Type | Method |
 | -------------:|:------------- |
-| XCRun | [`SourceKittenInterface.shared.xcRun(arguments:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF) |
-| XcodeBuild | [`SourceKittenInterface.shared.xcodeBuild(arguments:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF) |
-| Bash Command | [`SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF) |
-| Shell Command | [`SourceKittenInterface.shared.executeShell(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:9Sylvester21SourceKittenInterfaceC12executeShell10launchPath9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF) |
+| XCRun | [`SourceKittenInterface.shared.xcRun(arguments:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF) |
+| XcodeBuild | [`SourceKittenInterface.shared.xcodeBuild(arguments:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF) |
+| Bash Command | [`SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF) |
+| Launch Subprocess | [`SourceKittenInterface.shared.executeSubprocess(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC17executeSubprocess10launchPath9arguments016currentDirectoryI023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF) |
 
 
 Dependencies

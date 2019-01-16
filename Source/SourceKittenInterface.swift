@@ -406,7 +406,7 @@ open class SourceKittenInterface {
         #endif
     }
 
-    /// Executes another program as a subprocess.
+    /// Launches another program as a subprocess.
     ///
     /// - Parameters:
     ///   - launchPath: The path to the receiver’s executable.
@@ -415,26 +415,26 @@ open class SourceKittenInterface {
     ///                           inherited from the process that created the receiver.
     ///   - shouldPipeStandardError: Whether the standard error should also be piped to the output.
     /// - Returns: The executable's standard out (and standard error, if `shouldPipeStandardError` is true) output.
-    public func executeSubprocess(launchPath: String,
-                                  arguments: [String] = [],
-                                  currentDirectoryPath: String? = nil,
-                                  shouldPipeStandardError: Bool = false) -> String? {
+    public func launchSubprocess(launchPath: String,
+                                 arguments: [String] = [],
+                                 currentDirectoryPath: String? = nil,
+                                 shouldPipeStandardError: Bool = false) -> String? {
         #if XPC
         var response: String?
 
-        synchronousProxy.executeSubprocess(launchPath: launchPath,
-                                           arguments: arguments,
-                                           currentDirectoryPath: currentDirectoryPath,
-                                           shouldPipeStandardError: shouldPipeStandardError) { (output) in
+        synchronousProxy.launchSubprocess(launchPath: launchPath,
+                                          arguments: arguments,
+                                          currentDirectoryPath: currentDirectoryPath,
+                                          shouldPipeStandardError: shouldPipeStandardError) { (output) in
                                             response = output
         }
 
         return response
         #else
-        return SourceKittenAdapter.executeSubprocess(launchPath: launchPath,
-                                                     arguments: arguments,
-                                                     currentDirectoryPath: currentDirectoryPath,
-                                                     shouldPipeStandardError: shouldPipeStandardError)
+        return SourceKittenAdapter.launchSubprocess(launchPath: launchPath,
+                                                    arguments: arguments,
+                                                    currentDirectoryPath: currentDirectoryPath,
+                                                    shouldPipeStandardError: shouldPipeStandardError)
         #endif
     }
 

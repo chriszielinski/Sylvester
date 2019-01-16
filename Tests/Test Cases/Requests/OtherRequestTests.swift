@@ -47,12 +47,12 @@ class OtherRequestTests: XCTestCase {
         XCTAssertEqual(output, echoString)
     }
 
-    func testExecuteShell() {
+    func testLaunchSubprocess() {
         continueAfterFailure = false
 
-        let output = SourceKittenInterface.shared.executeSubprocess(launchPath: "/usr/bin/swift",
-                                                                    arguments: ["-version"],
-                                                                    shouldPipeStandardError: true)
+        let output = SourceKittenInterface.shared.launchSubprocess(launchPath: "/usr/bin/swift",
+                                                                   arguments: ["-version"],
+                                                                   shouldPipeStandardError: true)
 
         XCTAssertNotNil(output)
         XCTAssertTrue(output!.hasPrefix("Apple Swift version"))
