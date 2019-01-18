@@ -377,7 +377,8 @@ open class SKBaseSubstructure: NSObject, Codable {
 
     /// Decodes the children substructures from a decoding container.
     ///
-    /// If using a `SKBaseSubstructure` subclass, override this method and return the decoded children substructures by calling `decodeChildren(_:from:)` with the respective subclass.
+    /// If using a `SKBaseSubstructure` subclass, override this method and return the decoded children
+    /// substructures by calling `decodeChildren(_:from:)` with the respective subclass.
     ///
     /// For example:
     ///
