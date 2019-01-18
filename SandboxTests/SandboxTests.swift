@@ -31,6 +31,10 @@ class SandboxTests: XCTestCase {
                        import UIKit
 
                        var view = UIVi
+
+                       class Class {
+                           var instanceProperty = false
+                       }
                        """
 
     let missingCompilerArgumentsMessage: String = "missing compiler arguments"
@@ -103,6 +107,10 @@ class SandboxTests: XCTestCase {
         XCTAssertTrue(customSwiftDocs.overriddenResolveCalled)
         XCTAssertNotNil(customSwiftDocs.topLevelSubstructures.first)
         XCTAssertTrue(customSwiftDocs.topLevelSubstructures.first!.iAmASubclass)
+        XCTAssertTrue(customSwiftDocs.topLevelSubstructures.last?.children?.first?.iAmASubclass ?? false)
+
+        let substructureCount = customSwiftDocs.topLevelSubstructures.reduce(0, { (count, _) in count + 1 })
+        XCTAssertEqual(substructureCount, 3)
     }
 
     func testSKCodeCompletion() throws {

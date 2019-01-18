@@ -157,8 +157,6 @@
 		14B1804321EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */; };
 		14B1804621EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */; };
 		14B1804721EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */; };
-		14B1804A21EFCBCC001E272A /* GenericSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804921EFCBCC001E272A /* GenericSubstructure.swift */; };
-		14B1804B21EFCBCC001E272A /* GenericSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804921EFCBCC001E272A /* GenericSubstructure.swift */; };
 		14B1F18021DF068100ED3420 /* ALoadModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488977B21B74979007F6C17 /* ALoadModule.swift */; };
 		14B1F18121DF068100ED3420 /* SylvesterMockEditorOpenTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C0121BC207D006EAB11 /* SylvesterMockEditorOpenTestCase.swift */; };
 		14B1F18221DF068100ED3420 /* SylvesterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB49E121B44EF4008C02EB /* SylvesterTestCase.swift */; };
@@ -181,6 +179,10 @@
 		14B1F19321DF068100ED3420 /* OtherRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401286221CDDAB200141F44 /* OtherRequestTests.swift */; };
 		14B1F19421DF068100ED3420 /* SourceKitUIDProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488977621B73AF9007F6C17 /* SourceKitUIDProtocolTests.swift */; };
 		14B1F19521DF068100ED3420 /* SylvesterSecureCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724CFF21CEA3CC005CD5C9 /* SylvesterSecureCodingTests.swift */; };
+		14B69BAA21F25C24000D9D6E /* SKBaseSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */; };
+		14B69BAB21F25C24000D9D6E /* SKBaseSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */; };
+		14B69BAD21F25D31000D9D6E /* SKSubstructureSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B69BAC21F25D31000D9D6E /* SKSubstructureSubclass.swift */; };
+		14B69BAE21F25D31000D9D6E /* SKSubstructureSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B69BAC21F25D31000D9D6E /* SKSubstructureSubclass.swift */; };
 		14B6A9C521B61727007E007A /* AtomicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A9C321B616E3007E007A /* AtomicKit.framework */; };
 		14B6A9CB21B61C15007E007A /* SKCodeCompletionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */; };
 		14BEB8D921B9A0C600C7B052 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8D821B9A0C600C7B052 /* String.swift */; };
@@ -430,7 +432,8 @@
 		14B1803F21EFC68D001E272A /* CustomSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubstructure.swift; sourceTree = "<group>"; };
 		14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericSwiftDocs.swift; sourceTree = "<group>"; };
 		14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericEditorOpen.swift; sourceTree = "<group>"; };
-		14B1804921EFCBCC001E272A /* GenericSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSubstructure.swift; sourceTree = "<group>"; };
+		14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBaseSubstructure.swift; sourceTree = "<group>"; };
+		14B69BAC21F25D31000D9D6E /* SKSubstructureSubclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSubstructureSubclass.swift; sourceTree = "<group>"; };
 		14B6A9C121B60E74007E007A /* Mustache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mustache.framework; path = Carthage/Build/Mac/Mustache.framework; sourceTree = "<group>"; };
 		14B6A9C321B616E3007E007A /* AtomicKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtomicKit.framework; path = Carthage/Build/Mac/AtomicKit.framework; sourceTree = "<group>"; };
 		14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionSession.swift; sourceTree = "<group>"; };
@@ -449,7 +452,6 @@
 		14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SylvesterCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BF6C3721BC4FB6006EAB11 /* SylvesterCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SylvesterCommon.h; sourceTree = "<group>"; };
 		14BF6C3821BC4FB6006EAB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14C26D1E21D5624D004E8C56 /* remove_built_products.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = remove_built_products.sh; sourceTree = "<group>"; };
 		14D0CEDA21BF47D00000CB82 /* SKYAMLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKYAMLRequest.swift; sourceTree = "<group>"; };
 		14D0CEDC21BF48CD0000CB82 /* SKYAMLRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKYAMLRequestTests.swift; sourceTree = "<group>"; };
 		14D8382821CF083700996DF1 /* SandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -736,6 +738,7 @@
 			isa = PBXGroup;
 			children = (
 				14E4290A21DD8DD100CEDF61 /* Nested Types */,
+				14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */,
 				143E373F21BAC94600AEA600 /* SKEntities.swift */,
 				14E0A5DD21BAC8DC00BDCED2 /* SKEntity.swift */,
 				144ED49621B23B5200D0C19F /* SKSubstructure.swift */,
@@ -765,7 +768,6 @@
 		1467834D21D57468003936BB /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				14C26D1E21D5624D004E8C56 /* remove_built_products.sh */,
 				14E9183521CFF0A600DFDBBF /* code_sign.sh */,
 			);
 			path = Scripts;
@@ -809,8 +811,8 @@
 		1488977821B73BD7007F6C17 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				14B1804921EFCBCC001E272A /* GenericSubstructure.swift */,
 				142A52BF21E00E5700325A71 /* JSONDebugStringConvertable.swift */,
+				14B69BAC21F25D31000D9D6E /* SKSubstructureSubclass.swift */,
 				1488977921B73C05007F6C17 /* SourceKitUID.swift */,
 			);
 			path = Protocols;
@@ -1145,7 +1147,6 @@
 				14D8382421CF083700996DF1 /* Sources */,
 				14D8382521CF083700996DF1 /* Frameworks */,
 				14D8382621CF083700996DF1 /* Resources */,
-				14C26D1C21D5604C004E8C56 /* Remove Built Products */,
 			);
 			buildRules = (
 			);
@@ -1351,25 +1352,6 @@
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		14C26D1C21D5604C004E8C56 /* Remove Built Products */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Remove Built Products";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/Scripts/remove_built_products.sh\n";
-			showEnvVarsInLog = 0;
-		};
 		14FA5E8321CFEB260080DC6F /* Code Sign SylvesterXPC */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1413,11 +1395,11 @@
 				1411B12821DEE58700CA071D /* SKAttributeKind.swift in Sources */,
 				1411B12921DEE58700CA071D /* SKSubstructureIterator.swift in Sources */,
 				1411B12A21DEE58700CA071D /* SKSourceKind.swift in Sources */,
-				14B1804B21EFCBCC001E272A /* GenericSubstructure.swift in Sources */,
 				1411B12B21DEE58700CA071D /* Stack.swift in Sources */,
 				1411B12C21DEE58700CA071D /* SKModule.swift in Sources */,
 				1411B12D21DEE58700CA071D /* SKEditorOpen.swift in Sources */,
 				1411B12E21DEE58700CA071D /* SKCodeCompletionSession.swift in Sources */,
+				14B69BAE21F25D31000D9D6E /* SKSubstructureSubclass.swift in Sources */,
 				1411B12F21DEE58700CA071D /* SKEntities.swift in Sources */,
 				1411B13021DEE58700CA071D /* SKCodeCompletionSubstructure.swift in Sources */,
 				1411B13121DEE58700CA071D /* SKOverride.swift in Sources */,
@@ -1434,6 +1416,7 @@
 				1411B13B21DEE58700CA071D /* SKAccessLevel.swift in Sources */,
 				1411B13C21DEE58700CA071D /* SKAttribute.swift in Sources */,
 				147B1BAE21EE9A4A00000842 /* SKSubstructureKind.swift in Sources */,
+				14B69BAB21F25C24000D9D6E /* SKBaseSubstructure.swift in Sources */,
 				1411B13D21DEE58700CA071D /* SKCodeCompletionContext.swift in Sources */,
 				1411B13E21DEE58700CA071D /* SKYAMLRequest.swift in Sources */,
 				1411B13F21DEE58700CA071D /* SKGenericModule.swift in Sources */,
@@ -1464,11 +1447,11 @@
 				1409B2D421B8411C00938856 /* SKAttributeKind.swift in Sources */,
 				144ED49F21B23D8700D0C19F /* SKSubstructureIterator.swift in Sources */,
 				14FB4A0C21B49C5E008C02EB /* SKSourceKind.swift in Sources */,
-				14B1804A21EFCBCC001E272A /* GenericSubstructure.swift in Sources */,
 				144ED4A221B23E8B00D0C19F /* Stack.swift in Sources */,
 				148CB86121C19D5B002928DD /* SKModule.swift in Sources */,
 				1484CB0121B5DD8B00EF8F09 /* SKEditorOpen.swift in Sources */,
 				14B6A9CB21B61C15007E007A /* SKCodeCompletionSession.swift in Sources */,
+				14B69BAD21F25D31000D9D6E /* SKSubstructureSubclass.swift in Sources */,
 				143E374021BAC94600AEA600 /* SKEntities.swift in Sources */,
 				1491902921C6F41700F2F975 /* SKCodeCompletionSubstructure.swift in Sources */,
 				1409B2E321B8A65A00938856 /* SKOverride.swift in Sources */,
@@ -1485,6 +1468,7 @@
 				14FB4A1421B4FB23008C02EB /* SKAccessLevel.swift in Sources */,
 				1409B2DD21B8A5E500938856 /* SKAttribute.swift in Sources */,
 				147B1BAD21EE9A4A00000842 /* SKSubstructureKind.swift in Sources */,
+				14B69BAA21F25C24000D9D6E /* SKBaseSubstructure.swift in Sources */,
 				14FB4A0E21B4A6E3008C02EB /* SKCodeCompletionContext.swift in Sources */,
 				14D0CEDB21BF47D00000CB82 /* SKYAMLRequest.swift in Sources */,
 				14E4290821DD716000CEDF61 /* SKGenericModule.swift in Sources */,

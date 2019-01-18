@@ -9,7 +9,7 @@
 import SourceKittenFramework
 
 /// Represents a generic _SourceKit_ editor open request for a Swift file.
-open class SKGenericEditorOpen<Substructure: SKSubstructure>: SKGenericResponse<Substructure> {
+open class SKGenericEditorOpen<Substructure: SKBaseSubstructure>: SKGenericResponse<Substructure> {
 
     // MARK: - Public Initializers
 

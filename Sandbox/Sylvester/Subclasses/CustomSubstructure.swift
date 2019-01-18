@@ -8,14 +8,16 @@
 
 import SylvesterXPC
 
-public class CustomSubstructure: SKSubstructure {
-
-    // Public Type Alias
-
-    public typealias Substructure = CustomSubstructure
+final public class CustomSubstructure: SKBaseSubstructure, SKSubstructureSubclass {
 
     // Public Stored Properties
 
     public var iAmASubclass: Bool = true
+
+    // Public Overridden Methods
+
+    override public func decodeChildren(from container: DecodingContainer) throws -> [SKBaseSubstructure]? {
+        return try decodeChildren(CustomSubstructure.self, from: container)
+    }
 
 }

@@ -1,0 +1,2182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SKBaseSubstructure Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SKBaseSubstructure" class="dashAnchor"></a>
+    <a title="SKBaseSubstructure Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (79% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SKBaseSubstructure Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SKAttribute.html">SKAttribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC14SKBaseResponseC">SKBaseResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseSubstructure.html">SKBaseSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseSubstructure/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKCodeCompletion.html">SKCodeCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC12SKEditorOpenC">SKEditorOpen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKElement.html">SKElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKEntity.html">SKEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericEditorOpen.html">SKGenericEditorOpen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericModule.html">SKGenericModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericResponse.html">SKGenericResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericSwiftDocs.html">SKGenericSwiftDocs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC8SKModuleC">SKModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSubstructure.html">SKSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSubstructureChildren.html">SKSubstructureChildren</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSyntaxMap.html">SKSyntaxMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKYAMLRequest.html">SKYAMLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SourceKittenInterface.html">SourceKittenInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SKAccessLevel.html">SKAccessLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKAttributeKind.html">SKAttributeKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKCodeCompletionContext.html">SKCodeCompletionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKDiagnosticStage.html">SKDiagnosticStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKElementKind.html">SKElementKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKSourceKind.html">SKSourceKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKSubstructureKind.html">SKSubstructureKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKSyntaxKind.html">SKSyntaxKind</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDebugStringConvertable.html">JSONDebugStringConvertable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSString.html">NSString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SyntaxToken.html">SyntaxToken</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SKSubstructureSubclass.html">SKSubstructureSubclass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SourceKitUID.html">SourceKitUID</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionItem.html">SKCodeCompletionItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSessionResponse.html">SKCodeCompletionSessionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSessionResponse/Kind.html">– Kind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSubstructure.html">SKCodeCompletionSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKDocumentationParameter.html">SKDocumentationParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKEntities.html">SKEntities</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKInheritedType.html">SKInheritedType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKOverride.html">SKOverride</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKParagraph.html">SKParagraph</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKSubstructureIterator.html">SKSubstructureIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Stack.html">Stack</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SKBaseSubstructure</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKBaseSubstructure</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20Declarations"></a>
+                <a name="//apple_ref/swift/Section/Internal Declarations" class="dashAnchor"></a>
+                <a href="#/Internal%20Declarations">
+                  <h3 class="section-name">Internal Declarations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10CodingKeysO"></a>
+                    <a name="//apple_ref/swift/Enum/CodingKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10CodingKeysO">CodingKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/SKBaseSubstructure/CodingKeys.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CodingKeys</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CodingKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Type%20Aliases"></a>
+                <a name="//apple_ref/swift/Section/Public Type Aliases" class="dashAnchor"></a>
+                <a href="#/Public%20Type%20Aliases">
+                  <h3 class="section-name">Public Type Aliases</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC11AccessLevela"></a>
+                    <a name="//apple_ref/swift/Alias/AccessLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC11AccessLevela">AccessLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">AccessLevel</span> <span class="o">=</span> <span class="kt"><a href="../Enums/SKAccessLevel.html">SKAccessLevel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC9Attributea"></a>
+                    <a name="//apple_ref/swift/Alias/Attribute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC9Attributea">Attribute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Attribute</span> <span class="o">=</span> <span class="kt"><a href="../Classes/SKAttribute.html">SKAttribute</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC22DocumentationParametera"></a>
+                    <a name="//apple_ref/swift/Alias/DocumentationParameter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC22DocumentationParametera">DocumentationParameter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">DocumentationParameter</span> <span class="o">=</span> <span class="kt"><a href="../Structs/SKDocumentationParameter.html">SKDocumentationParameter</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC7Elementa"></a>
+                    <a name="//apple_ref/swift/Alias/Element" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC7Elementa">Element</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Element</span> <span class="o">=</span> <span class="kt"><a href="../Classes/SKElement.html">SKElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC13InheritedTypea"></a>
+                    <a name="//apple_ref/swift/Alias/InheritedType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC13InheritedTypea">InheritedType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">InheritedType</span> <span class="o">=</span> <span class="kt"><a href="../Structs/SKInheritedType.html">SKInheritedType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC8Overridea"></a>
+                    <a name="//apple_ref/swift/Alias/Override" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC8Overridea">Override</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Override</span> <span class="o">=</span> <span class="kt"><a href="../Structs/SKOverride.html">SKOverride</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC4Kinda"></a>
+                    <a name="//apple_ref/swift/Alias/Kind" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC4Kinda">Kind</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Kind</span> <span class="o">=</span> <span class="kt"><a href="../Enums/SKSubstructureKind.html">SKSubstructureKind</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC17DecodingContainera"></a>
+                    <a name="//apple_ref/swift/Alias/DecodingContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC17DecodingContainera">DecodingContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">DecodingContainer</span> <span class="o">=</span> <span class="kt">KeyedDecodingContainer</span><span class="o">&lt;</span><span class="kt">SKBaseSubstructure</span><span class="o">.</span><span class="kt"><a href="../Classes/SKBaseSubstructure/CodingKeys.html">CodingKeys</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Stored%20Properties">
+                  <h3 class="section-name">Public Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC5indexSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/index" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC5indexSiSgvp">index</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The zero-based index of the substructure relative to the source file.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The first substructure in each source file will begin from zero.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC13accessibilityAA13SKAccessLevelOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accessibility" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC13accessibilityAA13SKAccessLevelOSgvp">accessibility</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <a href="https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html">access level</a> of the substructure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">accessibility</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC11AccessLevela">AccessLevel</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC20annotatedDeclarationSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/annotatedDeclaration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC20annotatedDeclarationSSSgvp">annotatedDeclaration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The XML representing how the substructure was declared.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">annotatedDeclaration</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10attributesAA10SKEntitiesVyAA11SKAttributeCGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/attributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10attributesAA10SKEntitiesVyAA11SKAttributeCGSgvp">attributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <a href="https://docs.swift.org/swift-book/ReferenceManual/Attributes.html">attributes</a> of the substructure.</p>
+
+<p>The attributes include prefixed keywords such as <code>override</code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The attributes are ordered by decreasing byte offset (i.e. the first attribute in the source
+    is the last element in the array).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">attributes</span><span class="p">:</span> <span class="kt"><a href="../Structs/SKEntities.html">SKEntities</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC9Attributea">Attribute</a></span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10bodyOffsetSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/bodyOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10bodyOffsetSiSgvp">bodyOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte offset of the substructure&rsquo;s body inside the source contents.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">bodyOffset</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10bodyLengthSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/bodyLength" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10bodyLengthSiSgvp">bodyLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte length of the substructure&rsquo;s body inside the source contents.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">bodyLength</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC9docColumnSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docColumn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC9docColumnSiSgvp">docColumn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The column where the token&rsquo;s declaration begins (Int64).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docColumn</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10docCommentSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docComment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10docCommentSSSgvp">docComment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The documentation comment.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docComment</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC14docDeclarationSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docDeclaration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC14docDeclarationSSSgvp">docDeclaration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The declaration of documented token.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docDeclaration</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC7docFileSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docFile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC7docFileSSSgvp">docFile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The file where the documented token is located.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docFile</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC12docFullAsXMLSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docFullAsXML" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC12docFullAsXMLSSSgvp">docFullAsXML</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The XML representing the substructure and its documentation.</p>
+
+<p>Only present when the substructure is documented.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docFullAsXML</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC7docLineSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docLine" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC7docLineSiSgvp">docLine</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The line where the token&rsquo;s declaration begins (Int64).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docLine</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC7docNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC7docNameSSSgvp">docName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the documented token (String).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC13docParametersSayAA24SKDocumentationParameterVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC13docParametersSayAA24SKDocumentationParameterVGSgvp">docParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The parameters of the documented token.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docParameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC22DocumentationParametera">DocumentationParameter</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC7docTypeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC7docTypeSSSgvp">docType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of the documented token.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC9docOffsetSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC9docOffsetSiSgvp">docOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte offset of the substructure&rsquo;s documentation inside the source contents.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docOffset</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC9docLengthSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docLength" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC9docLengthSiSgvp">docLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte length of the substructure&rsquo;s documentation inside the source contents.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docLength</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC8elementsAA10SKEntitiesVyAA9SKElementCGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/elements" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC8elementsAA10SKEntitiesVyAA9SKElementCGSgvp">elements</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The elements of the substructure.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The elements are ordered by increasing byte offset (i.e. the first element in the source
+    is the first element in the array).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">elements</span><span class="p">:</span> <span class="kt"><a href="../Structs/SKEntities.html">SKEntities</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC7Elementa">Element</a></span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC8filePathSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/filePath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC8filePathSSSgvp">filePath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The path to the source file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">filePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC25fullyAnnotatedDeclarationSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fullyAnnotatedDeclaration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC25fullyAnnotatedDeclarationSSSgvp">fullyAnnotatedDeclaration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The XML representing the substructure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fullyAnnotatedDeclaration</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC14inheritedTypesSayAA15SKInheritedTypeVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/inheritedTypes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC14inheritedTypesSayAA15SKInheritedTypeVGSgvp">inheritedTypes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The inherited types of the substructure.</p>
+
+<p>Only present when the response is from a <code>SKSwiftDocumentation</code> request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">inheritedTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC13InheritedTypea">InheritedType</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC4kindAA18SKSubstructureKindOvp"></a>
+                    <a name="//apple_ref/swift/Property/kind" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC4kindAA18SKSubstructureKindOvp">kind</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The UID for the declaration or reference kind (function, class, etc.).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">kind</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC4Kinda">Kind</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC6offsetSivp"></a>
+                    <a name="//apple_ref/swift/Property/offset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC6offsetSivp">offset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte offset of the substructure inside the source contents.</p>
+
+<p>This offset is the location of the substructure&rsquo;s declarative keyword (e.g. <code>class</code>, <code>let</code>, <code>func</code>, etc.).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC6lengthSivp"></a>
+                    <a name="//apple_ref/swift/Property/length" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC6lengthSivp">length</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte length of the substructure inside the source contents.</p>
+
+<p>The length includes the substructure&rsquo;s body, if present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC4nameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC4nameSSSgvp">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display name for the substructure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10nameOffsetSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/nameOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10nameOffsetSiSgvp">nameOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte offset of the substructure&rsquo;s name inside the source contents.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">nameOffset</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10nameLengthSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/nameLength" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10nameLengthSiSgvp">nameLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte length of the substructure&rsquo;s name inside the source contents.</p>
+
+<p>For a function, the name encompasses everything up to the closing parameter <code>)</code>, including the generic
+parameter clause <code>&lt;...&gt;</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">nameLength</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC17parsedDeclarationSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parsedDeclaration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC17parsedDeclarationSSSgvp">parsedDeclaration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The parsed declaration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">parsedDeclaration</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC14parsedScopeEndSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parsedScopeEnd" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC14parsedScopeEndSiSgvp">parsedScopeEnd</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The parsed scope end (Int64).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">parsedScopeEnd</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC16parsedScopeStartSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parsedScopeStart" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC16parsedScopeStartSiSgvp">parsedScopeStart</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The parsed scope start (Int64).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">parsedScopeStart</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC11runtimeNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/runtimeName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC11runtimeNameSSSgvp">runtimeName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The objective-c runtime name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">runtimeName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC9overridesSayAA10SKOverrideVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/overrides" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC9overridesSayAA10SKOverrideVGSgvp">overrides</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The overrides of the substructure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">overrides</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC8Overridea">Override</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC19setterAccessibilityAA13SKAccessLevelOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/setterAccessibility" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC19setterAccessibilityAA13SKAccessLevelOSgvp">setterAccessibility</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The setter access level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">setterAccessibility</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC11AccessLevela">AccessLevel</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC8typeNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/typeName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC8typeNameSSSgvp">typeName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string describing the type of the substructure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">typeName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC7typeUSRSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/typeUSR" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC7typeUSRSSSgvp">typeUSR</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Unified Symbol Resolution (USR) for the substructure&rsquo;s type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">typeUSR</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC3usrSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/usr" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC3usrSSSgvp">usr</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Unified Symbol Resolution (USR) for the substructure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">usr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Initializers"></a>
+                <a name="//apple_ref/swift/Section/Public Initializers" class="dashAnchor"></a>
+                <a href="#/Public%20Initializers">
+                  <h3 class="section-name">Public Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Lazy%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Lazy Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Lazy%20Stored%20Properties">
+                  <h3 class="section-name">Public Lazy Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC7hasBodySbvp"></a>
+                    <a name="//apple_ref/swift/Property/hasBody" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC7hasBodySbvp">hasBody</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure has a body (i.e. <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC10bodyOffsetSiSgvp">bodyOffset</a></code> and <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC10bodyLengthSiSgvp">bodyLength</a></code> are non-nil).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">hasBody</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC9byteRangeSo8_NSRangeVvp"></a>
+                    <a name="//apple_ref/swift/Property/byteRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC9byteRangeSo8_NSRangeVvp">byteRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte range of the substructure (i.e. <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC6offsetSivp">offset</a></code> and <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC6lengthSivp">length</a></code>).</p>
+
+<p>Unlike <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC16contentByteRangeSo8_NSRangeVvp">contentByteRange</a></code>, this range does not include the attributes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">byteRange</span><span class="p">:</span> <span class="kt">NSRange</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC13nameByteRangeSo8_NSRangeVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/nameByteRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC13nameByteRangeSo8_NSRangeVSgvp">nameByteRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte range of the substructure&rsquo;s name (i.e. <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC10nameOffsetSiSgvp">nameOffset</a></code> and <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC10nameLengthSiSgvp">nameLength</a></code>).</p>
+
+<p>For a function, the name byte offset encompasses everything up to the closing parameter
+parenthesis <code>)</code>, including the generic parameter clause <code>&lt;...&gt;</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">nameByteRange</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC13bodyByteRangeSo8_NSRangeVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/bodyByteRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC13bodyByteRangeSo8_NSRangeVSgvp">bodyByteRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte range of the substructure&rsquo;s body (i.e. <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC10bodyOffsetSiSgvp">bodyOffset</a></code> and <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC10bodyLengthSiSgvp">bodyLength</a></code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">bodyByteRange</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC16contentByteRangeSo8_NSRangeVvp"></a>
+                    <a name="//apple_ref/swift/Property/contentByteRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC16contentByteRangeSo8_NSRangeVvp">contentByteRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte range encompassing the entire substructure content, including any attributes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">contentByteRange</span><span class="p">:</span> <span class="kt">NSRange</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC19isReturningFunctionSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isReturningFunction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC19isReturningFunctionSbvp">isReturningFunction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure is a function-kind and has a return type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isReturningFunction</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC18functionReturnTypeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/functionReturnType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC18functionReturnTypeSSSgvp">functionReturnType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the return type (<code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC8typeNameSSSgvp">typeName</a></code>) of a function-kind substructure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">functionReturnType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC6isMarkSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isMark" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC6isMarkSbvp">isMark</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure is a mark delimiter, which are <code>TODO</code>, <code>FIXME</code>, and <code>MARK</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isMark</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10isProtocolSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10isProtocolSbvp">isProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure is a protocol or protocol extension.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isProtocol</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC7isClassSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isClass" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC7isClassSbvp">isClass</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure is a class-kind.</p>
+
+<p>Class-kinds are:</p>
+
+<ul>
+<li><code>.class</code></li>
+<li><code>.varClass</code></li>
+<li><code>.extensionClass</code></li>
+<li><code>.functionMethodClass</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isClass</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC11isExtensionSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isExtension" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC11isExtensionSbvp">isExtension</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure is an extension-kind.</p>
+
+<p>Extension-kinds are:</p>
+
+<ul>
+<li><code>.extension</code></li>
+<li><code>.extensionClass</code></li>
+<li><code>.extensionEnum</code></li>
+<li><code>.extensionStruct</code></li>
+<li><code>.extensionProtocol</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isExtension</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10isVariableSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isVariable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10isVariableSbvp">isVariable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure is a variable-kind.</p>
+
+<p>Variable-kinds are:</p>
+
+<ul>
+<li><code>.varLocal</code></li>
+<li><code>.varInstance</code></li>
+<li><code>.varClass</code></li>
+<li><code>.varStatic</code></li>
+<li><code>.varGlobal</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isVariable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10isFunctionSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isFunction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10isFunctionSbvp">isFunction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure is a function-kind.</p>
+
+<p>Function-kinds are:</p>
+
+<ul>
+<li><code>.functionMethodInstance</code></li>
+<li><code>.functionMethodClass</code></li>
+<li><code>.functionMethodStatic</code></li>
+<li><code>.functionFree</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isFunction</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC10isOverrideSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isOverride" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC10isOverrideSbvp">isOverride</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure is an overridden function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isOverride</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC27isInsideProtocolDeclarationSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isInsideProtocolDeclaration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC27isInsideProtocolDeclarationSbvp">isInsideProtocolDeclaration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the substructure&rsquo;s parent is a protocol declaration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">isInsideProtocolDeclaration</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Children%20Decoding%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Children Decoding Methods" class="dashAnchor"></a>
+                <a href="#/Children%20Decoding%20Methods">
+                  <h3 class="section-name">Children Decoding Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC14decodeChildren_4fromSayxGSgxm_s22KeyedDecodingContainerVyAC10CodingKeysOGtKACRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/decodeChildren(_:from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC14decodeChildren_4fromSayxGSgxm_s22KeyedDecodingContainerVyAC10CodingKeysOGtKACRbzlF">decodeChildren(_:from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience method for decoding children substructures of a specified type from a decoding container.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code>DecodingError</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">decodeChildren</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">SKBaseSubstructure</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+                                                  <span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC17DecodingContainera">DecodingContainer</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The child type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The decoding container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The children substructures decoded as a specified type.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC14decodeChildren4fromSayACGSgs22KeyedDecodingContainerVyAC10CodingKeysOG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/decodeChildren(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC14decodeChildren4fromSayACGSgs22KeyedDecodingContainerVyAC10CodingKeysOG_tKF">decodeChildren(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decodes the children substructures from a decoding container.</p>
+
+<p>If using a <code>SKBaseSubstructure</code> subclass, override this method and return the decoded children substructures by calling <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC14decodeChildren_4fromSayxGSgxm_s22KeyedDecodingContainerVyAC10CodingKeysOGtKACRbzlF">decodeChildren(_:from:)</a></code> with the respective subclass.</p>
+
+<p>For example:</p>
+<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">DecodingContainer</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SKBaseSubstructure</span><span class="p">]?</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">try</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="kt">MySubstructureSubclass</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">container</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code>DecodingError</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC17DecodingContainera">DecodingContainer</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SKBaseSubstructure</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The decoding container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The children substructures decoded as a specified type.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overridden%20NSObject%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Overridden NSObject Methods" class="dashAnchor"></a>
+                <a href="#/Overridden%20NSObject%20Methods">
+                  <h3 class="section-name">Overridden NSObject Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SylvesterXPC@objc(cs)SKBaseSubstructure(im)isEqual:"></a>
+                    <a name="//apple_ref/swift/Method/isEqual(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SylvesterXPC@objc(cs)SKBaseSubstructure(im)isEqual:">isEqual(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">isEqual</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

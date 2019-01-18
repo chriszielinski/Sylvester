@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class SKSubstructureChildren<Substructure: SKSubstructure> {
+open class SKSubstructureChildren<Substructure: SKBaseSubstructure> {
 
     // MARK: - Public Stored Properties
 
@@ -46,7 +46,7 @@ open class SKSubstructureChildren<Substructure: SKSubstructure> {
         var currentIndex = index
 
         substructures.forEach {
-            $0.parent = parent
+            $0.internalParent = parent
             $0.index = currentIndex
             currentIndex += 1
 
@@ -54,7 +54,7 @@ open class SKSubstructureChildren<Substructure: SKSubstructure> {
                 $0.filePath = filePath
             }
 
-            if let children = $0.children {
+            if let children = $0.internalChildren {
                 currentIndex = children.resolve(parent: $0, index: currentIndex, filePath: filePath)
             }
         }
@@ -68,7 +68,7 @@ open class SKSubstructureChildren<Substructure: SKSubstructure> {
 
 extension SKSubstructureChildren: Sequence {
 
-    open func makeIterator() -> SKSubstructureIterator {
+    open func makeIterator() -> SKSubstructureIterator<Substructure> {
         return SKSubstructureIterator(substructures)
     }
 

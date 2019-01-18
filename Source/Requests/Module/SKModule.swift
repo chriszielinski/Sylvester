@@ -9,4 +9,4 @@
 import SylvesterCommon
 
 /// Represents a _SourceKitten_ documentation request for a given module.
-open class SKModule: SKGenericModule<SKSwiftDocs> {}
+open class SKModule: SKGenericModule<SKSubstructure, SKSwiftDocs> {}

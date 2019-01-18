@@ -28,7 +28,7 @@ class SKSubstructureChildrenTests: SylvesterMockEditorOpenTestCase {
             fatalError()
         }
         XCTAssertTrue(substructureChildren.count >= 2,
-                      "")
+                      "could not find a `SKSubstructureChildren` with at least two substructures")
         return substructureChildren
     }
 
@@ -41,7 +41,7 @@ class SKSubstructureChildrenTests: SylvesterMockEditorOpenTestCase {
 
         guard let encodedSubstructureChildren = try? JSONEncoder().encode(substructureChildren)
             else { return XCTFail("failed to encode `SKSubstructureChildren`") }
-        guard let decodedSubstructureChildren = try? JSONDecoder().decode(SKSubstructureChildren.self,
+        guard let decodedSubstructureChildren = try? JSONDecoder().decode(SKSubstructureChildren<SKSubstructure>.self,
                                                                           from: encodedSubstructureChildren)
             else { return XCTFail("failed to decode `SKSubstructureChildren`") }
 

@@ -10,7 +10,7 @@ import SourceKittenFramework
 import SylvesterCommon
 
 /// Represents a generic _SourceKitten_ Swift Documentation request for a Swift file.
-open class SKGenericSwiftDocs<Substructure: SKSubstructure>: SKGenericResponse<Substructure> {
+open class SKGenericSwiftDocs<Substructure: SKBaseSubstructure>: SKGenericResponse<Substructure> {
 
     // MARK: - Public Stored Properties
 
