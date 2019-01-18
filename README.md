@@ -118,17 +118,17 @@ Dependencies
 Code Signing
 ============
 
-If you decide to use the `SylvesterXPC` module, you will need to add a '_Run Script_' phase before embedding the _SylvesterXPC.framework_ (i.e. before the '_Embed Frameworks_' phase). Ensure the shell launch path is `/bin/sh` (default). Then for the script, execute the `code_sign.sh` shell script in the repository's _Scripts_ directory.
-
-For Carthage installations, the script should look like:
+If you decide to use the `SylvesterXPC` module, you will need to add a '_Run Script_' phase before embedding the _SylvesterXPC.framework_ (i.e. before the '_Embed Frameworks_' phase). Ensure the shell launch path is `/bin/sh` (default). Then for Carthage installations, execute the `code_sign_carthage.sh` shell script in the repository's _Scripts_ directory.
 
 ```shell
-$SRCROOT/Carthage/Checkouts/Sylvester/Scripts/code_sign.sh
+"$SRCROOT/Carthage/Checkouts/Sylvester/Scripts/code_sign_carthage.sh"
 ```
 
 <p align="center">
      <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/code-sign.png?raw=true" alt="Code Sign Phase">
  </p>
+
+For other installations, modify the script's paths as neccessary.
 
 
 Documentation

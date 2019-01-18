@@ -387,6 +387,14 @@
 		144ED49D21B23D8700D0C19F /* SKSubstructureIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSubstructureIterator.swift; sourceTree = "<group>"; };
 		144ED4A121B23E8B00D0C19F /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleValueDecodingContainer.swift; sourceTree = "<group>"; };
+		146910E921F28B1900C3E740 /* remove_built_products.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = remove_built_products.sh; sourceTree = "<group>"; };
+		146910EA21F28B1900C3E740 /* run_on_non_pull_requests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_on_non_pull_requests.sh; sourceTree = "<group>"; };
+		146910EB21F28B1900C3E740 /* code_sign_built_products.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = code_sign_built_products.sh; sourceTree = "<group>"; };
+		146910EC21F28B1900C3E740 /* remove_key.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = remove_key.sh; sourceTree = "<group>"; };
+		146910ED21F28B1900C3E740 /* run_on_pull_requests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_on_pull_requests.sh; sourceTree = "<group>"; };
+		146910EE21F28B1900C3E740 /* xccov-to-sonarqube-generic.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "xccov-to-sonarqube-generic.sh"; sourceTree = "<group>"; };
+		146910EF21F28B1900C3E740 /* add_key.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = add_key.sh; sourceTree = "<group>"; };
+		146910F021F28B1900C3E740 /* code_sign_carthage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = code_sign_carthage.sh; sourceTree = "<group>"; };
 		14724CFD21CEA2E7005CD5C9 /* SKWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWrapperTests.swift; sourceTree = "<group>"; };
 		14724CFF21CEA3CC005CD5C9 /* SylvesterSecureCodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylvesterSecureCodingTests.swift; sourceTree = "<group>"; };
 		14724D0121CEA42A005CD5C9 /* SKErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKErrorTests.swift; sourceTree = "<group>"; };
@@ -459,7 +467,6 @@
 		14D8382C21CF083700996DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E0A5DD21BAC8DC00BDCED2 /* SKEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKEntity.swift; sourceTree = "<group>"; };
 		14E4290721DD716000CEDF61 /* SKGenericModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericModule.swift; sourceTree = "<group>"; };
-		14E9183521CFF0A600DFDBBF /* code_sign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = code_sign.sh; sourceTree = "<group>"; };
 		14FB49E121B44EF4008C02EB /* SylvesterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylvesterTestCase.swift; sourceTree = "<group>"; };
 		14FB4A0921B49B17008C02EB /* GenerateBoilerplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateBoilerplate.swift; sourceTree = "<group>"; };
 		14FB4A0B21B49C5D008C02EB /* SKSourceKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSourceKind.swift; sourceTree = "<group>"; };
@@ -768,7 +775,14 @@
 		1467834D21D57468003936BB /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				14E9183521CFF0A600DFDBBF /* code_sign.sh */,
+				146910EF21F28B1900C3E740 /* add_key.sh */,
+				146910EB21F28B1900C3E740 /* code_sign_built_products.sh */,
+				146910F021F28B1900C3E740 /* code_sign_carthage.sh */,
+				146910E921F28B1900C3E740 /* remove_built_products.sh */,
+				146910EC21F28B1900C3E740 /* remove_key.sh */,
+				146910EA21F28B1900C3E740 /* run_on_non_pull_requests.sh */,
+				146910ED21F28B1900C3E740 /* run_on_pull_requests.sh */,
+				146910EE21F28B1900C3E740 /* xccov-to-sonarqube-generic.sh */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -1388,7 +1402,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/Scripts/code_sign.sh\n";
+			shellScript = "$SRCROOT/Scripts/code_sign_built_products.sh\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
