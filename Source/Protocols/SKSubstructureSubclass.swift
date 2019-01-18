@@ -22,8 +22,10 @@ extension SKSubstructureSubclass {
 
     public var children: SKSubstructureChildren<Self>? {
         get {
-            guard let substructures = internalChildren?.substructures as? [Self]
-                else { assert(internalChildren == nil); return nil }
+            guard let substructures = internalChildren?.substructures as? [Self] else {
+                assert(internalChildren == nil)
+                return nil
+            }
             return SKSubstructureChildren<Self>(substructures: substructures)
         }
         set {
