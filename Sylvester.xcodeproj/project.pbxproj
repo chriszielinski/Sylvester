@@ -1147,6 +1147,7 @@
 				14D8382421CF083700996DF1 /* Sources */,
 				14D8382521CF083700996DF1 /* Frameworks */,
 				14D8382621CF083700996DF1 /* Resources */,
+				1416A80621F26E7900879CBE /* Remove Built Products */,
 			);
 			buildRules = (
 			);
@@ -1312,6 +1313,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings\n";
+			showEnvVarsInLog = 0;
+		};
+		1416A80621F26E7900879CBE /* Remove Built Products */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Remove Built Products";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" == \"ReleaseXPC\" ]; then\n    echo \"Removing built products...\";\n    bash $SRCROOT/Scripts/remove_built_products.sh;\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		141E979D21DECF9B00409B56 /* Warn Outdated Carthage Dependencies */ = {
