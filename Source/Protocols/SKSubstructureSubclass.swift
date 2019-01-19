@@ -8,7 +8,9 @@
 
 public protocol SKSubstructureSubclass where Self: SKBaseSubstructure {
 
+    /// The parent substructure, or `nil` if this substructure is a root.
     var parent: Self? { get set }
+    /// The substructure children of the substructure.
     var children: SKSubstructureChildren<Self>? { get set }
 
 }
@@ -22,19 +24,12 @@ extension SKSubstructureSubclass {
 
     public var children: SKSubstructureChildren<Self>? {
         get {
-            guard let substructures = internalChildren?.substructures as? [Self] else {
-                assert(internalChildren == nil)
-                return nil
-            }
+            assert(internalChildren is [Self])
+            guard let substructures = internalChildren as? [Self]
+                else { return nil }
             return SKSubstructureChildren<Self>(substructures: substructures)
         }
-        set {
-            if let substructures = newValue?.substructures {
-                internalChildren?.substructures = substructures
-            } else {
-                internalChildren = nil
-            }
-        }
+        set { internalChildren = newValue?.substructures }
     }
 
 }

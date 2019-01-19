@@ -6,9 +6,7 @@
 //  Copyright © 2018 Big Z Labs. All rights reserved.
 //
 
-import Foundation
-
-open class SKSubstructureChildren<Substructure: SKBaseSubstructure> {
+open class SKSubstructureChildren<Substructure: SKBaseSubstructure>: Sequence {
 
     // MARK: - Public Stored Properties
 
@@ -43,33 +41,13 @@ open class SKSubstructureChildren<Substructure: SKBaseSubstructure> {
 
     @discardableResult
     func resolve(parent: Substructure? = nil, index: Int, filePath: String?) -> Int {
-        var currentIndex = index
-
-        substructures.forEach {
-            $0.internalParent = parent
-            $0.index = currentIndex
-            currentIndex += 1
-
-            if $0.filePath == nil {
-                $0.filePath = filePath
-            }
-
-            if let children = $0.internalChildren {
-                currentIndex = children.resolve(parent: $0, index: currentIndex, filePath: filePath)
-            }
-        }
-
-        return currentIndex
+        return substructures.resolve(parent: parent, index: index, filePath: filePath)
     }
 
-}
-
-// MARK: - Sequence Protocol
-
-extension SKSubstructureChildren: Sequence {
+    // MARK: - Sequence Protocol
 
     open func makeIterator() -> SKSubstructureIterator<Substructure> {
-        return SKSubstructureIterator(substructures)
+        return Substructure.iteratorClass().init(substructures)
     }
 
     public func index(of substructure: Substructure) -> Int? {

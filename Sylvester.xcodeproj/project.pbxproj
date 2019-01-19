@@ -20,7 +20,6 @@
 		1409B2E321B8A65A00938856 /* SKOverride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2E221B8A65A00938856 /* SKOverride.swift */; };
 		1409B2E521B8A66C00938856 /* SKDocumentationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2E421B8A66C00938856 /* SKDocumentationParameter.swift */; };
 		140E201A21B7618300E3B8E4 /* SKSyntaxMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E201921B7618300E3B8E4 /* SKSyntaxMapTests.swift */; };
-		140E201C21B7638800E3B8E4 /* SKSubstructureChildrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E201B21B7638800E3B8E4 /* SKSubstructureChildrenTests.swift */; };
 		1411B11D21DEE58700CA071D /* SKSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAF021B5946500EF8F09 /* SKSwiftDocs.swift */; };
 		1411B11E21DEE58700CA071D /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8DB21BA417C00C7B052 /* NSString.swift */; };
 		1411B11F21DEE58700CA071D /* SKCodeCompletionSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */; };
@@ -99,6 +98,10 @@
 		144ED49E21B23D8700D0C19F /* SKSubstructureChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED49C21B23D8700D0C19F /* SKSubstructureChildren.swift */; };
 		144ED49F21B23D8700D0C19F /* SKSubstructureIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED49D21B23D8700D0C19F /* SKSubstructureIterator.swift */; };
 		144ED4A221B23E8B00D0C19F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED4A121B23E8B00D0C19F /* Stack.swift */; };
+		1461C7B121F3D03800C87530 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B021F3D03800C87530 /* Array.swift */; };
+		1461C7B221F3D03800C87530 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B021F3D03800C87530 /* Array.swift */; };
+		1461C7B421F3D62900C87530 /* SKSubstructureChildrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B321F3D62900C87530 /* SKSubstructureChildrenTests.swift */; };
+		1461C7B521F3D62900C87530 /* SKSubstructureChildrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B321F3D62900C87530 /* SKSubstructureChildrenTests.swift */; };
 		14724CFE21CEA2E7005CD5C9 /* SKWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724CFD21CEA2E7005CD5C9 /* SKWrapperTests.swift */; };
 		14724D0021CEA3CC005CD5C9 /* SylvesterSecureCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724CFF21CEA3CC005CD5C9 /* SylvesterSecureCodingTests.swift */; };
 		14724D0221CEA42A005CD5C9 /* SKErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724D0121CEA42A005CD5C9 /* SKErrorTests.swift */; };
@@ -172,7 +175,6 @@
 		14B1F18C21DF068100ED3420 /* SKEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E374121BAC9CC00AEA600 /* SKEntityTests.swift */; };
 		14B1F18D21DF068100ED3420 /* SKErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724D0121CEA42A005CD5C9 /* SKErrorTests.swift */; };
 		14B1F18E21DF068100ED3420 /* SKResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2CD21B83B7700938856 /* SKResponseTests.swift */; };
-		14B1F18F21DF068100ED3420 /* SKSubstructureChildrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E201B21B7638800E3B8E4 /* SKSubstructureChildrenTests.swift */; };
 		14B1F19021DF068100ED3420 /* SKSubstructureIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488977421B731A9007F6C17 /* SKSubstructureIteratorTests.swift */; };
 		14B1F19121DF068100ED3420 /* SKSubstructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2D521B845C900938856 /* SKSubstructureTests.swift */; };
 		14B1F19221DF068100ED3420 /* SKWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724CFD21CEA2E7005CD5C9 /* SKWrapperTests.swift */; };
@@ -352,7 +354,6 @@
 		1409B2E221B8A65A00938856 /* SKOverride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKOverride.swift; sourceTree = "<group>"; };
 		1409B2E421B8A66C00938856 /* SKDocumentationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDocumentationParameter.swift; sourceTree = "<group>"; };
 		140E201921B7618300E3B8E4 /* SKSyntaxMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSyntaxMapTests.swift; sourceTree = "<group>"; };
-		140E201B21B7638800E3B8E4 /* SKSubstructureChildrenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSubstructureChildrenTests.swift; sourceTree = "<group>"; };
 		1411B15521DEE58700CA071D /* SylvesterXPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SylvesterXPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		141E979821DEC9DA00409B56 /* CustomEditorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEditorOpen.swift; sourceTree = "<group>"; };
 		141E979A21DECA0C00409B56 /* CustomSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwiftDocs.swift; sourceTree = "<group>"; };
@@ -387,6 +388,8 @@
 		144ED49D21B23D8700D0C19F /* SKSubstructureIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSubstructureIterator.swift; sourceTree = "<group>"; };
 		144ED4A121B23E8B00D0C19F /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleValueDecodingContainer.swift; sourceTree = "<group>"; };
+		1461C7B021F3D03800C87530 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		1461C7B321F3D62900C87530 /* SKSubstructureChildrenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSubstructureChildrenTests.swift; sourceTree = "<group>"; };
 		146910E921F28B1900C3E740 /* remove_built_products.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = remove_built_products.sh; sourceTree = "<group>"; };
 		146910EA21F28B1900C3E740 /* run_on_non_pull_requests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_on_non_pull_requests.sh; sourceTree = "<group>"; };
 		146910EB21F28B1900C3E740 /* code_sign_built_products.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = code_sign_built_products.sh; sourceTree = "<group>"; };
@@ -726,6 +729,7 @@
 		144ED44421B2144800D0C19F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1461C7B021F3D03800C87530 /* Array.swift */,
 				14BEB8DB21BA417C00C7B052 /* NSString.swift */,
 				14BEB8D821B9A0C600C7B052 /* String.swift */,
 				147B1BA421EE76FD00000842 /* SyntaxToken.swift */,
@@ -879,7 +883,7 @@
 				143E374121BAC9CC00AEA600 /* SKEntityTests.swift */,
 				14724D0121CEA42A005CD5C9 /* SKErrorTests.swift */,
 				1409B2CD21B83B7700938856 /* SKResponseTests.swift */,
-				140E201B21B7638800E3B8E4 /* SKSubstructureChildrenTests.swift */,
+				1461C7B321F3D62900C87530 /* SKSubstructureChildrenTests.swift */,
 				1488977421B731A9007F6C17 /* SKSubstructureIteratorTests.swift */,
 				1409B2D521B845C900938856 /* SKSubstructureTests.swift */,
 				14724CFD21CEA2E7005CD5C9 /* SKWrapperTests.swift */,
@@ -1441,6 +1445,7 @@
 				1411B13321DEE58700CA071D /* SKCodeCompletionItem.swift in Sources */,
 				1411B13421DEE58700CA071D /* SourceKittenInterface.swift in Sources */,
 				1411B13521DEE58700CA071D /* SKBaseResponse.swift in Sources */,
+				1461C7B221F3D03800C87530 /* Array.swift in Sources */,
 				1411B13621DEE58700CA071D /* SKSyntaxMap.swift in Sources */,
 				14B1804721EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */,
 				1411B13721DEE58700CA071D /* Constants.swift in Sources */,
@@ -1493,6 +1498,7 @@
 				1491902B21C6F43200F2F975 /* SKCodeCompletionItem.swift in Sources */,
 				14BF6C2421BC3E89006EAB11 /* SourceKittenInterface.swift in Sources */,
 				144ED49821B23B5200D0C19F /* SKBaseResponse.swift in Sources */,
+				1461C7B121F3D03800C87530 /* Array.swift in Sources */,
 				1484CB0521B5E1CD00EF8F09 /* SKSyntaxMap.swift in Sources */,
 				14B1804621EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */,
 				1438C33B21C8353200081C02 /* Constants.swift in Sources */,
@@ -1519,12 +1525,12 @@
 				14D0CEDD21BF48CD0000CB82 /* SKYAMLRequestTests.swift in Sources */,
 				143E374321BAC9DF00AEA600 /* SKEntityTests.swift in Sources */,
 				1409B2CE21B83B7700938856 /* SKResponseTests.swift in Sources */,
+				1461C7B421F3D62900C87530 /* SKSubstructureChildrenTests.swift in Sources */,
 				148CB86521C1A9C9002928DD /* SKModuleTests.swift in Sources */,
 				1488977521B731A9007F6C17 /* SKSubstructureIteratorTests.swift in Sources */,
 				1484CAF321B5978200EF8F09 /* SKSwiftDocumentationTests.swift in Sources */,
 				14BF6C4D21BC6914006EAB11 /* SylvesterMockEditorOpenTestCase.swift in Sources */,
 				1484CAF921B5C6C700EF8F09 /* FirstDifferenceBetweenStrings.swift in Sources */,
-				140E201C21B7638800E3B8E4 /* SKSubstructureChildrenTests.swift in Sources */,
 				1488977721B73AF9007F6C17 /* SourceKitUIDProtocolTests.swift in Sources */,
 				1488977C21B74979007F6C17 /* ALoadModule.swift in Sources */,
 				1401286321CDDAB200141F44 /* OtherRequestTests.swift in Sources */,
@@ -1561,6 +1567,7 @@
 				14B1F18021DF068100ED3420 /* ALoadModule.swift in Sources */,
 				14B1F18121DF068100ED3420 /* SylvesterMockEditorOpenTestCase.swift in Sources */,
 				14B1F18221DF068100ED3420 /* SylvesterTestCase.swift in Sources */,
+				1461C7B521F3D62900C87530 /* SKSubstructureChildrenTests.swift in Sources */,
 				14B1F18321DF068100ED3420 /* FirstDifferenceBetweenStrings.swift in Sources */,
 				14B1F18421DF068100ED3420 /* OtherTests.swift in Sources */,
 				14B1F18521DF068100ED3420 /* SKCodeCompletionSessionTests.swift in Sources */,
@@ -1573,7 +1580,6 @@
 				14B1F18C21DF068100ED3420 /* SKEntityTests.swift in Sources */,
 				14B1F18D21DF068100ED3420 /* SKErrorTests.swift in Sources */,
 				14B1F18E21DF068100ED3420 /* SKResponseTests.swift in Sources */,
-				14B1F18F21DF068100ED3420 /* SKSubstructureChildrenTests.swift in Sources */,
 				14B1F19021DF068100ED3420 /* SKSubstructureIteratorTests.swift in Sources */,
 				14B1F19121DF068100ED3420 /* SKSubstructureTests.swift in Sources */,
 				14B1F19221DF068100ED3420 /* SKWrapperTests.swift in Sources */,

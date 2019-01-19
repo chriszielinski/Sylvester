@@ -70,7 +70,7 @@ open class SKGenericResponse<Substructure: SKBaseSubstructure>: NSObject, Codabl
     /// - Note: If the resolution process is unnecessary, overriding this method with an empty body will
     ///         suffice to omit it.
     ///
-    /// - Parameter filePath: The absolute file path to the source file analyzed.
+    /// - Parameter filePath: The absolute file path to the request's source file.
     open func resolve(from filePath: String?) {
         topLevelSubstructures.resolve(index: 0, filePath: filePath)
     }

@@ -79,6 +79,9 @@
                 <a href="../Classes/SKSubstructureChildren.html">SKSubstructureChildren</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/SKSubstructureIterator.html">SKSubstructureIterator</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a>
               </li>
               <li class="nav-group-task">
@@ -178,9 +181,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/SKParagraph.html">SKParagraph</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/SKSubstructureIterator.html">SKSubstructureIterator</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Stack.html">Stack</a>
@@ -482,45 +482,6 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Public%20Static%20Stored%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Public Static Stored Properties" class="dashAnchor"></a>
-                <a href="#/Public%20Static%20Stored%20Properties">
-                  <h3 class="section-name">Public Static Stored Properties</h3>
-                </a>
-              </div>
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC23iteratorFilterPredicateSbACcSgvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/iteratorFilterPredicate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC23iteratorFilterPredicateSbACcSgvpZ">iteratorFilterPredicate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A closure that takes a substructure as its argument and returns a Boolean value indicating whether the
-substructure should be returned during iteration through <code><a href="../Classes/SKSubstructureChildren.html">SKSubstructureChildren</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">iteratorFilterPredicate</span><span class="p">:</span> <span class="p">((</span><span class="kt">SKBaseSubstructure</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
                 <a name="/Public%20Stored%20Properties"></a>
                 <a name="//apple_ref/swift/Section/Public Stored Properties" class="dashAnchor"></a>
                 <a href="#/Public%20Stored%20Properties">
@@ -541,7 +502,8 @@ substructure should be returned during iteration through <code><a href="../Class
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The zero-based index of the substructure relative to the source file.</p>
+                        <p>The zero-based pre-order <a href="https://en.wikipedia.org/wiki/Depth-first_search">depth-first search (DFS)</a> index
+of the substructure relative to the source file.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     The first substructure in each source file will begin from zero.
@@ -2030,6 +1992,51 @@ parenthesis <code>)</code>, including the generic parameter clause <code>&lt;...
             </div>
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Open%20Class%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Open Class Methods" class="dashAnchor"></a>
+                <a href="#/Open%20Class%20Methods">
+                  <h3 class="section-name">Open Class Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC13iteratorClassAA22SKSubstructureIteratorCyxGmyACRbzlFZ"></a>
+                    <a name="//apple_ref/swift/Method/iteratorClass()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC13iteratorClassAA22SKSubstructureIteratorCyxGmyACRbzlFZ">iteratorClass()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Overridden by subclasses to substitute a new iterator class for <code><a href="../Classes/SKSubstructureChildren.html">SKSubstructureChildren</a></code>.</p>
+
+<p>The default iterator class used is <code><a href="../Classes/SKSubstructureIterator.html">SKSubstructureIterator</a></code>, which is a pre-order (NLR)
+<a href="https://en.wikipedia.org/wiki/Depth-first_search">depth-first search (DFS)</a> traversing iterator.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="n">iteratorClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SKSubstructureIterator.html">SKSubstructureIterator</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;.</span><span class="k">Type</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">SKBaseSubstructure</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The iterator class used for iterating through <code><a href="../Classes/SKSubstructureChildren.html">SKSubstructureChildren</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Children%20Decoding%20Methods"></a>
                 <a name="//apple_ref/swift/Section/Children Decoding Methods" class="dashAnchor"></a>
                 <a href="#/Children%20Decoding%20Methods">
@@ -2212,7 +2219,7 @@ substructures by calling <code><a href="../Classes/SKBaseSubstructure.html#/s:12
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-18)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-19)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

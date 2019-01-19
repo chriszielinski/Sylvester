@@ -674,7 +674,7 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 408,
+      "line": 412,
       "symbol": "SKBaseSubstructure.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -814,70 +814,63 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": null,
-      "symbol": "SKSubstructureChildren",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 11,
+      "line": 9,
       "symbol": "SKSubstructureChildren",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 15,
+      "line": 13,
       "symbol": "SKSubstructureChildren.substructures",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 19,
+      "line": 17,
       "symbol": "SKSubstructureChildren.first",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 23,
+      "line": 21,
       "symbol": "SKSubstructureChildren.last",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 27,
+      "line": 25,
       "symbol": "SKSubstructureChildren.count",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 33,
+      "line": 31,
       "symbol": "SKSubstructureChildren.init(substructures:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 75,
+      "line": 53,
       "symbol": "SKSubstructureChildren.index(of:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 80,
+      "line": 58,
       "symbol": "SKSubstructureChildren.remove(substructure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructureChildren.swift",
-      "line": 87,
+      "line": 65,
       "symbol": "SKSubstructureChildren.subscript(_:)",
       "symbol_kind": "source.lang.swift.decl.function.subscript",
       "warning": "undocumented"
@@ -915,34 +908,6 @@
       "line": 9,
       "symbol": "SKSubstructureSubclass",
       "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Protocols/SKSubstructureSubclass.swift",
-      "line": 11,
-      "symbol": "SKSubstructureSubclass.parent",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Protocols/SKSubstructureSubclass.swift",
-      "line": 12,
-      "symbol": "SKSubstructureSubclass.children",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Protocols/SKSubstructureSubclass.swift",
-      "line": 18,
-      "symbol": "SKSubstructureSubclass.parent",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Protocols/SKSubstructureSubclass.swift",
-      "line": 23,
-      "symbol": "SKSubstructureSubclass.children",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {

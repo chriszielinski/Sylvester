@@ -94,10 +94,10 @@ class SKResponseTests: SylvesterTestCase {
     func testInit() {
         let diagnosticStage: SKBaseResponse.DiagnosticStage = .parse
         let response = SKBaseResponse(diagnosticStage: diagnosticStage,
-                                  length: length,
-                                  offset: offset,
-                                  substructureChildren: SKSubstructureChildren(substructures: []),
-                                  syntaxMap: nil)
+                                      length: length,
+                                      offset: offset,
+                                      substructureChildren: SKSubstructureChildren(substructures: []),
+                                      syntaxMap: nil)
         XCTAssertEqual(response.diagnosticStage, diagnosticStage)
         XCTAssertEqual(response.length, length)
         XCTAssertEqual(response.offset, offset)

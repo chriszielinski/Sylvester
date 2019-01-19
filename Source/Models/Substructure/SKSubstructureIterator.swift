@@ -7,7 +7,7 @@
 //
 
 /// A pre-order (NLR) [depth-first search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search) traversing iterator.
-public struct SKSubstructureIterator<Substructure: SKBaseSubstructure> {
+open class SKSubstructureIterator<Substructure: SKBaseSubstructure>: IteratorProtocol {
 
     // MARK: - Public Stored Properties
 
@@ -15,33 +15,24 @@ public struct SKSubstructureIterator<Substructure: SKBaseSubstructure> {
 
     // MARK: - Public Initializers
 
-    public init(_ substructures: [Substructure]) {
+    public required init(_ substructures: [Substructure]) {
         self.push(substructures)
     }
 
-}
+    // MARK: - Iterator Protocol
 
-// MARK: - Iterator Protocol
-
-extension SKSubstructureIterator: IteratorProtocol {
-
-    public mutating func next() -> Substructure? {
+    public func next() -> Substructure? {
         guard let nextSubstructure = stack.pop()
             else { return nil }
 
-        push(nextSubstructure.internalChildren?.substructures as? [Substructure])
-
-        guard let filterPredicate = SKBaseSubstructure.iteratorFilterPredicate
-            else { return nextSubstructure }
-
-        if filterPredicate(nextSubstructure) {
-            return nextSubstructure
-        } else {
-            return next()
-        }
+        assert(nextSubstructure.internalChildren is [Substructure] || nextSubstructure.internalChildren == nil)
+        push(nextSubstructure.internalChildren as? [Substructure])
+        return nextSubstructure
     }
 
-    private mutating func push(_ substructures: [Substructure]?) {
+    // MARK: - Helper Methods
+
+    private func push(_ substructures: [Substructure]?) {
         substructures?.reversed().forEach { stack.push($0) }
     }
 

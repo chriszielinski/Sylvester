@@ -60,18 +60,12 @@ open class SKBaseSubstructure: NSObject, Codable {
     public typealias Kind = SKSubstructureKind
     public typealias DecodingContainer = KeyedDecodingContainer<SKBaseSubstructure.CodingKeys>
 
-    // MARK: - Public Static Stored Properties
-
-    /// A closure that takes a substructure as its argument and returns a Boolean value indicating whether the
-    /// substructure should be returned during iteration through `SKSubstructureChildren`.
-    public static var iteratorFilterPredicate: ((SKBaseSubstructure) -> Bool)?
-
     // MARK: - Public Stored Properties
 
-    /// The zero-based index of the substructure relative to the source file.
+    /// The zero-based pre-order [depth-first search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search) index
+    /// of the substructure relative to the source file.
     ///
     /// - Note: The first substructure in each source file will begin from zero.
-    ///
     public var index: Int!
 
     /// The [access level](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html) of the substructure.
@@ -169,7 +163,7 @@ open class SKBaseSubstructure: NSObject, Codable {
     /// The parent substructure, or `nil` if this substructure is a root.
     weak var internalParent: SKBaseSubstructure?
     /// The substructure children of the substructure.
-    var internalChildren: SKSubstructureChildren<SKBaseSubstructure>?
+    var internalChildren: [SKBaseSubstructure]?
 
     // MARK: - Public Initializers
 
@@ -215,9 +209,7 @@ open class SKBaseSubstructure: NSObject, Codable {
 
         super.init()
 
-        if let decodedChildren = try decodeChildren(from: container) {
-            internalChildren = SKSubstructureChildren<SKBaseSubstructure>(substructures: decodedChildren)
-        }
+        internalChildren = try decodeChildren(from: container)
     }
 
     // MARK: - Public Lazy Stored Properties
@@ -366,6 +358,18 @@ open class SKBaseSubstructure: NSObject, Codable {
     open lazy var isInsideProtocolDeclaration: Bool = {
         return internalParent?.kind == .protocol
     }()
+
+    // MARK: - Open Class Methods
+
+    /// Overridden by subclasses to substitute a new iterator class for `SKSubstructureChildren`.
+    ///
+    /// The default iterator class used is `SKSubstructureIterator`, which is a pre-order (NLR)
+    /// [depth-first search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search) traversing iterator.
+    ///
+    /// - Returns: The iterator class used for iterating through `SKSubstructureChildren`.
+    open class func iteratorClass<T>() -> SKSubstructureIterator<T>.Type {
+        return SKSubstructureIterator.self
+    }
 
     // MARK: - Children Decoding Methods
 
