@@ -17,8 +17,8 @@ class SKSubstructureIteratorTests: SylvesterMockEditorOpenTestCase {
 
     // MARK: - Declarations
 
-    class FunctionIterator<T: SKBaseSubstructure>: SKSubstructureIterator<T> {
-        override func next() -> T? {
+    class FunctionIterator<Substructure: SKBaseSubstructure>: SKSubstructureIterator<Substructure> {
+        override func next() -> Substructure? {
             guard let nextSubstructure = super.next()
                 else { return nil }
             if nextSubstructure.isFunction {
@@ -30,7 +30,7 @@ class SKSubstructureIteratorTests: SylvesterMockEditorOpenTestCase {
     }
 
     final class CustomSubstructure: SKBaseSubstructure, SKSubstructureSubclass {
-        public override class func iteratorClass<T>() -> SKSubstructureIterator<T>.Type {
+        public override class func iteratorClass<Substructure>() -> SKSubstructureIterator<Substructure>.Type {
             return FunctionIterator.self
         }
 

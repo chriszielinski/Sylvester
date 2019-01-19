@@ -367,7 +367,7 @@ open class SKBaseSubstructure: NSObject, Codable {
     /// [depth-first search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search) traversing iterator.
     ///
     /// - Returns: The iterator class used for iterating through `SKSubstructureChildren`.
-    open class func iteratorClass<T>() -> SKSubstructureIterator<T>.Type {
+    open class func iteratorClass<Substructure>() -> SKSubstructureIterator<Substructure>.Type {
         return SKSubstructureIterator.self
     }
 
@@ -380,9 +380,10 @@ open class SKBaseSubstructure: NSObject, Codable {
     ///   - container: The decoding container.
     /// - Returns: The children substructures decoded as a specified type.
     /// - Throws: A `DecodingError`.
-    public func decodeChildren<T: SKBaseSubstructure>(_ type: T.Type,
-                                                      from container: DecodingContainer) throws -> [T]? {
-        return try container.decodeIfPresent([T].self, forKey: .internalChildren)
+    public func decodeChildren<Substructure: SKBaseSubstructure>(_ type: Substructure.Type,
+                                                                 from container: DecodingContainer) throws
+                                                                -> [Substructure]? {
+        return try container.decodeIfPresent([Substructure].self, forKey: .internalChildren)
     }
 
     /// Decodes the children substructures from a decoding container.

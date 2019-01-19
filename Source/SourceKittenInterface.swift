@@ -330,7 +330,7 @@ open class SourceKittenInterface {
     /// - Parameter yaml: The _SourceKit_ request in YAML representation.
     /// - Returns: The decoded response as the specified type.
     /// - Throws: A `SKError`, if an error occurs.
-    public func customYAML<T: Decodable>(_ yaml: String) throws -> T {
+    public func customYAML<Response: Decodable>(_ yaml: String) throws -> Response {
         #if XPC
         var response: SKDataWrapper?
         var responseError: SKXPCError?
@@ -444,7 +444,7 @@ open class SourceKittenInterface {
     // MARK: - Internal Helper Methods
 
     #if XPC
-    func handleXPC<T>(response: T?, error: SKXPCError?) throws -> T {
+    func handleXPC<Response>(response: Response?, error: SKXPCError?) throws -> Response {
         if let responseError = error {
             throw responseError.bridge
         } else if let response = response {

@@ -21,7 +21,7 @@ open class SKSubstructureIterator<Substructure: SKBaseSubstructure>: IteratorPro
 
     // MARK: - Iterator Protocol
 
-    public func next() -> Substructure? {
+    open func next() -> Substructure? {
         guard let nextSubstructure = stack.pop()
             else { return nil }
 
