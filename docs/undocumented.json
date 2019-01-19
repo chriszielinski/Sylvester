@@ -674,7 +674,7 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 412,
+      "line": 413,
       "symbol": "SKBaseSubstructure.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

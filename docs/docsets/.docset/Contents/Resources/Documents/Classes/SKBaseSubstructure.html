@@ -2022,7 +2022,7 @@ parenthesis <code>)</code>, including the generic parameter clause <code>&lt;...
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="n">iteratorClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SKSubstructureIterator.html">SKSubstructureIterator</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;.</span><span class="k">Type</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">SKBaseSubstructure</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="n">iteratorClass</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SKSubstructureIterator.html">SKSubstructureIterator</a></span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;.</span><span class="k">Type</span> <span class="k">where</span> <span class="kt">Substructure</span> <span class="p">:</span> <span class="kt">SKBaseSubstructure</span></code></pre>
 
                         </div>
                       </div>
@@ -2069,8 +2069,9 @@ parenthesis <code>)</code>, including the generic parameter clause <code>&lt;...
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">decodeChildren</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">SKBaseSubstructure</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
-                                                  <span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC17DecodingContainera">DecodingContainer</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">decodeChildren</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">SKBaseSubstructure</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Substructure</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+                                                             <span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC17DecodingContainera">DecodingContainer</a></span><span class="p">)</span> <span class="k">throws</span>
+                                                            <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Substructure</span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
