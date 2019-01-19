@@ -14,7 +14,7 @@
     <a title="SKBaseSubstructure Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (79% documented)</p>
+        <p><a href="../index.html"> Docs</a> (80% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -472,6 +472,45 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">DecodingContainer</span> <span class="o">=</span> <span class="kt">KeyedDecodingContainer</span><span class="o">&lt;</span><span class="kt">SKBaseSubstructure</span><span class="o">.</span><span class="kt"><a href="../Classes/SKBaseSubstructure/CodingKeys.html">CodingKeys</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Static%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Static Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Static%20Stored%20Properties">
+                  <h3 class="section-name">Public Static Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC18SKBaseSubstructureC23iteratorFilterPredicateSbACcSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/iteratorFilterPredicate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC18SKBaseSubstructureC23iteratorFilterPredicateSbACcSgvpZ">iteratorFilterPredicate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A closure that takes a substructure as its argument and returns a Boolean value indicating whether the
+substructure should be returned during iteration through <code><a href="../Classes/SKSubstructureChildren.html">SKSubstructureChildren</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">iteratorFilterPredicate</span><span class="p">:</span> <span class="p">((</span><span class="kt">SKBaseSubstructure</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)?</span></code></pre>
 
                         </div>
                       </div>
@@ -2081,7 +2120,8 @@ parenthesis <code>)</code>, including the generic parameter clause <code>&lt;...
                       <div class="abstract">
                         <p>Decodes the children substructures from a decoding container.</p>
 
-<p>If using a <code>SKBaseSubstructure</code> subclass, override this method and return the decoded children substructures by calling <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC14decodeChildren_4fromSayxGSgxm_s22KeyedDecodingContainerVyAC10CodingKeysOGtKACRbzlF">decodeChildren(_:from:)</a></code> with the respective subclass.</p>
+<p>If using a <code>SKBaseSubstructure</code> subclass, override this method and return the decoded children
+substructures by calling <code><a href="../Classes/SKBaseSubstructure.html#/s:12SylvesterXPC18SKBaseSubstructureC14decodeChildren_4fromSayxGSgxm_s22KeyedDecodingContainerVyAC10CodingKeysOGtKACRbzlF">decodeChildren(_:from:)</a></code> with the respective subclass.</p>
 
 <p>For example:</p>
 <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">DecodingContainer</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SKBaseSubstructure</span><span class="p">]?</span> <span class="p">{</span>

@@ -60,6 +60,12 @@ open class SKBaseSubstructure: NSObject, Codable {
     public typealias Kind = SKSubstructureKind
     public typealias DecodingContainer = KeyedDecodingContainer<SKBaseSubstructure.CodingKeys>
 
+    // MARK: - Public Static Stored Properties
+
+    /// A closure that takes a substructure as its argument and returns a Boolean value indicating whether the
+    /// substructure should be returned during iteration through `SKSubstructureChildren`.
+    public static var iteratorFilterPredicate: ((SKBaseSubstructure) -> Bool)?
+
     // MARK: - Public Stored Properties
 
     /// The zero-based index of the substructure relative to the source file.

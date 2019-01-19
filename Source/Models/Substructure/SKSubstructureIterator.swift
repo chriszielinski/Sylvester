@@ -30,7 +30,15 @@ extension SKSubstructureIterator: IteratorProtocol {
             else { return nil }
 
         push(nextSubstructure.internalChildren?.substructures as? [Substructure])
-        return nextSubstructure
+
+        guard let filterPredicate = SKBaseSubstructure.iteratorFilterPredicate
+            else { return nextSubstructure }
+
+        if filterPredicate(nextSubstructure) {
+            return nextSubstructure
+        } else {
+            return next()
+        }
     }
 
     private mutating func push(_ substructures: [Substructure]?) {

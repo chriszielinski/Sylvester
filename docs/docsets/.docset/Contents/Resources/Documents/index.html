@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (79% documented)</p>
+        <p><a href="index.html"> Docs</a> (80% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -350,15 +350,15 @@
  </p></p>
 <h1 id='code-signing' class='heading'>Code Signing</h1>
 
-<p>If you decide to use the <code>SylvesterXPC</code> module, you will need to add a &lsquo;<em>Run Script</em>&rsquo; phase before embedding the <em>SylvesterXPC.framework</em> (i.e. before the &lsquo;<em>Embed Frameworks</em>&rsquo; phase). Ensure the shell launch path is <code>/bin/sh</code> (default). Then for the script, execute the <code>code_sign.sh</code> shell script in the repository&rsquo;s <em>Scripts</em> directory.</p>
-
-<p>For Carthage installations, the script should look like:</p>
-<pre class="highlight shell"><code><span class="nv">$SRCROOT</span>/Carthage/Checkouts/Sylvester/Scripts/code_sign.sh
+<p>If you decide to use the <code>SylvesterXPC</code> module, you will need to add a &lsquo;<em>Run Script</em>&rsquo; phase before embedding the <em>SylvesterXPC.framework</em> (i.e. before the &lsquo;<em>Embed Frameworks</em>&rsquo; phase). Ensure the shell launch path is <code>/bin/sh</code> (default). Then for Carthage installations, execute the <code>code_sign_carthage.sh</code> shell script in the repository&rsquo;s <em>Scripts</em> directory.</p>
+<pre class="highlight shell"><code><span class="s2">"</span><span class="nv">$SRCROOT</span><span class="s2">/Carthage/Checkouts/Sylvester/Scripts/code_sign_carthage.sh"</span>
 </code></pre>
 
 <p align="center">
      <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/code-sign.png?raw=true" alt="Code Sign Phase">
  </p>
+
+<p>For other installations, modify the script&rsquo;s paths as neccessary.</p>
 <h1 id='documentation' class='heading'>Documentation</h1>
 
 <p>You can explore the docs <a href="http://chriszielinski.github.io/Sylvester/">here</a>.</p>

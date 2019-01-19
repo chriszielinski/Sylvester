@@ -45,4 +45,14 @@ class SKSubstructureIteratorTests: SylvesterMockEditorOpenTestCase {
         }
     }
 
+    func testFilterPredicate() {
+        SKBaseSubstructure.iteratorFilterPredicate = { $0.isFunction }
+        let functionCount = viewControllerEditorOpenResponse.topLevelSubstructures.reduce(0) { (count, _) in
+            return count + 1
+        }
+        SKBaseSubstructure.iteratorFilterPredicate = nil
+
+        XCTAssertEqual(functionCount, 2)
+    }
+
 }
