@@ -115,12 +115,14 @@ Other Fun Things
 | Launch Subprocess | [`SourceKittenInterface.shared.launchSubprocess(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF) |
 
 
-# Subclassing
+Subclassing
+===========
 
 Most of the standard requests are concrete subclasses of  ~~beautiful~~ generic classes. Fancy your own subclass? No problem, it _might_ be possible. 
 
 
-## `SKSubstructure`
+`SKSubstructure`
+----------------
 
 Also known as `SKBaseSubstructure`, a common culprit. 
 
@@ -157,11 +159,12 @@ final class BetterSubstructureSubclass: SKBaseSubstructure, SKSubstructureSubcla
 ```
 
 
-## `SKEditorOpen`, `SKSwiftDocs`
+`SKEditorOpen`, `SKSwiftDocs`
+-----------------------------
 
 An example of a `SKSwiftDocs` subclass utilizing the `BetterSubstructureSubclass` declared above:
 
-<note> Subclassing `SKEditorOpen` uses identical syntax, except it inherits from `SKGenericEditorOpen`.
+> 📌 **Note:** Subclassing `SKEditorOpen` uses identical syntax, except it inherits from `SKGenericEditorOpen`.
 
 ```swift
 class BetterSwiftDocs: SKGenericSwiftDocs<BetterSubstructureSubclass> {
@@ -172,7 +175,8 @@ class BetterSwiftDocs: SKGenericSwiftDocs<BetterSubstructureSubclass> {
 ```
 
 
-## `SKModule`
+`SKModule`
+----------
 
 An example of a `SKModule ` subclass utilizing the `BetterSwiftDocs` and `BetterSubstructureSubclass` classes declared above:
 
