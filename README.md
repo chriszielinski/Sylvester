@@ -75,6 +75,21 @@ The `Sylvester` framework has two build configurations that differ in their meth
  > 📌 **Note:** The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional [code signing step](#code-signing).
 
 
+Dependencies
+============
+
+`Sylvester` depends on the following frameworks/libraries, so ensure they are also embedded in the '_Embed Frameworks_' phase:
+
+ - `AtomicKit.framework`
+ - `SourceKittenFramework.framework`
+ - `SWXMLHash.framework`
+ - `Yams.framework`
+
+ <p align="center">
+     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/embed-frameworks.png?raw=true" alt="Embed Frameworks Phase">
+ </p>
+
+
 Supported Requests
 ==================
 
@@ -100,19 +115,70 @@ Other Fun Things
 | Launch Subprocess | [`SourceKittenInterface.shared.launchSubprocess(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF) |
 
 
-Dependencies
-============
+# Subclassing
 
-`Sylvester` depends on the following frameworks/libraries, so ensure they are also embedded in the '_Embed Frameworks_' phase:
+Most of the standard requests are concrete subclasses of  ~~beautiful~~ generic classes. Fancy your own subclass? No problem, it _might_ be possible. 
 
- - `AtomicKit.framework`
- - `SourceKittenFramework.framework`
- - `SWXMLHash.framework`
- - `Yams.framework`
 
- <p align="center">
-     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/embed-frameworks.png?raw=true" alt="Embed Frameworks Phase">
- </p>
+## `SKSubstructure`
+
+Also known as `SKBaseSubstructure`, a common culprit. 
+
+```swift
+final class BetterSubstructureSubclass: SKBaseSubstructure, SKSubstructureSubclass {
+
+    var iAmAnImportantProperty: String = "🚶‍♂️"
+
+    public override func decodeChildren(from container: DecodingContainer) throws -> [SKBaseSubstructure]? {
+        return try decodeChildren(BetterSubstructureSubclass.self, from: container)
+    }
+
+    /// The default iterator for `SKSubstructureChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:
+    class FunctionSubstructureIterator<Substructure: BetterSubstructureSubclass>: SKSubstructureIterator<Substructure> {
+
+        override func next() -> Substructure? {
+            guard let nextSubstructure = super.next()
+                else { return nil }
+
+            if nextSubstructure.isFunction {
+                return nextSubstructure
+            } else {
+                return next()
+            }
+        }
+
+    }
+
+    override class func iteratorClass<Substructure: BetterSubstructureSubclass>() -> SKSubstructureIterator<Substructure>.Type {
+        return FunctionSubstructureIterator.self
+    }
+
+}
+```
+
+
+## `SKEditorOpen`, `SKSwiftDocs`
+
+An example of a `SKSwiftDocs` subclass utilizing the `BetterSubstructureSubclass` declared above:
+
+<note> Subclassing `SKEditorOpen` uses identical syntax, except it inherits from `SKGenericEditorOpen`.
+
+```swift
+class BetterSwiftDocs: SKGenericSwiftDocs<BetterSubstructureSubclass> {
+
+    var mySuperCoolProperty: String = "😎"
+
+}
+```
+
+
+## `SKModule`
+
+An example of a `SKModule ` subclass utilizing the `BetterSwiftDocs` and `BetterSubstructureSubclass` classes declared above:
+
+```swift
+class BetterModule: SKGenericModule<BetterSubstructureSubclass, BetterSwiftDocs> {}
+```
 
 
 Code Signing
