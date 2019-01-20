@@ -6,7 +6,50 @@
 //  Copyright © 2019 Big Z Labs. All rights reserved.
 //
 
+// swiftlint:disable line_length
+/// Represents the structure of a symbol.
+///
+/// Depending on the request, the structure may contain syntactic and semantic information.
+///
+///
+/// ## Subclassing
+///
+/// Fancy your own subclass? No problem.
+///
+/// ```
+/// final class BetterSubstructureSubclass: SKBaseSubstructure, SKSubstructureSubclass {
+///
+///     var iAmAnImportantProperty: String = "🚶‍♂️"
+///
+///     public override func decodeChildren(from container: DecodingContainer) throws -> [SKBaseSubstructure]? {
+///         return try decodeChildren(BetterSubstructureSubclass.self, from: container)
+///     }
+///
+///     /// The default iterator for `SKSubstructureChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:
+///     class FunctionSubstructureIterator<Substructure: BetterSubstructureSubclass>: SKSubstructureIterator<Substructure> {
+///
+///         override func next() -> Substructure? {
+///             guard let nextSubstructure = super.next()
+///                 else { return nil }
+///
+///             if nextSubstructure.isFunction {
+///                 return nextSubstructure
+///             } else {
+///                 return next()
+///             }
+///         }
+///
+///     }
+///
+///     override class func iteratorClass<Substructure: BetterSubstructureSubclass>() -> SKSubstructureIterator<Substructure>.Type {
+///         return FunctionSubstructureIterator.self
+///     }
+///
+/// }
+/// ```
+///
 open class SKBaseSubstructure: NSObject, Codable {
+// swiftlint:enable line_length
 
     // MARK: - Internal Declarations
 

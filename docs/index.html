@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (80% documented)</p>
+        <p><a href="index.html"> Docs</a> (81% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -272,6 +272,20 @@
 <blockquote>
 <p>📌 <strong>Note:</strong> The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional <a href="#code-signing">code signing step</a>.</p>
 </blockquote>
+<h1 id='dependencies' class='heading'>Dependencies</h1>
+
+<p><code>Sylvester</code> depends on the following frameworks/libraries, so ensure they are also embedded in the &lsquo;<em>Embed Frameworks</em>&rsquo; phase:</p>
+
+<ul>
+<li><code>AtomicKit.framework</code></li>
+<li><code>SourceKittenFramework.framework</code></li>
+<li><code>SWXMLHash.framework</code></li>
+<li><code>Yams.framework</code></li>
+</ul>
+
+<p><p align="center">
+     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/embed-frameworks.png?raw=true" alt="Embed Frameworks Phase">
+ </p></p>
 <h1 id='supported-requests' class='heading'>Supported Requests</h1>
 
 <table><thead>
@@ -334,20 +348,60 @@
 <td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF"><code>SourceKittenInterface.shared.launchSubprocess(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)</code></a></td>
 </tr>
 </tbody></table>
-<h1 id='dependencies' class='heading'>Dependencies</h1>
+<h1 id='subclassing' class='heading'>Subclassing</h1>
 
-<p><code>Sylvester</code> depends on the following frameworks/libraries, so ensure they are also embedded in the &lsquo;<em>Embed Frameworks</em>&rsquo; phase:</p>
+<p>Most of the standard requests are concrete subclasses of  <del>beautiful</del> generic classes. Fancy your own subclass? No problem, it <em>might</em> be possible. </p>
+<h2 id='code-sksubstructure-code' class='heading'><code><a href="Classes/SKSubstructure.html">SKSubstructure</a></code></h2>
 
-<ul>
-<li><code>AtomicKit.framework</code></li>
-<li><code>SourceKittenFramework.framework</code></li>
-<li><code>SWXMLHash.framework</code></li>
-<li><code>Yams.framework</code></li>
-</ul>
+<p>Also known as <code><a href="Classes/SKBaseSubstructure.html">SKBaseSubstructure</a></code>, a common culprit. </p>
+<pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">BetterSubstructureSubclass</span><span class="p">:</span> <span class="kt">SKBaseSubstructure</span><span class="p">,</span> <span class="kt">SKSubstructureSubclass</span> <span class="p">{</span>
 
-<p><p align="center">
-     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/embed-frameworks.png?raw=true" alt="Embed Frameworks Phase">
- </p></p>
+    <span class="k">var</span> <span class="nv">iAmAnImportantProperty</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"🚶‍♂️"</span>
+
+    <span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">DecodingContainer</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SKBaseSubstructure</span><span class="p">]?</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">try</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="kt">BetterSubstructureSubclass</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">container</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1">/// The default iterator for `SKSubstructureChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:</span>
+    <span class="kd">class</span> <span class="kt">FunctionSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">SKSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="p">{</span>
+
+        <span class="k">override</span> <span class="kd">func</span> <span class="nf">next</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Substructure</span><span class="p">?</span> <span class="p">{</span>
+            <span class="k">guard</span> <span class="k">let</span> <span class="nv">nextSubstructure</span> <span class="o">=</span> <span class="k">super</span><span class="o">.</span><span class="nf">next</span><span class="p">()</span>
+                <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">nil</span> <span class="p">}</span>
+
+            <span class="k">if</span> <span class="n">nextSubstructure</span><span class="o">.</span><span class="n">isFunction</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">nextSubstructure</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nf">next</span><span class="p">()</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="n">iteratorClass</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">SKSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;.</span><span class="k">Type</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">FunctionSubstructureIterator</span><span class="o">.</span><span class="k">self</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre>
+<h2 id='code-skeditoropen-code-code-skswiftdocs-code' class='heading'><code><a href="Classes.html#/s:12SylvesterXPC12SKEditorOpenC">SKEditorOpen</a></code>, <code><a href="Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a></code></h2>
+
+<p>An example of a <code><a href="Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a></code> subclass utilizing the <code>BetterSubstructureSubclass</code> declared above:</p>
+
+<blockquote>
+<p>📌 <strong>Note:</strong> Subclassing <code><a href="Classes.html#/s:12SylvesterXPC12SKEditorOpenC">SKEditorOpen</a></code> uses identical syntax, except it inherits from <code><a href="Classes/SKGenericEditorOpen.html">SKGenericEditorOpen</a></code>.</p>
+</blockquote>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BetterSwiftDocs</span><span class="p">:</span> <span class="kt">SKGenericSwiftDocs</span><span class="o">&lt;</span><span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span> <span class="p">{</span>
+
+    <span class="k">var</span> <span class="nv">mySuperCoolProperty</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"😎"</span>
+
+<span class="p">}</span>
+</code></pre>
+<h2 id='code-skmodule-code' class='heading'><code><a href="Classes.html#/s:12SylvesterXPC8SKModuleC">SKModule</a></code></h2>
+
+<p>An example of a <code><a href="Classes.html#/s:12SylvesterXPC8SKModuleC">SKModule</a></code> subclass utilizing the <code>BetterSwiftDocs</code> and <code>BetterSubstructureSubclass</code> classes declared above:</p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BetterModule</span><span class="p">:</span> <span class="kt">SKGenericModule</span><span class="o">&lt;</span><span class="kt">BetterSubstructureSubclass</span><span class="p">,</span> <span class="kt">BetterSwiftDocs</span><span class="o">&gt;</span> <span class="p">{}</span>
+</code></pre>
 <h1 id='code-signing' class='heading'>Code Signing</h1>
 
 <p>If you decide to use the <code>SylvesterXPC</code> module, you will need to add a &lsquo;<em>Run Script</em>&rsquo; phase before embedding the <em>SylvesterXPC.framework</em> (i.e. before the &lsquo;<em>Embed Frameworks</em>&rsquo; phase). Ensure the shell launch path is <code>/bin/sh</code> (default). Then for Carthage installations, execute the <code>code_sign_carthage.sh</code> shell script in the repository&rsquo;s <em>Scripts</em> directory.</p>
@@ -398,7 +452,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-19)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-20)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

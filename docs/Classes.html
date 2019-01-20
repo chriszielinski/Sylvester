@@ -14,7 +14,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (80% documented)</p>
+        <p><a href="index.html"> Docs</a> (81% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -350,7 +350,42 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Represents the structure of a symbol.</p>
+
+<p>Depending on the request, the structure may contain syntactic and semantic information.</p>
+<h2 id='subclassing' class='heading'>Subclassing</h2>
+
+<p>Fancy your own subclass? No problem.</p>
+<pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">BetterSubstructureSubclass</span><span class="p">:</span> <span class="kt">SKBaseSubstructure</span><span class="p">,</span> <span class="kt">SKSubstructureSubclass</span> <span class="p">{</span>
+
+    <span class="k">var</span> <span class="nv">iAmAnImportantProperty</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"🚶‍♂️"</span>
+
+    <span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">DecodingContainer</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SKBaseSubstructure</span><span class="p">]?</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">try</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="kt">BetterSubstructureSubclass</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">container</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1">/// The default iterator for `SKSubstructureChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:</span>
+    <span class="kd">class</span> <span class="kt">FunctionSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">SKSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="p">{</span>
+
+        <span class="k">override</span> <span class="kd">func</span> <span class="nf">next</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Substructure</span><span class="p">?</span> <span class="p">{</span>
+            <span class="k">guard</span> <span class="k">let</span> <span class="nv">nextSubstructure</span> <span class="o">=</span> <span class="k">super</span><span class="o">.</span><span class="nf">next</span><span class="p">()</span>
+                <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">nil</span> <span class="p">}</span>
+
+            <span class="k">if</span> <span class="n">nextSubstructure</span><span class="o">.</span><span class="n">isFunction</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">nextSubstructure</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nf">next</span><span class="p">()</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="n">iteratorClass</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">SKSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;.</span><span class="k">Type</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">FunctionSubstructureIterator</span><span class="o">.</span><span class="k">self</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre>
 
                         <a href="Classes/SKBaseSubstructure.html" class="slightly-smaller">See more</a>
                       </div>
@@ -414,7 +449,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Represents the default substructure returned by some requests.</p>
 
                         <a href="Classes/SKSubstructure.html" class="slightly-smaller">See more</a>
                       </div>
@@ -847,7 +882,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-19)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-20)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

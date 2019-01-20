@@ -345,336 +345,322 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": null,
-      "symbol": "SKBaseSubstructure",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 9,
-      "symbol": "SKBaseSubstructure",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 13,
+      "line": 56,
       "symbol": "SKBaseSubstructure.CodingKeys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 14,
+      "line": 57,
       "symbol": "SKBaseSubstructure.CodingKeys.accessibility",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 15,
+      "line": 58,
       "symbol": "SKBaseSubstructure.CodingKeys.annotatedDeclaration",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 16,
+      "line": 59,
       "symbol": "SKBaseSubstructure.CodingKeys.attributes",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 17,
+      "line": 60,
       "symbol": "SKBaseSubstructure.CodingKeys.bodyLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 18,
+      "line": 61,
       "symbol": "SKBaseSubstructure.CodingKeys.bodyOffset",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 19,
+      "line": 62,
       "symbol": "SKBaseSubstructure.CodingKeys.docColumn",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 20,
+      "line": 63,
       "symbol": "SKBaseSubstructure.CodingKeys.docComment",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 21,
+      "line": 64,
       "symbol": "SKBaseSubstructure.CodingKeys.docDeclaration",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 22,
+      "line": 65,
       "symbol": "SKBaseSubstructure.CodingKeys.docFile",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 23,
+      "line": 66,
       "symbol": "SKBaseSubstructure.CodingKeys.docFullAsXML",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 24,
+      "line": 67,
       "symbol": "SKBaseSubstructure.CodingKeys.docLine",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 25,
+      "line": 68,
       "symbol": "SKBaseSubstructure.CodingKeys.docName",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 26,
+      "line": 69,
       "symbol": "SKBaseSubstructure.CodingKeys.docParameters",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 27,
+      "line": 70,
       "symbol": "SKBaseSubstructure.CodingKeys.docType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 28,
+      "line": 71,
       "symbol": "SKBaseSubstructure.CodingKeys.docLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 29,
+      "line": 72,
       "symbol": "SKBaseSubstructure.CodingKeys.docOffset",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 30,
+      "line": 73,
       "symbol": "SKBaseSubstructure.CodingKeys.elements",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 31,
+      "line": 74,
       "symbol": "SKBaseSubstructure.CodingKeys.filePath",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 32,
+      "line": 75,
       "symbol": "SKBaseSubstructure.CodingKeys.fullyAnnotatedDeclaration",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 33,
+      "line": 76,
       "symbol": "SKBaseSubstructure.CodingKeys.inheritedTypes",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 34,
+      "line": 77,
       "symbol": "SKBaseSubstructure.CodingKeys.kind",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 35,
+      "line": 78,
       "symbol": "SKBaseSubstructure.CodingKeys.length",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 36,
+      "line": 79,
       "symbol": "SKBaseSubstructure.CodingKeys.name",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 37,
+      "line": 80,
       "symbol": "SKBaseSubstructure.CodingKeys.nameLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 38,
+      "line": 81,
       "symbol": "SKBaseSubstructure.CodingKeys.nameOffset",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 39,
+      "line": 82,
       "symbol": "SKBaseSubstructure.CodingKeys.offset",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 40,
+      "line": 83,
       "symbol": "SKBaseSubstructure.CodingKeys.parsedDeclaration",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 41,
+      "line": 84,
       "symbol": "SKBaseSubstructure.CodingKeys.parsedScopeEnd",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 42,
+      "line": 85,
       "symbol": "SKBaseSubstructure.CodingKeys.parsedScopeStart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 43,
+      "line": 86,
       "symbol": "SKBaseSubstructure.CodingKeys.runtimeName",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 44,
+      "line": 87,
       "symbol": "SKBaseSubstructure.CodingKeys.overrides",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 45,
+      "line": 88,
       "symbol": "SKBaseSubstructure.CodingKeys.setterAccessibility",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 46,
+      "line": 89,
       "symbol": "SKBaseSubstructure.CodingKeys.internalChildren",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 47,
+      "line": 90,
       "symbol": "SKBaseSubstructure.CodingKeys.typeName",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 48,
+      "line": 91,
       "symbol": "SKBaseSubstructure.CodingKeys.typeUSR",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 49,
+      "line": 92,
       "symbol": "SKBaseSubstructure.CodingKeys.usr",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 54,
+      "line": 97,
       "symbol": "SKBaseSubstructure.AccessLevel",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 55,
+      "line": 98,
       "symbol": "SKBaseSubstructure.Attribute",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 56,
+      "line": 99,
       "symbol": "SKBaseSubstructure.DocumentationParameter",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 57,
+      "line": 100,
       "symbol": "SKBaseSubstructure.Element",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 58,
+      "line": 101,
       "symbol": "SKBaseSubstructure.InheritedType",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 59,
+      "line": 102,
       "symbol": "SKBaseSubstructure.Override",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 60,
+      "line": 103,
       "symbol": "SKBaseSubstructure.Kind",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 61,
+      "line": 104,
       "symbol": "SKBaseSubstructure.DecodingContainer",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 413,
+      "line": 456,
       "symbol": "SKBaseSubstructure.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -782,13 +768,6 @@
       "line": 27,
       "symbol": "SKEntity.init(offset:length:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKSubstructure.swift",
-      "line": 9,
-      "symbol": "SKSubstructure",
-      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
