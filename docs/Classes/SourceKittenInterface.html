@@ -243,7 +243,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">SourceKittenInterface</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">SourceKittenInterface</span> <span class="o">=</span> <span class="kt">SourceKittenInterface</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -367,7 +367,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">moduleDocs</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">module</span><span class="p">:</span> <span class="kt">Module</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span> <span class="k">where</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html">SKBaseSubstructure</a></span><span class="p">,</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Classes/SKGenericSwiftDocs.html">SKGenericSwiftDocs</a></span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">moduleDocs</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseSubstructure.html">SKBaseSubstructure</a></span><span class="p">,</span> <span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKGenericSwiftDocs.html">SKGenericSwiftDocs</a></span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="nv">module</span><span class="p">:</span> <span class="kt">Module</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -981,7 +981,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">customYAML</span><span class="o">&lt;</span><span class="kt">Response</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">yaml</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Response</span> <span class="k">where</span> <span class="kt">Response</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">customYAML</span><span class="o">&lt;</span><span class="kt">Response</span><span class="p">:</span> <span class="kt">Decodable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">yaml</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Response</span></code></pre>
 
                         </div>
                       </div>
@@ -1200,9 +1200,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF"></a>
-                    <a name="//apple_ref/swift/Method/launchSubprocess(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGAISbtF">launchSubprocess(launchPath:arguments:currentDirectoryPath:shouldPipeStandardError:)</a>
+                    <a name="/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments11environment016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGSDyS2SGSgAJSbtF"></a>
+                    <a name="//apple_ref/swift/Method/launchSubprocess(launchPath:arguments:environment:currentDirectoryPath:shouldPipeStandardError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments11environment016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGSDyS2SGSgAJSbtF">launchSubprocess(launchPath:arguments:environment:currentDirectoryPath:shouldPipeStandardError:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1219,6 +1219,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">launchSubprocess</span><span class="p">(</span><span class="nv">launchPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                              <span class="nv">arguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+                             <span class="nv">environment</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                              <span class="nv">currentDirectoryPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                              <span class="nv">shouldPipeStandardError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
@@ -1249,6 +1250,19 @@
                               <td>
                                 <div>
                                   <p>The command arguments that should be used to launch the executable.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>environment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The environment for the receiver. If <code>nil</code>, the environment is inherited from the process
+         that created the receiver.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1293,7 +1307,7 @@
         </section>
         <section id="footer">
           <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-20)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
