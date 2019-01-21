@@ -148,11 +148,17 @@ public class SourceKittenAdapter {
 
     public static func launchSubprocess(launchPath: String,
                                         arguments: [String] = [],
+                                        environment: [String: String]? = nil,
                                         currentDirectoryPath: String? = nil,
                                         shouldPipeStandardError: Bool = false) -> String? {
         let task = Process()
         task.launchPath = launchPath
         task.arguments = arguments
+
+        if let environment = environment {
+            task.environment = environment
+        }
+
         if let path = currentDirectoryPath {
             task.currentDirectoryPath = path
         }

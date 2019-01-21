@@ -414,12 +414,15 @@ open class SourceKittenInterface {
     /// - Parameters:
     ///   - launchPath: The path to the receiver’s executable.
     ///   - arguments: The command arguments that should be used to launch the executable.
+    ///   - environment: The environment for the receiver. If `nil`, the environment is inherited from the process
+    ///                  that created the receiver.
     ///   - currentDirectoryPath: The current directory for the receiver. If `nil`, the current directory is
     ///                           inherited from the process that created the receiver.
     ///   - shouldPipeStandardError: Whether the standard error should also be piped to the output.
     /// - Returns: The executable's standard out (and standard error, if `shouldPipeStandardError` is true) output.
     public func launchSubprocess(launchPath: String,
                                  arguments: [String] = [],
+                                 environment: [String: String]? = nil,
                                  currentDirectoryPath: String? = nil,
                                  shouldPipeStandardError: Bool = false) -> String? {
         #if XPC
@@ -427,6 +430,7 @@ open class SourceKittenInterface {
 
         synchronousProxy.launchSubprocess(launchPath: launchPath,
                                           arguments: arguments,
+                                          environment: environment,
                                           currentDirectoryPath: currentDirectoryPath,
                                           shouldPipeStandardError: shouldPipeStandardError) { (output) in
                                             response = output
@@ -436,6 +440,7 @@ open class SourceKittenInterface {
         #else
         return SourceKittenAdapter.launchSubprocess(launchPath: launchPath,
                                                     arguments: arguments,
+                                                    environment: environment,
                                                     currentDirectoryPath: currentDirectoryPath,
                                                     shouldPipeStandardError: shouldPipeStandardError)
         #endif

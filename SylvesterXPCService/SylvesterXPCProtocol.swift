@@ -61,6 +61,7 @@ public protocol SylvesterXPCProtocol {
     func executeBash(_ command: String, currentDirectoryPath: String?, with reply: (String?) -> Void)
     func launchSubprocess(launchPath: String,
                           arguments: [String],
+                          environment: [String: String]?,
                           currentDirectoryPath: String?,
                           shouldPipeStandardError: Bool,
                           with reply: (String?) -> Void)

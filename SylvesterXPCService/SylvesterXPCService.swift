@@ -169,11 +169,13 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
 
     func launchSubprocess(launchPath: String,
                           arguments: [String],
+                          environment: [String: String]?,
                           currentDirectoryPath: String?,
                           shouldPipeStandardError: Bool,
                           with reply: (String?) -> Void) {
         reply(SourceKittenAdapter.launchSubprocess(launchPath: launchPath,
                                                    arguments: arguments,
+                                                   environment: environment,
                                                    currentDirectoryPath: currentDirectoryPath,
                                                    shouldPipeStandardError: shouldPipeStandardError))
     }
