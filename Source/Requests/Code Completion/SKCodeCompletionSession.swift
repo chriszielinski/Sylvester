@@ -210,7 +210,7 @@ open class SKCodeCompletionSession: NSObject {
                 else { return }
 
             do {
-                let response = try SourceKittenInterface.shared
+                let response = try SylvesterInterface.shared
                     .codeCompletionOpen(file: session.file,
                                             offset: session.offset,
                                             options: options,
@@ -239,7 +239,7 @@ open class SKCodeCompletionSession: NSObject {
                 else { return }
 
             do {
-                let response = try SourceKittenInterface.shared.codeCompletionUpdate(file: session.file,
+                let response = try SylvesterInterface.shared.codeCompletionUpdate(file: session.file,
                                                                                      offset: session.offset,
                                                                                      options: options)
                 session.handleRequest(response: response)
@@ -269,7 +269,7 @@ open class SKCodeCompletionSession: NSObject {
 
         let sendCloseRequest: (SKCodeCompletionSession) -> Void = { (session) in
             do {
-                let response = try SourceKittenInterface.shared.codeCompletionClose(name: session.file.name,
+                let response = try SylvesterInterface.shared.codeCompletionClose(name: session.file.name,
                                                                                     offset: session.offset)
                 if shouldDispatchAsynchronous {
                     session.handleRequest(response: response)

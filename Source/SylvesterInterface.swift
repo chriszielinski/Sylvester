@@ -1,5 +1,5 @@
 //
-//  SourceKittenInterface.swift
+//  SylvesterInterface.swift
 //  Sylvester 😼
 //
 //  Created by Chris Zielinski on 12/8/18.
@@ -13,11 +13,11 @@ import SylvesterCommon
 import SylvesterXPCService
 #endif
 
-open class SourceKittenInterface {
+open class SylvesterInterface {
 
     // MARK: - Public Static Stored Properties
 
-    public static let shared: SourceKittenInterface = SourceKittenInterface()
+    public static let shared: SylvesterInterface = SylvesterInterface()
 
     // MARK: - Private Static Methods
 
@@ -26,11 +26,9 @@ open class SourceKittenInterface {
         Utilities.print(error: error)
         shared.xpcError = error
     }
-    #endif
 
     // MARK: - Private Stored Properties
 
-    #if XPC
     private let xpcConnection: NSXPCConnection
     private let synchronousProxy: SylvesterXPCProtocol
     private var xpcError: Error?
@@ -45,7 +43,7 @@ open class SourceKittenInterface {
         xpcConnection.resume()
 
         synchronousProxy = xpcConnection
-            .synchronousRemoteObjectProxyWithErrorHandler(SourceKittenInterface.handleXPC(error:))
+            .synchronousRemoteObjectProxyWithErrorHandler(SylvesterInterface.handleXPC(error:))
             // swiftlint:disable:next force_cast
             as! SylvesterXPCProtocol
         #endif

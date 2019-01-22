@@ -43,7 +43,7 @@
 		1411B13121DEE58700CA071D /* SKOverride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2E221B8A65A00938856 /* SKOverride.swift */; };
 		1411B13221DEE58700CA071D /* SKSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED49621B23B5200D0C19F /* SKSubstructure.swift */; };
 		1411B13321DEE58700CA071D /* SKCodeCompletionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491902A21C6F43200F2F975 /* SKCodeCompletionItem.swift */; };
-		1411B13421DEE58700CA071D /* SourceKittenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C2321BC3E89006EAB11 /* SourceKittenInterface.swift */; };
+		1411B13421DEE58700CA071D /* SylvesterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C2321BC3E89006EAB11 /* SylvesterInterface.swift */; };
 		1411B13521DEE58700CA071D /* SKBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED49521B23B5200D0C19F /* SKBaseResponse.swift */; };
 		1411B13621DEE58700CA071D /* SKSyntaxMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CB0421B5E1CD00EF8F09 /* SKSyntaxMap.swift */; };
 		1411B13721DEE58700CA071D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33A21C8353200081C02 /* Constants.swift */; };
@@ -194,7 +194,7 @@
 		14BF6C1F21BC3C15006EAB11 /* SylvesterXPCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C1B21BC3C12006EAB11 /* SylvesterXPCDelegate.swift */; };
 		14BF6C2021BC3C15006EAB11 /* SylvesterXPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C1C21BC3C14006EAB11 /* SylvesterXPCService.swift */; };
 		14BF6C2121BC3CCC006EAB11 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
-		14BF6C2421BC3E89006EAB11 /* SourceKittenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C2321BC3E89006EAB11 /* SourceKittenInterface.swift */; };
+		14BF6C2421BC3E89006EAB11 /* SylvesterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C2321BC3E89006EAB11 /* SylvesterInterface.swift */; };
 		14BF6C3921BC4FB6006EAB11 /* SylvesterCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BF6C3721BC4FB6006EAB11 /* SylvesterCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14BF6C3F21BC4FC4006EAB11 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C2A21BC43A7006EAB11 /* File.swift */; };
 		14BF6C4121BC4FDB006EAB11 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
@@ -458,7 +458,7 @@
 		14BF6C1B21BC3C12006EAB11 /* SylvesterXPCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SylvesterXPCDelegate.swift; sourceTree = "<group>"; };
 		14BF6C1C21BC3C14006EAB11 /* SylvesterXPCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SylvesterXPCService.swift; sourceTree = "<group>"; };
 		14BF6C2221BC3E26006EAB11 /* debug-xpc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "debug-xpc.xcconfig"; sourceTree = "<group>"; };
-		14BF6C2321BC3E89006EAB11 /* SourceKittenInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceKittenInterface.swift; sourceTree = "<group>"; };
+		14BF6C2321BC3E89006EAB11 /* SylvesterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylvesterInterface.swift; sourceTree = "<group>"; };
 		14BF6C2A21BC43A7006EAB11 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SylvesterCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BF6C3721BC4FB6006EAB11 /* SylvesterCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SylvesterCommon.h; sourceTree = "<group>"; };
@@ -682,7 +682,7 @@
 				144ED43821B2108D00D0C19F /* Models */,
 				1488977821B73BD7007F6C17 /* Protocols */,
 				1484CAEE21B593DD00EF8F09 /* Requests */,
-				14BF6C2321BC3E89006EAB11 /* SourceKittenInterface.swift */,
+				14BF6C2321BC3E89006EAB11 /* SylvesterInterface.swift */,
 				144ED42121B2105E00D0C19F /* Sylvester.h */,
 				14827A5121DF2B1B002D4440 /* SylvesterXPC.h */,
 				1438196621D6F1EE00F58A0F /* TypeAlias.swift */,
@@ -1443,7 +1443,7 @@
 				1411B13121DEE58700CA071D /* SKOverride.swift in Sources */,
 				1411B13221DEE58700CA071D /* SKSubstructure.swift in Sources */,
 				1411B13321DEE58700CA071D /* SKCodeCompletionItem.swift in Sources */,
-				1411B13421DEE58700CA071D /* SourceKittenInterface.swift in Sources */,
+				1411B13421DEE58700CA071D /* SylvesterInterface.swift in Sources */,
 				1411B13521DEE58700CA071D /* SKBaseResponse.swift in Sources */,
 				1461C7B221F3D03800C87530 /* Array.swift in Sources */,
 				1411B13621DEE58700CA071D /* SKSyntaxMap.swift in Sources */,
@@ -1496,7 +1496,7 @@
 				1409B2E321B8A65A00938856 /* SKOverride.swift in Sources */,
 				144ED49921B23B5200D0C19F /* SKSubstructure.swift in Sources */,
 				1491902B21C6F43200F2F975 /* SKCodeCompletionItem.swift in Sources */,
-				14BF6C2421BC3E89006EAB11 /* SourceKittenInterface.swift in Sources */,
+				14BF6C2421BC3E89006EAB11 /* SylvesterInterface.swift in Sources */,
 				144ED49821B23B5200D0C19F /* SKBaseResponse.swift in Sources */,
 				1461C7B121F3D03800C87530 /* Array.swift in Sources */,
 				1484CB0521B5E1CD00EF8F09 /* SKSyntaxMap.swift in Sources */,

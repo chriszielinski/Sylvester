@@ -20,7 +20,7 @@ class OtherRequestTests: XCTestCase {
     func testXCRun() {
         continueAfterFailure = false
 
-        let output = SourceKittenInterface.shared.xcRun(arguments: ["-f", "swift"])
+        let output = SylvesterInterface.shared.xcRun(arguments: ["-f", "swift"])
 
         XCTAssertNotNil(output)
         XCTAssertTrue(output!.hasSuffix("/usr/bin/swift"))
@@ -30,7 +30,7 @@ class OtherRequestTests: XCTestCase {
         continueAfterFailure = false
 
         let path = SylvesterTestCase.testProjectDirectoryPath
-        let output = SourceKittenInterface.shared.xcodeBuild(arguments: ["-list", "-project", "Test.xcodeproj"],
+        let output = SylvesterInterface.shared.xcodeBuild(arguments: ["-list", "-project", "Test.xcodeproj"],
                                                              currentDirectoryPath: path)
 
         XCTAssertNotNil(output)
@@ -41,7 +41,7 @@ class OtherRequestTests: XCTestCase {
         let echoString = "nice"
         continueAfterFailure = false
 
-        let output = SourceKittenInterface.shared.executeBash(command: "echo '\(echoString)'")
+        let output = SylvesterInterface.shared.executeBash(command: "echo '\(echoString)'")
 
         XCTAssertNotNil(output)
         XCTAssertEqual(output, echoString)
@@ -50,7 +50,7 @@ class OtherRequestTests: XCTestCase {
     func testLaunchSubprocess() {
         continueAfterFailure = false
 
-        let output = SourceKittenInterface.shared.launchSubprocess(launchPath: "/usr/bin/swift",
+        let output = SylvesterInterface.shared.launchSubprocess(launchPath: "/usr/bin/swift",
                                                                    arguments: ["-version"],
                                                                    shouldPipeStandardError: true)
 

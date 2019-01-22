@@ -44,7 +44,7 @@ open class SKCodeCompletion: Codable {
     ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
     /// - Throws: A `SKError`, if an error occurs.
     public init(file: File, offset: Offset, compilerArguments: [String]) throws {
-        let codeCompletion = try SourceKittenInterface.shared.codeCompletion(file: file,
+        let codeCompletion = try SylvesterInterface.shared.codeCompletion(file: file,
                                                                              offset: offset,
                                                                              compilerArguments: compilerArguments)
         self.nextRequestStart = codeCompletion.nextRequestStart

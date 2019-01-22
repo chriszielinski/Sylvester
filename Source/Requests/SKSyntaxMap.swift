@@ -33,7 +33,7 @@ open class SKSyntaxMap: Codable {
     ///   - file: The source file.
     /// - Throws: A `SKError`, if an error occurs.
     public init(file: File) throws {
-        syntaxMap = try SourceKittenInterface.shared.syntaxMap(file: file)
+        syntaxMap = try SylvesterInterface.shared.syntaxMap(file: file)
     }
 
     /// Creates a new synchronous _SourceKitten_ syntax map request.

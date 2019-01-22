@@ -30,7 +30,7 @@ open class SKGenericSwiftDocs<Substructure: SKBaseSubstructure>: SKGenericRespon
     public init(file: File, compilerArguments: [String]) throws {
         self.file = file
 
-        super.init(skInformation: try SourceKittenInterface.shared.swiftDocs(file: file,
+        super.init(skInformation: try SylvesterInterface.shared.swiftDocs(file: file,
                                                                              compilerArguments: compilerArguments))
 
         resolve(from: file.path)

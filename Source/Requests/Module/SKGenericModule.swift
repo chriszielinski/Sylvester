@@ -49,7 +49,7 @@ open class SKGenericModule<S: SKBaseSubstructure, T: SKGenericSwiftDocs<S>> {
     /// - Warning: Typically expensive computed property.
     open var docs: [T] {
         do {
-            return try SourceKittenInterface.shared.moduleDocs(module: module)
+            return try SylvesterInterface.shared.moduleDocs(module: module)
         } catch {
             Utilities.print(error: error)
             return []
@@ -70,7 +70,7 @@ open class SKGenericModule<S: SKBaseSubstructure, T: SKGenericSwiftDocs<S>> {
     public init(xcodeBuildArguments: [String],
                 name: String? = nil,
                 inPath path: String = FileManager.default.currentDirectoryPath) throws {
-        module = try SourceKittenInterface.shared.moduleInfo(xcodeBuildArguments: xcodeBuildArguments,
+        module = try SylvesterInterface.shared.moduleInfo(xcodeBuildArguments: xcodeBuildArguments,
                                                              name: name,
                                                              in: path)
     }

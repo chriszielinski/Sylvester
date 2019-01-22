@@ -24,7 +24,7 @@ open class SKYAMLRequest<Response: Decodable> {
     ///   - yaml: The _SourceKit_ request in YAML representation.
     /// - Throws: A `SKError`, if an error occurs.
     public init(yaml: String) throws {
-        response = try SourceKittenInterface.shared.customYAML(yaml)
+        response = try SylvesterInterface.shared.customYAML(yaml)
     }
 
 }

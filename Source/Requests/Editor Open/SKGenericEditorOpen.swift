@@ -21,7 +21,7 @@ open class SKGenericEditorOpen<Substructure: SKBaseSubstructure>: SKGenericRespo
     ///   - file: The source file.
     /// - Throws: A `SKError`, if an error occurs.
     public init(file: File) throws {
-        super.init(skInformation: try SourceKittenInterface.shared.editorOpen(file: file))
+        super.init(skInformation: try SylvesterInterface.shared.editorOpen(file: file))
 
         resolve(from: file.path)
     }
