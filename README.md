@@ -109,10 +109,10 @@ Other Fun Things
 
 | Type | Method |
 | -------------:|:------------- |
-| XCRun | [`SourceKittenInterface.shared.xcRun(arguments:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF) |
-| XcodeBuild | [`SourceKittenInterface.shared.xcodeBuild(arguments:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF) |
-| Bash Command | [`SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF) |
-| Launch Subprocess | [`SourceKittenInterface.shared.launchSubprocess(launchPath:arguments:environment:currentDirectoryPath:shouldPipeStandardError:)`](https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments11environment016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGSDyS2SGSgAJSbtF) |
+| XCRun | [`SylvesterInterface.shared.xcRun(arguments:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC5xcRun9argumentsSSSgSaySSG_tF) |
+| XcodeBuild | [`SylvesterInterface.shared.xcodeBuild(arguments:currentDirectoryURL:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC10xcodeBuild9arguments19currentDirectoryURLSSSgSaySSG_10Foundation0I0VtF) |
+| Bash Command | [`SylvesterInterface.shared.executeBash(command:currentDirectoryURL:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC11executeBash7command19currentDirectoryURLSSSgSS_10Foundation0I0VSgtF) |
+| Launch Subprocess | [`SylvesterInterface.shared.launch(subprocess:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC6launch10subprocessSSSg0A6Common12SKSubprocessC_tKF) |
 
 
 Subclassing
