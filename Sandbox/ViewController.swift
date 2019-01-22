@@ -25,7 +25,7 @@ class ViewController: NSViewController {
         textView.string = ""
 
         do {
-            let editorOpen = try SylvesterInterface.customEditorOpen(file: File(contents: testContents))
+            let editorOpen = try SandboxInterface.customEditorOpen(file: File(contents: testContents))
             textView.string = editorOpen.debugDescription
         } catch {
             print(error)

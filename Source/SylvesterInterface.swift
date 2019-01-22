@@ -370,19 +370,19 @@ open class SylvesterInterface {
     ///
     /// - Parameters:
     ///   - arguments: The arguments to pass to `xcodebuild`.
-    ///   - currentDirectoryPath: The path to run `xcodebuild` from.
+    ///   - currentDirectoryURL: The URL to run `xcodebuild` from.
     /// - Returns: The `xcodebuild`'s combined standard error and standard out output.
-    public func xcodeBuild(arguments: [String], currentDirectoryPath: String) -> String? {
+    public func xcodeBuild(arguments: [String], currentDirectoryURL: URL) -> String? {
         #if XPC
         var response: String?
 
-        synchronousProxy.xcodeBuild(arguments: arguments, currentDirectoryPath: currentDirectoryPath) { (output) in
+        synchronousProxy.xcodeBuild(arguments: arguments, currentDirectoryURL: currentDirectoryURL) { (output) in
             response = output
         }
 
         return response
         #else
-        return SourceKittenAdapter.xcodeBuild(arguments: arguments, currentDirectoryPath: currentDirectoryPath)
+        return SourceKittenAdapter.xcodeBuild(arguments: arguments, currentDirectoryURL: currentDirectoryURL)
         #endif
     }
 
@@ -390,20 +390,19 @@ open class SylvesterInterface {
     ///
     /// - Parameters:
     ///   - command: The command to execute.
-    ///   - currentDirectoryPath: The path to run the Bash command from.
+    ///   - currentDirectoryURL: The URL to run the Bash command from.
     /// - Returns: The Bash command's standard out output.
-    public func executeBash(command: String,
-                            currentDirectoryPath: String? = nil) -> String? {
+    public func executeBash(command: String, currentDirectoryURL: URL? = nil) -> String? {
         #if XPC
         var response: String?
 
-        synchronousProxy.executeBash(command, currentDirectoryPath: currentDirectoryPath) { (output) in
+        synchronousProxy.executeBash(command, currentDirectoryURL: currentDirectoryURL) { (output) in
             response = output
         }
 
         return response
         #else
-        return SourceKittenAdapter.executeBash(command, currentDirectoryPath: currentDirectoryPath)
+        return SourceKittenAdapter.executeBash(command, currentDirectoryURL: currentDirectoryURL)
         #endif
     }
 
@@ -411,36 +410,21 @@ open class SylvesterInterface {
     ///
     /// - Parameters:
     ///   - launchPath: The path to the receiver’s executable.
-    ///   - arguments: The command arguments that should be used to launch the executable.
-    ///   - environment: The environment for the receiver. If `nil`, the environment is inherited from the process
-    ///                  that created the receiver.
-    ///   - currentDirectoryPath: The current directory for the receiver. If `nil`, the current directory is
-    ///                           inherited from the process that created the receiver.
-    ///   - shouldPipeStandardError: Whether the standard error should also be piped to the output.
-    /// - Returns: The executable's standard out (and standard error, if `shouldPipeStandardError` is true) output.
-    public func launchSubprocess(launchPath: String,
-                                 arguments: [String] = [],
-                                 environment: [String: String]? = nil,
-                                 currentDirectoryPath: String? = nil,
-                                 shouldPipeStandardError: Bool = false) -> String? {
+    /// - Returns: The executable's standard out (and standard error, if `SKSubprocess.shouldPipeStandardError`
+    ///            is true) output.
+    public func launch(subprocess: SKSubprocess) throws -> String? {
         #if XPC
         var response: String?
+        var responseError: SKXPCError?
 
-        synchronousProxy.launchSubprocess(launchPath: launchPath,
-                                          arguments: arguments,
-                                          environment: environment,
-                                          currentDirectoryPath: currentDirectoryPath,
-                                          shouldPipeStandardError: shouldPipeStandardError) { (output) in
-                                            response = output
+        synchronousProxy.launch(subprocess: try SKDataWrapper(object: subprocess)) { (output, error) in
+            response = output
+            responseError = error
         }
 
-        return response
+        return try handleXPC(response: response, error: responseError)
         #else
-        return SourceKittenAdapter.launchSubprocess(launchPath: launchPath,
-                                                    arguments: arguments,
-                                                    environment: environment,
-                                                    currentDirectoryPath: currentDirectoryPath,
-                                                    shouldPipeStandardError: shouldPipeStandardError)
+        return SourceKittenAdapter.launch(subprocess: subprocess)
         #endif
     }
 

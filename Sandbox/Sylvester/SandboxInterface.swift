@@ -1,5 +1,5 @@
 //
-//  SylvesterInterface.swift
+//  SandboxInterface.swift
 //  Sandbox
 //
 //  Created by Chris Zielinski on 12/15/18.
@@ -9,7 +9,7 @@
 import SylvesterXPC
 import SourceKittenFramework
 
-public class SylvesterInterface {
+public class SandboxInterface {
 
     public static func skModule(xcodeBuildArguments: [String] = [],
                                 name: String? = nil,
@@ -50,30 +50,31 @@ public class SylvesterInterface {
     }
 
     public static func customYAML(yaml: String) throws -> String {
-        return try SourceKittenInterface.shared.customYAML(yaml)
+        return try SylvesterInterface.shared.customYAML(yaml)
     }
 
     public static func xcRun(arguments: [String]) -> String? {
-        return SourceKittenInterface.shared.xcRun(arguments: arguments)
+        return SylvesterInterface.shared.xcRun(arguments: arguments)
     }
 
-    public static func xcodeBuild(arguments: [String], currentDirectoryPath: String) -> String? {
-        return SourceKittenInterface.shared.xcodeBuild(arguments: arguments,
-                                                       currentDirectoryPath: currentDirectoryPath)
+    public static func xcodeBuild(arguments: [String], currentDirectoryURL: URL) -> String? {
+        return SylvesterInterface.shared.xcodeBuild(arguments: arguments, currentDirectoryURL: currentDirectoryURL)
     }
 
-    public static func executeBash(command: String, currentDirectoryPath: String? = nil) -> String? {
-        return SourceKittenInterface.shared.executeBash(command: command, currentDirectoryPath: currentDirectoryPath)
+    public static func executeBash(command: String, currentDirectoryURL: URL? = nil) -> String? {
+        return SylvesterInterface.shared.executeBash(command: command, currentDirectoryURL: currentDirectoryURL)
     }
 
-    public static func launchSubprocess(launchPath: String,
+    public static func launchSubprocess(exexutableURL: URL,
                                         arguments: [String] = [],
-                                        currentDirectoryPath: String? = nil,
-                                        shouldPipeStandardError: Bool = false) -> String? {
-        return SourceKittenInterface.shared.launchSubprocess(launchPath: launchPath,
-                                                             arguments: arguments,
-                                                             currentDirectoryPath: currentDirectoryPath,
-                                                             shouldPipeStandardError: shouldPipeStandardError)
+                                        currentDirectoryURL: URL? = nil,
+                                        shouldPipeStandardError: Bool = false) throws -> String? {
+        let subprocess = SKSubprocess(executableURL: exexutableURL)
+        subprocess.arguments = arguments
+        subprocess.currentDirectoryURL = currentDirectoryURL
+        subprocess.shouldPipeStandardError = shouldPipeStandardError
+
+        return try SylvesterInterface.shared.launch(subprocess: subprocess)
     }
 
 }

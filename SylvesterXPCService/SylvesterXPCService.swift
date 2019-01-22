@@ -96,15 +96,9 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
                             compilerArguments: [String],
                             with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
         do {
-            var codeCompletionOptions: SKCodeCompletionSessionOptions?
-
-            if let options = options {
-                codeCompletionOptions = try decodeCodeCompletionOptions(from: options)
-            }
-
             reply(try SourceKittenAdapter.codeCompletionOpen(file: file.file,
                                                              offset: offset,
-                                                             options: codeCompletionOptions,
+                                                             options: try options?.xpcDecodeData(),
                                                              compilerArguments: compilerArguments), nil)
         } catch {
             reply(nil, error.toSKXPCError())
@@ -116,10 +110,9 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
                               options: SKDataWrapper,
                               with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
         do {
-            let codeCompletionOptions = try decodeCodeCompletionOptions(from: options)
             reply(try SourceKittenAdapter.codeCompletionUpdate(name: name,
                                                                offset: offset,
-                                                               options: codeCompletionOptions), nil)
+                                                               options: try options.xpcDecodeData()), nil)
         } catch {
             reply(nil, error.toSKXPCError())
         }
@@ -156,32 +149,23 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
     }
 
     func xcodeBuild(arguments: [String],
-                    currentDirectoryPath: String,
+                    currentDirectoryURL: URL,
                     with reply: (String?) -> Void) {
-        reply(SourceKittenAdapter.xcodeBuild(arguments: arguments, currentDirectoryPath: currentDirectoryPath))
+        reply(SourceKittenAdapter.xcodeBuild(arguments: arguments, currentDirectoryURL: currentDirectoryURL))
     }
 
     func executeBash(_ command: String,
-                     currentDirectoryPath: String?,
+                     currentDirectoryURL: URL?,
                      with reply: (String?) -> Void) {
-        reply(SourceKittenAdapter.executeBash(command, currentDirectoryPath: currentDirectoryPath))
+        reply(SourceKittenAdapter.executeBash(command, currentDirectoryURL: currentDirectoryURL))
     }
 
-    func launchSubprocess(launchPath: String,
-                          arguments: [String],
-                          environment: [String: String]?,
-                          currentDirectoryPath: String?,
-                          shouldPipeStandardError: Bool,
-                          with reply: (String?) -> Void) {
-        reply(SourceKittenAdapter.launchSubprocess(launchPath: launchPath,
-                                                   arguments: arguments,
-                                                   environment: environment,
-                                                   currentDirectoryPath: currentDirectoryPath,
-                                                   shouldPipeStandardError: shouldPipeStandardError))
-    }
-
-    func decodeCodeCompletionOptions(from wrapper: SKDataWrapper) throws -> SKCodeCompletionSessionOptions {
-        return try wrapper.xpcDecodeData()
+    func launch(subprocess: SKDataWrapper, with reply: (String?, SKXPCError?) -> Void) {
+        do {
+            reply(SourceKittenAdapter.launch(subprocess: try subprocess.xpcDecodeData()), nil)
+        } catch {
+            reply(nil, error.toSKXPCError())
+        }
     }
 
 }

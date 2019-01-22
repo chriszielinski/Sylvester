@@ -29,9 +29,9 @@ class OtherRequestTests: XCTestCase {
     func testXcodeBuild() {
         continueAfterFailure = false
 
-        let path = SylvesterTestCase.testProjectDirectoryPath
+        let currentDirectoryURL = URL(fileURLWithPath: SylvesterTestCase.testProjectDirectoryPath)
         let output = SylvesterInterface.shared.xcodeBuild(arguments: ["-list", "-project", "Test.xcodeproj"],
-                                                             currentDirectoryPath: path)
+                                                          currentDirectoryURL: currentDirectoryURL)
 
         XCTAssertNotNil(output)
         XCTAssertTrue(output!.hasSuffix("Test"))
@@ -47,12 +47,13 @@ class OtherRequestTests: XCTestCase {
         XCTAssertEqual(output, echoString)
     }
 
-    func testLaunchSubprocess() {
+    func testLaunchSubprocess() throws {
         continueAfterFailure = false
 
-        let output = SylvesterInterface.shared.launchSubprocess(launchPath: "/usr/bin/swift",
-                                                                   arguments: ["-version"],
-                                                                   shouldPipeStandardError: true)
+        let subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/swift"))
+        subprocess.arguments = ["-version"]
+        subprocess.shouldPipeStandardError = true
+        let output = try SylvesterInterface.shared.launch(subprocess: subprocess)
 
         XCTAssertNotNil(output)
         XCTAssertTrue(output!.hasPrefix("Apple Swift version"))

@@ -57,13 +57,8 @@ public protocol SylvesterXPCProtocol {
     // MARK: - Subprocess Methods
 
     func xcRun(arguments: [String], with reply: (String?) -> Void)
-    func xcodeBuild(arguments: [String], currentDirectoryPath: String, with reply: (String?) -> Void)
-    func executeBash(_ command: String, currentDirectoryPath: String?, with reply: (String?) -> Void)
-    func launchSubprocess(launchPath: String,
-                          arguments: [String],
-                          environment: [String: String]?,
-                          currentDirectoryPath: String?,
-                          shouldPipeStandardError: Bool,
-                          with reply: (String?) -> Void)
+    func xcodeBuild(arguments: [String], currentDirectoryURL: URL, with reply: (String?) -> Void)
+    func executeBash(_ command: String, currentDirectoryURL: URL?, with reply: (String?) -> Void)
+    func launch(subprocess: SKDataWrapper, with reply: (String?, SKXPCError?) -> Void)
 
 }

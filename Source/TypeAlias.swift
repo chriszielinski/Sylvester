@@ -10,3 +10,4 @@ import SylvesterCommon
 
 public typealias Offset = Int
 public typealias SKError = SylvesterCommon.SKError
+public typealias SKSubprocess = SylvesterCommon.SKSubprocess

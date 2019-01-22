@@ -53,7 +53,7 @@ class SandboxTests: XCTestCase {
     // MARK: - Test Methods
 
     func test1SKModule() throws {
-        let module = try SylvesterInterface.skModule(in: SandboxTests.testProjectDirectoryPath)
+        let module = try SandboxInterface.skModule(in: SandboxTests.testProjectDirectoryPath)
 
         SandboxTests.testModuleSDKPath = module.sdkPath
         SandboxTests.testModuleTarget = module.target
@@ -63,7 +63,7 @@ class SandboxTests: XCTestCase {
     }
 
     func testSKEditorOpen() throws {
-        let editorOpen = try SylvesterInterface.editorOpen(file: testContentsFile)
+        let editorOpen = try SandboxInterface.editorOpen(file: testContentsFile)
 
         XCTAssertGreaterThan(editorOpen.length, 0)
         XCTAssertGreaterThan(editorOpen.topLevelSubstructures.count, 0)
@@ -71,7 +71,7 @@ class SandboxTests: XCTestCase {
     }
 
     func testCustomEditorOpen() throws {
-        let customEditorOpen = try SylvesterInterface.customEditorOpen(file: testContentsFile)
+        let customEditorOpen = try SandboxInterface.customEditorOpen(file: testContentsFile)
 
         XCTAssertTrue(customEditorOpen.overriddenResolveCalled)
         XCTAssertNotNil(customEditorOpen.topLevelSubstructures.first)
@@ -79,7 +79,7 @@ class SandboxTests: XCTestCase {
     }
 
     func testSKSyntaxMap() throws {
-        let syntaxMap = try SylvesterInterface.syntaxMap(file: testContentsFile)
+        let syntaxMap = try SandboxInterface.syntaxMap(file: testContentsFile)
 
         XCTAssertGreaterThan(syntaxMap.tokens.count, 0)
     }
@@ -88,8 +88,8 @@ class SandboxTests: XCTestCase {
         guard let compilerArguments = testCompilerArguments
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let swiftDocs = try SylvesterInterface.swiftDocs(file: testContentsFile,
-                                                         compilerArguments: compilerArguments)
+        let swiftDocs = try SandboxInterface.swiftDocs(file: testContentsFile,
+                                                       compilerArguments: compilerArguments)
 
         XCTAssertGreaterThan(swiftDocs.length, 0)
         XCTAssertGreaterThan(swiftDocs.topLevelSubstructures.count, 0)
@@ -101,8 +101,8 @@ class SandboxTests: XCTestCase {
         guard let compilerArguments = testCompilerArguments
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let customSwiftDocs = try SylvesterInterface.customSwiftDocs(file: testContentsFile,
-                                                                     compilerArguments: compilerArguments)
+        let customSwiftDocs = try SandboxInterface.customSwiftDocs(file: testContentsFile,
+                                                                   compilerArguments: compilerArguments)
 
         XCTAssertTrue(customSwiftDocs.overriddenResolveCalled)
         XCTAssertNotNil(customSwiftDocs.topLevelSubstructures.first)
@@ -117,9 +117,9 @@ class SandboxTests: XCTestCase {
         guard let compilerArguments = testCompilerArguments
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let codeCompletion = try SylvesterInterface.codeCompletion(file: testContentsFile,
-                                                                   offset: testContentsOffset,
-                                                                   compilerArguments: compilerArguments)
+        let codeCompletion = try SandboxInterface.codeCompletion(file: testContentsFile,
+                                                                 offset: testContentsOffset,
+                                                                 compilerArguments: compilerArguments)
 
         XCTAssertGreaterThan(codeCompletion.items.count, 0)
     }
@@ -130,9 +130,9 @@ class SandboxTests: XCTestCase {
         guard let compilerArguments = testCompilerArguments
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let session = SylvesterInterface.codeCompletionSession(file: testContentsFile,
-                                                               offset: testContentsOffset,
-                                                               compilerArguments: compilerArguments)
+        let session = SandboxInterface.codeCompletionSession(file: testContentsFile,
+                                                             offset: testContentsOffset,
+                                                             compilerArguments: compilerArguments)
 
         XCTAssertNotNil(session.options)
 
@@ -165,7 +165,7 @@ class SandboxTests: XCTestCase {
     func testXCRun() {
         continueAfterFailure = false
 
-        let output = SylvesterInterface.xcRun(arguments: ["-f", "swift"])
+        let output = SandboxInterface.xcRun(arguments: ["-f", "swift"])
 
         XCTAssertNotNil(output)
         XCTAssertTrue(output!.hasSuffix("/usr/bin/swift"))
@@ -174,8 +174,9 @@ class SandboxTests: XCTestCase {
     func testXcodeBuild() {
         continueAfterFailure = false
 
-        let output = SylvesterInterface.xcodeBuild(arguments: ["-list", "-project", "Test.xcodeproj"],
-                                                   currentDirectoryPath: SandboxTests.testProjectDirectoryPath)
+        let currentDirectoryURL = URL(fileURLWithPath: SandboxTests.testProjectDirectoryPath)
+        let output = SandboxInterface.xcodeBuild(arguments: ["-list", "-project", "Test.xcodeproj"],
+                                                 currentDirectoryURL: currentDirectoryURL)
 
         XCTAssertNotNil(output)
         XCTAssertTrue(output!.hasSuffix("Test"))
@@ -185,18 +186,18 @@ class SandboxTests: XCTestCase {
         let echoString = "nice"
         continueAfterFailure = false
 
-        let output = SylvesterInterface.executeBash(command: "echo '\(echoString)'")
+        let output = SandboxInterface.executeBash(command: "echo '\(echoString)'")
 
         XCTAssertNotNil(output)
         XCTAssertEqual(output, echoString)
     }
 
-    func testLaunchSubprocess() {
+    func testLaunchSubprocess() throws {
         continueAfterFailure = false
 
-        let output = SylvesterInterface.launchSubprocess(launchPath: "/usr/bin/swift",
-                                                         arguments: ["-version"],
-                                                         shouldPipeStandardError: true)
+        let output = try SandboxInterface.launchSubprocess(exexutableURL: URL(fileURLWithPath: "/usr/bin/swift"),
+                                                           arguments: ["-version"],
+                                                           shouldPipeStandardError: true)
 
         XCTAssertNotNil(output)
         XCTAssertTrue(output!.hasPrefix("Apple Swift version"))

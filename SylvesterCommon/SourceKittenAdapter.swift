@@ -126,50 +126,41 @@ public class SourceKittenAdapter {
     // MARK: - Subprocess Methods
 
     public static func xcRun(arguments: [String]) -> String? {
-        return launchSubprocess(launchPath: "/usr/bin/xcrun", arguments: arguments)
+        let subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/xcrun", isDirectory: false))
+        subprocess.arguments = arguments
+        return launch(subprocess: subprocess)
     }
 
-    public static func xcodeBuild(arguments: [String], currentDirectoryPath: String) -> String? {
-        return launchSubprocess(launchPath: "/usr/bin/xcodebuild",
-                                arguments: arguments + [
-                                    "clean",
-                                    "build",
-                                    "CODE_SIGN_IDENTITY=",
-                                    "CODE_SIGNING_REQUIRED=NO"],
-                                currentDirectoryPath: currentDirectoryPath,
-                                shouldPipeStandardError: true)
+    public static func xcodeBuild(arguments: [String], currentDirectoryURL: URL) -> String? {
+        let subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/xcodebuild", isDirectory: false))
+        subprocess.arguments = arguments + [
+            "clean",
+            "build",
+            "CODE_SIGN_IDENTITY=",
+            "CODE_SIGNING_REQUIRED=NO"
+        ]
+        subprocess.currentDirectoryURL = currentDirectoryURL
+        subprocess.shouldPipeStandardError = true
+        return launch(subprocess: subprocess)
     }
 
-    public static func executeBash(_ command: String, currentDirectoryPath: String? = nil) -> String? {
-        return launchSubprocess(launchPath: "/bin/bash",
-                                arguments: ["-c", command],
-                                currentDirectoryPath: currentDirectoryPath)
+    public static func executeBash(_ command: String, currentDirectoryURL: URL? = nil) -> String? {
+        let subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/bin/bash", isDirectory: false))
+        subprocess.arguments = ["-c", command]
+        subprocess.currentDirectoryURL = currentDirectoryURL
+        return launch(subprocess: subprocess)
     }
 
-    public static func launchSubprocess(launchPath: String,
-                                        arguments: [String] = [],
-                                        environment: [String: String]? = nil,
-                                        currentDirectoryPath: String? = nil,
-                                        shouldPipeStandardError: Bool = false) -> String? {
-        let task = Process()
-        task.launchPath = launchPath
-        task.arguments = arguments
-
-        if let environment = environment {
-            task.environment = environment
-        }
-
-        if let path = currentDirectoryPath {
-            task.currentDirectoryPath = path
-        }
+    public static func launch(subprocess: SKSubprocess) -> String? {
+        let process = subprocess.process
 
         let pipe = Pipe()
-        task.standardOutput = pipe
-        if shouldPipeStandardError {
-            task.standardError = pipe
+        process.standardOutput = pipe
+        if subprocess.shouldPipeStandardError {
+            process.standardError = pipe
         }
 
-        task.launch()
+        process.launch()
 
         let file = pipe.fileHandleForReading
         defer { file.closeFile() }

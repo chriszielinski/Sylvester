@@ -118,7 +118,7 @@
 		14724D3521CED38A005CD5C9 /* Yams.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14724D3621CED3AD005CD5C9 /* AtomicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A9C321B616E3007E007A /* AtomicKit.framework */; };
 		14724D3721CED3AD005CD5C9 /* AtomicKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A9C321B616E3007E007A /* AtomicKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		14724D3921CED795005CD5C9 /* SylvesterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724D3821CED794005CD5C9 /* SylvesterInterface.swift */; };
+		14724D3921CED795005CD5C9 /* SandboxInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724D3821CED794005CD5C9 /* SandboxInterface.swift */; };
 		147ACB1E21C5AE2000CA1CA9 /* SourceKittenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ACB1D21C5AE2000CA1CA9 /* SourceKittenAdapter.swift */; };
 		147ACB2021C5B18000CA1CA9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ACB1F21C5B18000CA1CA9 /* Error.swift */; };
 		147B1BA521EE76FD00000842 /* SyntaxToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA421EE76FD00000842 /* SyntaxToken.swift */; };
@@ -154,7 +154,8 @@
 		149ABB5421DEEBDA00CE0351 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		149ABB5521DEEBDA00CE0351 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; };
 		149ABB5621DEEBDA00CE0351 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
-		149ABB6121DEEC0100CE0351 /* SylvesterXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; };
+		14ADDFA521F79B23009C42D6 /* SKSubprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */; };
+		14ADDFA621F7ABD0009C42D6 /* SylvesterXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; };
 		14B1804021EFC68D001E272A /* CustomSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1803F21EFC68D001E272A /* CustomSubstructure.swift */; };
 		14B1804221EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */; };
 		14B1804321EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */; };
@@ -408,7 +409,7 @@
 		14724D1021CECD63005CD5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14724D1221CECD63005CD5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14724D1321CECD63005CD5C9 /* Sandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sandbox.entitlements; sourceTree = "<group>"; };
-		14724D3821CED794005CD5C9 /* SylvesterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SylvesterInterface.swift; sourceTree = "<group>"; };
+		14724D3821CED794005CD5C9 /* SandboxInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxInterface.swift; sourceTree = "<group>"; };
 		147ACB1D21C5AE2000CA1CA9 /* SourceKittenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceKittenAdapter.swift; sourceTree = "<group>"; };
 		147ACB1F21C5B18000CA1CA9 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		147B1BA421EE76FD00000842 /* SyntaxToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxToken.swift; sourceTree = "<group>"; };
@@ -440,6 +441,7 @@
 		1493780021D5C92500632B76 /* SKParagraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKParagraph.swift; sourceTree = "<group>"; };
 		1493780221D5D51700632B76 /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
 		149ABB5D21DEEBDA00CE0351 /* SylvesterXPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SylvesterXPCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSubprocess.swift; sourceTree = "<group>"; };
 		14B1803F21EFC68D001E272A /* CustomSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubstructure.swift; sourceTree = "<group>"; };
 		14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericSwiftDocs.swift; sourceTree = "<group>"; };
 		14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericEditorOpen.swift; sourceTree = "<group>"; };
@@ -532,7 +534,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149ABB6121DEEC0100CE0351 /* SylvesterXPC.framework in Frameworks */,
+				14ADDFA621F7ABD0009C42D6 /* SylvesterXPC.framework in Frameworks */,
 				149ABB5221DEEBDA00CE0351 /* Regex.framework in Frameworks */,
 				149ABB5421DEEBDA00CE0351 /* SourceKittenFramework.framework in Frameworks */,
 				149ABB5521DEEBDA00CE0351 /* SWXMLHash.framework in Frameworks */,
@@ -606,7 +608,7 @@
 			isa = PBXGroup;
 			children = (
 				141E979C21DECA9C00409B56 /* Subclasses */,
-				14724D3821CED794005CD5C9 /* SylvesterInterface.swift */,
+				14724D3821CED794005CD5C9 /* SandboxInterface.swift */,
 			);
 			path = Sylvester;
 			sourceTree = "<group>";
@@ -627,6 +629,7 @@
 				144ED43A21B2108D00D0C19F /* SKCodeCompletionSessionOptions.swift */,
 				148CB85D21C17E72002928DD /* SKXPCError.swift */,
 				148CB85F21C18036002928DD /* Wrappers */,
+				14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1349,7 +1352,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CONFIGURATION\" == \"ReleaseXPC\" ]; then\n    echo \"Removing built products...\";\n    bash $SRCROOT/Scripts/remove_built_products.sh;\nfi\n";
+			shellScript = "#if [ \"$CONFIGURATION\" == \"ReleaseXPC\" ]; then\n    echo \"Removing built products...\";\n    bash $SRCROOT/Scripts/remove_built_products.sh;\n#fi\n";
 			showEnvVarsInLog = 0;
 		};
 		141E979D21DECF9B00409B56 /* Warn Outdated Carthage Dependencies */ = {
@@ -1554,7 +1557,7 @@
 				14724D0C21CECD61005CD5C9 /* ViewController.swift in Sources */,
 				141E979921DEC9DA00409B56 /* CustomEditorOpen.swift in Sources */,
 				141E979B21DECA0C00409B56 /* CustomSwiftDocs.swift in Sources */,
-				14724D3921CED795005CD5C9 /* SylvesterInterface.swift in Sources */,
+				14724D3921CED795005CD5C9 /* SandboxInterface.swift in Sources */,
 				14724D0A21CECD61005CD5C9 /* AppDelegate.swift in Sources */,
 				14B1804021EFC68D001E272A /* CustomSubstructure.swift in Sources */,
 			);
@@ -1624,6 +1627,7 @@
 				1420E24821C0529000BEF13C /* Bool.swift in Sources */,
 				148CB85E21C17E72002928DD /* SKXPCError.swift in Sources */,
 				1420E25121C0A5A500BEF13C /* SKDataWrapper.swift in Sources */,
+				14ADDFA521F79B23009C42D6 /* SKSubprocess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
