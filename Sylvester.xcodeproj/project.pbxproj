@@ -62,7 +62,6 @@
 		1411B14721DEE58700CA071D /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		1411B14821DEE58700CA071D /* AtomicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A9C321B616E3007E007A /* AtomicKit.framework */; };
 		1411B14B21DEE58700CA071D /* SylvesterXPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 14BF6C0821BC2182006EAB11 /* SylvesterXPCService.xpc */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1411B14D21DEE58700CA071D /* SylvesterCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14149BB421DFC534007A1AF5 /* SylvesterXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; };
 		14149BB521DFC534007A1AF5 /* SylvesterXPC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		141E979921DEC9DA00409B56 /* CustomEditorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E979821DEC9DA00409B56 /* CustomEditorOpen.swift */; };
@@ -109,7 +108,6 @@
 		14724D0C21CECD61005CD5C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724D0B21CECD61005CD5C9 /* ViewController.swift */; };
 		14724D0E21CECD63005CD5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14724D0D21CECD63005CD5C9 /* Assets.xcassets */; };
 		14724D1121CECD63005CD5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14724D0F21CECD63005CD5C9 /* Main.storyboard */; };
-		14724D2A21CECE5B005CD5C9 /* SylvesterCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14724D3021CED389005CD5C9 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		14724D3121CED389005CD5C9 /* SourceKittenFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14724D3221CED38A005CD5C9 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; };
@@ -156,6 +154,9 @@
 		149ABB5621DEEBDA00CE0351 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
 		14ADDFA521F79B23009C42D6 /* SKSubprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */; };
 		14ADDFA621F7ABD0009C42D6 /* SylvesterXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; };
+		14ADDFA921F7C8A6009C42D6 /* SylvesterCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; };
+		14ADDFAC21F7C9CE009C42D6 /* SylvesterCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; };
+		14ADDFAD21F7C9DF009C42D6 /* SylvesterCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14B1804021EFC68D001E272A /* CustomSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1803F21EFC68D001E272A /* CustomSubstructure.swift */; };
 		14B1804221EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */; };
 		14B1804321EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */; };
@@ -227,13 +228,6 @@
 			remoteGlobalIDString = 14BF6C0721BC2182006EAB11;
 			remoteInfo = SylvesterXPC;
 		};
-		14149BB621DFC534007A1AF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1411B11721DEE58700CA071D;
-			remoteInfo = SylvesterXPC;
-		};
 		144ED42921B2105E00D0C19F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
@@ -249,6 +243,20 @@
 			remoteInfo = SylvesterCommon;
 		};
 		14827A4F21DF292E002D4440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14BF6C3421BC4FB5006EAB11;
+			remoteInfo = SylvesterCommon;
+		};
+		14ADDFA721F7C4E1009C42D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1411B11721DEE58700CA071D;
+			remoteInfo = SylvesterXPC;
+		};
+		14ADDFAA21F7C900009C42D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
 			proxyType = 1;
@@ -283,17 +291,6 @@
 			name = "Embed XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1411B14C21DEE58700CA071D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1411B14D21DEE58700CA071D /* SylvesterCommon.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		144ED45321B2179100D0C19F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,23 +300,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14724D2921CECE45005CD5C9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				14724D2A21CECE5B005CD5C9 /* SylvesterCommon.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		14724D2F21CECE7F005CD5C9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				14ADDFAD21F7C9DF009C42D6 /* SylvesterCommon.framework in Embed Frameworks */,
 				14149BB521DFC534007A1AF5 /* SylvesterXPC.framework in Embed Frameworks */,
 				14724D3721CED3AD005CD5C9 /* AtomicKit.framework in Embed Frameworks */,
 				14724D3121CED389005CD5C9 /* SourceKittenFramework.framework in Embed Frameworks */,
@@ -510,6 +497,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ADDFA921F7C8A6009C42D6 /* SylvesterCommon.framework in Frameworks */,
 				1409B2D921B8491400938856 /* Regex.framework in Frameworks */,
 				144ED42821B2105E00D0C19F /* Sylvester.framework in Frameworks */,
 				144ED44C21B2159F00D0C19F /* SourceKittenFramework.framework in Frameworks */,
@@ -522,6 +510,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ADDFAC21F7C9CE009C42D6 /* SylvesterCommon.framework in Frameworks */,
 				14724D3421CED38A005CD5C9 /* Yams.framework in Frameworks */,
 				14149BB421DFC534007A1AF5 /* SylvesterXPC.framework in Frameworks */,
 				14724D3021CED389005CD5C9 /* SourceKittenFramework.framework in Frameworks */,
@@ -627,9 +616,9 @@
 			isa = PBXGroup;
 			children = (
 				144ED43A21B2108D00D0C19F /* SKCodeCompletionSessionOptions.swift */,
+				14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */,
 				148CB85D21C17E72002928DD /* SKXPCError.swift */,
 				148CB85F21C18036002928DD /* Wrappers */,
-				14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1033,7 +1022,6 @@
 				1411B14321DEE58700CA071D /* Frameworks */,
 				1411B14921DEE58700CA071D /* Resources */,
 				1411B14A21DEE58700CA071D /* Embed XPC Services */,
-				1411B14C21DEE58700CA071D /* Embed Frameworks */,
 				1411B14E21DEE58700CA071D /* Run SwiftLint */,
 				1411B14F21DEE58700CA071D /* Warn Outdated Carthage Dependencies */,
 			);
@@ -1056,13 +1044,13 @@
 				144ED41A21B2105E00D0C19F /* Sources */,
 				144ED41B21B2105E00D0C19F /* Frameworks */,
 				144ED41C21B2105E00D0C19F /* Resources */,
-				14724D2921CECE45005CD5C9 /* Embed Frameworks */,
 				148EF61721D59F3C00BA681A /* Run SwiftLint */,
 				141E979D21DECF9B00409B56 /* Warn Outdated Carthage Dependencies */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				14ADDFAB21F7C900009C42D6 /* PBXTargetDependency */,
 			);
 			name = Sylvester;
 			productName = Sylvester;
@@ -1100,7 +1088,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				14149BB721DFC534007A1AF5 /* PBXTargetDependency */,
+				14ADDFA821F7C4E1009C42D6 /* PBXTargetDependency */,
 			);
 			name = Sandbox;
 			productName = Sandbox;
@@ -1352,7 +1340,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#if [ \"$CONFIGURATION\" == \"ReleaseXPC\" ]; then\n    echo \"Removing built products...\";\n    bash $SRCROOT/Scripts/remove_built_products.sh;\n#fi\n";
+			shellScript = "if [ \"$CONFIGURATION\" == \"ReleaseXPC\" ]; then\n    echo \"Removing built products...\";\n    bash $SRCROOT/Scripts/remove_built_products.sh;\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		141E979D21DECF9B00409B56 /* Warn Outdated Carthage Dependencies */ = {
@@ -1647,11 +1635,6 @@
 			target = 14BF6C0721BC2182006EAB11 /* SylvesterXPCService */;
 			targetProxy = 1411B11921DEE58700CA071D /* PBXContainerItemProxy */;
 		};
-		14149BB721DFC534007A1AF5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1411B11721DEE58700CA071D /* SylvesterXPC */;
-			targetProxy = 14149BB621DFC534007A1AF5 /* PBXContainerItemProxy */;
-		};
 		144ED42A21B2105E00D0C19F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 144ED41D21B2105E00D0C19F /* Sylvester */;
@@ -1666,6 +1649,16 @@
 			isa = PBXTargetDependency;
 			target = 14BF6C3421BC4FB5006EAB11 /* SylvesterCommon */;
 			targetProxy = 14827A4F21DF292E002D4440 /* PBXContainerItemProxy */;
+		};
+		14ADDFA821F7C4E1009C42D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1411B11721DEE58700CA071D /* SylvesterXPC */;
+			targetProxy = 14ADDFA721F7C4E1009C42D6 /* PBXContainerItemProxy */;
+		};
+		14ADDFAB21F7C900009C42D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14BF6C3421BC4FB5006EAB11 /* SylvesterCommon */;
+			targetProxy = 14ADDFAA21F7C900009C42D6 /* PBXContainerItemProxy */;
 		};
 		14B1F19721DF083C00ED3420 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
