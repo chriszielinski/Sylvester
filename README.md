@@ -78,8 +78,9 @@ The `Sylvester` framework has two build configurations that differ in their meth
 Dependencies
 ============
 
-`Sylvester` depends on the following frameworks/libraries, so ensure they are also embedded in the _Embed Frameworks_ phase:
+`Sylvester`/`SylvesterXPC` depends on the following frameworks/libraries, so ensure they are also embedded in the _Embed Frameworks_ phase:
 
+ - `SylvesterCommon.framework`
  - `AtomicKit.framework`
  - `SourceKittenFramework.framework`
  - `SWXMLHash.framework`
