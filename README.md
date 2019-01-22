@@ -78,7 +78,7 @@ The `Sylvester` framework has two build configurations that differ in their meth
 Dependencies
 ============
 
-`Sylvester` depends on the following frameworks/libraries, so ensure they are also embedded in the '_Embed Frameworks_' phase:
+`Sylvester` depends on the following frameworks/libraries, so ensure they are also embedded in the _Embed Frameworks_ phase:
 
  - `AtomicKit.framework`
  - `SourceKittenFramework.framework`
@@ -178,7 +178,7 @@ class BetterSwiftDocs: SKGenericSwiftDocs<BetterSubstructureSubclass> {
 `SKModule`
 ----------
 
-An example of a `SKModule ` subclass utilizing the `BetterSwiftDocs` and `BetterSubstructureSubclass` classes declared above:
+An example of a `SKModule` subclass utilizing the `BetterSwiftDocs` and `BetterSubstructureSubclass` classes declared above:
 
 ```swift
 class BetterModule: SKGenericModule<BetterSubstructureSubclass, BetterSwiftDocs> {}
@@ -188,7 +188,7 @@ class BetterModule: SKGenericModule<BetterSubstructureSubclass, BetterSwiftDocs>
 Code Signing
 ============
 
-If you decide to use the `SylvesterXPC` module, you will need to add a '_Run Script_' phase before embedding the _SylvesterXPC.framework_ (i.e. before the '_Embed Frameworks_' phase). Ensure the shell launch path is `/bin/sh` (default). Then for Carthage installations, execute the `code_sign_carthage.sh` shell script in the repository's _Scripts_ directory.
+If you decide to use the `SylvesterXPC` module, you will need to add a _Run Script_ phase before embedding the _SylvesterXPC.framework_ (i.e. before the _Embed Frameworks_ phase). Ensure the shell launch path is `/bin/sh` (default). Then for Carthage installations, execute the `code_sign_carthage.sh` shell script in the repository's _Scripts_ directory.
 
 ```shell
 "$SRCROOT/Carthage/Checkouts/Sylvester/Scripts/code_sign_carthage.sh"
