@@ -113,7 +113,7 @@ Other Fun Things
 | XCRun | [`SylvesterInterface.shared.xcRun(arguments:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC5xcRun9argumentsSSSgSaySSG_tF) |
 | XcodeBuild | [`SylvesterInterface.shared.xcodeBuild(arguments:currentDirectoryURL:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC10xcodeBuild9arguments19currentDirectoryURLSSSgSaySSG_10Foundation0I0VtF) |
 | Bash Command | [`SylvesterInterface.shared.executeBash(command:currentDirectoryURL:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC11executeBash7command19currentDirectoryURLSSSgSS_10Foundation0I0VSgtF) |
-| Launch Subprocess | [`SylvesterInterface.shared.launch(subprocess:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC6launch10subprocessSSSg0A6Common12SKSubprocessC_tKF) |
+| Launch Subprocess | [`SylvesterInterface.shared.launch(subprocess:)`](https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC6launch10subprocessSSSg0A6Common12SKSubprocessV_tKF) |
 
 
 Subclassing

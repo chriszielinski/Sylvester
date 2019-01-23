@@ -10,7 +10,7 @@
 import Foundation
 
 let replacements: [String: String] = [
-    "<span class=\"kt\">SKCodeCompletionSessionOptions</span>": "<span class=\"kt\"><a href=\"https://chriszielinski.github.io/Sylvester/SylvesterCommon/Structs/SKCodeCompletionSessionOptions.html\">SKCodeCompletionSessionResponse</a></span>",
+    "<span class=\"kt\">SKCodeCompletionSessionOptions</span>": "<span class=\"kt\"><a href=\"https://chriszielinski.github.io/Sylvester/SylvesterCommon/Structs/SKCodeCompletionSessionOptions.html\">SKCodeCompletionSessionOptions</a></span>",
     "<span class=\"kt\">SKError</span>": "<span class=\"kt\"><a href=\"https://chriszielinski.github.io/Sylvester/SylvesterCommon/Enums/SKError.html\">SKError</a></span>",
     "<span class=\"kt\">SKSubprocess</span>": "<span class=\"kt\"><a href=\"https://chriszielinski.github.io/Sylvester/SylvesterCommon/Structs/SKSubprocess.html\">SKSubprocess</a></span>"
 ]
