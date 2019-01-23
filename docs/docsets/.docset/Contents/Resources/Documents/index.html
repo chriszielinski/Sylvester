@@ -277,9 +277,10 @@
 </blockquote>
 <h1 id='dependencies' class='heading'>Dependencies</h1>
 
-<p><code>Sylvester</code> depends on the following frameworks/libraries, so ensure they are also embedded in the <em>Embed Frameworks</em> phase:</p>
+<p><code>Sylvester</code>/<code>SylvesterXPC</code> depends on the following frameworks/libraries, so ensure they are also embedded in the <em>Embed Frameworks</em> phase:</p>
 
 <ul>
+<li><code>SylvesterCommon.framework</code></li>
 <li><code>AtomicKit.framework</code></li>
 <li><code>SourceKittenFramework.framework</code></li>
 <li><code>SWXMLHash.framework</code></li>
@@ -336,19 +337,19 @@
 </thead><tbody>
 <tr>
 <td style="text-align: right">XCRun</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC5xcRun9argumentsSSSgSaySSG_tF"><code>SourceKittenInterface.shared.xcRun(arguments:)</code></a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC5xcRun9argumentsSSSgSaySSG_tF"><code>SylvesterInterface.shared.xcRun(arguments:)</code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">XcodeBuild</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC10xcodeBuild9arguments20currentDirectoryPathSSSgSaySSG_SStF"><code>SourceKittenInterface.shared.xcodeBuild(arguments:currentDirectoryPath:)</code></a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC10xcodeBuild9arguments19currentDirectoryURLSSSgSaySSG_10Foundation0I0VtF"><code>SylvesterInterface.shared.xcodeBuild(arguments:currentDirectoryURL:)</code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Bash Command</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC11executeBash7command20currentDirectoryPathSSSgSS_AGtF"><code>SourceKittenInterface.shared.executeBash(command:currentDirectoryPath:)</code></a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC11executeBash7command19currentDirectoryURLSSSgSS_10Foundation0I0VSgtF"><code>SylvesterInterface.shared.executeBash(command:currentDirectoryURL:)</code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Launch Subprocess</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SourceKittenInterface.html#/s:12SylvesterXPC21SourceKittenInterfaceC16launchSubprocess0F4Path9arguments11environment016currentDirectoryH023shouldPipeStandardErrorSSSgSS_SaySSGSDyS2SGSgAJSbtF"><code>SourceKittenInterface.shared.launchSubprocess(launchPath:arguments:environment:currentDirectoryPath:shouldPipeStandardError:)</code></a></td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SylvesterInterface.html#/s:12SylvesterXPC0A9InterfaceC6launch10subprocessSSSg0A6Common12SKSubprocessC_tKF"><code>SylvesterInterface.shared.launch(subprocess:)</code></a></td>
 </tr>
 </tbody></table>
 <h1 id='subclassing' class='heading'>Subclassing</h1>

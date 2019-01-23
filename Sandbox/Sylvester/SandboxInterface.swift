@@ -69,7 +69,7 @@ public class SandboxInterface {
                                         arguments: [String] = [],
                                         currentDirectoryURL: URL? = nil,
                                         shouldPipeStandardError: Bool = false) throws -> String? {
-        let subprocess = SKSubprocess(executableURL: exexutableURL)
+        var subprocess = SKSubprocess(executableURL: exexutableURL)
         subprocess.arguments = arguments
         subprocess.currentDirectoryURL = currentDirectoryURL
         subprocess.shouldPipeStandardError = shouldPipeStandardError

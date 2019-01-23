@@ -429,6 +429,7 @@
 		1493780221D5D51700632B76 /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
 		149ABB5D21DEEBDA00CE0351 /* SylvesterXPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SylvesterXPCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSubprocess.swift; sourceTree = "<group>"; };
+		14ADDFAE21F7E0D9009C42D6 /* generate-docs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "generate-docs.swift"; sourceTree = "<group>"; };
 		14B1803F21EFC68D001E272A /* CustomSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubstructure.swift; sourceTree = "<group>"; };
 		14B1804121EFC838001E272A /* SKGenericSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericSwiftDocs.swift; sourceTree = "<group>"; };
 		14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericEditorOpen.swift; sourceTree = "<group>"; };
@@ -779,6 +780,7 @@
 				146910EA21F28B1900C3E740 /* run_on_non_pull_requests.sh */,
 				146910ED21F28B1900C3E740 /* run_on_pull_requests.sh */,
 				146910EE21F28B1900C3E740 /* xccov-to-sonarqube-generic.sh */,
+				14ADDFAE21F7E0D9009C42D6 /* generate-docs.swift */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";

@@ -126,13 +126,13 @@ public class SourceKittenAdapter {
     // MARK: - Subprocess Methods
 
     public static func xcRun(arguments: [String]) -> String? {
-        let subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/xcrun", isDirectory: false))
+        var subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/xcrun", isDirectory: false))
         subprocess.arguments = arguments
         return launch(subprocess: subprocess)
     }
 
     public static func xcodeBuild(arguments: [String], currentDirectoryURL: URL) -> String? {
-        let subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/xcodebuild", isDirectory: false))
+        var subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/xcodebuild", isDirectory: false))
         subprocess.arguments = arguments + [
             "clean",
             "build",
@@ -145,7 +145,7 @@ public class SourceKittenAdapter {
     }
 
     public static func executeBash(_ command: String, currentDirectoryURL: URL? = nil) -> String? {
-        let subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/bin/bash", isDirectory: false))
+        var subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/bin/bash", isDirectory: false))
         subprocess.arguments = ["-c", command]
         subprocess.currentDirectoryURL = currentDirectoryURL
         return launch(subprocess: subprocess)

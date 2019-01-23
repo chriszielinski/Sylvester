@@ -50,7 +50,7 @@ class OtherRequestTests: XCTestCase {
     func testLaunchSubprocess() throws {
         continueAfterFailure = false
 
-        let subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/swift"))
+        var subprocess = SKSubprocess(executableURL: URL(fileURLWithPath: "/usr/bin/swift"))
         subprocess.arguments = ["-version"]
         subprocess.shouldPipeStandardError = true
         let output = try SylvesterInterface.shared.launch(subprocess: subprocess)
