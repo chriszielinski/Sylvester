@@ -108,10 +108,10 @@ swiftlint:
 jazzy:
 	jazzy --clean --xcodebuild-arguments -scheme,SylvesterXPC
 	jazzy --xcodebuild-arguments -scheme,SylvesterCommon,-configuration,Debug --output docs/SylvesterCommon
-	./Scripts/generate-docs.swift `pwd`/docs
+	./Scripts/generate_docs.swift `pwd`/docs
 
 convert-xccov-to-sonarqube:
-	./Scripts/xccov-to-sonarqube-generic.sh .test-results/1_Test/action.xccovarchive/ > .test-results/sonarqube-generic-coverage.xml
+	./Scripts/xccov_to_sonarqube_generic.sh .test-results/1_Test/action.xccovarchive/ > .test-results/sonarqube-generic-coverage.xml
 
 clean:
 	rm -rf ./.test-results
