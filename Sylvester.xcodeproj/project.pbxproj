@@ -221,33 +221,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1411B11921DEE58700CA071D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14BF6C0721BC2182006EAB11;
-			remoteInfo = SylvesterXPC;
-		};
 		144ED42921B2105E00D0C19F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 144ED41D21B2105E00D0C19F;
 			remoteInfo = Sylvester;
-		};
-		14827A4D21DF290D002D4440 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14BF6C3421BC4FB5006EAB11;
-			remoteInfo = SylvesterCommon;
-		};
-		14827A4F21DF292E002D4440 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 144ED41521B2105E00D0C19F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14BF6C3421BC4FB5006EAB11;
-			remoteInfo = SylvesterCommon;
 		};
 		14ADDFA721F7C4E1009C42D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -402,8 +381,8 @@
 		147B1BA421EE76FD00000842 /* SyntaxToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxToken.swift; sourceTree = "<group>"; };
 		147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSyntaxKind.swift; sourceTree = "<group>"; };
 		147B1BAC21EE9A4900000842 /* SKSubstructureKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSubstructureKind.swift; sourceTree = "<group>"; };
+		147FBC5521FA51BC00E90057 /* build-sylvester-common.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-sylvester-common.sh"; sourceTree = "<group>"; };
 		14827A5121DF2B1B002D4440 /* SylvesterXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SylvesterXPC.h; sourceTree = "<group>"; };
-		1482FC2621DFE4C800CC796C /* release-xpc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "release-xpc.xcconfig"; sourceTree = "<group>"; };
 		1484CAF021B5946500EF8F09 /* SKSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSwiftDocs.swift; sourceTree = "<group>"; };
 		1484CAF221B5978200EF8F09 /* SKSwiftDocumentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSwiftDocumentationTests.swift; sourceTree = "<group>"; };
 		1484CAF821B5C6C700EF8F09 /* FirstDifferenceBetweenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDifferenceBetweenStrings.swift; sourceTree = "<group>"; };
@@ -447,7 +426,6 @@
 		14BF6C1A21BC3C12006EAB11 /* SylvesterXPCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SylvesterXPCProtocol.swift; sourceTree = "<group>"; };
 		14BF6C1B21BC3C12006EAB11 /* SylvesterXPCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SylvesterXPCDelegate.swift; sourceTree = "<group>"; };
 		14BF6C1C21BC3C14006EAB11 /* SylvesterXPCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SylvesterXPCService.swift; sourceTree = "<group>"; };
-		14BF6C2221BC3E26006EAB11 /* debug-xpc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "debug-xpc.xcconfig"; sourceTree = "<group>"; };
 		14BF6C2321BC3E89006EAB11 /* SylvesterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylvesterInterface.swift; sourceTree = "<group>"; };
 		14BF6C2A21BC43A7006EAB11 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SylvesterCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -643,7 +621,6 @@
 				14BF6C3621BC4FB6006EAB11 /* SylvesterCommon */,
 				14BF6C0921BC2182006EAB11 /* SylvesterXPCService */,
 				144ED42B21B2105E00D0C19F /* Tests */,
-				1467834C21D57446003936BB /* XCConfigurations */,
 				144ED43D21B2115D00D0C19F /* Frameworks */,
 				144ED41F21B2105E00D0C19F /* Products */,
 			);
@@ -760,18 +737,10 @@
 			path = "Data Structures";
 			sourceTree = "<group>";
 		};
-		1467834C21D57446003936BB /* XCConfigurations */ = {
-			isa = PBXGroup;
-			children = (
-				14BF6C2221BC3E26006EAB11 /* debug-xpc.xcconfig */,
-				1482FC2621DFE4C800CC796C /* release-xpc.xcconfig */,
-			);
-			path = XCConfigurations;
-			sourceTree = "<group>";
-		};
 		1467834D21D57468003936BB /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				147FBC5521FA51BC00E90057 /* build-sylvester-common.sh */,
 				146910EF21F28B1900C3E740 /* add_key.sh */,
 				146910EB21F28B1900C3E740 /* code_sign_built_products.sh */,
 				146910F021F28B1900C3E740 /* code_sign_carthage.sh */,
@@ -1019,6 +988,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1411B15021DEE58700CA071D /* Build configuration list for PBXNativeTarget "SylvesterXPC" */;
 			buildPhases = (
+				147FBC5421FA51A200E90057 /* Build SylvesterCommon */,
 				1411B11A21DEE58700CA071D /* Headers */,
 				1411B11C21DEE58700CA071D /* Sources */,
 				1411B14321DEE58700CA071D /* Frameworks */,
@@ -1030,8 +1000,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				14827A5021DF292E002D4440 /* PBXTargetDependency */,
-				1411B11821DEE58700CA071D /* PBXTargetDependency */,
 			);
 			name = SylvesterXPC;
 			productName = Sylvester;
@@ -1126,7 +1094,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				14827A4E21DF290D002D4440 /* PBXTargetDependency */,
 			);
 			name = SylvesterXPCService;
 			productName = SylvesterXPC;
@@ -1362,6 +1329,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings\n";
+			showEnvVarsInLog = 0;
+		};
+		147FBC5421FA51A200E90057 /* Build SylvesterCommon */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build SylvesterCommon";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/Scripts/build-sylvester-common.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		148EF61721D59F3C00BA681A /* Run SwiftLint */ = {
@@ -1632,25 +1618,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1411B11821DEE58700CA071D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14BF6C0721BC2182006EAB11 /* SylvesterXPCService */;
-			targetProxy = 1411B11921DEE58700CA071D /* PBXContainerItemProxy */;
-		};
 		144ED42A21B2105E00D0C19F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 144ED41D21B2105E00D0C19F /* Sylvester */;
 			targetProxy = 144ED42921B2105E00D0C19F /* PBXContainerItemProxy */;
-		};
-		14827A4E21DF290D002D4440 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14BF6C3421BC4FB5006EAB11 /* SylvesterCommon */;
-			targetProxy = 14827A4D21DF290D002D4440 /* PBXContainerItemProxy */;
-		};
-		14827A5021DF292E002D4440 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14BF6C3421BC4FB5006EAB11 /* SylvesterCommon */;
-			targetProxy = 14827A4F21DF292E002D4440 /* PBXContainerItemProxy */;
 		};
 		14ADDFA821F7C4E1009C42D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1705,11 +1676,15 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(BUILT_PRODUCTS_DIR)/SylvesterXPCTests.xctest/Contents/Frameworks",
+					"$(BUILT_PRODUCTS_DIR)/Sandbox.app/Contents/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigzlabs.SylvesterXPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG XPC";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -1794,6 +1769,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigzlabs.SylvesterXPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = XPC;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -2133,7 +2109,6 @@
 		};
 		1482FC1D21DFE47D00CC796C /* ReleaseXPC */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1482FC2621DFE4C800CC796C /* release-xpc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2411,13 +2386,16 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"@loader_path/../Frameworks",
 					"@executable_path/../Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(BUILT_PRODUCTS_DIR)/SylvesterXPCTests.xctest/Contents/Frameworks",
+					"$(BUILT_PRODUCTS_DIR)/Sandbox.app/Contents/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigzlabs.SylvesterXPCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG XPC";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -2493,6 +2471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigzlabs.SylvesterXPCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = XPC;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -2682,7 +2661,6 @@
 		};
 		14BF6C2521BC4006006EAB11 /* DebugXPC */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14BF6C2221BC3E26006EAB11 /* debug-xpc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

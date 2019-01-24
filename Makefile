@@ -88,10 +88,10 @@ travis-test-normal:
 	xcodebuild test $(XCODEFLAGS) -scheme Sylvester -configuration Debug $(TRAVIS_BUILD_SETTINGS) $(MAKE_PRETTY_FOR_TRAVIS)
 
 travis-test-xpc:
-	xcodebuild test $(XCODEFLAGS) -scheme SylvesterXPC -configuration DebugXPC -resultBundlePath .test-results $(TRAVIS_XPC_BUILD_SETTINGS) $(MAKE_PRETTY_FOR_TRAVIS)
+	xcodebuild test $(XCODEFLAGS) -scheme SylvesterXPC -configuration Debug -resultBundlePath .test-results $(TRAVIS_XPC_BUILD_SETTINGS) $(MAKE_PRETTY_FOR_TRAVIS)
 
 travis-test-sandbox:
-	$(TRAVIS_ENV_VARIABLES) xcodebuild test $(XCODEFLAGS) -scheme Sandbox -configuration ReleaseXPC $(TRAVIS_XPC_BUILD_SETTINGS) $(MAKE_PRETTY_FOR_TRAVIS)
+	$(TRAVIS_ENV_VARIABLES) xcodebuild test $(XCODEFLAGS) -scheme Sandbox $(TRAVIS_XPC_BUILD_SETTINGS) $(MAKE_PRETTY_FOR_TRAVIS)
 
 
 #################
@@ -107,7 +107,7 @@ swiftlint:
 
 jazzy:
 	jazzy --clean --xcodebuild-arguments -scheme,SylvesterXPC
-	jazzy --xcodebuild-arguments -scheme,SylvesterCommon,-configuration,DebugXPC --output docs/SylvesterCommon
+	jazzy --xcodebuild-arguments -scheme,SylvesterCommon,-configuration,Debug --output docs/SylvesterCommon
 	./Scripts/generate-docs.swift `pwd`/docs
 
 convert-xccov-to-sonarqube:
