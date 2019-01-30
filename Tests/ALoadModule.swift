@@ -91,14 +91,14 @@ class ALoadModule: SylvesterTestCase {
                          name: .docSupportInputsMainSyntaxMapJSON)
 
         writeJSONFixture(for: try SKDocInfo(file: appDelegateFile, sdkPath: sdkPath, target: target),
-                         name: .appDelegateDocInfoJSON)
+                         name: .appDelegateDocInfoMustache)
         writeJSONFixture(for: try SKDocInfo(file: viewControllerFile, sdkPath: sdkPath, target: target),
-                         name: .viewControllerDocInfoJSON)
+                         name: .viewControllerDocInfoMustache)
         writeJSONFixture(for: try SKDocInfo(file: placeholdersFile, sdkPath: sdkPath, target: target),
-                         name: .placeholdersDocInfoJSON)
+                         name: .placeholdersDocInfoMustache)
         writeJSONFixture(for: try SKDocInfo(file: aProtocolFile, sdkPath: sdkPath, target: target),
-                         name: .aProtocolDocInfoJSON)
+                         name: .aProtocolDocInfoMustache)
         writeJSONFixture(for: try SKDocInfo(file: docSupportInputsMainFile, sdkPath: sdkPath, target: target),
-                         name: .docSupportInputsMainDocInfoJSON)
+                         name: .docSupportInputsMainDocInfoMustache)
     }
 }

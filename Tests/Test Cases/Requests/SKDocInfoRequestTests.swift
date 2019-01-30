@@ -101,10 +101,11 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         guard let sdkPath = testModule.sdkPath, let target = testModule.target
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let file = File(pathDeferringReading: filePath(for: .appDelegate))
+        let path = filePath(for: .appDelegate)
+        let file = File(pathDeferringReading: path)
         let response = try SKDocInfo(file: file, sdkPath: sdkPath, target: target)
 
-        try SylvesterAssert(response, equalsTestFixture: .appDelegateDocInfoJSON)
+        try SylvesterAssert(response, equalsTestFixture: .appDelegateDocInfoMustache, filePath: path)
     }
 
     func testViewControllerDocInfoRequest() throws {
@@ -113,10 +114,11 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         guard let sdkPath = testModule.sdkPath, let target = testModule.target
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let file = File(pathDeferringReading: filePath(for: .viewController))
+        let path = filePath(for: .viewController)
+        let file = File(pathDeferringReading: path)
         let response = try CustomDocInfo(file: file, sdkPath: sdkPath, target: target)
 
-        try SylvesterAssert(response, equalsTestFixture: .viewControllerDocInfoJSON)
+        try SylvesterAssert(response, equalsTestFixture: .viewControllerDocInfoMustache, filePath: path)
     }
 
     func testViewControllerCustomDocInfoRequest() throws {
@@ -125,7 +127,8 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         guard let sdkPath = testModule.sdkPath, let target = testModule.target
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let file = File(pathDeferringReading: filePath(for: .viewController))
+        let path = filePath(for: .viewController)
+        let file = File(pathDeferringReading: path)
         let response = try CustomDocInfo(file: file, sdkPath: sdkPath, target: target)
 
         XCTAssertNotNil(response.topLevelEntities)
@@ -139,7 +142,7 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         }
 
         XCTAssertEqual(count, 2)
-        try SylvesterAssert(response, equalsTestFixture: .viewControllerDocInfoJSON)
+        try SylvesterAssert(response, equalsTestFixture: .viewControllerDocInfoMustache, filePath: path)
 
         XCTAssertNotEqual(classEntity?.parent, classEntity)
         classEntity?.parent = classEntity
@@ -161,10 +164,11 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         guard let sdkPath = testModule.sdkPath, let target = testModule.target
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let file = File(pathDeferringReading: filePath(for: .placeholders))
+        let path = filePath(for: .placeholders)
+        let file = File(pathDeferringReading: path)
         let response = try SKDocInfo(file: file, sdkPath: sdkPath, target: target)
 
-        try SylvesterAssert(response, equalsTestFixture: .placeholdersDocInfoJSON)
+        try SylvesterAssert(response, equalsTestFixture: .placeholdersDocInfoMustache, filePath: path)
     }
 
     func testAProtocolDocInfoRequest() throws {
@@ -173,10 +177,11 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         guard let sdkPath = testModule.sdkPath, let target = testModule.target
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let file = File(pathDeferringReading: filePath(for: .aProtocol))
+        let path = filePath(for: .aProtocol)
+        let file = File(pathDeferringReading: path)
         let response = try SKDocInfo(file: file, sdkPath: sdkPath, target: target)
 
-        try SylvesterAssert(response, equalsTestFixture: .aProtocolDocInfoJSON)
+        try SylvesterAssert(response, equalsTestFixture: .aProtocolDocInfoMustache, filePath: path)
     }
 
     func testDocSupportInputsMainDocInfoRequest() throws {
@@ -185,10 +190,11 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         guard let sdkPath = testModule.sdkPath, let target = testModule.target
             else { return XCTFail(missingCompilerArgumentsMessage) }
 
-        let file = File(pathDeferringReading: filePath(for: .docSupportInputsMain))
+        let path = filePath(for: .docSupportInputsMain)
+        let file = File(pathDeferringReading: path)
         let response = try SKDocInfo(file: file, sdkPath: sdkPath, target: target)
 
-        try SylvesterAssert(response, equalsTestFixture: .docSupportInputsMainDocInfoJSON)
+        try SylvesterAssert(response, equalsTestFixture: .docSupportInputsMainDocInfoMustache, filePath: path)
     }
 
 }

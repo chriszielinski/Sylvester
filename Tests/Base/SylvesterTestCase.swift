@@ -41,29 +41,28 @@ class SylvesterTestCase: XCTestCase {
         enum Mustache: String {
             case appDelegateEditorOpenMustache = "app-delegate-editor-open.mustache"
             case appDelegateSwiftDocsMustache = "app-delegate-swift-documentation.mustache"
+            case appDelegateDocInfoMustache = "app-delegate-doc-info.mustache"
 
             case viewControllerEditorOpenMustache = "view-controller-editor-open.mustache"
             case viewControllerSwiftDocsMustache = "view-controller-swift-documentation.mustache"
+            case viewControllerDocInfoMustache = "view-controller-doc-info.mustache"
 
             case placeholdersEditorOpenMustache = "placeholders-editor-open.mustache"
             case placeholdersSwiftDocsMustache = "placeholders-swift-documentation.mustache"
+            case placeholdersDocInfoMustache = "placeholders-doc-info.mustache"
 
             case aProtocolEditorOpenMustache = "a-protocol-editor-open.mustache"
+            case aProtocolDocInfoMustache = "a-protocol-doc-info.mustache"
 
             case docSupportInputsMainEditorOpenMustache = "doc-support-inputs-main-editor-open.mustache"
             case docSupportInputsMainSwiftDocsMustache = "doc-support-inputs-main-swift-documentation.mustache"
+            case docSupportInputsMainDocInfoMustache = "doc-support-inputs-main-doc-info.mustache"
         }
 
         enum JSON: String {
             case viewControllerSyntaxMapJSON = "view-controller-syntax-map.json"
             case placeholdersSyntaxMapJSON = "placeholders-syntax-map.json"
             case docSupportInputsMainSyntaxMapJSON = "doc-support-inputs-main-syntax-map.json"
-
-            case appDelegateDocInfoJSON = "app-delegate-doc-info.json"
-            case viewControllerDocInfoJSON = "view-controller-doc-info.json"
-            case placeholdersDocInfoJSON = "placeholders-doc-info.json"
-            case aProtocolDocInfoJSON = "a-protocol-doc-info.json"
-            case docSupportInputsMainDocInfoJSON = "doc-support-inputs-main-doc-info.json"
         }
 
     }
@@ -200,11 +199,23 @@ class SylvesterTestCase: XCTestCase {
 
     func decodeMustache(template: TestFixture.Mustache, sourceFile: SourceFile) throws -> SKBaseResponse {
         let path = filePath(for: sourceFile)
-        let jsonString = renderMustache(template: template,
-                                        usingFilePath: path)
+        let jsonString = renderMustache(template: template, usingFilePath: path)
 
         do {
             let response: SKBaseResponse = try decodeJSON(string: jsonString)
+            response.resolve(from: path)
+            return response
+        } catch {
+            fatalError((error as NSError).description)
+        }
+    }
+
+    func decodeMustache(template: TestFixture.Mustache, sourceFile: SourceFile) throws -> SKDocInfo {
+        let path = filePath(for: sourceFile)
+        let jsonString = renderMustache(template: template, usingFilePath: path)
+
+        do {
+            let response: SKDocInfo = try decodeJSON(string: jsonString)
             response.resolve(from: path)
             return response
         } catch {
@@ -237,15 +248,23 @@ class SylvesterTestCase: XCTestCase {
         writeJSONFixture(for: encodableObject, enumCase: name) { jsonString in
             let sourceFile: SourceFile
             switch name {
-            case .appDelegateEditorOpenMustache, .appDelegateSwiftDocsMustache:
+            case .appDelegateEditorOpenMustache,
+                 .appDelegateSwiftDocsMustache,
+                 .appDelegateDocInfoMustache:
                 sourceFile = .appDelegate
-            case .viewControllerEditorOpenMustache, .viewControllerSwiftDocsMustache:
+            case .viewControllerEditorOpenMustache,
+                 .viewControllerSwiftDocsMustache,
+                 .viewControllerDocInfoMustache:
                 sourceFile = .viewController
-            case .placeholdersEditorOpenMustache, .placeholdersSwiftDocsMustache:
+            case .placeholdersEditorOpenMustache,
+                 .placeholdersSwiftDocsMustache,
+                 .placeholdersDocInfoMustache:
                 sourceFile = .placeholders
-            case .aProtocolEditorOpenMustache:
+            case .aProtocolEditorOpenMustache, .aProtocolDocInfoMustache:
                 sourceFile = .aProtocol
-            case .docSupportInputsMainEditorOpenMustache, .docSupportInputsMainSwiftDocsMustache:
+            case .docSupportInputsMainEditorOpenMustache,
+                 .docSupportInputsMainSwiftDocsMustache,
+                 .docSupportInputsMainDocInfoMustache:
                 sourceFile = .docSupportInputsMain
             }
             let path = self.filePath(for: sourceFile).replacingOccurrences(of: "/", with: "\\/")
