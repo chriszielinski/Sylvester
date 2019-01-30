@@ -1,0 +1,422 @@
+{
+  "key.entities" : [
+    {
+      "key.length" : 432,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>ViewController<\/decl.name> : <ref.class usr=\"c:objc(cs)UIViewController\">UIViewController<\/ref.class><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.doc.full_as_xml" : "<Class file=\"\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/ViewController.swift\" line=\"17\" column=\"7\"><Name>ViewController<\/Name><USR>c:@M@main@objc(cs)ViewController<\/USR><Declaration>class ViewController : UIViewController<\/Declaration><CommentParts><Abstract><Para>This is the <codeVoice>ViewController<\/codeVoice>’s documentation.<\/Para><\/Abstract><Discussion><Para>It has another paragraph.<\/Para><Warning><Para>And a warning callout.<\/Para><\/Warning><\/Discussion><\/CommentParts><\/Class>",
+      "key.entities" : [
+        {
+          "key.length" : 192,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>override<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>viewDidLoad<\/decl.name>()<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.doc.full_as_xml" : "<Function file=\"\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/ViewController.swift\" line=\"20\" column=\"19\"><Name>viewDidLoad()<\/Name><USR>c:@M@main@objc(cs)ViewController(im)viewDidLoad<\/USR><Declaration>override func viewDidLoad()<\/Declaration><CommentParts><Abstract><Para>This has some documentation also.<\/Para><\/Abstract><\/CommentParts><\/Function>",
+          "key.name" : "viewDidLoad()",
+          "key.inherits" : [
+            {
+              "key.usr" : "c:objc(cs)UIViewController(im)viewDidLoad",
+              "key.name" : "viewDidLoad()",
+              "key.kind" : "source.lang.swift.ref.function.method.instance"
+            }
+          ],
+          "key.usr" : "c:@M@main@objc(cs)ViewController(im)viewDidLoad",
+          "key.offset" : 384
+        },
+        {
+          "key.length" : 133,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>genericFunction<\/decl.name>&lt;<decl.generic_type_param usr=\"s:4main14ViewControllerC15genericFunction4withSSxcSgx_tSYRzSS8RawValueRtzlF1TL_xmfp\"><decl.generic_type_param.name>T<\/decl.generic_type_param.name><\/decl.generic_type_param>&gt;(<decl.var.parameter><decl.var.parameter.argument_label>with<\/decl.var.parameter.argument_label> <decl.var.parameter.name>parameter<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.generic_type_param usr=\"s:4main14ViewControllerC15genericFunction4withSSxcSgx_tSYRzSS8RawValueRtzlF1TL_xmfp\">T<\/ref.generic_type_param><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><tuple>(<tuple.element><tuple.element.type>(<decl.var.parameter><decl.var.parameter.type><ref.generic_type_param usr=\"s:4main14ViewControllerC15genericFunction4withSSxcSgx_tSYRzSS8RawValueRtzlF1TL_xmfp\">T<\/ref.generic_type_param><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.struct usr=\"s:SS\">String<\/ref.struct><\/decl.function.returntype><\/tuple.element.type><\/tuple.element>)<\/tuple>?<\/decl.function.returntype> <syntaxtype.keyword>where<\/syntaxtype.keyword> <decl.generic_type_requirement>T : <ref.protocol usr=\"s:SY\">RawRepresentable<\/ref.protocol><\/decl.generic_type_requirement>, <decl.generic_type_requirement>T.RawValue == <ref.struct usr=\"s:SS\">String<\/ref.struct><\/decl.generic_type_requirement><\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "parameter",
+              "key.offset" : 641,
+              "key.keyword" : "with",
+              "key.length" : 1,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.generic_params" : [
+            {
+              "key.name" : "T"
+            }
+          ],
+          "key.generic_requirements" : [
+            {
+              "key.description" : "T : RawRepresentable"
+            },
+            {
+              "key.description" : "T.RawValue == String"
+            }
+          ],
+          "key.name" : "genericFunction(with:)",
+          "key.usr" : "s:4main14ViewControllerC15genericFunction4withSSxcSgx_tSYRzSS8RawValueRtzlF",
+          "key.offset" : 583
+        }
+      ],
+      "key.name" : "ViewController",
+      "key.inherits" : [
+        {
+          "key.name" : "UIViewController",
+          "key.modulename" : "UIKit.UIViewController",
+          "key.usr" : "c:objc(cs)UIViewController",
+          "key.kind" : "source.lang.swift.ref.class"
+        }
+      ],
+      "key.usr" : "c:@M@main@objc(cs)ViewController",
+      "key.offset" : 287
+    }
+  ],
+  "key.diagnostics" : [
+    {
+      "key.column" : 9,
+      "key.severity" : "source.diagnostic.severity.error",
+      "key.description" : "errors thrown from here are not handled",
+      "key.filepath" : "\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/ViewController.swift",
+      "key.line" : 24
+    },
+    {
+      "key.column" : 13,
+      "key.severity" : "source.diagnostic.severity.warning",
+      "key.description" : "result of 'String' initializer is unused",
+      "key.ranges" : [
+        {
+          "key.length" : 38,
+          "key.offset" : 533
+        }
+      ],
+      "key.filepath" : "\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/ViewController.swift",
+      "key.line" : 24
+    }
+  ],
+  "key.annotations" : [
+    {
+      "key.name" : null,
+      "key.offset" : 0,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 3,
+      "key.usr" : null,
+      "key.length" : 25,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 28,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 37,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 40,
+      "key.usr" : null,
+      "key.length" : 44,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 84,
+      "key.usr" : null,
+      "key.length" : 55,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 139,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 143,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 150,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 157,
+      "key.usr" : null,
+      "key.length" : 50,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 207,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 211,
+      "key.usr" : null,
+      "key.length" : 30,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 241,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 245,
+      "key.usr" : null,
+      "key.length" : 38,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 251,
+      "key.usr" : null,
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment.field"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 283,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 287,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 293,
+      "key.usr" : null,
+      "key.length" : 14,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "UIViewController",
+      "key.offset" : 309,
+      "key.usr" : "c:objc(cs)UIViewController",
+      "key.length" : 16,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 333,
+      "key.usr" : null,
+      "key.length" : 38,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 375,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.attribute.builtin"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 384,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 389,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 413,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "viewDidLoad()",
+      "key.offset" : 419,
+      "key.usr" : "c:objc(cs)UIViewController(im)viewDidLoad",
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.ref.function.method.instance"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 441,
+      "key.usr" : null,
+      "key.length" : 73,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 523,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "init(contentsOf:)",
+      "key.offset" : 527,
+      "key.usr" : "s:SS10FoundationE10contentsOfSSAA3URLV_tKcfc",
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.ref.function.constructor"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 534,
+      "key.usr" : null,
+      "key.length" : 10,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "init(fileURLWithPath:)",
+      "key.offset" : 546,
+      "key.usr" : "s:10Foundation3URLV15fileURLWithPathACSS_tcfc",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.function.constructor"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 550,
+      "key.usr" : null,
+      "key.length" : 15,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 567,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.syntaxtype.string"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 583,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 588,
+      "key.usr" : null,
+      "key.length" : 15,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 604,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "RawRepresentable",
+      "key.offset" : 607,
+      "key.usr" : "s:SY",
+      "key.length" : 16,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 625,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 630,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "T",
+      "key.offset" : 641,
+      "key.usr" : "s:4main14ViewControllerC15genericFunction4withSSxcSgx_tSYRzSS8RawValueRtzlF1TL_xmfp",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.generic_type_param"
+    },
+    {
+      "key.name" : "T",
+      "key.offset" : 649,
+      "key.usr" : "s:4main14ViewControllerC15genericFunction4withSSxcSgx_tSYRzSS8RawValueRtzlF1TL_xmfp",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.generic_type_param"
+    },
+    {
+      "key.name" : "String",
+      "key.offset" : 655,
+      "key.usr" : "s:SS",
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 664,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "T",
+      "key.offset" : 670,
+      "key.usr" : "s:4main14ViewControllerC15genericFunction4withSSxcSgx_tSYRzSS8RawValueRtzlF1TL_xmfp",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.generic_type_param"
+    },
+    {
+      "key.name" : "RawValue",
+      "key.offset" : 672,
+      "key.usr" : "s:SY8RawValueQa",
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.ref.associatedtype"
+    },
+    {
+      "key.name" : "String",
+      "key.offset" : 684,
+      "key.usr" : "s:SS",
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 701,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 708,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    }
+  ]
+}

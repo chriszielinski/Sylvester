@@ -31,16 +31,6 @@ public struct SKInheritedType {
 
 extension SKInheritedType: Codable {}
 
-// MARK: - Custom Debug String Convertible Protocol
-
-extension SKInheritedType: CustomDebugStringConvertible {
-
-    public var debugDescription: String {
-        return "InheritedType(name: \"\(name)\")"
-    }
-
-}
-
 // MARK: - Equatable Protocol
 
 extension SKInheritedType: Equatable {
@@ -50,3 +40,7 @@ extension SKInheritedType: Equatable {
     }
 
 }
+
+// MARK: - JSON Debug String Convertible Protocol
+
+extension SKInheritedType: JSONDebugStringConvertible {}

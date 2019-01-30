@@ -51,7 +51,7 @@ open class SKSyntaxMap: Codable {
 
 // MARK: - JSON Debug String Convertable Protocol
 
-extension SKSyntaxMap: JSONDebugStringConvertable {}
+extension SKSyntaxMap: JSONDebugStringConvertible {}
 
 // MARK: - Equatable Protocol
 

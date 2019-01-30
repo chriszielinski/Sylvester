@@ -27,23 +27,24 @@ class SKEntityTests: SylvesterTestCase {
         let secondAttribute = SKAttribute(kind: .convenience, offset: offset + 1, length: length)
         let otherAttribute = SKAttribute(kind: .discardableResult, offset: offset, length: length)
         let outOfOrderEntities = [secondAttribute, firstAttribute]
-        let entities = SKEntities(entities: outOfOrderEntities)
+        let entities = SKSortedEntities(entities: outOfOrderEntities)
 
-        XCTAssertEqual(entities[0], firstAttribute, "`SKEntities` subscript returns incorrect entity.")
-        XCTAssertEqual(entities.index(of: firstAttribute), 0, "`SKEntities.index(of:)` returns incorrect index.")
-        XCTAssertEqual(entities.index(of: secondAttribute), 1, "`SKEntities.index(of:)` returns incorrect index.")
+        XCTAssertEqual(entities[0], firstAttribute, "`SKSortedEntities` subscript returns incorrect entity.")
+        XCTAssertEqual(entities.index(of: firstAttribute), 0, "`SKSortedEntities.index(of:)` returns incorrect index.")
+        XCTAssertEqual(entities.index(of: secondAttribute), 1, "`SKSortedEntities.index(of:)` returns incorrect index.")
         XCTAssertNil(entities.index(of: otherAttribute),
-                     "`SKEntities.index(of:)` returns index for a non-member entity.")
+                     "`SKSortedEntities.index(of:)` returns index for a non-member entity.")
 
         var entityIterator = entities.makeIterator()
         XCTAssertTrue(entityIterator.next() == firstAttribute && entityIterator.next() == secondAttribute,
-                      "`SKEntities` iterator is not sorted.")
+                      "`SKSortedEntities` iterator is not sorted.")
     }
 
     func testEntityEquatable() {
         let attributeKind: SKAttribute.Kind = .available
         let attribute = SKAttribute(kind: attributeKind, offset: offset, length: length)
         let sameAttribute = SKAttribute(kind: attributeKind, offset: offset, length: length)
+        let element = SKElement(kind: .pattern, offset: offset, length: length)
         let failureMessage = "`SKAttribute`'s `Equatable` conformance is incorrect "
 
         XCTAssertTrue(attribute == sameAttribute,
@@ -56,6 +57,10 @@ class SKEntityTests: SylvesterTestCase {
         let differentKindAttribute = SKAttribute(kind: .discardableResult, offset: offset, length: length)
         XCTAssertFalse(attribute == differentKindAttribute,
                       failureMessage + "(differentKindAttribute == differentKindAttribute).")
+
+        XCTAssertFalse(attribute == element,
+                       failureMessage + "(attribute == element).")
+        XCTAssertNotEqual(attribute, element)
     }
 
     func testEntitiesEquatable() {
@@ -65,9 +70,10 @@ class SKEntityTests: SylvesterTestCase {
         let availableIBInspectableAttributes = [availableAttribute, ibInspectableAttribute]
         let availableNonMutatingAttributes = [availableAttribute, nonMutatingAttribute]
 
-        let availableIBInspectableEntities = SKEntities(entities: availableIBInspectableAttributes)
-        let availableNonMutatingEntities = SKEntities(entities: availableNonMutatingAttributes)
+        let availableIBInspectableEntities = SKSortedEntities(entities: availableIBInspectableAttributes)
+        let availableNonMutatingEntities = SKSortedEntities(entities: availableNonMutatingAttributes)
 
+        XCTAssertNotEqual(availableAttribute, ibInspectableAttribute)
         XCTAssertEqual(availableIBInspectableEntities, availableIBInspectableEntities)
         XCTAssertNotEqual(availableIBInspectableEntities, availableNonMutatingEntities)
     }
@@ -85,11 +91,11 @@ class SKEntityTests: SylvesterTestCase {
         XCTAssertTrue(element != differentElement,
                       "`SKElement`'s `Equatable` conformance is incorrect (!=).")
 
-        let entities = SKEntities<SKElement>(entities: [element, differentElement])
+        let entities = SKSortedEntities<SKElement>(entities: [element, differentElement])
         XCTAssertTrue(entities.containsElement(with: differentElementKind),
-                      "`SKEntities.containsElement(with:)` returns false for a member element kind.")
+                      "`SKSortedEntities.containsElement(with:)` returns false for a member element kind.")
         XCTAssertFalse(entities.containsElement(with: .conditionExpr),
-                      "`SKEntities.containsElement(with:)` returns false for a member element kind.")
+                      "`SKSortedEntities.containsElement(with:)` returns false for a member element kind.")
     }
 
 }

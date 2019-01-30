@@ -184,6 +184,43 @@ open class SylvesterInterface {
         return try dataWrapper.decodeData()
     }
 
+    /// A _SourceKitten_ doc info request.
+    ///
+    /// - Parameters:
+    ///   - file: The source file to gather documentation for.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Returns: The resulting `SKSwiftDocs`.
+    /// - Throws: A `SKError`, if an error occurs.
+    public func docInfo<Entity: SKBaseEntity>(file: File?,
+                                              moduleName: String?,
+                                              compilerArguments: [String]) throws
+                                             -> SKGenericDocInfo<Entity> {
+        #if XPC
+        var fileWrapper: SKFileWrapper?
+        var response: SKDataWrapper?
+        var responseError: SKXPCError?
+
+        if let file = file {
+            fileWrapper = SKFileWrapper(file: file)
+        }
+
+        synchronousProxy.docInfo(file: fileWrapper,
+                                 moduleName: moduleName,
+                                 compilerArguments: compilerArguments) { (dataWrapper, error) in
+                                    response = dataWrapper
+                                    responseError = error
+        }
+
+        let dataWrapper = try handleXPC(response: response, error: responseError)
+        #else
+        let dataWrapper = try SourceKittenAdapter.docInfo(file: file,
+                                                          moduleName: moduleName,
+                                                          compilerArguments: compilerArguments)
+        #endif
+
+        return try dataWrapper.decodeData()
+    }
+
     // MARK: Code Completion Methods
 
     /// A _SourceKit_ code completion request.

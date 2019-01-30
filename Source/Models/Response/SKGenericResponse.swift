@@ -8,7 +8,7 @@
 
 import SourceKittenFramework
 
-open class SKGenericResponse<Substructure: SKBaseSubstructure>: NSObject, Codable, JSONDebugStringConvertable {
+open class SKGenericResponse<Substructure: SKBaseSubstructure>: NSObject, Codable, JSONDebugStringConvertible {
 
     // MARK: - Internal Declarations
 
@@ -34,7 +34,7 @@ open class SKGenericResponse<Substructure: SKBaseSubstructure>: NSObject, Codabl
     /// The starting byte offset of the analyzed source contents.
     public let offset: Int
     /// The top-level substructures in the analyzed source contents.
-    public let topLevelSubstructures: SKSubstructureChildren<Substructure>
+    public let topLevelSubstructures: SKChildren<Substructure>
     /// The syntax map of the analyzed source contents.
     public let syntaxMap: SyntaxMap?
 
@@ -43,7 +43,7 @@ open class SKGenericResponse<Substructure: SKBaseSubstructure>: NSObject, Codabl
     public init(diagnosticStage: DiagnosticStage,
                 length: Int,
                 offset: Int,
-                substructureChildren: SKSubstructureChildren<Substructure>,
+                substructureChildren: SKChildren<Substructure>,
                 syntaxMap: SyntaxMap?) {
         self.diagnosticStage = diagnosticStage
         self.length = length
@@ -65,7 +65,7 @@ open class SKGenericResponse<Substructure: SKBaseSubstructure>: NSObject, Codabl
     /// The entry point to a recursive resolution process that sets each child's `index`, `parent`, and
     /// `filePath` properties.
     ///
-    /// This method calls the `topLevelSubstructures`'s `SKSubstructureChildren.resolve(parent:index:filePath:)` method.
+    /// This method calls the `topLevelSubstructures`'s `SKChildren.resolve(parent:index:filePath:)` method.
     ///
     /// - Note: If the resolution process is unnecessary, overriding this method with an empty body will
     ///         suffice to omit it.
@@ -95,3 +95,7 @@ open class SKGenericResponse<Substructure: SKBaseSubstructure>: NSObject, Codabl
     }
 
 }
+
+// MARK: - Byte Range Convertible
+
+extension SKGenericResponse: ByteRangeConvertible {}

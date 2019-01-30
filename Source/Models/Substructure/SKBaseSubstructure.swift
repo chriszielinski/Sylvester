@@ -17,7 +17,7 @@
 /// Fancy your own subclass? No problem.
 ///
 /// ```
-/// final class BetterSubstructureSubclass: SKBaseSubstructure, SKSubstructureSubclass {
+/// final class BetterSubstructureSubclass: SKBaseSubstructure, SKFinalSubclass {
 ///
 ///     var iAmAnImportantProperty: String = "🚶‍♂️"
 ///
@@ -25,8 +25,8 @@
 ///         return try decodeChildren(BetterSubstructureSubclass.self, from: container)
 ///     }
 ///
-///     /// The default iterator for `SKSubstructureChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:
-///     class FunctionSubstructureIterator<Substructure: BetterSubstructureSubclass>: SKSubstructureIterator<Substructure> {
+///     /// The default iterator for `SKChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:
+///     class FunctionSubstructureIterator<Substructure: BetterSubstructureSubclass>: SKPreOrderDFSIterator<Substructure> {
 ///
 ///         override func next() -> Substructure? {
 ///             guard let nextSubstructure = super.next()
@@ -41,14 +41,14 @@
 ///
 ///     }
 ///
-///     override class func iteratorClass<Substructure: BetterSubstructureSubclass>() -> SKSubstructureIterator<Substructure>.Type {
+///     override class func iteratorClass<Substructure: BetterSubstructureSubclass>() -> SKPreOrderDFSIterator<Substructure>.Type {
 ///         return FunctionSubstructureIterator.self
 ///     }
 ///
 /// }
 /// ```
 ///
-open class SKBaseSubstructure: NSObject, Codable {
+open class SKBaseSubstructure: NSObject, SKSequence {
 // swiftlint:enable line_length
 
     // MARK: - Internal Declarations
@@ -100,16 +100,10 @@ open class SKBaseSubstructure: NSObject, Codable {
     public typealias Element = SKElement
     public typealias InheritedType = SKInheritedType
     public typealias Override = SKOverride
-    public typealias Kind = SKSubstructureKind
+    public typealias Kind = SKDeclarationKind
     public typealias DecodingContainer = KeyedDecodingContainer<SKBaseSubstructure.CodingKeys>
 
     // MARK: - Public Stored Properties
-
-    /// The zero-based pre-order [depth-first search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search) index
-    /// of the substructure relative to the source file.
-    ///
-    /// - Note: The first substructure in each source file will begin from zero.
-    public var index: Int!
 
     /// The [access level](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html) of the substructure.
     public let accessibility: AccessLevel?
@@ -121,7 +115,7 @@ open class SKBaseSubstructure: NSObject, Codable {
     ///
     /// - Note: The attributes are ordered by decreasing byte offset (i.e. the first attribute in the source
     ///         is the last element in the array).
-    public let attributes: SKEntities<Attribute>?
+    public let attributes: SKSortedEntities<Attribute>?
     /// The byte offset of the substructure's body inside the source contents.
     public let bodyOffset: Int?
     /// The byte length of the substructure's body inside the source contents.
@@ -154,9 +148,7 @@ open class SKBaseSubstructure: NSObject, Codable {
     ///
     /// - Note: The elements are ordered by increasing byte offset (i.e. the first element in the source
     ///         is the first element in the array).
-    public let elements: SKEntities<Element>?
-    /// The path to the source file.
-    public var filePath: String?
+    public let elements: SKSortedEntities<Element>?
     /// The XML representing the substructure.
     public let fullyAnnotatedDeclaration: String?
     /// The inherited types of the substructure.
@@ -201,17 +193,18 @@ open class SKBaseSubstructure: NSObject, Codable {
     /// The Unified Symbol Resolution (USR) for the substructure.
     public let usr: String?
 
-    // MARK: - Internal Stored Properties
+    // MARK: SKSequence Protocol
 
-    /// The parent substructure, or `nil` if this substructure is a root.
-    weak var internalParent: SKBaseSubstructure?
-    /// The substructure children of the substructure.
-    var internalChildren: [SKBaseSubstructure]?
+    public var index: Int?
+    public var filePath: String?
+    public weak var internalParent: SKBaseSubstructure?
+    public var internalChildren: [SKBaseSubstructure]?
 
     // MARK: - Public Initializers
 
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+
         accessibility = try container.decodeIfPresent(forKey: .accessibility)
         annotatedDeclaration = try container.decodeIfPresent(forKey: .annotatedDeclaration)
         attributes = try container.decodeIfPresent(forKey: .attributes)
@@ -402,16 +395,10 @@ open class SKBaseSubstructure: NSObject, Codable {
         return internalParent?.kind == .protocol
     }()
 
-    // MARK: - Open Class Methods
+    // MARK: - SKSequence Protocol Methods
 
-    /// Overridden by subclasses to substitute a new iterator class for `SKSubstructureChildren`.
-    ///
-    /// The default iterator class used is `SKSubstructureIterator`, which is a pre-order (NLR)
-    /// [depth-first search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search) traversing iterator.
-    ///
-    /// - Returns: The iterator class used for iterating through `SKSubstructureChildren`.
-    open class func iteratorClass<Substructure>() -> SKSubstructureIterator<Substructure>.Type {
-        return SKSubstructureIterator.self
+    open class func iteratorClass<Substructure>() -> SKPreOrderDFSIterator<Substructure>.Type {
+        return SKPreOrderDFSIterator.self
     }
 
     // MARK: - Children Decoding Methods
@@ -496,3 +483,7 @@ extension SKBaseSubstructure {
     }
 
 }
+
+// MARK: - JSON Debug String Convertible Protocol
+
+extension SKBaseSubstructure: JSONDebugStringConvertible {}

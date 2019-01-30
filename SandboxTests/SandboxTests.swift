@@ -113,6 +113,30 @@ class SandboxTests: XCTestCase {
         XCTAssertEqual(substructureCount, 3)
     }
 
+    func testDocInfo() throws {
+        let testSourceContents = """
+                                 import UIKit
+
+                                 open class View: UIView {
+                                    let property: String = "Property"
+                                 }
+                                 """
+        let file = File(contents: testSourceContents)
+
+        continueAfterFailure = false
+
+        guard let compilerArguments = testCompilerArguments
+            else { return XCTFail(missingCompilerArgumentsMessage) }
+
+        let response = try SandboxInterface.docInfo(file: file, compilerArguments: compilerArguments)
+
+        XCTAssertNil(response.sourceText)
+        XCTAssertGreaterThan(response.annotations.count, 0)
+        XCTAssertNotNil(response.topLevelEntities)
+        XCTAssertGreaterThan(response.topLevelEntities!.count, 0)
+        XCTAssertNil(response.diagnostics)
+    }
+
     func testSKCodeCompletion() throws {
         guard let compilerArguments = testCompilerArguments
             else { return XCTFail(missingCompilerArgumentsMessage) }

@@ -75,6 +75,19 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
         }
     }
 
+    func docInfo(file: SKFileWrapper?,
+                 moduleName: String?,
+                 compilerArguments: [String],
+                 with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
+        do {
+            reply(try SourceKittenAdapter.docInfo(file: file?.file,
+                                                  moduleName: moduleName,
+                                                  compilerArguments: compilerArguments), nil)
+        } catch {
+            reply(nil, error.toSKXPCError())
+        }
+    }
+
     // MARK: - Code Completion Methods
 
     func codeCompletion(file: SKFileWrapper,

@@ -8,7 +8,7 @@
 
 import SylvesterXPC
 
-final public class CustomSubstructure: SKBaseSubstructure, SKSubstructureSubclass {
+final public class CustomSubstructure: SKBaseSubstructure, SKFinalSubclass {
 
     // Public Stored Properties
 

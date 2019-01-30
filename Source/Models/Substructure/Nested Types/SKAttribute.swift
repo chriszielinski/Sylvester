@@ -6,7 +6,7 @@
 //  Copyright © 2018 Big Z Labs. All rights reserved.
 //
 
-open class SKAttribute: SKEntity {
+open class SKAttribute: SKGenericKindEntity<SKAttribute.Kind> {
 
     // MARK: - Internal Declarations
 
@@ -18,24 +18,17 @@ open class SKAttribute: SKEntity {
 
     public typealias Kind = SKAttributeKind
 
-    // MARK: - Public Stored Properties
-
-    /// The kind of the attribute.
-    public let kind: Kind
-
     // MARK: - Public Initializers
 
-    public init(kind: Kind, offset: Int, length: Int) {
-        self.kind = kind
-
-        super.init(offset: offset, length: length)
+    override public init(kind: Kind, offset: Int, length: Int) {
+        super.init(kind: kind, offset: offset, length: length)
     }
 
     required public init(from decoder: Decoder) throws {
+        try super.init(from: decoder)
+
         let container = try decoder.container(keyedBy: CodingKeys.self)
         kind = try container.decode(forKey: .attribute)
-
-        try super.init(from: decoder)
     }
 
     // MARK: - Overridden Methods
@@ -49,29 +42,9 @@ open class SKAttribute: SKEntity {
 
 }
 
-// MARK: - Custom Debug String Convertible Protocol
+// MARK: - SKSortedEntities<SKAttribute> Methods
 
-extension SKAttribute: CustomDebugStringConvertible {
-
-    public var debugDescription: String {
-        return "Attribute(kind: \"\(String(reflecting: kind))\", offset: \(offset), length: \(length))"
-    }
-
-}
-
-// MARK: - Equatable Protocol
-
-extension SKAttribute: Equatable {
-
-    public static func == (lhs: SKAttribute, rhs: SKAttribute) -> Bool {
-        return lhs.kind == rhs.kind && lhs.offset == rhs.offset && lhs.length == rhs.length
-    }
-
-}
-
-// MARK: - SKEntities<SKAttribute> Methods
-
-extension SKEntities where Entity: SKAttribute {
+extension SKSortedEntities where Entity: SKAttribute {
 
     /// Returns the attribute with the specified kind, or `nil` if nonexistent.
     ///
@@ -81,10 +54,10 @@ extension SKEntities where Entity: SKAttribute {
         return entities.first(where: { $0.kind == kind })
     }
 
-    /// Returns whether the specified attribute kind is a member of the array.
+    /// Returns whether the specified attribute kind is a member of the entities.
     ///
     /// - Parameter kind: The kind of the attribute.
-    /// - Returns: `true` if the attribute kind is a member of the array; otherwise, `false`.
+    /// - Returns: `true` if the attribute kind is a member of the entities; otherwise, `false`.
     public func containsAttribute(with kind: SKAttribute.Kind) -> Bool {
         return attribute(with: kind) != nil
     }

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Big Z Labs. All rights reserved.
 //
 
-open class SKElement: SKEntity {
+open class SKElement: SKGenericKindEntity<SKElement.Kind> {
 
     // MARK: - Internal Declarations
 
@@ -18,24 +18,17 @@ open class SKElement: SKEntity {
 
     public typealias Kind = SKElementKind
 
-    // MARK: - Public Stored Properties
-
-    /// The kind of the element.
-    public let kind: Kind
-
     // MARK: - Public Initializers
 
-    public init(kind: Kind, offset: Int, length: Int) {
-        self.kind = kind
-
-        super.init(offset: offset, length: length)
+    override public init(kind: Kind, offset: Int, length: Int) {
+        super.init(kind: kind, offset: offset, length: length)
     }
 
     required public init(from decoder: Decoder) throws {
+        try super.init(from: decoder)
+
         let container = try decoder.container(keyedBy: CodingKeys.self)
         kind = try container.decode(forKey: .kind)
-
-        try super.init(from: decoder)
     }
 
     // MARK: - Overridden Methods
@@ -49,29 +42,9 @@ open class SKElement: SKEntity {
 
 }
 
-// MARK: - Custom Debug String Convertible Protocol
+// MARK: - SKSortedEntities<SKElement> Methods
 
-extension SKElement: CustomDebugStringConvertible {
-
-    public var debugDescription: String {
-        return "Element(kind: \"\(String(reflecting: kind))\", offset: \(offset), length: \(length))"
-    }
-
-}
-
-// MARK: - Equatable Protocol
-
-extension SKElement: Equatable {
-
-    public static func == (lhs: SKElement, rhs: SKElement) -> Bool {
-        return lhs.kind == rhs.kind && lhs.offset == rhs.offset && lhs.length == rhs.length
-    }
-
-}
-
-// MARK: - SKEntities<SKElement> Methods
-
-extension SKEntities where Entity: SKElement {
+extension SKSortedEntities where Entity: SKElement {
 
     /// Returns the element with the specified kind, or `nil` if nonexistent.
     ///
@@ -81,10 +54,10 @@ extension SKEntities where Entity: SKElement {
         return entities.first(where: { $0.kind == kind })
     }
 
-    /// Returns whether the specified element kind is a member of the array.
+    /// Returns whether the specified element kind is a member of the entities.
     ///
     /// - Parameter kind: The kind of the element.
-    /// - Returns: `true` if the element kind is a member of the array; otherwise, `false`.
+    /// - Returns: `true` if the element kind is a member of the entities; otherwise, `false`.
     public func containsElement(with kind: SKElement.Kind) -> Bool {
         return element(with: kind) != nil
     }

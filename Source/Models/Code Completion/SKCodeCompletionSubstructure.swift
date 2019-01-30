@@ -36,7 +36,7 @@ public struct SKCodeCompletionSubstructure {
 
 // MARK: - JSON Debug String Convertable Protocol
 
-extension SKCodeCompletionSubstructure: JSONDebugStringConvertable {}
+extension SKCodeCompletionSubstructure: JSONDebugStringConvertible {}
 
 // MARK: - Codable Protocol
 

@@ -65,6 +65,21 @@ public class SourceKittenAdapter {
         return try SKDataWrapper(object: swiftDocs)
     }
 
+    public static func docInfo(file: File?, moduleName: String?, compilerArguments: [String]) throws -> SKDataWrapper {
+        let request = Request.docInfo(file: file, moduleName: moduleName, compilerArguments: compilerArguments)
+        let responseDictionary: [String: SourceKitRepresentable]
+
+        do {
+            responseDictionary = try Request.customRequest(request: request).send()
+        } catch let error as Request.Error {
+            throw SKError.sourceKitRequestFailed(error)
+        } catch {
+            throw SKError.unknown(error: error)
+        }
+
+        return try SKDataWrapper(responseDictionary)
+    }
+
     // MARK: - Code Completion Methods
 
     public static func codeCompletion(file: File,

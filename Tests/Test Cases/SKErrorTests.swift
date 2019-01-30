@@ -10,7 +10,7 @@ import SylvesterCommon
 import SourceKittenFramework
 import XCTest
 
-class SKErrorTests: SylvesterSecureCodingTests {
+class SKErrorTests: SylvesterSecureCodingTestCase {
 
     // MARK: - Stored Properties
 

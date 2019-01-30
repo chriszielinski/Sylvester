@@ -29,7 +29,11 @@ class SKResponseTests: SylvesterTestCase {
         XCTAssertEqual(attribute.offset, offset)
         XCTAssertEqual(attribute.debugDescription,
                        """
-                       Attribute(kind: "source.decl.attribute.available", offset: 20, length: 15)
+                       {
+                         "key.length" : 15,
+                         "key.attribute" : "source.decl.attribute.available",
+                         "key.offset" : 20
+                       }
                        """)
     }
 
@@ -40,7 +44,11 @@ class SKResponseTests: SylvesterTestCase {
         XCTAssertEqual(element.offset, offset)
         XCTAssertEqual(element.debugDescription,
                        """
-                       Element(kind: "source.lang.swift.structure.elem.id", offset: 20, length: 15)
+                       {
+                         "key.length" : 15,
+                         "key.kind" : "source.lang.swift.structure.elem.id",
+                         "key.offset" : 20
+                       }
                        """)
     }
 
@@ -50,7 +58,9 @@ class SKResponseTests: SylvesterTestCase {
         XCTAssertEqual(inheritedType.name, inheritedTypeName)
         XCTAssertEqual(inheritedType.debugDescription,
                        """
-                       InheritedType(name: "UIViewController")
+                       {
+                         "key.name" : "UIViewController"
+                       }
                        """)
 
         let differentInheritedType = SKInheritedType(name: "UIView")
@@ -64,7 +74,9 @@ class SKResponseTests: SylvesterTestCase {
         XCTAssertEqual(override.usr, usr)
         XCTAssertEqual(override.debugDescription,
                        """
-                       Override(usr: "usr")
+                       {
+                         "key.usr" : "usr"
+                       }
                        """)
 
         let differentOverride = SKOverride(usr: "different-usr")
@@ -96,7 +108,7 @@ class SKResponseTests: SylvesterTestCase {
         let response = SKBaseResponse(diagnosticStage: diagnosticStage,
                                       length: length,
                                       offset: offset,
-                                      substructureChildren: SKSubstructureChildren(substructures: []),
+                                      substructureChildren: SKChildren(elements: []),
                                       syntaxMap: nil)
         XCTAssertEqual(response.diagnosticStage, diagnosticStage)
         XCTAssertEqual(response.length, length)

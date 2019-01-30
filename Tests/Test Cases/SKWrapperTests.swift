@@ -10,7 +10,7 @@ import SourceKittenFramework
 import SylvesterCommon
 import XCTest
 
-class SKWrapperTests: SylvesterSecureCodingTests {
+class SKWrapperTests: SylvesterSecureCodingTestCase {
 
     // MARK: - Test Methods
 

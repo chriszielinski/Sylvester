@@ -8,7 +8,7 @@ TRAVIS_XPC_BUILD_SETTINGS='SWIFT_ACTIVE_COMPILATION_CONDITIONS=XPC XCODEBUILD TR
 MAKE_PRETTY=| xcpretty && exit ${PIPESTATUS[0]}
 MAKE_PRETTY_FOR_TRAVIS=| xcpretty -f `xcpretty-travis-formatter` && exit ${PIPESTATUS[0]}
 
-.PHONY: all travis travis-pr carthage build build-normal build-xpc build-sandbox travis-build-pr travis-build travis-build-normal travis-build-xpc travis-build-sandbox test test-normal test-xpc test-sandbox travis-test-pr travis-test travis-test-normal travis-test-xpc travis-test-sandbox generate-boilerplate swiftlint jazzy convert-xccov-to-sonarqube clean
+.PHONY: all travis travis-pr carthage build build-normal build-xpc build-sandbox travis-build-pr travis-build travis-build-normal travis-build-xpc travis-build-sandbox test test-normal test-xpc test-sandbox travis-test-pr travis-test travis-test-normal travis-test-xpc travis-test-sandbox generate-boilerplate generate-docs swiftlint convert-xccov-to-sonarqube clean
 
 
 ###################
@@ -100,15 +100,15 @@ travis-test-sandbox:
 
 generate-boilerplate:
 	cd Source/Enumerations/Generated; \
-	./GenerateBoilerplate.swift
+	../../../Scripts/generate_boilerplate.swift
+
+generate-docs:
+	jazzy --clean --xcodebuild-arguments -scheme,SylvesterXPC
+	jazzy --xcodebuild-arguments -scheme,SylvesterCommon,-configuration,Debug,SWIFT_ACTIVE_COMPILATION_CONDITIONS=XPC --output docs/SylvesterCommon
+	./Scripts/generate_docs.swift `pwd`/docs
 
 swiftlint:
 	swiftlint lint --reporter json > .test-results/swiftlint.json
-
-jazzy:
-	jazzy --clean --xcodebuild-arguments -scheme,SylvesterXPC
-	jazzy --xcodebuild-arguments -scheme,SylvesterCommon,-configuration,Debug --output docs/SylvesterCommon
-	./Scripts/generate_docs.swift `pwd`/docs
 
 convert-xccov-to-sonarqube:
 	./Scripts/xccov_to_sonarqube_generic.sh .test-results/1_Test/action.xccovarchive/ > .test-results/sonarqube-generic-coverage.xml

@@ -58,6 +58,12 @@ class SylvesterTestCase: XCTestCase {
             case viewControllerSyntaxMapJSON = "view-controller-syntax-map.json"
             case placeholdersSyntaxMapJSON = "placeholders-syntax-map.json"
             case docSupportInputsMainSyntaxMapJSON = "doc-support-inputs-main-syntax-map.json"
+
+            case appDelegateDocInfoJSON = "app-delegate-doc-info.json"
+            case viewControllerDocInfoJSON = "view-controller-doc-info.json"
+            case placeholdersDocInfoJSON = "placeholders-doc-info.json"
+            case aProtocolDocInfoJSON = "a-protocol-doc-info.json"
+            case docSupportInputsMainDocInfoJSON = "doc-support-inputs-main-doc-info.json"
         }
 
     }
@@ -209,8 +215,7 @@ class SylvesterTestCase: XCTestCase {
     // MARK: - JSON Test Fixture Methods
 
     func decodeJSONTestFixture<T: Decodable>(name: TestFixture.JSON) throws -> T {
-        let data = try Data(contentsOf: filePath(for: name))
-        return try decodeJSON(data: data)
+        return try decodeJSON(data: Data(contentsOf: filePath(for: name)))
     }
 
     func decodeJSON<T: Decodable>(string: String) throws -> T {

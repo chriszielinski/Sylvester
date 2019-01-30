@@ -101,7 +101,7 @@ extension SKCodeCompletionItem: Codable {
 
 // MARK: - JSON Debug String Convertable Protocol
 
-extension SKCodeCompletionItem: JSONDebugStringConvertable {}
+extension SKCodeCompletionItem: JSONDebugStringConvertible {}
 
 // MARK: - Equatable Protocol
 

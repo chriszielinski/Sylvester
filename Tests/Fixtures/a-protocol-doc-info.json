@@ -1,0 +1,350 @@
+{
+  "key.entities" : [
+    {
+      "key.length" : 142,
+      "key.fully_annotated_decl" : "<decl.protocol><syntaxtype.attribute.builtin><syntaxtype.attribute.name>@objc<\/syntaxtype.attribute.name>(AProtocol)<\/syntaxtype.attribute.builtin> <syntaxtype.keyword>public<\/syntaxtype.keyword> <syntaxtype.keyword>protocol<\/syntaxtype.keyword> <decl.name>AProtocol<\/decl.name><\/decl.protocol>",
+      "key.kind" : "source.lang.swift.decl.protocol",
+      "key.doc.full_as_xml" : "<Class file=\"\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/AProtocol.swift\" line=\"13\" column=\"17\"><Name>AProtocol<\/Name><USR>c:@M@main@objc(pl)AProtocol<\/USR><Declaration>@objc(AProtocol) public protocol AProtocol<\/Declaration><CommentParts><Abstract><Para>This is a <codeVoice>AProtocol<\/codeVoice>’s documentation.<\/Para><\/Abstract><\/CommentParts><\/Class>",
+      "key.entities" : [
+        {
+          "key.name" : "aVariable",
+          "key.usr" : "c:@M@main@objc(pl)AProtocol(py)aVariable",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>aVariable<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Sb\">Bool<\/ref.struct><\/decl.var.type> { <syntaxtype.keyword>get<\/syntaxtype.keyword> <syntaxtype.keyword>set<\/syntaxtype.keyword> }<\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.usr" : "c:@M@main@objc(pl)AProtocol(im)aVariable",
+          "key.kind" : "source.lang.swift.decl.function.accessor.getter",
+          "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>"
+        },
+        {
+          "key.usr" : "c:@M@main@objc(pl)AProtocol(im)setAVariable:",
+          "key.kind" : "source.lang.swift.decl.function.accessor.setter",
+          "key.fully_annotated_decl" : "<decl.function.accessor.setter><decl.name>set<\/decl.name> {}<\/decl.function.accessor.setter>"
+        },
+        {
+          "key.name" : "aClosure",
+          "key.usr" : "c:@M@main@objc(pl)AProtocol(py)aClosure",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>aClosure<\/decl.name>: <decl.var.type>(<decl.var.parameter><decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.typealias usr=\"s:s4Voida\">Void<\/ref.typealias><\/decl.function.returntype><\/decl.var.type> { <syntaxtype.keyword>get<\/syntaxtype.keyword> <syntaxtype.keyword>set<\/syntaxtype.keyword> }<\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.usr" : "c:@M@main@objc(pl)AProtocol(im)aClosure",
+          "key.kind" : "source.lang.swift.decl.function.accessor.getter",
+          "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>"
+        },
+        {
+          "key.usr" : "c:@M@main@objc(pl)AProtocol(im)setAClosure:",
+          "key.kind" : "source.lang.swift.decl.function.accessor.setter",
+          "key.fully_annotated_decl" : "<decl.function.accessor.setter><decl.name>set<\/decl.name> {}<\/decl.function.accessor.setter>"
+        },
+        {
+          "key.name" : "aFunction()",
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>aFunction<\/decl.name>() -&gt; <decl.function.returntype>() -&gt; <decl.function.returntype><ref.struct usr=\"s:SS\">String<\/ref.struct><\/decl.function.returntype><\/decl.function.returntype><\/decl.function.method.instance>",
+          "key.offset" : 327,
+          "key.usr" : "c:@M@main@objc(pl)AProtocol(im)aFunction",
+          "key.length" : 26,
+          "key.kind" : "source.lang.swift.decl.function.method.instance"
+        }
+      ],
+      "key.name" : "AProtocol",
+      "key.usr" : "c:@M@main@objc(pl)AProtocol",
+      "key.offset" : 219
+    },
+    {
+      "key.entities" : [
+        {
+          "key.name" : "aClosure",
+          "key.usr" : "s:4main9AProtocolPAAE8aClosureyySicvp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>aClosure<\/decl.name>: <decl.var.type>(<decl.var.parameter><decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.typealias usr=\"s:s4Voida\">Void<\/ref.typealias><\/decl.function.returntype><\/decl.var.type> { <syntaxtype.keyword>get<\/syntaxtype.keyword> }<\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>",
+          "key.offset" : 419,
+          "key.usr" : "s:4main9AProtocolPAAE8aClosureyySicvg",
+          "key.length" : 45,
+          "key.kind" : "source.lang.swift.decl.function.accessor.getter"
+        }
+      ],
+      "key.offset" : 364,
+      "key.length" : 103,
+      "key.kind" : "source.lang.swift.decl.extension.protocol"
+    }
+  ],
+  "key.annotations" : [
+    {
+      "key.name" : null,
+      "key.offset" : 0,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 3,
+      "key.usr" : null,
+      "key.length" : 20,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 23,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 32,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 35,
+      "key.usr" : null,
+      "key.length" : 44,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 79,
+      "key.usr" : null,
+      "key.length" : 55,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 134,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 138,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 145,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 152,
+      "key.usr" : null,
+      "key.length" : 43,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 195,
+      "key.usr" : null,
+      "key.length" : 16,
+      "key.kind" : "source.lang.swift.syntaxtype.attribute.builtin"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 212,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.attribute.builtin"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 219,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 228,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 245,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 249,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Bool",
+      "key.offset" : 260,
+      "key.usr" : "s:Sb",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 267,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 271,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 282,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 286,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 297,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : "Void",
+      "key.offset" : 305,
+      "key.usr" : "s:s4Voida",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.typealias"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 312,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 316,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 327,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 332,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "String",
+      "key.offset" : 353,
+      "key.usr" : "s:SS",
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 364,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "AProtocol",
+      "key.offset" : 374,
+      "key.usr" : "c:@M@main@objc(pl)AProtocol",
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 391,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 395,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 406,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : "Void",
+      "key.offset" : 414,
+      "key.usr" : "s:s4Voida",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.typealias"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 429,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 439,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 444,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "print(_:separator:terminator:)",
+      "key.offset" : 447,
+      "key.usr" : "s:s5print_9separator10terminatoryypd_S2StF",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.function.free"
+    },
+    {
+      "key.name" : "int",
+      "key.offset" : 453,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    }
+  ]
+}

@@ -129,7 +129,7 @@ open class SKCodeCompletion: Codable {
 
 // MARK: - JSON Debug String Convertable Protocol
 
-extension SKCodeCompletion: JSONDebugStringConvertable {}
+extension SKCodeCompletion: JSONDebugStringConvertible {}
 
 // MARK: - Equatable Protocol
 

@@ -7,7 +7,7 @@
 //
 
 /// Represents the default substructure returned by some requests.
-final public class SKSubstructure: SKBaseSubstructure, SKSubstructureSubclass {
+final public class SKSubstructure: SKBaseSubstructure, SKFinalSubclass {
 
     override public func decodeChildren(from container: DecodingContainer) throws -> [SKBaseSubstructure]? {
         return try decodeChildren(SKSubstructure.self, from: container)

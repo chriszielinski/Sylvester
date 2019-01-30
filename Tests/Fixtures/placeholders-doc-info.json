@@ -1,0 +1,113 @@
+{
+  "key.entities" : [
+    {
+      "key.name" : "<#MyCls#>",
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>&lt;#MyCls#&gt;<\/decl.name> : &lt;#OtherClass#&gt;<\/decl.class>",
+      "key.offset" : 0,
+      "key.usr" : "s:4main0016MyCls_nnEyfaHqzaC",
+      "key.length" : 34,
+      "key.kind" : "source.lang.swift.decl.class"
+    },
+    {
+      "key.name" : "<#test1#>()",
+      "key.fully_annotated_decl" : "<decl.function.free><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>&lt;#test1#&gt;<\/decl.name>()<\/decl.function.free>",
+      "key.offset" : 37,
+      "key.usr" : "s:4main0016test1_nnEyfaHqzayyF",
+      "key.length" : 51,
+      "key.kind" : "source.lang.swift.decl.function.free"
+    },
+    {
+      "key.name" : "myArray",
+      "key.usr" : "s:4main7myArraySayytGvp",
+      "key.fully_annotated_decl" : "<decl.var.global><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>myArray<\/decl.name>: <decl.var.type>[<tuple>()<\/tuple>]<\/decl.var.type><\/decl.var.global>",
+      "key.kind" : "source.lang.swift.decl.var.global"
+    }
+  ],
+  "key.diagnostics" : [
+    {
+      "key.column" : 19,
+      "key.severity" : "source.diagnostic.severity.error",
+      "key.description" : "use of undeclared type '<#OtherClass#>'",
+      "key.ranges" : [
+        {
+          "key.length" : 14,
+          "key.offset" : 18
+        }
+      ],
+      "key.filepath" : "\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/Placeholders.swift",
+      "key.line" : 1
+    },
+    {
+      "key.column" : 19,
+      "key.severity" : "source.diagnostic.severity.error",
+      "key.description" : "type '()' does not conform to protocol 'Sequence'",
+      "key.filepath" : "\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/Placeholders.swift",
+      "key.line" : 4
+    }
+  ],
+  "key.annotations" : [
+    {
+      "key.name" : null,
+      "key.offset" : 0,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 18,
+      "key.usr" : null,
+      "key.length" : 14,
+      "key.kind" : "source.lang.swift.syntaxtype.typeidentifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 37,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 59,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 72,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 91,
+      "key.usr" : null,
+      "key.length" : 133,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 94,
+      "key.usr" : null,
+      "key.length" : 129,
+      "key.kind" : "source.lang.swift.syntaxtype.comment.mark"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 224,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 228,
+      "key.usr" : null,
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    }
+  ]
+}

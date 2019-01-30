@@ -1,0 +1,666 @@
+{
+  "key.entities" : [
+    {
+      "key.length" : 2135,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.attribute.builtin><syntaxtype.attribute.name>@UIApplicationMain<\/syntaxtype.attribute.name><\/syntaxtype.attribute.builtin> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>AppDelegate<\/decl.name> : <ref.class usr=\"c:objc(cs)UIResponder\">UIResponder<\/ref.class>, <ref.protocol usr=\"c:objc(pl)UIApplicationDelegate\">UIApplicationDelegate<\/ref.protocol><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.name" : "window",
+          "key.usr" : "s:4main11AppDelegateC6windowSo8UIWindowCSgvp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>public<\/syntaxtype.keyword> <syntaxtype.keyword>private<\/syntaxtype.keyword>(set) <syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>window<\/decl.name>: <decl.var.type><ref.class usr=\"c:objc(cs)UIWindow\">UIWindow<\/ref.class>?<\/decl.var.type><\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.length" : 257,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>application<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>application<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"c:objc(cs)UIApplication\">UIApplication<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>didFinishLaunchingWithOptions<\/decl.var.parameter.argument_label> <decl.var.parameter.name>launchOptions<\/decl.var.parameter.name>: <decl.var.parameter.type>[<ref.class usr=\"c:objc(cs)UIApplication\">UIApplication<\/ref.class>.<ref.struct usr=\"c:@T@UIApplicationLaunchOptionsKey\">LaunchOptionsKey<\/ref.struct> : Any]?<\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.struct usr=\"s:Sb\">Bool<\/ref.struct><\/decl.function.returntype><\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "application",
+              "key.offset" : 313,
+              "key.keyword" : "_",
+              "key.length" : 13,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            },
+            {
+              "key.name" : "launchOptions",
+              "key.offset" : 394,
+              "key.keyword" : "didFinishLaunchingWithOptions",
+              "key.length" : 38,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "application(_:didFinishLaunchingWithOptions:)",
+          "key.usr" : "c:@M@main@objc(cs)AppDelegate(im)application:didFinishLaunchingWithOptions:",
+          "key.offset" : 281
+        },
+        {
+          "key.length" : 548,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>applicationWillResignActive<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>application<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"c:objc(cs)UIApplication\">UIApplication<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "application",
+              "key.offset" : 593,
+              "key.keyword" : "_",
+              "key.length" : 13,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "applicationWillResignActive(_:)",
+          "key.usr" : "c:@M@main@objc(cs)AppDelegate(im)applicationWillResignActive:",
+          "key.offset" : 545
+        },
+        {
+          "key.length" : 465,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>applicationDidEnterBackground<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>application<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"c:objc(cs)UIApplication\">UIApplication<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "application",
+              "key.offset" : 1150,
+              "key.keyword" : "_",
+              "key.length" : 13,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "applicationDidEnterBackground(_:)",
+          "key.usr" : "c:@M@main@objc(cs)AppDelegate(im)applicationDidEnterBackground:",
+          "key.offset" : 1100
+        },
+        {
+          "key.length" : 239,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>applicationWillEnterForeground<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>application<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"c:objc(cs)UIApplication\">UIApplication<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "application",
+              "key.offset" : 1623,
+              "key.keyword" : "_",
+              "key.length" : 13,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "applicationWillEnterForeground(_:)",
+          "key.usr" : "c:@M@main@objc(cs)AppDelegate(im)applicationWillEnterForeground:",
+          "key.offset" : 1572
+        },
+        {
+          "key.length" : 274,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>applicationDidBecomeActive<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>application<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"c:objc(cs)UIApplication\">UIApplication<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "application",
+              "key.offset" : 1865,
+              "key.keyword" : "_",
+              "key.length" : 13,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "applicationDidBecomeActive(_:)",
+          "key.usr" : "c:@M@main@objc(cs)AppDelegate(im)applicationDidBecomeActive:",
+          "key.offset" : 1818
+        },
+        {
+          "key.length" : 206,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>applicationWillTerminate<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>application<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"c:objc(cs)UIApplication\">UIApplication<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "application",
+              "key.offset" : 2144,
+              "key.keyword" : "_",
+              "key.length" : 13,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "applicationWillTerminate(_:)",
+          "key.usr" : "c:@M@main@objc(cs)AppDelegate(im)applicationWillTerminate:",
+          "key.offset" : 2099
+        }
+      ],
+      "key.name" : "AppDelegate",
+      "key.inherits" : [
+        {
+          "key.name" : "UIResponder",
+          "key.modulename" : "UIKit.UIResponder",
+          "key.usr" : "c:objc(cs)UIResponder",
+          "key.kind" : "source.lang.swift.ref.class"
+        }
+      ],
+      "key.usr" : "c:@M@main@objc(cs)AppDelegate",
+      "key.offset" : 173
+    }
+  ],
+  "key.diagnostics" : [
+    {
+      "key.column" : 1,
+      "key.severity" : "source.diagnostic.severity.error",
+      "key.description" : "'UIApplicationMain' attribute cannot be used in a module that contains top-level code",
+      "key.filepath" : "\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/AppDelegate.swift",
+      "key.line" : 11
+    }
+  ],
+  "key.annotations" : [
+    {
+      "key.name" : null,
+      "key.offset" : 0,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 3,
+      "key.usr" : null,
+      "key.length" : 22,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 25,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 34,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 37,
+      "key.usr" : null,
+      "key.length" : 44,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 81,
+      "key.usr" : null,
+      "key.length" : 55,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 136,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 140,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 147,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 154,
+      "key.usr" : null,
+      "key.length" : 18,
+      "key.kind" : "source.lang.swift.syntaxtype.attribute.builtin"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 173,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 179,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "UIResponder",
+      "key.offset" : 192,
+      "key.usr" : "c:objc(cs)UIResponder",
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : "UIApplicationDelegate",
+      "key.offset" : 205,
+      "key.usr" : "c:objc(pl)UIApplicationDelegate",
+      "key.length" : 21,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 234,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.attribute.builtin"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 241,
+      "key.usr" : null,
+      "key.length" : 12,
+      "key.kind" : "source.lang.swift.syntaxtype.attribute.builtin"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 254,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 258,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "UIWindow",
+      "key.offset" : 266,
+      "key.usr" : "c:objc(cs)UIWindow",
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 281,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 286,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 298,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 300,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "UIApplication",
+      "key.offset" : 313,
+      "key.usr" : "c:objc(cs)UIApplication",
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 349,
+      "key.usr" : null,
+      "key.length" : 29,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 379,
+      "key.usr" : null,
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "UIApplication",
+      "key.offset" : 395,
+      "key.usr" : "c:objc(cs)UIApplication",
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : "LaunchOptionsKey",
+      "key.offset" : 409,
+      "key.usr" : "c:@T@UIApplicationLaunchOptionsKey",
+      "key.length" : 16,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 427,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "Bool",
+      "key.offset" : 437,
+      "key.usr" : "s:Sb",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 452,
+      "key.usr" : null,
+      "key.length" : 62,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 522,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 529,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 545,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 550,
+      "key.usr" : null,
+      "key.length" : 27,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 578,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 580,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "UIApplication",
+      "key.offset" : 593,
+      "key.usr" : "c:objc(cs)UIApplication",
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 618,
+      "key.usr" : null,
+      "key.length" : 104,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 730,
+      "key.usr" : null,
+      "key.length" : 107,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 845,
+      "key.usr" : null,
+      "key.length" : 73,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 926,
+      "key.usr" : null,
+      "key.length" : 104,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1038,
+      "key.usr" : null,
+      "key.length" : 51,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1100,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1105,
+      "key.usr" : null,
+      "key.length" : 29,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1135,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1137,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "UIApplication",
+      "key.offset" : 1150,
+      "key.usr" : "c:objc(cs)UIApplication",
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1175,
+      "key.usr" : null,
+      "key.length" : 100,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1283,
+      "key.usr" : null,
+      "key.length" : 96,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1387,
+      "key.usr" : null,
+      "key.length" : 21,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1416,
+      "key.usr" : null,
+      "key.length" : 87,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1511,
+      "key.usr" : null,
+      "key.length" : 50,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1572,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1577,
+      "key.usr" : null,
+      "key.length" : 30,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1608,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1610,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "UIApplication",
+      "key.offset" : 1623,
+      "key.usr" : "c:objc(cs)UIApplication",
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1648,
+      "key.usr" : null,
+      "key.length" : 103,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1759,
+      "key.usr" : null,
+      "key.length" : 48,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1818,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1823,
+      "key.usr" : null,
+      "key.length" : 26,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1850,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1852,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "UIApplication",
+      "key.offset" : 1865,
+      "key.usr" : "c:objc(cs)UIApplication",
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1890,
+      "key.usr" : null,
+      "key.length" : 102,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2000,
+      "key.usr" : null,
+      "key.length" : 88,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2099,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2104,
+      "key.usr" : null,
+      "key.length" : 24,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2129,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2131,
+      "key.usr" : null,
+      "key.length" : 11,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "UIApplication",
+      "key.offset" : 2144,
+      "key.usr" : "c:objc(cs)UIApplication",
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2169,
+      "key.usr" : null,
+      "key.length" : 80,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2257,
+      "key.usr" : null,
+      "key.length" : 44,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    }
+  ]
+}

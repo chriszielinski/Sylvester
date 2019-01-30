@@ -98,8 +98,9 @@ Supported Requests
 | -------------:|:------------- |
 | Code Completion | [`SKCodeCompletion`](https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletion.html) |
 | Code Completion Session | [`SKCodeCompletionSession`](https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletionSession.html) |
-| Module Info | [`SKModule`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC8SKModuleC)|
+| Documentation Info | [`SKDocInfo`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC9SKDocInfoC) |
 | Editor Open | [`SKEditorOpen`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC12SKEditorOpenC) |
+| Module Info | [`SKModule`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC8SKModuleC)|
 | Swift Documentation | [`SKSwiftDocs`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC11SKSwiftDocsC) |
 | Syntax Map | [`SKSyntaxMap`](https://chriszielinski.github.io/Sylvester/Classes/SKSyntaxMap.html) |
 | Custom YAML | [`SKYAMLRequest`](https://chriszielinski.github.io/Sylvester/Classes/SKYAMLRequest.html) |
@@ -122,13 +123,15 @@ Subclassing
 Most of the standard requests are concrete subclasses of  ~~beautiful~~ generic classes. Fancy your own subclass? No problem, it _might_ be possible. 
 
 
-`SKSubstructure`
-----------------
+`SKSubstructure`, `SKEntity`
+----------------------------
 
-Also known as `SKBaseSubstructure`, a common culprit. 
+Also known as `SKBaseSubstructure` (or `SKBaseEntity`), a common culprit. 
+
+> 📌 **Note:** Subclassing `SKBaseEntity` uses similar syntax.
 
 ```swift
-final class BetterSubstructureSubclass: SKBaseSubstructure, SKSubstructureSubclass {
+final class BetterSubstructureSubclass: SKBaseSubstructure, SKFinalSubclass {
 
     var iAmAnImportantProperty: String = "🚶‍♂️"
 
@@ -136,8 +139,8 @@ final class BetterSubstructureSubclass: SKBaseSubstructure, SKSubstructureSubcla
         return try decodeChildren(BetterSubstructureSubclass.self, from: container)
     }
 
-    /// The default iterator for `SKSubstructureChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:
-    class FunctionSubstructureIterator<Substructure: BetterSubstructureSubclass>: SKSubstructureIterator<Substructure> {
+    /// The default iterator for `SKChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:
+    class FunctionSubstructureIterator<Substructure: BetterSubstructureSubclass>: SKPreOrderDFSIterator<Substructure> {
 
         override func next() -> Substructure? {
             guard let nextSubstructure = super.next()
@@ -152,7 +155,7 @@ final class BetterSubstructureSubclass: SKBaseSubstructure, SKSubstructureSubcla
 
     }
 
-    override class func iteratorClass<Substructure: BetterSubstructureSubclass>() -> SKSubstructureIterator<Substructure>.Type {
+    override class func iteratorClass<Substructure: BetterSubstructureSubclass>() -> SKPreOrderDFSIterator<Substructure>.Type {
         return FunctionSubstructureIterator.self
     }
 

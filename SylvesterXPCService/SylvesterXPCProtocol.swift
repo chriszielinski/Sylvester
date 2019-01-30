@@ -32,6 +32,10 @@ public protocol SylvesterXPCProtocol {
     func swiftDocs(file: SKFileWrapper,
                    compilerArguments: [String],
                    with reply: (SKDataWrapper?, SKXPCError?) -> Void)
+    func docInfo(file: SKFileWrapper?,
+                 moduleName: String?,
+                 compilerArguments: [String],
+                 with reply: (SKDataWrapper?, SKXPCError?) -> Void)
 
     // MARK: - Code Completion Methods
 

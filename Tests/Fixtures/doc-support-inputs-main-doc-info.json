@@ -1,0 +1,2961 @@
+{
+  "key.entities" : [
+    {
+      "key.name" : "globV",
+      "key.doc.full_as_xml" : "<Other file=\"\/Users\/chriszielinski\/apps\/Sylvester\/Tests\/Fixtures\/Test Project\/Test\/DocSupportInputsMain.swift\" line=\"9\" column=\"5\"><Name>globV<\/Name><USR>s:4main5globVSivp<\/USR><Declaration>var globV: Int<\/Declaration><CommentParts><Abstract><Para>https:\/\/github.com\/apple\/swift\/blob\/master\/test\/SourceKit\/DocSupport\/Inputs\/main.swift<\/Para><\/Abstract><\/CommentParts><\/Other>",
+      "key.usr" : "s:4main5globVSivp",
+      "key.fully_annotated_decl" : "<decl.var.global><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>globV<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.global>",
+      "key.kind" : "source.lang.swift.decl.var.global"
+    },
+    {
+      "key.length" : 31,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>CC0<\/decl.name><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.name" : "x",
+          "key.usr" : "s:4main3CC0C1xSivp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>x<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        }
+      ],
+      "key.name" : "CC0",
+      "key.usr" : "s:4main3CC0C",
+      "key.offset" : 233
+    },
+    {
+      "key.length" : 268,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>CC<\/decl.name><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.name" : "instV",
+          "key.usr" : "s:4main2CCC5instVAA3CC0Cvp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>instV<\/decl.name>: <decl.var.type><ref.class usr=\"s:4main3CC0C\">CC0<\/ref.class><\/decl.var.type><\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.name" : "meth()",
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>meth<\/decl.name>()<\/decl.function.method.instance>",
+          "key.offset" : 300,
+          "key.usr" : "s:4main2CCC4methyyF",
+          "key.length" : 13,
+          "key.kind" : "source.lang.swift.decl.function.method.instance"
+        },
+        {
+          "key.length" : 69,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>instanceFunc0<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>a<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>b<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Sf\">Float<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.function.returntype><\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "a",
+              "key.offset" : 343,
+              "key.keyword" : "_",
+              "key.length" : 3,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            },
+            {
+              "key.name" : "b",
+              "key.offset" : 351,
+              "key.keyword" : "b",
+              "key.length" : 5,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "instanceFunc0(_:b:)",
+          "key.usr" : "s:4main2CCC13instanceFunc0_1bS2i_SftF",
+          "key.offset" : 319
+        },
+        {
+          "key.length" : 71,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>instanceFunc1<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>a<\/decl.var.parameter.argument_label> <decl.var.parameter.name>x<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>b<\/decl.var.parameter.argument_label> <decl.var.parameter.name>y<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.struct usr=\"s:Sf\">Float<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.function.returntype><\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "x",
+              "key.offset" : 418,
+              "key.keyword" : "a",
+              "key.length" : 3,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            },
+            {
+              "key.name" : "y",
+              "key.offset" : 428,
+              "key.keyword" : "b",
+              "key.length" : 5,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "instanceFunc1(a:b:)",
+          "key.usr" : "s:4main2CCC13instanceFunc11a1bS2i_SftF",
+          "key.offset" : 394
+        },
+        {
+          "key.name" : "smeth()",
+          "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>smeth<\/decl.name>()<\/decl.function.method.class>",
+          "key.offset" : 471,
+          "key.usr" : "s:4main2CCC5smethyyFZ",
+          "key.length" : 20,
+          "key.kind" : "source.lang.swift.decl.function.method.class"
+        },
+        {
+          "key.name" : "init()",
+          "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>init<\/syntaxtype.keyword>()<\/decl.function.constructor>",
+          "key.offset" : 497,
+          "key.usr" : "s:4main2CCCACycfc",
+          "key.length" : 35,
+          "key.kind" : "source.lang.swift.decl.function.constructor"
+        }
+      ],
+      "key.name" : "CC",
+      "key.usr" : "s:4main2CCC",
+      "key.offset" : 266
+    },
+    {
+      "key.length" : 44,
+      "key.fully_annotated_decl" : "<decl.function.operator.infix><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>+ <\/decl.name>(<decl.var.parameter><decl.var.parameter.name>a<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:4main2CCC\">CC<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.name>b<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:4main3CC0C\">CC0<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.class usr=\"s:4main2CCC\">CC<\/ref.class><\/decl.function.returntype><\/decl.function.operator.infix>",
+      "key.kind" : "source.lang.swift.decl.function.operator.infix",
+      "key.entities" : [
+        {
+          "key.name" : "a",
+          "key.offset" : 548,
+          "key.keyword" : "_",
+          "key.length" : 2,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        },
+        {
+          "key.name" : "b",
+          "key.offset" : 555,
+          "key.keyword" : "_",
+          "key.length" : 3,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        }
+      ],
+      "key.name" : "+(_:_:)",
+      "key.usr" : "s:4main1poiyAA2CCCAD_AA3CC0CtF",
+      "key.offset" : 537
+    },
+    {
+      "key.length" : 57,
+      "key.fully_annotated_decl" : "<decl.struct><syntaxtype.keyword>struct<\/syntaxtype.keyword> <decl.name>S<\/decl.name><\/decl.struct>",
+      "key.kind" : "source.lang.swift.decl.struct",
+      "key.entities" : [
+        {
+          "key.name" : "meth()",
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>meth<\/decl.name>()<\/decl.function.method.instance>",
+          "key.offset" : 599,
+          "key.usr" : "s:4main1SV4methyyF",
+          "key.length" : 13,
+          "key.kind" : "source.lang.swift.decl.function.method.instance"
+        },
+        {
+          "key.name" : "smeth()",
+          "key.fully_annotated_decl" : "<decl.function.method.static><syntaxtype.keyword>static<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>smeth<\/decl.name>()<\/decl.function.method.static>",
+          "key.offset" : 618,
+          "key.usr" : "s:4main1SV5smethyyFZ",
+          "key.length" : 21,
+          "key.kind" : "source.lang.swift.decl.function.method.static"
+        }
+      ],
+      "key.name" : "S",
+      "key.usr" : "s:4main1SV",
+      "key.offset" : 584
+    },
+    {
+      "key.length" : 24,
+      "key.fully_annotated_decl" : "<decl.enum><syntaxtype.keyword>enum<\/syntaxtype.keyword> <decl.name>E<\/decl.name><\/decl.enum>",
+      "key.kind" : "source.lang.swift.decl.enum",
+      "key.entities" : [
+        {
+          "key.name" : "EElem",
+          "key.usr" : "s:4main1EO5EElemyA2CmF",
+          "key.fully_annotated_decl" : "<decl.enumelement><syntaxtype.keyword>case<\/syntaxtype.keyword> <decl.name>EElem<\/decl.name><\/decl.enumelement>",
+          "key.kind" : "source.lang.swift.decl.enumelement"
+        }
+      ],
+      "key.name" : "E",
+      "key.usr" : "s:4main1EO",
+      "key.offset" : 644
+    },
+    {
+      "key.length" : 45,
+      "key.fully_annotated_decl" : "<decl.protocol><syntaxtype.keyword>protocol<\/syntaxtype.keyword> <decl.name>Prot<\/decl.name><\/decl.protocol>",
+      "key.kind" : "source.lang.swift.decl.protocol",
+      "key.entities" : [
+        {
+          "key.length" : 23,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>protMeth<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>a<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.protocol usr=\"s:4main4ProtP\">Prot<\/ref.protocol><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "a",
+              "key.offset" : 710,
+              "key.keyword" : "_",
+              "key.length" : 4,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "protMeth(_:)",
+          "key.usr" : "s:4main4ProtP8protMethyyAaB_pF",
+          "key.offset" : 691
+        }
+      ],
+      "key.name" : "Prot",
+      "key.usr" : "s:4main4ProtP",
+      "key.offset" : 671
+    },
+    {
+      "key.length" : 182,
+      "key.fully_annotated_decl" : "<decl.function.free><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>foo<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>a<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:4main2CCC\">CC<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>b<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.enum usr=\"s:4main1EO\">E<\/ref.enum><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.free>",
+      "key.kind" : "source.lang.swift.decl.function.free",
+      "key.entities" : [
+        {
+          "key.name" : "a",
+          "key.offset" : 733,
+          "key.keyword" : "_",
+          "key.length" : 2,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        },
+        {
+          "key.name" : "b",
+          "key.offset" : 740,
+          "key.keyword" : "b",
+          "key.length" : 1,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        }
+      ],
+      "key.name" : "foo(_:b:)",
+      "key.usr" : "s:4main3foo_1byAA2CCC_AA1EOtF",
+      "key.offset" : 719
+    },
+    {
+      "key.name" : "CCAlias",
+      "key.fully_annotated_decl" : "<decl.typealias><syntaxtype.keyword>typealias<\/syntaxtype.keyword> <decl.name>CCAlias<\/decl.name> = <ref.class usr=\"s:4main2CCC\">CC<\/ref.class><\/decl.typealias>",
+      "key.offset" : 904,
+      "key.usr" : "s:4main7CCAliasa",
+      "key.length" : 20,
+      "key.kind" : "source.lang.swift.decl.typealias"
+    },
+    {
+      "key.entities" : [
+        {
+          "key.length" : 26,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>meth2<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>x<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.typealias usr=\"s:4main7CCAliasa\">CCAlias<\/ref.typealias><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "x",
+              "key.offset" : 970,
+              "key.keyword" : "_",
+              "key.length" : 7,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "meth2(_:)",
+          "key.usr" : "s:4main2CCC5meth2yyACF",
+          "key.offset" : 954
+        },
+        {
+          "key.length" : 26,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>protMeth<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>a<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.protocol usr=\"s:4main4ProtP\">Prot<\/ref.protocol><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "a",
+              "key.offset" : 1005,
+              "key.keyword" : "_",
+              "key.length" : 4,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "protMeth(_:)",
+          "key.usr" : "s:4main2CCC8protMethyyAA4Prot_pF",
+          "key.offset" : 986
+        },
+        {
+          "key.name" : "extV",
+          "key.usr" : "s:4main2CCC4extVSivp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>extV<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type> { <syntaxtype.keyword>get<\/syntaxtype.keyword> }<\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>",
+          "key.offset" : 1033,
+          "key.usr" : "s:4main2CCC4extVSivg",
+          "key.length" : 11,
+          "key.kind" : "source.lang.swift.decl.function.accessor.getter"
+        }
+      ],
+      "key.offset" : 928,
+      "key.length" : 118,
+      "key.kind" : "source.lang.swift.decl.extension.class"
+    },
+    {
+      "key.length" : 18,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>SubCC<\/decl.name> : <ref.class usr=\"s:4main2CCC\">CC<\/ref.class><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.name" : "SubCC",
+      "key.inherits" : [
+        {
+          "key.usr" : "s:4main2CCC",
+          "key.name" : "CC",
+          "key.kind" : "source.lang.swift.ref.class"
+        }
+      ],
+      "key.usr" : "s:4main5SubCCC",
+      "key.offset" : 1049
+    },
+    {
+      "key.name" : "globV2",
+      "key.usr" : "s:4main6globV2AA5SubCCCvp",
+      "key.fully_annotated_decl" : "<decl.var.global><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>globV2<\/decl.name>: <decl.var.type><ref.class usr=\"s:4main5SubCCC\">SubCC<\/ref.class><\/decl.var.type><\/decl.var.global>",
+      "key.kind" : "source.lang.swift.decl.var.global"
+    },
+    {
+      "key.length" : 236,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>ComputedProperty<\/decl.name><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.name" : "value",
+          "key.usr" : "s:4main16ComputedPropertyC5valueSivp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>value<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type> { <syntaxtype.keyword>get<\/syntaxtype.keyword> <syntaxtype.keyword>set<\/syntaxtype.keyword> }<\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>",
+          "key.offset" : 1144,
+          "key.usr" : "s:4main16ComputedPropertyC5valueSivg",
+          "key.length" : 67,
+          "key.kind" : "source.lang.swift.decl.function.accessor.getter"
+        },
+        {
+          "key.fully_annotated_decl" : "<decl.function.accessor.setter><decl.name>set(newVal)<\/decl.name> {}<\/decl.function.accessor.setter>",
+          "key.offset" : 1221,
+          "key.usr" : "s:4main16ComputedPropertyC5valueSivs",
+          "key.length" : 59,
+          "key.kind" : "source.lang.swift.decl.function.accessor.setter"
+        },
+        {
+          "key.name" : "readOnly",
+          "key.usr" : "s:4main16ComputedPropertyC8readOnlySivp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>readOnly<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type> { <syntaxtype.keyword>get<\/syntaxtype.keyword> }<\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>",
+          "key.offset" : 1312,
+          "key.usr" : "s:4main16ComputedPropertyC8readOnlySivg",
+          "key.length" : 11,
+          "key.kind" : "source.lang.swift.decl.function.accessor.getter"
+        }
+      ],
+      "key.name" : "ComputedProperty",
+      "key.usr" : "s:4main16ComputedPropertyC",
+      "key.offset" : 1089
+    },
+    {
+      "key.length" : 44,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>BC2<\/decl.name><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.length" : 26,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>protMeth<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>a<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.protocol usr=\"s:4main4ProtP\">Prot<\/ref.protocol><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "a",
+              "key.offset" : 1363,
+              "key.keyword" : "_",
+              "key.length" : 4,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "protMeth(_:)",
+          "key.usr" : "s:4main3BC2C8protMethyyAA4Prot_pF",
+          "key.offset" : 1344
+        }
+      ],
+      "key.name" : "BC2",
+      "key.usr" : "s:4main3BC2C",
+      "key.offset" : 1328
+    },
+    {
+      "key.length" : 67,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>SubC2<\/decl.name> : <ref.class usr=\"s:4main3BC2C\">BC2<\/ref.class>, <ref.protocol usr=\"s:4main4ProtP\">Prot<\/ref.protocol><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.length" : 26,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>override<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>protMeth<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>a<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.protocol usr=\"s:4main4ProtP\">Prot<\/ref.protocol><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.entities" : [
+            {
+              "key.name" : "a",
+              "key.offset" : 1432,
+              "key.keyword" : "_",
+              "key.length" : 4,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "protMeth(_:)",
+          "key.inherits" : [
+            {
+              "key.usr" : "s:4main3BC2C8protMethyyAA4Prot_pF",
+              "key.name" : "protMeth(_:)",
+              "key.kind" : "source.lang.swift.ref.function.method.instance"
+            }
+          ],
+          "key.usr" : "s:4main5SubC2C8protMethyyAA4Prot_pF",
+          "key.offset" : 1413
+        }
+      ],
+      "key.name" : "SubC2",
+      "key.inherits" : [
+        {
+          "key.usr" : "s:4main3BC2C",
+          "key.name" : "BC2",
+          "key.kind" : "source.lang.swift.ref.class"
+        }
+      ],
+      "key.usr" : "s:4main5SubC2C",
+      "key.offset" : 1374
+    },
+    {
+      "key.length" : 147,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>CC2<\/decl.name><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.length" : 129,
+          "key.fully_annotated_decl" : "<decl.function.subscript><syntaxtype.keyword>subscript<\/syntaxtype.keyword>(<decl.var.parameter><decl.var.parameter.name>i<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.function.returntype> { <syntaxtype.keyword>get<\/syntaxtype.keyword> <syntaxtype.keyword>set<\/syntaxtype.keyword> }<\/decl.function.subscript>",
+          "key.kind" : "source.lang.swift.decl.function.subscript",
+          "key.entities" : [
+            {
+              "key.name" : "i",
+              "key.offset" : 1475,
+              "key.keyword" : "_",
+              "key.length" : 3,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "subscript(_:)",
+          "key.usr" : "s:4main3CC2CyS2icip",
+          "key.offset" : 1460
+        },
+        {
+          "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>",
+          "key.offset" : 1497,
+          "key.usr" : "s:4main3CC2CyS2icig",
+          "key.length" : 35,
+          "key.kind" : "source.lang.swift.decl.function.accessor.getter"
+        },
+        {
+          "key.fully_annotated_decl" : "<decl.function.accessor.setter><decl.name>set(vvv)<\/decl.name> {}<\/decl.function.accessor.setter>",
+          "key.offset" : 1542,
+          "key.usr" : "s:4main3CC2CyS2icis",
+          "key.length" : 41,
+          "key.kind" : "source.lang.swift.decl.function.accessor.setter"
+        }
+      ],
+      "key.name" : "CC2",
+      "key.usr" : "s:4main3CC2C",
+      "key.offset" : 1444
+    },
+    {
+      "key.length" : 169,
+      "key.fully_annotated_decl" : "<decl.function.free><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>test1<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>cp<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:4main16ComputedPropertyC\">ComputedProperty<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>sub<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.class usr=\"s:4main3CC2C\">CC2<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.free>",
+      "key.kind" : "source.lang.swift.decl.function.free",
+      "key.entities" : [
+        {
+          "key.name" : "cp",
+          "key.offset" : 1611,
+          "key.keyword" : "_",
+          "key.length" : 16,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        },
+        {
+          "key.name" : "sub",
+          "key.offset" : 1634,
+          "key.keyword" : "sub",
+          "key.length" : 3,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        }
+      ],
+      "key.name" : "test1(_:sub:)",
+      "key.usr" : "s:4main5test1_3subyAA16ComputedPropertyC_AA3CC2CtF",
+      "key.offset" : 1594
+    },
+    {
+      "key.length" : 31,
+      "key.fully_annotated_decl" : "<decl.struct><syntaxtype.keyword>struct<\/syntaxtype.keyword> <decl.name>S2<\/decl.name><\/decl.struct>",
+      "key.kind" : "source.lang.swift.decl.struct",
+      "key.entities" : [
+        {
+          "key.name" : "sfoo()",
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>sfoo<\/decl.name>()<\/decl.function.method.instance>",
+          "key.offset" : 1782,
+          "key.usr" : "s:4main2S2V4sfooyyF",
+          "key.length" : 13,
+          "key.kind" : "source.lang.swift.decl.function.method.instance"
+        }
+      ],
+      "key.name" : "S2",
+      "key.usr" : "s:4main2S2V",
+      "key.offset" : 1766
+    },
+    {
+      "key.name" : "globReadOnly",
+      "key.usr" : "s:4main12globReadOnlyAA2S2Vvp",
+      "key.fully_annotated_decl" : "<decl.var.global><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>globReadOnly<\/decl.name>: <decl.var.type><ref.struct usr=\"s:4main2S2V\">S2<\/ref.struct><\/decl.var.type> { <syntaxtype.keyword>get<\/syntaxtype.keyword> }<\/decl.var.global>",
+      "key.kind" : "source.lang.swift.decl.var.global"
+    },
+    {
+      "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>",
+      "key.offset" : 1828,
+      "key.usr" : "s:4main12globReadOnlyAA2S2Vvg",
+      "key.length" : 31,
+      "key.kind" : "source.lang.swift.decl.function.accessor.getter"
+    },
+    {
+      "key.name" : "test2()",
+      "key.fully_annotated_decl" : "<decl.function.free><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>test2<\/decl.name>()<\/decl.function.free>",
+      "key.offset" : 1864,
+      "key.usr" : "s:4main5test2yyF",
+      "key.length" : 39,
+      "key.kind" : "source.lang.swift.decl.function.free"
+    },
+    {
+      "key.length" : 29,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>B1<\/decl.name><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.name" : "foo()",
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>foo<\/decl.name>()<\/decl.function.method.instance>",
+          "key.offset" : 1921,
+          "key.usr" : "s:4main2B1C3fooyyF",
+          "key.length" : 12,
+          "key.kind" : "source.lang.swift.decl.function.method.instance"
+        }
+      ],
+      "key.name" : "B1",
+      "key.usr" : "s:4main2B1C",
+      "key.offset" : 1906
+    },
+    {
+      "key.length" : 102,
+      "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>SB1<\/decl.name> : <ref.class usr=\"s:4main2B1C\">B1<\/ref.class><\/decl.class>",
+      "key.kind" : "source.lang.swift.decl.class",
+      "key.entities" : [
+        {
+          "key.length" : 70,
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>override<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>foo<\/decl.name>()<\/decl.function.method.instance>",
+          "key.kind" : "source.lang.swift.decl.function.method.instance",
+          "key.name" : "foo()",
+          "key.inherits" : [
+            {
+              "key.usr" : "s:4main2B1C3fooyyF",
+              "key.name" : "foo()",
+              "key.kind" : "source.lang.swift.ref.function.method.instance"
+            }
+          ],
+          "key.usr" : "s:4main3SB1C3fooyyF",
+          "key.offset" : 1968
+        }
+      ],
+      "key.name" : "SB1",
+      "key.inherits" : [
+        {
+          "key.usr" : "s:4main2B1C",
+          "key.name" : "B1",
+          "key.kind" : "source.lang.swift.ref.class"
+        }
+      ],
+      "key.usr" : "s:4main3SB1C",
+      "key.offset" : 1938
+    },
+    {
+      "key.length" : 67,
+      "key.fully_annotated_decl" : "<decl.function.free><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>test3<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>c<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:4main3SB1C\">SB1<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>s<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:4main2S2V\">S2<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.free>",
+      "key.kind" : "source.lang.swift.decl.function.free",
+      "key.entities" : [
+        {
+          "key.name" : "c",
+          "key.offset" : 2059,
+          "key.keyword" : "_",
+          "key.length" : 3,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        },
+        {
+          "key.name" : "s",
+          "key.offset" : 2067,
+          "key.keyword" : "s",
+          "key.length" : 2,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        }
+      ],
+      "key.name" : "test3(_:s:)",
+      "key.usr" : "s:4main5test3_1syAA3SB1C_AA2S2VtF",
+      "key.offset" : 2043
+    },
+    {
+      "key.length" : 28,
+      "key.fully_annotated_decl" : "<decl.function.free><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>test4<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>a<\/decl.var.parameter.name>: <decl.var.parameter.type><syntaxtype.keyword>inout<\/syntaxtype.keyword> <ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.free>",
+      "key.kind" : "source.lang.swift.decl.function.free",
+      "key.entities" : [
+        {
+          "key.name" : "a",
+          "key.offset" : 2135,
+          "key.keyword" : "_",
+          "key.length" : 3,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        }
+      ],
+      "key.name" : "test4(_:)",
+      "key.usr" : "s:4main5test4yySizF",
+      "key.offset" : 2113
+    },
+    {
+      "key.length" : 83,
+      "key.fully_annotated_decl" : "<decl.protocol><syntaxtype.keyword>protocol<\/syntaxtype.keyword> <decl.name>Prot2<\/decl.name><\/decl.protocol>",
+      "key.kind" : "source.lang.swift.decl.protocol",
+      "key.entities" : [
+        {
+          "key.name" : "Element",
+          "key.fully_annotated_decl" : "<decl.associatedtype><syntaxtype.keyword>associatedtype<\/syntaxtype.keyword> <decl.name>Element<\/decl.name><\/decl.associatedtype>",
+          "key.offset" : 2165,
+          "key.usr" : "s:4main5Prot2P7ElementQa",
+          "key.length" : 15,
+          "key.kind" : "source.lang.swift.decl.associatedtype"
+        },
+        {
+          "key.name" : "p",
+          "key.usr" : "s:4main5Prot2P1pSivp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>p<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type> { <syntaxtype.keyword>get<\/syntaxtype.keyword> }<\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.usr" : "s:4main5Prot2P1pSivg",
+          "key.kind" : "source.lang.swift.decl.function.accessor.getter",
+          "key.fully_annotated_decl" : "<decl.function.accessor.getter><decl.name>get<\/decl.name> {}<\/decl.function.accessor.getter>"
+        },
+        {
+          "key.name" : "foo()",
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>foo<\/decl.name>()<\/decl.function.method.instance>",
+          "key.offset" : 2216,
+          "key.usr" : "s:4main5Prot2P3fooyyF",
+          "key.length" : 9,
+          "key.kind" : "source.lang.swift.decl.function.method.instance"
+        }
+      ],
+      "key.name" : "Prot2",
+      "key.usr" : "s:4main5Prot2P",
+      "key.offset" : 2144
+    },
+    {
+      "key.length" : 86,
+      "key.fully_annotated_decl" : "<decl.struct><syntaxtype.keyword>struct<\/syntaxtype.keyword> <decl.name>S1<\/decl.name> : <ref.protocol usr=\"s:4main5Prot2P\">Prot2<\/ref.protocol><\/decl.struct>",
+      "key.kind" : "source.lang.swift.decl.struct",
+      "key.entities" : [
+        {
+          "key.name" : "Element",
+          "key.fully_annotated_decl" : "<decl.typealias><syntaxtype.keyword>typealias<\/syntaxtype.keyword> <ref.struct usr=\"s:4main2S1V\">S1<\/ref.struct>.<decl.name>Element<\/decl.name> = <ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.typealias>",
+          "key.offset" : 2254,
+          "key.usr" : "s:4main2S1V7Elementa",
+          "key.length" : 20,
+          "key.kind" : "source.lang.swift.decl.typealias"
+        },
+        {
+          "key.name" : "p",
+          "key.usr" : "s:4main2S1V1pSivp",
+          "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>p<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
+          "key.kind" : "source.lang.swift.decl.var.instance"
+        },
+        {
+          "key.name" : "foo()",
+          "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>foo<\/decl.name>()<\/decl.function.method.instance>",
+          "key.offset" : 2302,
+          "key.usr" : "s:4main2S1V3fooyyF",
+          "key.length" : 12,
+          "key.kind" : "source.lang.swift.decl.function.method.instance"
+        }
+      ],
+      "key.name" : "S1",
+      "key.usr" : "s:4main2S1V",
+      "key.offset" : 2230
+    },
+    {
+      "key.length" : 55,
+      "key.fully_annotated_decl" : "<decl.function.free><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>genfoo<\/decl.name>&lt;<decl.generic_type_param usr=\"s:4main6genfooyyxAA5Prot2RzSi7ElementRtzlF1TL_xmfp\"><decl.generic_type_param.name>T<\/decl.generic_type_param.name><\/decl.generic_type_param>&gt;(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>x<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.generic_type_param usr=\"s:4main6genfooyyxAA5Prot2RzSi7ElementRtzlF1TL_xmfp\">T<\/ref.generic_type_param><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>where<\/syntaxtype.keyword> <decl.generic_type_requirement>T : <ref.protocol usr=\"s:4main5Prot2P\">Prot2<\/ref.protocol><\/decl.generic_type_requirement>, <decl.generic_type_requirement>T.Element == <ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.generic_type_requirement><\/decl.function.free>",
+      "key.kind" : "source.lang.swift.decl.function.free",
+      "key.entities" : [
+        {
+          "key.name" : "x",
+          "key.offset" : 2347,
+          "key.keyword" : "_",
+          "key.length" : 1,
+          "key.kind" : "source.lang.swift.decl.var.local"
+        }
+      ],
+      "key.generic_params" : [
+        {
+          "key.name" : "T"
+        }
+      ],
+      "key.generic_requirements" : [
+        {
+          "key.description" : "T : Prot2"
+        },
+        {
+          "key.description" : "T.Element == Int"
+        }
+      ],
+      "key.name" : "genfoo(_:)",
+      "key.usr" : "s:4main6genfooyyxAA5Prot2RzSi7ElementRtzlF",
+      "key.offset" : 2319
+    },
+    {
+      "key.length" : 53,
+      "key.fully_annotated_decl" : "<decl.protocol><syntaxtype.keyword>protocol<\/syntaxtype.keyword> <decl.name>Prot3<\/decl.name><\/decl.protocol>",
+      "key.kind" : "source.lang.swift.decl.protocol",
+      "key.entities" : [
+        {
+          "key.length" : 30,
+          "key.fully_annotated_decl" : "<decl.function.operator.infix><syntaxtype.keyword>static<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>+ <\/decl.name>(<decl.var.parameter><decl.var.parameter.name>x<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.generic_type_param usr=\"s:4main5Prot3P4Selfxmfp\">Self<\/ref.generic_type_param><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.name>y<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.generic_type_param usr=\"s:4main5Prot3P4Selfxmfp\">Self<\/ref.generic_type_param><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.operator.infix>",
+          "key.kind" : "source.lang.swift.decl.function.operator.infix",
+          "key.entities" : [
+            {
+              "key.name" : "x",
+              "key.offset" : 2415,
+              "key.keyword" : "_",
+              "key.length" : 4,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            },
+            {
+              "key.name" : "y",
+              "key.offset" : 2424,
+              "key.keyword" : "_",
+              "key.length" : 4,
+              "key.kind" : "source.lang.swift.decl.var.local"
+            }
+          ],
+          "key.name" : "+(_:_:)",
+          "key.usr" : "s:4main5Prot3P1poiyyx_xtFZ",
+          "key.offset" : 2398
+        }
+      ],
+      "key.name" : "Prot3",
+      "key.usr" : "s:4main5Prot3P",
+      "key.offset" : 2377
+    }
+  ],
+  "key.annotations" : [
+    {
+      "key.name" : null,
+      "key.offset" : 0,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 3,
+      "key.usr" : null,
+      "key.length" : 31,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 34,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 43,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 46,
+      "key.usr" : null,
+      "key.length" : 76,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 89,
+      "key.usr" : null,
+      "key.length" : 32,
+      "key.kind" : "source.lang.swift.syntaxtype.comment.url"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 122,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 125,
+      "key.usr" : null,
+      "key.length" : 91,
+      "key.kind" : "source.lang.swift.syntaxtype.doccomment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 129,
+      "key.usr" : null,
+      "key.length" : 86,
+      "key.kind" : "source.lang.swift.syntaxtype.comment.url"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 217,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 221,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 228,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 233,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 239,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 249,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 253,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 256,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 262,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 266,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 272,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 281,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 285,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "CC0",
+      "key.offset" : 292,
+      "key.usr" : "s:4main3CC0C",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 300,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 305,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 319,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 324,
+      "key.usr" : null,
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 338,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 340,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 343,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 348,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Float",
+      "key.offset" : 351,
+      "key.usr" : "s:Sf",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 361,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 375,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 382,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 394,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 399,
+      "key.usr" : null,
+      "key.length" : 13,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 413,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 415,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 418,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 423,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 425,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Float",
+      "key.offset" : 428,
+      "key.usr" : "s:Sf",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 438,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 452,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 459,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 471,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 477,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 482,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 497,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "instV",
+      "key.offset" : 514,
+      "key.usr" : "s:4main2CCC5instVAA3CC0Cvp",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.var.instance"
+    },
+    {
+      "key.name" : "init()",
+      "key.offset" : 522,
+      "key.usr" : "s:4main3CC0CACycfc",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.function.constructor"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 537,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 544,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "CC",
+      "key.offset" : 548,
+      "key.usr" : "s:4main2CCC",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 552,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "CC0",
+      "key.offset" : 555,
+      "key.usr" : "s:4main3CC0C",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : "CC",
+      "key.offset" : 563,
+      "key.usr" : "s:4main2CCC",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 572,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "a",
+      "key.offset" : 579,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 584,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 591,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 599,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 604,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 618,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 625,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 630,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 644,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 649,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 657,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 662,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 671,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 680,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 691,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 696,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 705,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 707,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Prot",
+      "key.offset" : 710,
+      "key.usr" : "s:4main4ProtP",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 719,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 724,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 728,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 730,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "CC",
+      "key.offset" : 733,
+      "key.usr" : "s:4main2CCC",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 737,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "E",
+      "key.offset" : 740,
+      "key.usr" : "s:4main1EO",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.enum"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 749,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 753,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "b",
+      "key.offset" : 757,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 763,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "b",
+      "key.offset" : 767,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "globV",
+      "key.offset" : 773,
+      "key.usr" : "s:4main5globVSivp",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.var.global"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 781,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 787,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "a",
+      "key.offset" : 791,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "+(_:_:)",
+      "key.offset" : 793,
+      "key.usr" : "s:4main1poiyAA2CCCAD_AA3CC0CtF",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.function.operator.infix"
+    },
+    {
+      "key.name" : "a",
+      "key.offset" : 795,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "instV",
+      "key.offset" : 797,
+      "key.usr" : "s:4main2CCC5instVAA3CC0Cvp",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.var.instance"
+    },
+    {
+      "key.name" : "a",
+      "key.offset" : 807,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "meth()",
+      "key.offset" : 809,
+      "key.usr" : "s:4main2CCC4methyyF",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.function.method.instance"
+    },
+    {
+      "key.name" : "CC",
+      "key.offset" : 820,
+      "key.usr" : "s:4main2CCC",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : "smeth()",
+      "key.offset" : 823,
+      "key.usr" : "s:4main2CCC5smethyyFZ",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.function.method.class"
+    },
+    {
+      "key.name" : "b",
+      "key.offset" : 835,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "E",
+      "key.offset" : 839,
+      "key.usr" : "s:4main1EO",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.enum"
+    },
+    {
+      "key.name" : "EElem",
+      "key.offset" : 841,
+      "key.usr" : "s:4main1EO5EElemyA2CmF",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.enumelement"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 851,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 855,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "CC",
+      "key.offset" : 858,
+      "key.usr" : "s:4main2CCC",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 865,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 871,
+      "key.usr" : null,
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 886,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 890,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "LocalCC",
+      "key.offset" : 893,
+      "key.usr" : "s:4main3foo_1byAA2CCC_AA1EOtF05LocalC0L_C",
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 904,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 914,
+      "key.usr" : null,
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "CC",
+      "key.offset" : 924,
+      "key.usr" : "s:4main2CCC",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 928,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "CC",
+      "key.offset" : 938,
+      "key.usr" : "s:4main2CCC",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : "Prot",
+      "key.offset" : 943,
+      "key.usr" : "s:4main4ProtP",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 954,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 959,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 965,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 967,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "CCAlias",
+      "key.offset" : 970,
+      "key.usr" : "s:4main7CCAliasa",
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.ref.typealias"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 986,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 991,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1000,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1002,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Prot",
+      "key.offset" : 1005,
+      "key.usr" : "s:4main4ProtP",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1018,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1022,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 1029,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1035,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1042,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1049,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1055,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "CC",
+      "key.offset" : 1063,
+      "key.usr" : "s:4main2CCC",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1070,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1074,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "SubCC",
+      "key.offset" : 1082,
+      "key.usr" : "s:4main5SubCCC",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1089,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1095,
+      "key.usr" : null,
+      "key.length" : 16,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1118,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1122,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 1130,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1144,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1162,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1166,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1175,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1189,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "result",
+      "key.offset" : 1196,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1221,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1225,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1247,
+      "key.usr" : null,
+      "key.length" : 25,
+      "key.kind" : "source.lang.swift.syntaxtype.comment"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1293,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1297,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 1308,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1314,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1321,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1328,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1334,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1344,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1349,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1358,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1360,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Prot",
+      "key.offset" : 1363,
+      "key.usr" : "s:4main4ProtP",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1374,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1380,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "BC2",
+      "key.offset" : 1388,
+      "key.usr" : "s:4main3BC2C",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : "Prot",
+      "key.offset" : 1393,
+      "key.usr" : "s:4main4ProtP",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1404,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.attribute.builtin"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1413,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1418,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1427,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1429,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Prot",
+      "key.offset" : 1432,
+      "key.usr" : "s:4main4ProtP",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1444,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1450,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1460,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1471,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 1475,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 1483,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1497,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1515,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "i",
+      "key.offset" : 1522,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1542,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1546,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1565,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "vvv",
+      "key.offset" : 1569,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "+(_:_:)",
+      "key.offset" : 1572,
+      "key.usr" : "s:Si1poiyS2i_SitFZ",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.function.operator.infix"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1573,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1594,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1599,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1605,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1607,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "ComputedProperty",
+      "key.offset" : 1611,
+      "key.usr" : "s:4main16ComputedPropertyC",
+      "key.length" : 16,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1629,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "CC2",
+      "key.offset" : 1634,
+      "key.usr" : "s:4main3CC2C",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1645,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1649,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "cp",
+      "key.offset" : 1653,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "value",
+      "key.offset" : 1656,
+      "key.usr" : "s:4main16ComputedPropertyC5valueSivp",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.var.instance"
+    },
+    {
+      "key.name" : "x",
+      "key.offset" : 1666,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "cp",
+      "key.offset" : 1670,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "readOnly",
+      "key.offset" : 1673,
+      "key.usr" : "s:4main16ComputedPropertyC8readOnlySivp",
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.ref.var.instance"
+    },
+    {
+      "key.name" : "cp",
+      "key.offset" : 1686,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "value",
+      "key.offset" : 1689,
+      "key.usr" : "s:4main16ComputedPropertyC5valueSivp",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.var.instance"
+    },
+    {
+      "key.name" : "x",
+      "key.offset" : 1697,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "cp",
+      "key.offset" : 1703,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "value",
+      "key.offset" : 1706,
+      "key.usr" : "s:4main16ComputedPropertyC5valueSivp",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.var.instance"
+    },
+    {
+      "key.name" : "+=(_:_:)",
+      "key.offset" : 1712,
+      "key.usr" : "s:Si2peoiyySiz_SitFZ",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.function.operator.infix"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1715,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : "x",
+      "key.offset" : 1721,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "sub",
+      "key.offset" : 1725,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "subscript(_:)",
+      "key.offset" : 1728,
+      "key.usr" : "s:4main3CC2CyS2icip",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.function.subscript"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1729,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : "subscript(_:)",
+      "key.offset" : 1730,
+      "key.usr" : "s:4main3CC2CyS2icip",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.function.subscript"
+    },
+    {
+      "key.name" : "sub",
+      "key.offset" : 1736,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "subscript(_:)",
+      "key.offset" : 1739,
+      "key.usr" : "s:4main3CC2CyS2icip",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.function.subscript"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1740,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : "subscript(_:)",
+      "key.offset" : 1741,
+      "key.usr" : "s:4main3CC2CyS2icip",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.function.subscript"
+    },
+    {
+      "key.name" : "x",
+      "key.offset" : 1745,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "sub",
+      "key.offset" : 1751,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "subscript(_:)",
+      "key.offset" : 1754,
+      "key.usr" : "s:4main3CC2CyS2icip",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.function.subscript"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1755,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : "subscript(_:)",
+      "key.offset" : 1756,
+      "key.usr" : "s:4main3CC2CyS2icip",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.function.subscript"
+    },
+    {
+      "key.name" : "+=(_:_:)",
+      "key.offset" : 1758,
+      "key.usr" : "s:Si2peoiyySiz_SitFZ",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.function.operator.infix"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1761,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1766,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1773,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1782,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1787,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1800,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1804,
+      "key.usr" : null,
+      "key.length" : 12,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "S2",
+      "key.offset" : 1819,
+      "key.usr" : "s:4main2S2V",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1828,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1842,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "init()",
+      "key.offset" : 1849,
+      "key.usr" : "s:4main2S2VACycfc",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.function.constructor"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1864,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1869,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "globReadOnly",
+      "key.offset" : 1883,
+      "key.usr" : "s:4main12globReadOnlyAA2S2Vvp",
+      "key.length" : 12,
+      "key.kind" : "source.lang.swift.ref.var.global"
+    },
+    {
+      "key.name" : "sfoo()",
+      "key.offset" : 1896,
+      "key.usr" : "s:4main2S2V4sfooyyF",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.function.method.instance"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1906,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1912,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1921,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1926,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1938,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1944,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "B1",
+      "key.offset" : 1950,
+      "key.usr" : "s:4main2B1C",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1959,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.attribute.builtin"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1968,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 1973,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "foo()",
+      "key.offset" : 1989,
+      "key.usr" : "s:4main3SB1C3fooyyF",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.function.method.instance"
+    },
+    {
+      "key.name" : "self",
+      "key.offset" : 2003,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "foo()",
+      "key.offset" : 2008,
+      "key.usr" : "s:4main3SB1C3fooyyF",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.function.method.instance"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2022,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "foo()",
+      "key.offset" : 2028,
+      "key.usr" : "s:4main2B1C3fooyyF",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.function.method.instance"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2043,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2048,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2054,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2056,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "SB1",
+      "key.offset" : 2059,
+      "key.usr" : "s:4main3SB1C",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.class"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2064,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "S2",
+      "key.offset" : 2067,
+      "key.usr" : "s:4main2S2V",
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : "test2()",
+      "key.offset" : 2077,
+      "key.usr" : "s:4main5test2yyF",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.function.free"
+    },
+    {
+      "key.name" : "c",
+      "key.offset" : 2089,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "foo()",
+      "key.offset" : 2091,
+      "key.usr" : "s:4main3SB1C3fooyyF",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.function.method.instance"
+    },
+    {
+      "key.name" : "s",
+      "key.offset" : 2101,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.var.local"
+    },
+    {
+      "key.name" : "sfoo()",
+      "key.offset" : 2103,
+      "key.usr" : "s:4main2S2V4sfooyyF",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.function.method.instance"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2113,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2118,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2124,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2126,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2129,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 2135,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2144,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2153,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2165,
+      "key.usr" : null,
+      "key.length" : 14,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2180,
+      "key.usr" : null,
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2192,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2196,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 2200,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2206,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2216,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2221,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2230,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2237,
+      "key.usr" : null,
+      "key.length" : 2,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Prot2",
+      "key.offset" : 2242,
+      "key.usr" : "s:4main5Prot2P",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2254,
+      "key.usr" : null,
+      "key.length" : 9,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2264,
+      "key.usr" : null,
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 2274,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2282,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2286,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 2290,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2296,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.number"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2302,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2307,
+      "key.usr" : null,
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2319,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2324,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2331,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : "Prot2",
+      "key.offset" : 2335,
+      "key.usr" : "s:4main5Prot2P",
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.ref.protocol"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2342,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.argument"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2344,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "T",
+      "key.offset" : 2347,
+      "key.usr" : "s:4main6genfooyyxAA5Prot2RzSi7ElementRtzlF1TL_xmfp",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.generic_type_param"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2350,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : "T",
+      "key.offset" : 2356,
+      "key.usr" : "s:4main6genfooyyxAA5Prot2RzSi7ElementRtzlF1TL_xmfp",
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.ref.generic_type_param"
+    },
+    {
+      "key.name" : "Element",
+      "key.offset" : 2358,
+      "key.usr" : "s:4main5Prot2P7ElementQa",
+      "key.length" : 7,
+      "key.kind" : "source.lang.swift.ref.associatedtype"
+    },
+    {
+      "key.name" : "Int",
+      "key.offset" : 2369,
+      "key.usr" : "s:Si",
+      "key.length" : 3,
+      "key.kind" : "source.lang.swift.ref.struct"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2377,
+      "key.usr" : null,
+      "key.length" : 8,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2386,
+      "key.usr" : null,
+      "key.length" : 5,
+      "key.kind" : "source.lang.swift.syntaxtype.identifier"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2398,
+      "key.usr" : null,
+      "key.length" : 6,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2405,
+      "key.usr" : null,
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.syntaxtype.keyword"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2412,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Self",
+      "key.offset" : 2415,
+      "key.usr" : "s:4main5Prot3P4Selfxmfp",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.generic_type_param"
+    },
+    {
+      "key.name" : null,
+      "key.offset" : 2421,
+      "key.usr" : null,
+      "key.length" : 1,
+      "key.kind" : "source.lang.swift.syntaxtype.parameter"
+    },
+    {
+      "key.name" : "Self",
+      "key.offset" : 2424,
+      "key.usr" : "s:4main5Prot3P4Selfxmfp",
+      "key.length" : 4,
+      "key.kind" : "source.lang.swift.ref.generic_type_param"
+    }
+  ]
+}

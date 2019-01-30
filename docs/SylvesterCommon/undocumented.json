@@ -43,29 +43,43 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Requests.swift",
-      "line": 13,
+      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Request.swift",
+      "line": 15,
+      "symbol": "Request.createCompilerArguments(sdkPath:target:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Request.swift",
+      "line": 31,
+      "symbol": "Request.docInfo(file:moduleName:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Request.swift",
+      "line": 50,
       "symbol": "Request.codeCompletion(file:offset:compilerArguments:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Requests.swift",
-      "line": 41,
+      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Request.swift",
+      "line": 78,
       "symbol": "Request.codeCompletionOpen(file:offset:options:compilerArguments:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Requests.swift",
-      "line": 74,
+      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Request.swift",
+      "line": 111,
       "symbol": "Request.codeCompletionUpdate(name:offset:options:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Requests.swift",
-      "line": 90,
+      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/Extensions/Request.swift",
+      "line": 127,
       "symbol": "Request.codeCompletionClose(name:offset:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
@@ -422,63 +436,70 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 70,
+      "line": 68,
+      "symbol": "SourceKittenAdapter.docInfo(file:moduleName:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 85,
       "symbol": "SourceKittenAdapter.codeCompletion(file:offset:compilerArguments:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 77,
+      "line": 92,
       "symbol": "SourceKittenAdapter.codeCompletionOpen(file:offset:options:compilerArguments:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 88,
+      "line": 103,
       "symbol": "SourceKittenAdapter.codeCompletionUpdate(name:offset:options:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 95,
+      "line": 110,
       "symbol": "SourceKittenAdapter.codeCompletionClose(name:offset:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 102,
+      "line": 117,
       "symbol": "SourceKittenAdapter.customYAML(yaml:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 128,
+      "line": 143,
       "symbol": "SourceKittenAdapter.xcRun(arguments:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 134,
+      "line": 149,
       "symbol": "SourceKittenAdapter.xcodeBuild(arguments:currentDirectoryURL:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 147,
+      "line": 162,
       "symbol": "SourceKittenAdapter.executeBash(_:currentDirectoryURL:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
-      "line": 154,
+      "line": 169,
       "symbol": "SourceKittenAdapter.launch(subprocess:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"

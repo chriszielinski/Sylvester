@@ -28,3 +28,7 @@ extension SKParagraph: Codable {}
 // MARK: - Equatable Protocol
 
 extension SKParagraph: Equatable {}
+
+// MARK: - JSON Debug String Convertible Protocol
+
+extension SKParagraph: JSONDebugStringConvertible {}

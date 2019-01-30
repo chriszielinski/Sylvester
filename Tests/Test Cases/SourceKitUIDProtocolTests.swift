@@ -18,10 +18,14 @@ class SourceKitUIDProtocolTests: XCTestCase {
     // MARK: - Test Methods
 
     func testDescription() {
-        XCTAssertEqual(SKDiagnosticStage.parse.description, "parse")
-        XCTAssertEqual(SKAccessLevel.internal.description, "internal")
-        XCTAssertEqual(SKSubstructureKind.class.description, "class")
-        XCTAssertEqual(SKCodeCompletionContext.thisclass.description, "thisclass")
+        XCTAssertEqual(SKDiagnosticStage.parse.description,
+                       "source.diagnostic.stage.swift.parse")
+        XCTAssertEqual(SKAccessLevel.internal.description,
+                       "source.lang.swift.accessibility.internal")
+        XCTAssertEqual(SKDeclarationKind.class.description,
+                       "source.lang.swift.decl.class")
+        XCTAssertEqual(SKCodeCompletionContext.thisclass.description,
+                       "source.codecompletion.context.thisclass")
     }
 
 }

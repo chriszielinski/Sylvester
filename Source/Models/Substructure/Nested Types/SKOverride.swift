@@ -31,16 +31,6 @@ public struct SKOverride {
 
 extension SKOverride: Codable {}
 
-// MARK: - Custom Debug String Convertible Protocol
-
-extension SKOverride: CustomDebugStringConvertible {
-
-    public var debugDescription: String {
-        return "Override(usr: \"\(usr)\")"
-    }
-
-}
-
 // MARK: - Equatable Protocol
 
 extension SKOverride: Equatable {
@@ -50,3 +40,7 @@ extension SKOverride: Equatable {
     }
 
 }
+
+// MARK: - JSON Debug String Convertible Protocol
+
+extension SKOverride: JSONDebugStringConvertible {}

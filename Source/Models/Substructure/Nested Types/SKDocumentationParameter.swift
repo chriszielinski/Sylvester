@@ -25,6 +25,16 @@ public struct SKDocumentationParameter {
 
 extension SKDocumentationParameter: Codable {}
 
+// MARK: - Equatable Protocol
+
+extension SKDocumentationParameter: Equatable {
+
+    public static func == (lhs: SKDocumentationParameter, rhs: SKDocumentationParameter) -> Bool {
+        return lhs.name == rhs.name && lhs.discussion == rhs.discussion
+    }
+
+}
+
 // MARK: - Custom String Convertible Protocol
 
 extension SKDocumentationParameter: CustomStringConvertible {
@@ -35,12 +45,6 @@ extension SKDocumentationParameter: CustomStringConvertible {
 
 }
 
-// MARK: - Equatable Protocol
+// MARK: - JSON Debug String Convertible Protocol
 
-extension SKDocumentationParameter: Equatable {
-
-    public static func == (lhs: SKDocumentationParameter, rhs: SKDocumentationParameter) -> Bool {
-        return lhs.name == rhs.name && lhs.discussion == rhs.discussion
-    }
-
-}
+extension SKDocumentationParameter: JSONDebugStringConvertible {}

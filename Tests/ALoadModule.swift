@@ -42,7 +42,9 @@ class ALoadModule: SylvesterTestCase {
     /// This method should only be manually invoked to update the test fixtures when necessary.
     func testGenerateRequestFixtures() throws {
         // The test case is disabled, so should never be invoked, but you never know...
-        guard !SylvesterTestCase.isTravisBuild
+        guard !SylvesterTestCase.isTravisBuild,
+            let sdkPath = testModule.sdkPath,
+            let target = testModule.target
             else { return }
 
         let appDelegateFilePath = filePath(for: .appDelegate)
@@ -50,6 +52,12 @@ class ALoadModule: SylvesterTestCase {
         let placeholdersFilePath = filePath(for: .placeholders)
         let aProtocolFilePath = filePath(for: .aProtocol)
         let docSupportInputsMainFilePath = filePath(for: .docSupportInputsMain)
+
+        let appDelegateFile = File(pathDeferringReading: appDelegateFilePath)
+        let viewControllerFile = File(pathDeferringReading: viewControllerFilePath)
+        let placeholdersFile = File(pathDeferringReading: placeholdersFilePath)
+        let aProtocolFile = File(pathDeferringReading: aProtocolFilePath)
+        let docSupportInputsMainFile = File(pathDeferringReading: docSupportInputsMainFilePath)
 
         writeJSONFixture(for: try SKEditorOpen(filePath: appDelegateFilePath),
                          name: .appDelegateEditorOpenMustache)
@@ -81,5 +89,16 @@ class ALoadModule: SylvesterTestCase {
                          name: .placeholdersSyntaxMapJSON)
         writeJSONFixture(for: try SKSyntaxMap(filePath: docSupportInputsMainFilePath),
                          name: .docSupportInputsMainSyntaxMapJSON)
+
+        writeJSONFixture(for: try SKDocInfo(file: appDelegateFile, sdkPath: sdkPath, target: target),
+                         name: .appDelegateDocInfoJSON)
+        writeJSONFixture(for: try SKDocInfo(file: viewControllerFile, sdkPath: sdkPath, target: target),
+                         name: .viewControllerDocInfoJSON)
+        writeJSONFixture(for: try SKDocInfo(file: placeholdersFile, sdkPath: sdkPath, target: target),
+                         name: .placeholdersDocInfoJSON)
+        writeJSONFixture(for: try SKDocInfo(file: aProtocolFile, sdkPath: sdkPath, target: target),
+                         name: .aProtocolDocInfoJSON)
+        writeJSONFixture(for: try SKDocInfo(file: docSupportInputsMainFile, sdkPath: sdkPath, target: target),
+                         name: .docSupportInputsMainDocInfoJSON)
     }
 }

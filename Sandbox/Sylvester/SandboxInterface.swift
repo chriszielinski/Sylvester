@@ -37,6 +37,10 @@ public class SandboxInterface {
         return try CustomSwiftDocs(file: file, compilerArguments: compilerArguments)
     }
 
+    public static func docInfo(file: File, compilerArguments: [String]) throws -> SKDocInfo {
+        return try SKDocInfo(file: file, compilerArguments: compilerArguments)
+    }
+
     public static func codeCompletion(file: File,
                                       offset: Int,
                                       compilerArguments: [String]) throws -> SKCodeCompletion {

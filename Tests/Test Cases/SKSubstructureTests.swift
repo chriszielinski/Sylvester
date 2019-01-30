@@ -43,11 +43,11 @@ class SKSubstructureTests: SylvesterMockEditorOpenTestCase {
             else { return XCTFail("AppDelegate substructure has no `elements`.") }
 
         XCTAssertEqual(elements.count, 2,
-                       "`SKEntities` `count` property is incorrect.")
+                       "`SKSortedEntities` `count` property is incorrect.")
         XCTAssertEqual(elements.first, elements.entities.first,
-                       "`SKEntities` `first` property is incorrect.")
+                       "`SKSortedEntities` `first` property is incorrect.")
         XCTAssertEqual(elements.last, elements.entities.last,
-                       "`SKEntities` `last` property is incorrect.")
+                       "`SKSortedEntities` `last` property is incorrect.")
 
         var lastElementOffset: Offset = 0
         for element in elements {
