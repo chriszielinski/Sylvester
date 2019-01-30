@@ -592,7 +592,6 @@
 			isa = PBXGroup;
 			children = (
 				14FB4A0821B49B17008C02EB /* Generated */,
-				1409B2CA21B82E7200938856 /* SKError.swift */,
 			);
 			path = Enumerations;
 			sourceTree = "<group>";
@@ -687,6 +686,14 @@
 				144ED49D21B23D8700D0C19F /* SKPreOrderDFSIterator.swift */,
 			);
 			path = Iterators;
+			sourceTree = "<group>";
+		};
+		144E411A22024AA9006B1E90 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				1409B2CA21B82E7200938856 /* SKError.swift */,
+			);
+			path = Enumerations;
 			sourceTree = "<group>";
 		};
 		144ED41421B2105E00D0C19F = {
@@ -999,6 +1006,7 @@
 		14BF6C3621BC4FB6006EAB11 /* SylvesterCommon */ = {
 			isa = PBXGroup;
 			children = (
+				144E411A22024AA9006B1E90 /* Enumerations */,
 				14BF6C2921BC4397006EAB11 /* Extensions */,
 				14BF6C3821BC4FB6006EAB11 /* Info.plist */,
 				1420E24F21C0A57D00BEF13C /* Models */,
