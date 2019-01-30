@@ -13,7 +13,6 @@
 		1409B2D321B8411C00938856 /* SKElementKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2D121B8411C00938856 /* SKElementKind.swift */; };
 		1409B2D421B8411C00938856 /* SKAttributeKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2D221B8411C00938856 /* SKAttributeKind.swift */; };
 		1409B2D621B845C900938856 /* SKSubstructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2D521B845C900938856 /* SKSubstructureTests.swift */; };
-		1409B2D921B8491400938856 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1409B2D821B848FB00938856 /* Regex.framework */; };
 		1409B2DD21B8A5E500938856 /* SKAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2DC21B8A5E500938856 /* SKAttribute.swift */; };
 		1409B2DF21B8A61900938856 /* SKElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2DE21B8A61900938856 /* SKElement.swift */; };
 		1409B2E121B8A63E00938856 /* SKInheritedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2E021B8A63E00938856 /* SKInheritedType.swift */; };
@@ -180,7 +179,6 @@
 		1493780121D5C92500632B76 /* SKParagraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493780021D5C92500632B76 /* SKParagraph.swift */; };
 		1493780421D5D89700632B76 /* KeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493780221D5D51700632B76 /* KeyedDecodingContainer.swift */; };
 		1493780521D5D8A300632B76 /* SingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer.swift */; };
-		149ABB5221DEEBDA00CE0351 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1409B2D821B848FB00938856 /* Regex.framework */; };
 		149ABB5421DEEBDA00CE0351 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		149ABB5521DEEBDA00CE0351 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; };
 		149ABB5621DEEBDA00CE0351 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
@@ -344,7 +342,6 @@
 		1409B2D121B8411C00938856 /* SKElementKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKElementKind.swift; sourceTree = "<group>"; };
 		1409B2D221B8411C00938856 /* SKAttributeKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKAttributeKind.swift; sourceTree = "<group>"; };
 		1409B2D521B845C900938856 /* SKSubstructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSubstructureTests.swift; sourceTree = "<group>"; };
-		1409B2D821B848FB00938856 /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/Mac/Regex.framework; sourceTree = "<group>"; };
 		1409B2DC21B8A5E500938856 /* SKAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAttribute.swift; sourceTree = "<group>"; };
 		1409B2DE21B8A61900938856 /* SKElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKElement.swift; sourceTree = "<group>"; };
 		1409B2E021B8A63E00938856 /* SKInheritedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKInheritedType.swift; sourceTree = "<group>"; };
@@ -522,7 +519,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14ADDFA921F7C8A6009C42D6 /* SylvesterCommon.framework in Frameworks */,
-				1409B2D921B8491400938856 /* Regex.framework in Frameworks */,
 				144ED42821B2105E00D0C19F /* Sylvester.framework in Frameworks */,
 				144ED44C21B2159F00D0C19F /* SourceKittenFramework.framework in Frameworks */,
 				144ED44D21B2159F00D0C19F /* SWXMLHash.framework in Frameworks */,
@@ -548,7 +544,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14ADDFA621F7ABD0009C42D6 /* SylvesterXPC.framework in Frameworks */,
-				149ABB5221DEEBDA00CE0351 /* Regex.framework in Frameworks */,
 				149ABB5421DEEBDA00CE0351 /* SourceKittenFramework.framework in Frameworks */,
 				149ABB5521DEEBDA00CE0351 /* SWXMLHash.framework in Frameworks */,
 				149ABB5621DEEBDA00CE0351 /* Yams.framework in Frameworks */,
@@ -766,7 +761,6 @@
 			children = (
 				14B6A9C321B616E3007E007A /* AtomicKit.framework */,
 				14B6A9C121B60E74007E007A /* Mustache.framework */,
-				1409B2D821B848FB00938856 /* Regex.framework */,
 				144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */,
 				144ED43E21B211B300D0C19F /* SWXMLHash.framework */,
 				144ED44021B211B300D0C19F /* Yams.framework */,

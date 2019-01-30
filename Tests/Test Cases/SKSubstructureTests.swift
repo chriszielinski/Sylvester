@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Regex
 #if XPC
 @testable import SylvesterXPC
 #else

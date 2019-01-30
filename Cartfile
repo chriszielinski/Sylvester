@@ -3,4 +3,3 @@ github "macmade/AtomicKit" "master"
 
 # Testing Frameworks/Libraries
 github "groue/GRMustache.swift"
-github "chriszielinski/Regex" "master"
