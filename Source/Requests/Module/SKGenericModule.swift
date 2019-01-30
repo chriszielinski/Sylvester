@@ -7,7 +7,9 @@
 //
 
 import SourceKittenFramework
+#if !COCOAPODS
 import SylvesterCommon
+#endif
 
 /// Represents a generic _SourceKitten_ documentation request for a given module.
 open class SKGenericModule<S: SKBaseSubstructure, T: SKGenericSwiftDocs<S>> {

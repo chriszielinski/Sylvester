@@ -26,14 +26,14 @@
 		1409B2E521B8A66C00938856 /* SKDocumentationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2E421B8A66C00938856 /* SKDocumentationParameter.swift */; };
 		140E201A21B7618300E3B8E4 /* SKSyntaxMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E201921B7618300E3B8E4 /* SKSyntaxMapTests.swift */; };
 		1411B11D21DEE58700CA071D /* SKSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAF021B5946500EF8F09 /* SKSwiftDocs.swift */; };
-		1411B11E21DEE58700CA071D /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8DB21BA417C00C7B052 /* NSString.swift */; };
+		1411B11E21DEE58700CA071D /* NSString+Sylvester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8DB21BA417C00C7B052 /* NSString+Sylvester.swift */; };
 		1411B11F21DEE58700CA071D /* SKCodeCompletionSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */; };
 		1411B12021DEE58700CA071D /* SKByteRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0A5DD21BAC8DC00BDCED2 /* SKByteRange.swift */; };
 		1411B12121DEE58700CA071D /* SKCodeCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED43921B2108D00D0C19F /* SKCodeCompletion.swift */; };
 		1411B12221DEE58700CA071D /* SourceKitUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488977921B73C05007F6C17 /* SourceKitUID.swift */; };
 		1411B12321DEE58700CA071D /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438196621D6F1EE00F58A0F /* TypeAlias.swift */; };
 		1411B12421DEE58700CA071D /* SKChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED49C21B23D8700D0C19F /* SKChildren.swift */; };
-		1411B12521DEE58700CA071D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8D821B9A0C600C7B052 /* String.swift */; };
+		1411B12521DEE58700CA071D /* String+Sylvester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8D821B9A0C600C7B052 /* String+Sylvester.swift */; };
 		1411B12621DEE58700CA071D /* SKParagraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493780021D5C92500632B76 /* SKParagraph.swift */; };
 		1411B12721DEE58700CA071D /* SKElementKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2D121B8411C00938856 /* SKElementKind.swift */; };
 		1411B12821DEE58700CA071D /* SKAttributeKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2D221B8411C00938856 /* SKAttributeKind.swift */; };
@@ -71,8 +71,8 @@
 		141E979921DEC9DA00409B56 /* CustomEditorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E979821DEC9DA00409B56 /* CustomEditorOpen.swift */; };
 		141E979B21DECA0C00409B56 /* CustomSwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E979A21DECA0C00409B56 /* CustomSwiftDocs.swift */; };
 		1420E24721C0527600BEF13C /* SKCodeCompletionSessionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED43A21B2108D00D0C19F /* SKCodeCompletionSessionOptions.swift */; };
-		1420E24821C0529000BEF13C /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED44521B2145000D0C19F /* Bool.swift */; };
-		1420E24C21C07E6500BEF13C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420E24B21C07E6500BEF13C /* Request.swift */; };
+		1420E24821C0529000BEF13C /* Bool+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED44521B2145000D0C19F /* Bool+SylvesterCommon.swift */; };
+		1420E24C21C07E6500BEF13C /* Request+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420E24B21C07E6500BEF13C /* Request+SylvesterCommon.swift */; };
 		1420E24E21C0857300BEF13C /* OtherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420E24D21C0857300BEF13C /* OtherTests.swift */; };
 		1420E25121C0A5A500BEF13C /* SKDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420E25021C0A5A500BEF13C /* SKDataWrapper.swift */; };
 		1420E25321C0A5C300BEF13C /* SKSyntaxMapWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420E25221C0A5C300BEF13C /* SKSyntaxMapWrapper.swift */; };
@@ -109,8 +109,8 @@
 		144ED49E21B23D8700D0C19F /* SKChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED49C21B23D8700D0C19F /* SKChildren.swift */; };
 		144ED49F21B23D8700D0C19F /* SKPreOrderDFSIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED49D21B23D8700D0C19F /* SKPreOrderDFSIterator.swift */; };
 		144ED4A221B23E8B00D0C19F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED4A121B23E8B00D0C19F /* Stack.swift */; };
-		1461C7B121F3D03800C87530 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B021F3D03800C87530 /* Array.swift */; };
-		1461C7B221F3D03800C87530 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B021F3D03800C87530 /* Array.swift */; };
+		1461C7B121F3D03800C87530 /* Array+Sylvester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B021F3D03800C87530 /* Array+Sylvester.swift */; };
+		1461C7B221F3D03800C87530 /* Array+Sylvester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B021F3D03800C87530 /* Array+Sylvester.swift */; };
 		1461C7B421F3D62900C87530 /* SKChildrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B321F3D62900C87530 /* SKChildrenTests.swift */; };
 		1461C7B521F3D62900C87530 /* SKChildrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C7B321F3D62900C87530 /* SKChildrenTests.swift */; };
 		14724CFE21CEA2E7005CD5C9 /* SKWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724CFD21CEA2E7005CD5C9 /* SKWrapperTests.swift */; };
@@ -128,10 +128,10 @@
 		14724D3521CED38A005CD5C9 /* Yams.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14724D3921CED795005CD5C9 /* SandboxInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724D3821CED794005CD5C9 /* SandboxInterface.swift */; };
 		147ACB1E21C5AE2000CA1CA9 /* SourceKittenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ACB1D21C5AE2000CA1CA9 /* SourceKittenAdapter.swift */; };
-		147ACB2021C5B18000CA1CA9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ACB1F21C5B18000CA1CA9 /* Error.swift */; };
-		147B1BA521EE76FD00000842 /* SyntaxToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA421EE76FD00000842 /* SyntaxToken.swift */; };
+		147ACB2021C5B18000CA1CA9 /* Error+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ACB1F21C5B18000CA1CA9 /* Error+SylvesterCommon.swift */; };
+		147B1BA521EE76FD00000842 /* SyntaxToken+Sylvester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA421EE76FD00000842 /* SyntaxToken+Sylvester.swift */; };
 		147B1BA721EE7A4700000842 /* SKSyntaxKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */; };
-		147B1BA821EE7B6D00000842 /* SyntaxToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA421EE76FD00000842 /* SyntaxToken.swift */; };
+		147B1BA821EE7B6D00000842 /* SyntaxToken+Sylvester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA421EE76FD00000842 /* SyntaxToken+Sylvester.swift */; };
 		147B1BA921EE7C0F00000842 /* SKSyntaxKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */; };
 		147B1BAD21EE9A4A00000842 /* SKDeclarationKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BAC21EE9A4900000842 /* SKDeclarationKind.swift */; };
 		147B1BAE21EE9A4A00000842 /* SKDeclarationKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B1BAC21EE9A4900000842 /* SKDeclarationKind.swift */; };
@@ -174,14 +174,14 @@
 		148CB85C21C17E48002928DD /* SKRequestErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148CB85B21C17E48002928DD /* SKRequestErrorWrapper.swift */; };
 		148CB85E21C17E72002928DD /* SKXPCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148CB85D21C17E72002928DD /* SKXPCError.swift */; };
 		148CB86121C19D5B002928DD /* SKModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148CB86021C19D5B002928DD /* SKModule.swift */; };
-		148CB86321C19FCA002928DD /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148CB86221C19FCA002928DD /* Module.swift */; };
+		148CB86321C19FCA002928DD /* Module+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148CB86221C19FCA002928DD /* Module+SylvesterCommon.swift */; };
 		148CB86521C1A9C9002928DD /* SKModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148CB86421C1A9C9002928DD /* SKModuleTests.swift */; };
 		148CB86721C1AC0C002928DD /* SKModuleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148CB86621C1AC0C002928DD /* SKModuleWrapper.swift */; };
 		1491902921C6F41700F2F975 /* SKCodeCompletionSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491902821C6F41700F2F975 /* SKCodeCompletionSubstructure.swift */; };
 		1491902B21C6F43200F2F975 /* SKCodeCompletionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491902A21C6F43200F2F975 /* SKCodeCompletionItem.swift */; };
 		1493780121D5C92500632B76 /* SKParagraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493780021D5C92500632B76 /* SKParagraph.swift */; };
-		1493780421D5D89700632B76 /* KeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493780221D5D51700632B76 /* KeyedDecodingContainer.swift */; };
-		1493780521D5D8A300632B76 /* SingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer.swift */; };
+		1493780421D5D89700632B76 /* KeyedDecodingContainer+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493780221D5D51700632B76 /* KeyedDecodingContainer+SylvesterCommon.swift */; };
+		1493780521D5D8A300632B76 /* SingleValueDecodingContainer+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer+SylvesterCommon.swift */; };
 		149ABB5421DEEBDA00CE0351 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		149ABB5521DEEBDA00CE0351 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; };
 		149ABB5621DEEBDA00CE0351 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
@@ -219,8 +219,8 @@
 		14B69BAA21F25C24000D9D6E /* SKBaseSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */; };
 		14B69BAB21F25C24000D9D6E /* SKBaseSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */; };
 		14B6A9CB21B61C15007E007A /* SKCodeCompletionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */; };
-		14BEB8D921B9A0C600C7B052 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8D821B9A0C600C7B052 /* String.swift */; };
-		14BEB8DC21BA417C00C7B052 /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8DB21BA417C00C7B052 /* NSString.swift */; };
+		14BEB8D921B9A0C600C7B052 /* String+Sylvester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8D821B9A0C600C7B052 /* String+Sylvester.swift */; };
+		14BEB8DC21BA417C00C7B052 /* NSString+Sylvester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8DB21BA417C00C7B052 /* NSString+Sylvester.swift */; };
 		14BF6C1D21BC3C15006EAB11 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C1921BC3C10006EAB11 /* main.swift */; };
 		14BF6C1E21BC3C15006EAB11 /* SylvesterXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C1A21BC3C12006EAB11 /* SylvesterXPCProtocol.swift */; };
 		14BF6C1F21BC3C15006EAB11 /* SylvesterXPCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C1B21BC3C12006EAB11 /* SylvesterXPCDelegate.swift */; };
@@ -228,12 +228,12 @@
 		14BF6C2121BC3CCC006EAB11 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		14BF6C2421BC3E89006EAB11 /* SylvesterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C2321BC3E89006EAB11 /* SylvesterInterface.swift */; };
 		14BF6C3921BC4FB6006EAB11 /* SylvesterCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BF6C3721BC4FB6006EAB11 /* SylvesterCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14BF6C3F21BC4FC4006EAB11 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C2A21BC43A7006EAB11 /* File.swift */; };
+		14BF6C3F21BC4FC4006EAB11 /* File+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C2A21BC43A7006EAB11 /* File+SylvesterCommon.swift */; };
 		14BF6C4121BC4FDB006EAB11 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		14BF6C4221BC4FFD006EAB11 /* SylvesterCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; };
 		14BF6C4321BC500B006EAB11 /* SylvesterCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; };
-		14BF6C4A21BC68E6006EAB11 /* SyntaxMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAFE21B5DABF00EF8F09 /* SyntaxMap.swift */; };
-		14BF6C4B21BC68E6006EAB11 /* SyntaxToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAFC21B5DAA900EF8F09 /* SyntaxToken.swift */; };
+		14BF6C4A21BC68E6006EAB11 /* SyntaxMap+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAFE21B5DABF00EF8F09 /* SyntaxMap+SylvesterCommon.swift */; };
+		14BF6C4B21BC68E6006EAB11 /* SyntaxToken+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CAFC21B5DAA900EF8F09 /* SyntaxToken+SylvesterCommon.swift */; };
 		14BF6C4D21BC6914006EAB11 /* SylvesterMockEditorOpenTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF6C0121BC207D006EAB11 /* SylvesterMockEditorOpenTestCase.swift */; };
 		14BF6C4E21BC6C39006EAB11 /* SKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2CA21B82E7200938856 /* SKError.swift */; };
 		14D0CEDB21BF47D00000CB82 /* SKYAMLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D0CEDA21BF47D00000CB82 /* SKYAMLRequest.swift */; };
@@ -247,7 +247,7 @@
 		14FB4A0E21B4A6E3008C02EB /* SKCodeCompletionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A0D21B4A6E3008C02EB /* SKCodeCompletionContext.swift */; };
 		14FB4A1221B4FA5F008C02EB /* SKDiagnosticStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */; };
 		14FB4A1421B4FB23008C02EB /* SKAccessLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */; };
-		14FE8F0621ED97E8005231B6 /* SwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE8F0521ED97E8005231B6 /* SwiftDocs.swift */; };
+		14FE8F0621ED97E8005231B6 /* SwiftDocs+SylvesterCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE8F0521ED97E8005231B6 /* SwiftDocs+SylvesterCommon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,7 +355,7 @@
 		1411B15521DEE58700CA071D /* SylvesterXPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SylvesterXPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		141E979821DEC9DA00409B56 /* CustomEditorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEditorOpen.swift; sourceTree = "<group>"; };
 		141E979A21DECA0C00409B56 /* CustomSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwiftDocs.swift; sourceTree = "<group>"; };
-		1420E24B21C07E6500BEF13C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		1420E24B21C07E6500BEF13C /* Request+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+SylvesterCommon.swift"; sourceTree = "<group>"; };
 		1420E24D21C0857300BEF13C /* OtherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTests.swift; sourceTree = "<group>"; };
 		1420E25021C0A5A500BEF13C /* SKDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDataWrapper.swift; sourceTree = "<group>"; };
 		1420E25221C0A5C300BEF13C /* SKSyntaxMapWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSyntaxMapWrapper.swift; sourceTree = "<group>"; };
@@ -382,15 +382,15 @@
 		144ED43E21B211B300D0C19F /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/Mac/SWXMLHash.framework; sourceTree = "<group>"; };
 		144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = Carthage/Build/Mac/SourceKittenFramework.framework; sourceTree = "<group>"; };
 		144ED44021B211B300D0C19F /* Yams.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yams.framework; path = Carthage/Build/Mac/Yams.framework; sourceTree = "<group>"; };
-		144ED44521B2145000D0C19F /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
+		144ED44521B2145000D0C19F /* Bool+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+SylvesterCommon.swift"; sourceTree = "<group>"; };
 		144ED49321B22A6F00D0C19F /* Test Project */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Test Project"; sourceTree = "<group>"; };
 		144ED49521B23B5200D0C19F /* SKBaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKBaseResponse.swift; sourceTree = "<group>"; };
 		144ED49621B23B5200D0C19F /* SKSubstructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSubstructure.swift; sourceTree = "<group>"; };
 		144ED49C21B23D8700D0C19F /* SKChildren.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKChildren.swift; sourceTree = "<group>"; };
 		144ED49D21B23D8700D0C19F /* SKPreOrderDFSIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPreOrderDFSIterator.swift; sourceTree = "<group>"; };
 		144ED4A121B23E8B00D0C19F /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleValueDecodingContainer.swift; sourceTree = "<group>"; };
-		1461C7B021F3D03800C87530 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer+SylvesterCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SingleValueDecodingContainer+SylvesterCommon.swift"; sourceTree = "<group>"; };
+		1461C7B021F3D03800C87530 /* Array+Sylvester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sylvester.swift"; sourceTree = "<group>"; };
 		1461C7B321F3D62900C87530 /* SKChildrenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKChildrenTests.swift; sourceTree = "<group>"; };
 		146910E921F28B1900C3E740 /* remove_built_products.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = remove_built_products.sh; sourceTree = "<group>"; };
 		146910EA21F28B1900C3E740 /* run_on_non_pull_requests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_on_non_pull_requests.sh; sourceTree = "<group>"; };
@@ -412,8 +412,8 @@
 		14724D1321CECD63005CD5C9 /* Sandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sandbox.entitlements; sourceTree = "<group>"; };
 		14724D3821CED794005CD5C9 /* SandboxInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxInterface.swift; sourceTree = "<group>"; };
 		147ACB1D21C5AE2000CA1CA9 /* SourceKittenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceKittenAdapter.swift; sourceTree = "<group>"; };
-		147ACB1F21C5B18000CA1CA9 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		147B1BA421EE76FD00000842 /* SyntaxToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxToken.swift; sourceTree = "<group>"; };
+		147ACB1F21C5B18000CA1CA9 /* Error+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+SylvesterCommon.swift"; sourceTree = "<group>"; };
+		147B1BA421EE76FD00000842 /* SyntaxToken+Sylvester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SyntaxToken+Sylvester.swift"; sourceTree = "<group>"; };
 		147B1BA621EE7A4600000842 /* SKSyntaxKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSyntaxKind.swift; sourceTree = "<group>"; };
 		147B1BAC21EE9A4900000842 /* SKDeclarationKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDeclarationKind.swift; sourceTree = "<group>"; };
 		147FBC5521FA51BC00E90057 /* build_sylvester_common.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_sylvester_common.sh; sourceTree = "<group>"; };
@@ -421,8 +421,8 @@
 		1484CAF021B5946500EF8F09 /* SKSwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSwiftDocs.swift; sourceTree = "<group>"; };
 		1484CAF221B5978200EF8F09 /* SKSwiftDocumentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSwiftDocumentationTests.swift; sourceTree = "<group>"; };
 		1484CAF821B5C6C700EF8F09 /* FirstDifferenceBetweenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDifferenceBetweenStrings.swift; sourceTree = "<group>"; };
-		1484CAFC21B5DAA900EF8F09 /* SyntaxToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxToken.swift; sourceTree = "<group>"; };
-		1484CAFE21B5DABF00EF8F09 /* SyntaxMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxMap.swift; sourceTree = "<group>"; };
+		1484CAFC21B5DAA900EF8F09 /* SyntaxToken+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SyntaxToken+SylvesterCommon.swift"; sourceTree = "<group>"; };
+		1484CAFE21B5DABF00EF8F09 /* SyntaxMap+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SyntaxMap+SylvesterCommon.swift"; sourceTree = "<group>"; };
 		1484CB0021B5DD8B00EF8F09 /* SKEditorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKEditorOpen.swift; sourceTree = "<group>"; };
 		1484CB0221B5DE7000EF8F09 /* SKEditorOpenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKEditorOpenTests.swift; sourceTree = "<group>"; };
 		1484CB0421B5E1CD00EF8F09 /* SKSyntaxMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSyntaxMap.swift; sourceTree = "<group>"; };
@@ -446,13 +446,13 @@
 		148CB85B21C17E48002928DD /* SKRequestErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRequestErrorWrapper.swift; sourceTree = "<group>"; };
 		148CB85D21C17E72002928DD /* SKXPCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKXPCError.swift; sourceTree = "<group>"; };
 		148CB86021C19D5B002928DD /* SKModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKModule.swift; sourceTree = "<group>"; };
-		148CB86221C19FCA002928DD /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		148CB86221C19FCA002928DD /* Module+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Module+SylvesterCommon.swift"; sourceTree = "<group>"; };
 		148CB86421C1A9C9002928DD /* SKModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKModuleTests.swift; sourceTree = "<group>"; };
 		148CB86621C1AC0C002928DD /* SKModuleWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKModuleWrapper.swift; sourceTree = "<group>"; };
 		1491902821C6F41700F2F975 /* SKCodeCompletionSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionSubstructure.swift; sourceTree = "<group>"; };
 		1491902A21C6F43200F2F975 /* SKCodeCompletionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionItem.swift; sourceTree = "<group>"; };
 		1493780021D5C92500632B76 /* SKParagraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKParagraph.swift; sourceTree = "<group>"; };
-		1493780221D5D51700632B76 /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		1493780221D5D51700632B76 /* KeyedDecodingContainer+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+SylvesterCommon.swift"; sourceTree = "<group>"; };
 		149ABB5D21DEEBDA00CE0351 /* SylvesterXPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SylvesterXPCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSubprocess.swift; sourceTree = "<group>"; };
 		14ADDFAE21F7E0D9009C42D6 /* generate_docs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generate_docs.swift; sourceTree = "<group>"; };
@@ -462,8 +462,8 @@
 		14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBaseSubstructure.swift; sourceTree = "<group>"; };
 		14B6A9C121B60E74007E007A /* Mustache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mustache.framework; path = Carthage/Build/Mac/Mustache.framework; sourceTree = "<group>"; };
 		14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionSession.swift; sourceTree = "<group>"; };
-		14BEB8D821B9A0C600C7B052 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		14BEB8DB21BA417C00C7B052 /* NSString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSString.swift; sourceTree = "<group>"; };
+		14BEB8D821B9A0C600C7B052 /* String+Sylvester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Sylvester.swift"; sourceTree = "<group>"; };
+		14BEB8DB21BA417C00C7B052 /* NSString+Sylvester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Sylvester.swift"; sourceTree = "<group>"; };
 		14BF6C0121BC207D006EAB11 /* SylvesterMockEditorOpenTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylvesterMockEditorOpenTestCase.swift; sourceTree = "<group>"; };
 		14BF6C0821BC2182006EAB11 /* SylvesterXPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = SylvesterXPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BF6C1021BC2182006EAB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -472,7 +472,7 @@
 		14BF6C1B21BC3C12006EAB11 /* SylvesterXPCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SylvesterXPCDelegate.swift; sourceTree = "<group>"; };
 		14BF6C1C21BC3C14006EAB11 /* SylvesterXPCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SylvesterXPCService.swift; sourceTree = "<group>"; };
 		14BF6C2321BC3E89006EAB11 /* SylvesterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylvesterInterface.swift; sourceTree = "<group>"; };
-		14BF6C2A21BC43A7006EAB11 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		14BF6C2A21BC43A7006EAB11 /* File+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+SylvesterCommon.swift"; sourceTree = "<group>"; };
 		14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SylvesterCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BF6C3721BC4FB6006EAB11 /* SylvesterCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SylvesterCommon.h; sourceTree = "<group>"; };
 		14BF6C3821BC4FB6006EAB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -489,7 +489,7 @@
 		14FB4A0D21B4A6E3008C02EB /* SKCodeCompletionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionContext.swift; sourceTree = "<group>"; };
 		14FB4A1121B4FA5F008C02EB /* SKDiagnosticStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDiagnosticStage.swift; sourceTree = "<group>"; };
 		14FB4A1321B4FB23008C02EB /* SKAccessLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKAccessLevel.swift; sourceTree = "<group>"; };
-		14FE8F0521ED97E8005231B6 /* SwiftDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDocs.swift; sourceTree = "<group>"; };
+		14FE8F0521ED97E8005231B6 /* SwiftDocs+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftDocs+SylvesterCommon.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -787,10 +787,10 @@
 		144ED44421B2144800D0C19F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1461C7B021F3D03800C87530 /* Array.swift */,
-				14BEB8DB21BA417C00C7B052 /* NSString.swift */,
-				14BEB8D821B9A0C600C7B052 /* String.swift */,
-				147B1BA421EE76FD00000842 /* SyntaxToken.swift */,
+				1461C7B021F3D03800C87530 /* Array+Sylvester.swift */,
+				14BEB8DB21BA417C00C7B052 /* NSString+Sylvester.swift */,
+				14BEB8D821B9A0C600C7B052 /* String+Sylvester.swift */,
+				147B1BA421EE76FD00000842 /* SyntaxToken+Sylvester.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -989,16 +989,16 @@
 		14BF6C2921BC4397006EAB11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				144ED44521B2145000D0C19F /* Bool.swift */,
-				147ACB1F21C5B18000CA1CA9 /* Error.swift */,
-				14BF6C2A21BC43A7006EAB11 /* File.swift */,
-				1493780221D5D51700632B76 /* KeyedDecodingContainer.swift */,
-				148CB86221C19FCA002928DD /* Module.swift */,
-				1420E24B21C07E6500BEF13C /* Request.swift */,
-				144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer.swift */,
-				14FE8F0521ED97E8005231B6 /* SwiftDocs.swift */,
-				1484CAFE21B5DABF00EF8F09 /* SyntaxMap.swift */,
-				1484CAFC21B5DAA900EF8F09 /* SyntaxToken.swift */,
+				144ED44521B2145000D0C19F /* Bool+SylvesterCommon.swift */,
+				147ACB1F21C5B18000CA1CA9 /* Error+SylvesterCommon.swift */,
+				14BF6C2A21BC43A7006EAB11 /* File+SylvesterCommon.swift */,
+				1493780221D5D51700632B76 /* KeyedDecodingContainer+SylvesterCommon.swift */,
+				148CB86221C19FCA002928DD /* Module+SylvesterCommon.swift */,
+				1420E24B21C07E6500BEF13C /* Request+SylvesterCommon.swift */,
+				144ED4A321B23F8400D0C19F /* SingleValueDecodingContainer+SylvesterCommon.swift */,
+				14FE8F0521ED97E8005231B6 /* SwiftDocs+SylvesterCommon.swift */,
+				1484CAFE21B5DABF00EF8F09 /* SyntaxMap+SylvesterCommon.swift */,
+				1484CAFC21B5DAA900EF8F09 /* SyntaxToken+SylvesterCommon.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1516,7 +1516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1411B11D21DEE58700CA071D /* SKSwiftDocs.swift in Sources */,
-				1411B11E21DEE58700CA071D /* NSString.swift in Sources */,
+				1411B11E21DEE58700CA071D /* NSString+Sylvester.swift in Sources */,
 				1411B11F21DEE58700CA071D /* SKCodeCompletionSessionResponse.swift in Sources */,
 				148BFEB32200065700DBE3DD /* SKEntity.swift in Sources */,
 				1411B12021DEE58700CA071D /* SKByteRange.swift in Sources */,
@@ -1524,10 +1524,10 @@
 				1411B12221DEE58700CA071D /* SourceKitUID.swift in Sources */,
 				148BFEA521FFA02B00DBE3DD /* SKAnnotation.swift in Sources */,
 				1411B12321DEE58700CA071D /* TypeAlias.swift in Sources */,
-				147B1BA821EE7B6D00000842 /* SyntaxToken.swift in Sources */,
+				147B1BA821EE7B6D00000842 /* SyntaxToken+Sylvester.swift in Sources */,
 				142D93AA21EFE01C0014CFC2 /* SKGenericResponse.swift in Sources */,
 				1411B12421DEE58700CA071D /* SKChildren.swift in Sources */,
-				1411B12521DEE58700CA071D /* String.swift in Sources */,
+				1411B12521DEE58700CA071D /* String+Sylvester.swift in Sources */,
 				142A52C121E0104200325A71 /* JSONDebugStringConvertible.swift in Sources */,
 				1411B12621DEE58700CA071D /* SKParagraph.swift in Sources */,
 				148BFE9021FF959A00DBE3DD /* SKDiagnostic.swift in Sources */,
@@ -1553,7 +1553,7 @@
 				1411B13321DEE58700CA071D /* SKCodeCompletionItem.swift in Sources */,
 				1411B13421DEE58700CA071D /* SylvesterInterface.swift in Sources */,
 				1411B13521DEE58700CA071D /* SKBaseResponse.swift in Sources */,
-				1461C7B221F3D03800C87530 /* Array.swift in Sources */,
+				1461C7B221F3D03800C87530 /* Array+Sylvester.swift in Sources */,
 				148BFE9C21FF9D3500DBE3DD /* SKInherit.swift in Sources */,
 				1404D31E2202104500B98824 /* DispatchedValueWrapper.swift in Sources */,
 				1411B13621DEE58700CA071D /* SKSyntaxMap.swift in Sources */,
@@ -1586,7 +1586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1484CAF121B5946500EF8F09 /* SKSwiftDocs.swift in Sources */,
-				14BEB8DC21BA417C00C7B052 /* NSString.swift in Sources */,
+				14BEB8DC21BA417C00C7B052 /* NSString+Sylvester.swift in Sources */,
 				1438C33D21C8449200081C02 /* SKCodeCompletionSessionResponse.swift in Sources */,
 				148BFEB22200065700DBE3DD /* SKEntity.swift in Sources */,
 				14E0A5DE21BAC8DC00BDCED2 /* SKByteRange.swift in Sources */,
@@ -1594,10 +1594,10 @@
 				1488977A21B73C05007F6C17 /* SourceKitUID.swift in Sources */,
 				148BFEA421FFA02B00DBE3DD /* SKAnnotation.swift in Sources */,
 				1438196721D6F1EE00F58A0F /* TypeAlias.swift in Sources */,
-				147B1BA521EE76FD00000842 /* SyntaxToken.swift in Sources */,
+				147B1BA521EE76FD00000842 /* SyntaxToken+Sylvester.swift in Sources */,
 				142D93A921EFE01C0014CFC2 /* SKGenericResponse.swift in Sources */,
 				144ED49E21B23D8700D0C19F /* SKChildren.swift in Sources */,
-				14BEB8D921B9A0C600C7B052 /* String.swift in Sources */,
+				14BEB8D921B9A0C600C7B052 /* String+Sylvester.swift in Sources */,
 				142A52C021E00E5700325A71 /* JSONDebugStringConvertible.swift in Sources */,
 				1493780121D5C92500632B76 /* SKParagraph.swift in Sources */,
 				148BFE8F21FF959A00DBE3DD /* SKDiagnostic.swift in Sources */,
@@ -1623,7 +1623,7 @@
 				1491902B21C6F43200F2F975 /* SKCodeCompletionItem.swift in Sources */,
 				14BF6C2421BC3E89006EAB11 /* SylvesterInterface.swift in Sources */,
 				144ED49821B23B5200D0C19F /* SKBaseResponse.swift in Sources */,
-				1461C7B121F3D03800C87530 /* Array.swift in Sources */,
+				1461C7B121F3D03800C87530 /* Array+Sylvester.swift in Sources */,
 				148BFE9B21FF9D3500DBE3DD /* SKInherit.swift in Sources */,
 				1404D31D2202104500B98824 /* DispatchedValueWrapper.swift in Sources */,
 				1484CB0521B5E1CD00EF8F09 /* SKSyntaxMap.swift in Sources */,
@@ -1739,24 +1739,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147ACB2021C5B18000CA1CA9 /* Error.swift in Sources */,
-				1493780421D5D89700632B76 /* KeyedDecodingContainer.swift in Sources */,
+				147ACB2021C5B18000CA1CA9 /* Error+SylvesterCommon.swift in Sources */,
+				1493780421D5D89700632B76 /* KeyedDecodingContainer+SylvesterCommon.swift in Sources */,
 				1420E24721C0527600BEF13C /* SKCodeCompletionSessionOptions.swift in Sources */,
 				14BF6C4E21BC6C39006EAB11 /* SKError.swift in Sources */,
-				14FE8F0621ED97E8005231B6 /* SwiftDocs.swift in Sources */,
-				14BF6C3F21BC4FC4006EAB11 /* File.swift in Sources */,
-				1493780521D5D8A300632B76 /* SingleValueDecodingContainer.swift in Sources */,
+				14FE8F0621ED97E8005231B6 /* SwiftDocs+SylvesterCommon.swift in Sources */,
+				14BF6C3F21BC4FC4006EAB11 /* File+SylvesterCommon.swift in Sources */,
+				1493780521D5D8A300632B76 /* SingleValueDecodingContainer+SylvesterCommon.swift in Sources */,
 				148CB86721C1AC0C002928DD /* SKModuleWrapper.swift in Sources */,
-				14BF6C4B21BC68E6006EAB11 /* SyntaxToken.swift in Sources */,
-				148CB86321C19FCA002928DD /* Module.swift in Sources */,
+				14BF6C4B21BC68E6006EAB11 /* SyntaxToken+SylvesterCommon.swift in Sources */,
+				148CB86321C19FCA002928DD /* Module+SylvesterCommon.swift in Sources */,
 				1420E25321C0A5C300BEF13C /* SKSyntaxMapWrapper.swift in Sources */,
 				1420E25521C0A5EB00BEF13C /* SKFileWrapper.swift in Sources */,
-				14BF6C4A21BC68E6006EAB11 /* SyntaxMap.swift in Sources */,
+				14BF6C4A21BC68E6006EAB11 /* SyntaxMap+SylvesterCommon.swift in Sources */,
 				1401286121CD801800141F44 /* Utilities.swift in Sources */,
 				148CB85C21C17E48002928DD /* SKRequestErrorWrapper.swift in Sources */,
 				147ACB1E21C5AE2000CA1CA9 /* SourceKittenAdapter.swift in Sources */,
-				1420E24C21C07E6500BEF13C /* Request.swift in Sources */,
-				1420E24821C0529000BEF13C /* Bool.swift in Sources */,
+				1420E24C21C07E6500BEF13C /* Request+SylvesterCommon.swift in Sources */,
+				1420E24821C0529000BEF13C /* Bool+SylvesterCommon.swift in Sources */,
 				148CB85E21C17E72002928DD /* SKXPCError.swift in Sources */,
 				1420E25121C0A5A500BEF13C /* SKDataWrapper.swift in Sources */,
 				14ADDFA521F79B23009C42D6 /* SKSubprocess.swift in Sources */,

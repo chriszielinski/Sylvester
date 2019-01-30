@@ -7,7 +7,9 @@
 //
 
 import SourceKittenFramework
+#if !COCOAPODS
 import SylvesterCommon
+#endif
 
 /// Represents a _SourceKit_ code completion session, which can be filtered using update requests.
 open class SKCodeCompletionSession: NSObject {

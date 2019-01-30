@@ -7,7 +7,9 @@
 //
 
 import SourceKittenFramework
+#if !COCOAPODS
 import SylvesterCommon
+#endif
 
 class SylvesterXPCService: NSObject {}
 

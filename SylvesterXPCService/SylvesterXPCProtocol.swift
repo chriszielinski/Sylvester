@@ -6,7 +6,9 @@
 //  Copyright © 2018 Big Z Labs. All rights reserved.
 //
 
+#if !COCOAPODS
 import SylvesterCommon
+#endif
 
 @objc
 public protocol SylvesterXPCProtocol {
