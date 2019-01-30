@@ -81,7 +81,6 @@ Dependencies
 `Sylvester`/`SylvesterXPC` depends on the following frameworks/libraries, so ensure they are also embedded in the _Embed Frameworks_ phase:
 
  - `SylvesterCommon.framework`
- - `AtomicKit.framework`
  - `SourceKittenFramework.framework`
  - `SWXMLHash.framework`
  - `Yams.framework`
@@ -239,7 +238,6 @@ Frameworks & Libraries
 * **[jpsim/SourceKitten](https://github.com/jpsim/SourceKitten)** — An adorable little framework and command line tool for interacting with SourceKit.
 * **[macmade/AtomicKit](https://github.com/macmade/AtomicKit)** — Concurrency made simple in Swift.
 * **[groue/GRMustache.swift](https://github.com/groue/GRMustache.swift)** — Flexible Mustache templates for Swift.
-* **[crossroadlabs/Regex](https://github.com/crossroadlabs/Regex)** — Regular expressions for Swift.
 * **[realm/jazzy](https://github.com/realm/jazzy)** — Soulful docs for Swift & Objective-C.
 * **[realm/SwiftLint](https://github.com/realm/SwiftLint)** — A tool to enforce Swift style and conventions.
 

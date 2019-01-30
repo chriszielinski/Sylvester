@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1401286121CD801800141F44 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401286021CD801800141F44 /* Utilities.swift */; };
 		1401286321CDDAB200141F44 /* OtherRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401286221CDDAB200141F44 /* OtherRequestTests.swift */; };
+		1404D3192202100500B98824 /* DispatchedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404D3182202100500B98824 /* DispatchedValue.swift */; };
+		1404D31A2202100500B98824 /* DispatchedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404D3182202100500B98824 /* DispatchedValue.swift */; };
+		1404D31D2202104500B98824 /* DispatchedValueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404D31C2202104500B98824 /* DispatchedValueWrapper.swift */; };
+		1404D31E2202104500B98824 /* DispatchedValueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404D31C2202104500B98824 /* DispatchedValueWrapper.swift */; };
+		1404D3202202106300B98824 /* ThreadSafeValueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404D31F2202106300B98824 /* ThreadSafeValueWrapper.swift */; };
+		1404D3212202106300B98824 /* ThreadSafeValueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404D31F2202106300B98824 /* ThreadSafeValueWrapper.swift */; };
 		1409B2CE21B83B7700938856 /* SKResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2CD21B83B7700938856 /* SKResponseTests.swift */; };
 		1409B2D321B8411C00938856 /* SKElementKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2D121B8411C00938856 /* SKElementKind.swift */; };
 		1409B2D421B8411C00938856 /* SKAttributeKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B2D221B8411C00938856 /* SKAttributeKind.swift */; };
@@ -59,7 +65,6 @@
 		1411B14521DEE58700CA071D /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
 		1411B14621DEE58700CA071D /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; };
 		1411B14721DEE58700CA071D /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
-		1411B14821DEE58700CA071D /* AtomicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A9C321B616E3007E007A /* AtomicKit.framework */; };
 		1411B14B21DEE58700CA071D /* SylvesterXPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 14BF6C0821BC2182006EAB11 /* SylvesterXPCService.xpc */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14149BB421DFC534007A1AF5 /* SylvesterXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; };
 		14149BB521DFC534007A1AF5 /* SylvesterXPC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -121,8 +126,6 @@
 		14724D3321CED38A005CD5C9 /* SWXMLHash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14724D3421CED38A005CD5C9 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
 		14724D3521CED38A005CD5C9 /* Yams.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		14724D3621CED3AD005CD5C9 /* AtomicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A9C321B616E3007E007A /* AtomicKit.framework */; };
-		14724D3721CED3AD005CD5C9 /* AtomicKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A9C321B616E3007E007A /* AtomicKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14724D3921CED795005CD5C9 /* SandboxInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724D3821CED794005CD5C9 /* SandboxInterface.swift */; };
 		147ACB1E21C5AE2000CA1CA9 /* SourceKittenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ACB1D21C5AE2000CA1CA9 /* SourceKittenAdapter.swift */; };
 		147ACB2021C5B18000CA1CA9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ACB1F21C5B18000CA1CA9 /* Error.swift */; };
@@ -215,7 +218,6 @@
 		14B1F19521DF068100ED3420 /* SylvesterSecureCodingTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724CFF21CEA3CC005CD5C9 /* SylvesterSecureCodingTestCase.swift */; };
 		14B69BAA21F25C24000D9D6E /* SKBaseSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */; };
 		14B69BAB21F25C24000D9D6E /* SKBaseSubstructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */; };
-		14B6A9C521B61727007E007A /* AtomicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A9C321B616E3007E007A /* AtomicKit.framework */; };
 		14B6A9CB21B61C15007E007A /* SKCodeCompletionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */; };
 		14BEB8D921B9A0C600C7B052 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8D821B9A0C600C7B052 /* String.swift */; };
 		14BEB8DC21BA417C00C7B052 /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB8DB21BA417C00C7B052 /* NSString.swift */; };
@@ -315,7 +317,6 @@
 			files = (
 				14ADDFAD21F7C9DF009C42D6 /* SylvesterCommon.framework in Embed Frameworks */,
 				14149BB521DFC534007A1AF5 /* SylvesterXPC.framework in Embed Frameworks */,
-				14724D3721CED3AD005CD5C9 /* AtomicKit.framework in Embed Frameworks */,
 				14724D3121CED389005CD5C9 /* SourceKittenFramework.framework in Embed Frameworks */,
 				14724D3321CED38A005CD5C9 /* SWXMLHash.framework in Embed Frameworks */,
 				14724D3521CED38A005CD5C9 /* Yams.framework in Embed Frameworks */,
@@ -337,6 +338,9 @@
 /* Begin PBXFileReference section */
 		1401286021CD801800141F44 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = SylvesterCommon/Utilities.swift; sourceTree = SOURCE_ROOT; };
 		1401286221CDDAB200141F44 /* OtherRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherRequestTests.swift; sourceTree = "<group>"; };
+		1404D3182202100500B98824 /* DispatchedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchedValue.swift; sourceTree = "<group>"; };
+		1404D31C2202104500B98824 /* DispatchedValueWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchedValueWrapper.swift; sourceTree = "<group>"; };
+		1404D31F2202106300B98824 /* ThreadSafeValueWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeValueWrapper.swift; sourceTree = "<group>"; };
 		1409B2CA21B82E7200938856 /* SKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKError.swift; sourceTree = "<group>"; };
 		1409B2CD21B83B7700938856 /* SKResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKResponseTests.swift; sourceTree = "<group>"; };
 		1409B2D121B8411C00938856 /* SKElementKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKElementKind.swift; sourceTree = "<group>"; };
@@ -457,7 +461,6 @@
 		14B1804521EFC96D001E272A /* SKGenericEditorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericEditorOpen.swift; sourceTree = "<group>"; };
 		14B69BA921F25C24000D9D6E /* SKBaseSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBaseSubstructure.swift; sourceTree = "<group>"; };
 		14B6A9C121B60E74007E007A /* Mustache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mustache.framework; path = Carthage/Build/Mac/Mustache.framework; sourceTree = "<group>"; };
-		14B6A9C321B616E3007E007A /* AtomicKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtomicKit.framework; path = Carthage/Build/Mac/AtomicKit.framework; sourceTree = "<group>"; };
 		14B6A9C621B6176F007E007A /* SKCodeCompletionSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionSession.swift; sourceTree = "<group>"; };
 		14BEB8D821B9A0C600C7B052 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		14BEB8DB21BA417C00C7B052 /* NSString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSString.swift; sourceTree = "<group>"; };
@@ -498,7 +501,6 @@
 				1411B14521DEE58700CA071D /* Yams.framework in Frameworks */,
 				1411B14621DEE58700CA071D /* SWXMLHash.framework in Frameworks */,
 				1411B14721DEE58700CA071D /* SourceKittenFramework.framework in Frameworks */,
-				1411B14821DEE58700CA071D /* AtomicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +512,6 @@
 				144ED44321B211B300D0C19F /* Yams.framework in Frameworks */,
 				144ED44121B211B300D0C19F /* SWXMLHash.framework in Frameworks */,
 				144ED44221B211B300D0C19F /* SourceKittenFramework.framework in Frameworks */,
-				14B6A9C521B61727007E007A /* AtomicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +536,6 @@
 				14149BB421DFC534007A1AF5 /* SylvesterXPC.framework in Frameworks */,
 				14724D3021CED389005CD5C9 /* SourceKittenFramework.framework in Frameworks */,
 				14724D3221CED38A005CD5C9 /* SWXMLHash.framework in Frameworks */,
-				14724D3621CED3AD005CD5C9 /* AtomicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +578,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1404D31B2202102F00B98824 /* AtomicKit */ = {
+			isa = PBXGroup;
+			children = (
+				1404D3182202100500B98824 /* DispatchedValue.swift */,
+				1404D31C2202104500B98824 /* DispatchedValueWrapper.swift */,
+				1404D31F2202106300B98824 /* ThreadSafeValueWrapper.swift */,
+			);
+			path = AtomicKit;
+			sourceTree = "<group>";
+		};
 		1409B2C921B82DD200938856 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
@@ -759,7 +769,6 @@
 		144ED43D21B2115D00D0C19F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				14B6A9C321B616E3007E007A /* AtomicKit.framework */,
 				14B6A9C121B60E74007E007A /* Mustache.framework */,
 				144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */,
 				144ED43E21B211B300D0C19F /* SWXMLHash.framework */,
@@ -800,6 +809,7 @@
 		144ED4A021B23E8B00D0C19F /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
+				1404D31B2202102F00B98824 /* AtomicKit */,
 				144ED4A121B23E8B00D0C19F /* Stack.swift */,
 			);
 			path = "Data Structures";
@@ -1517,6 +1527,7 @@
 				1411B12821DEE58700CA071D /* SKAttributeKind.swift in Sources */,
 				1411B12921DEE58700CA071D /* SKPreOrderDFSIterator.swift in Sources */,
 				1411B12A21DEE58700CA071D /* SKSourceKind.swift in Sources */,
+				1404D31A2202100500B98824 /* DispatchedValue.swift in Sources */,
 				1411B12B21DEE58700CA071D /* Stack.swift in Sources */,
 				1411B12C21DEE58700CA071D /* SKModule.swift in Sources */,
 				143CF020220127A100D26630 /* SKGenericKindEntity.swift in Sources */,
@@ -1536,6 +1547,7 @@
 				1411B13521DEE58700CA071D /* SKBaseResponse.swift in Sources */,
 				1461C7B221F3D03800C87530 /* Array.swift in Sources */,
 				148BFE9C21FF9D3500DBE3DD /* SKInherit.swift in Sources */,
+				1404D31E2202104500B98824 /* DispatchedValueWrapper.swift in Sources */,
 				1411B13621DEE58700CA071D /* SKSyntaxMap.swift in Sources */,
 				143CF01D2201134900D26630 /* SKSequence.swift in Sources */,
 				14B1804721EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */,
@@ -1555,6 +1567,7 @@
 				1411B13E21DEE58700CA071D /* SKYAMLRequest.swift in Sources */,
 				1411B13F21DEE58700CA071D /* SKGenericModule.swift in Sources */,
 				14B1804321EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */,
+				1404D3212202106300B98824 /* ThreadSafeValueWrapper.swift in Sources */,
 				1411B14021DEE58700CA071D /* SKElement.swift in Sources */,
 				1411B14121DEE58700CA071D /* SKDocumentationParameter.swift in Sources */,
 			);
@@ -1584,6 +1597,7 @@
 				1409B2D421B8411C00938856 /* SKAttributeKind.swift in Sources */,
 				144ED49F21B23D8700D0C19F /* SKPreOrderDFSIterator.swift in Sources */,
 				14FB4A0C21B49C5E008C02EB /* SKSourceKind.swift in Sources */,
+				1404D3192202100500B98824 /* DispatchedValue.swift in Sources */,
 				144ED4A221B23E8B00D0C19F /* Stack.swift in Sources */,
 				148CB86121C19D5B002928DD /* SKModule.swift in Sources */,
 				143CF01F220127A100D26630 /* SKGenericKindEntity.swift in Sources */,
@@ -1603,6 +1617,7 @@
 				144ED49821B23B5200D0C19F /* SKBaseResponse.swift in Sources */,
 				1461C7B121F3D03800C87530 /* Array.swift in Sources */,
 				148BFE9B21FF9D3500DBE3DD /* SKInherit.swift in Sources */,
+				1404D31D2202104500B98824 /* DispatchedValueWrapper.swift in Sources */,
 				1484CB0521B5E1CD00EF8F09 /* SKSyntaxMap.swift in Sources */,
 				143CF01C2201134900D26630 /* SKSequence.swift in Sources */,
 				14B1804621EFC96D001E272A /* SKGenericEditorOpen.swift in Sources */,
@@ -1622,6 +1637,7 @@
 				14D0CEDB21BF47D00000CB82 /* SKYAMLRequest.swift in Sources */,
 				14E4290821DD716000CEDF61 /* SKGenericModule.swift in Sources */,
 				14B1804221EFC838001E272A /* SKGenericSwiftDocs.swift in Sources */,
+				1404D3202202106300B98824 /* ThreadSafeValueWrapper.swift in Sources */,
 				1409B2DF21B8A61900938856 /* SKElement.swift in Sources */,
 				1409B2E521B8A66C00938856 /* SKDocumentationParameter.swift in Sources */,
 			);

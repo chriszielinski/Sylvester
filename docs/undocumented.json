@@ -1,6 +1,13 @@
 {
   "warnings": [
     {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Data Structures/AtomicKit/ThreadSafeValueWrapper.swift",
+      "line": 28,
+      "symbol": "ThreadSafeValueWrapper.ValueType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Data Structures/Stack.swift",
       "line": 17,
       "symbol": "Stack.isEmpty",
@@ -1143,28 +1150,28 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletionSession.swift",
-      "line": 24,
+      "line": 23,
       "symbol": "SKCodeCompletionSession.CompletionHandler",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletionSession.swift",
-      "line": 25,
+      "line": 24,
       "symbol": "SKCodeCompletionSession.ErrorHandler",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletionSession.swift",
-      "line": 26,
+      "line": 25,
       "symbol": "SKCodeCompletionSession.Options",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Requests/Code Completion/SKCodeCompletionSession.swift",
-      "line": 27,
+      "line": 26,
       "symbol": "SKCodeCompletionSession.Response",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"

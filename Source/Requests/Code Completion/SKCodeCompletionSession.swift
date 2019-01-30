@@ -6,7 +6,6 @@
 //  Copyright © 2018 Big Z Labs. All rights reserved.
 //
 
-import AtomicKit
 import SourceKittenFramework
 import SylvesterCommon
 
