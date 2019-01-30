@@ -131,6 +131,29 @@ open class SKBaseEntity: NSObject, SKSequence {
         return try decodeChildren(SKBaseEntity.self, from: container)
     }
 
+    // MARK: - Overridden NSObject Methods
+
+    open override func isEqual(_ object: Any?) -> Bool {
+        guard let rhs = object as? SKBaseEntity
+            else { return false }
+
+        return offset == rhs.offset
+            && length == rhs.length
+            && kind == rhs.kind
+            && name == rhs.name
+            && keyword == rhs.keyword
+            && usr == rhs.usr
+            && fullyAnnotatedDeclaration == rhs.fullyAnnotatedDeclaration
+            && docFullAsXML == rhs.docFullAsXML
+            && inherits == rhs.inherits
+            && genericRequirements == rhs.genericRequirements
+            && genericParameters == rhs.genericParameters
+            && index == rhs.index
+            && filePath == rhs.filePath
+            && internalParent == rhs.internalParent
+            && internalChildren == rhs.internalChildren
+    }
+
 }
 
 // MARK: - Optional Byte Range Convertible Protocol

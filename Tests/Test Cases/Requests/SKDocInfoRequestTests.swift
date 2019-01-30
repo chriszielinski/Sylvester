@@ -77,6 +77,13 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         XCTAssertNotNil(response.topLevelEntities)
         XCTAssertGreaterThan(response.topLevelEntities!.count, 0)
         XCTAssertNil(response.diagnostics)
+
+        let classEntity = response.topLevelEntities!.first!
+        let propertyEntity = classEntity.children?.first
+        XCTAssertEqual(classEntity, classEntity)
+        XCTAssertTrue(classEntity == classEntity)
+        XCTAssertNotEqual(classEntity, propertyEntity)
+        XCTAssertTrue(classEntity != propertyEntity)
     }
 
     /// - Warning: This test method may take a long time.

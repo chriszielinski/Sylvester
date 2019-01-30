@@ -434,13 +434,9 @@ open class SKBaseSubstructure: NSObject, SKSequence {
         return try decodeChildren(SKBaseSubstructure.self, from: container)
     }
 
-}
+    // MARK: - Overridden NSObject Methods
 
-// MARK: - Overridden NSObject Methods
-
-extension SKBaseSubstructure {
-
-    override open func isEqual(_ object: Any?) -> Bool {
+    open override func isEqual(_ object: Any?) -> Bool {
         guard let rhs = object as? SKBaseSubstructure
             else { return false }
 
