@@ -232,6 +232,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Doc Info/Entity/SKBaseEntity.swift",
+      "line": 136,
+      "symbol": "SKBaseEntity.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Doc Info/SKAnnotation.swift",
       "line": 37,
       "symbol": "SKAnnotation.init(from:)",
@@ -1059,7 +1066,7 @@
     },
     {
       "file": "/Users/chriszielinski/apps/Sylvester/Source/Models/Substructure/SKBaseSubstructure.swift",
-      "line": 443,
+      "line": 439,
       "symbol": "SKBaseSubstructure.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

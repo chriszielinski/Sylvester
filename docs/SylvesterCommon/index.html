@@ -219,12 +219,16 @@
 <td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletionSession.html"><code>SKCodeCompletionSession</code></a></td>
 </tr>
 <tr>
-<td style="text-align: right">Module Info</td>
-<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC8SKModuleC"><code>SKModule</code></a></td>
+<td style="text-align: right">Documentation Info</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC9SKDocInfoC"><code>SKDocInfo</code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Editor Open</td>
 <td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC12SKEditorOpenC"><code>SKEditorOpen</code></a></td>
+</tr>
+<tr>
+<td style="text-align: right">Module Info</td>
+<td style="text-align: left"><a href="https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC8SKModuleC"><code>SKModule</code></a></td>
 </tr>
 <tr>
 <td style="text-align: right">Swift Documentation</td>
@@ -267,10 +271,14 @@
 <h1 id='subclassing' class='heading'>Subclassing</h1>
 
 <p>Most of the standard requests are concrete subclasses of  <del>beautiful</del> generic classes. Fancy your own subclass? No problem, it <em>might</em> be possible. </p>
-<h2 id='code-sksubstructure-code' class='heading'><code>SKSubstructure</code></h2>
+<h2 id='code-sksubstructure-code-code-skentity-code' class='heading'><code>SKSubstructure</code>, <code>SKEntity</code></h2>
 
-<p>Also known as <code>SKBaseSubstructure</code>, a common culprit. </p>
-<pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">BetterSubstructureSubclass</span><span class="p">:</span> <span class="kt">SKBaseSubstructure</span><span class="p">,</span> <span class="kt">SKSubstructureSubclass</span> <span class="p">{</span>
+<p>Also known as <code>SKBaseSubstructure</code> (or <code>SKBaseEntity</code>), a common culprit. </p>
+
+<blockquote>
+<p>📌 <strong>Note:</strong> Subclassing <code>SKBaseEntity</code> uses similar syntax.</p>
+</blockquote>
+<pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">BetterSubstructureSubclass</span><span class="p">:</span> <span class="kt">SKBaseSubstructure</span><span class="p">,</span> <span class="kt">SKFinalSubclass</span> <span class="p">{</span>
 
     <span class="k">var</span> <span class="nv">iAmAnImportantProperty</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"🚶‍♂️"</span>
 
@@ -278,8 +286,8 @@
         <span class="k">return</span> <span class="k">try</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="kt">BetterSubstructureSubclass</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">container</span><span class="p">)</span>
     <span class="p">}</span>
 
-    <span class="c1">/// The default iterator for `SKSubstructureChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:</span>
-    <span class="kd">class</span> <span class="kt">FunctionSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">SKSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="c1">/// The default iterator for `SKChildren` does a pre-order (NLR) depth-first search (DFS) traversal; however, if you want something else, for instance:</span>
+    <span class="kd">class</span> <span class="kt">FunctionSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">SKPreOrderDFSIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;</span> <span class="p">{</span>
 
         <span class="k">override</span> <span class="kd">func</span> <span class="nf">next</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Substructure</span><span class="p">?</span> <span class="p">{</span>
             <span class="k">guard</span> <span class="k">let</span> <span class="nv">nextSubstructure</span> <span class="o">=</span> <span class="k">super</span><span class="o">.</span><span class="nf">next</span><span class="p">()</span>
@@ -294,7 +302,7 @@
 
     <span class="p">}</span>
 
-    <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="n">iteratorClass</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">SKSubstructureIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;.</span><span class="k">Type</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="kd">class</span> <span class="kd">func</span> <span class="n">iteratorClass</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="p">:</span> <span class="kt">BetterSubstructureSubclass</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">SKPreOrderDFSIterator</span><span class="o">&lt;</span><span class="kt">Substructure</span><span class="o">&gt;.</span><span class="k">Type</span> <span class="p">{</span>
         <span class="k">return</span> <span class="kt">FunctionSubstructureIterator</span><span class="o">.</span><span class="k">self</span>
     <span class="p">}</span>
 
@@ -368,7 +376,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-29)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
