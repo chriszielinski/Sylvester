@@ -458,7 +458,6 @@ open class SKBaseSubstructure: NSObject, SKSequence {
             && docOffset == rhs.docOffset
             && docLength == rhs.docLength
             && elements == rhs.elements
-            && filePath == rhs.filePath
             && fullyAnnotatedDeclaration == rhs.fullyAnnotatedDeclaration
             && inheritedTypes == rhs.inheritedTypes
             && kind == rhs.kind

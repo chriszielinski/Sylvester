@@ -14,12 +14,18 @@ public protocol SKSequence: class, Equatable, Codable {
     /// index of the substructure relative to the source file.
     ///
     /// - Note: The first entity in each source file will begin from zero.
+    ///
+    /// - Note: The parents are not compared for equality.
     var index: Int? { get set }
     /// The path to the source file.
+    ///
+    /// - Note: The parents are not compared for equality.
     var filePath: String? { get set }
     /// The parent entity, or `nil` if this entity is a root.
     ///
     /// - Important: The use of `SKFinalSubclass.parent` should be preferred.
+    ///
+    /// - Note: The parents are not compared for equality.
     var internalParent: SequenceElement? { get set }
     /// The entity children contained in the particular entity (sub-classes, references, etc.).
     ///

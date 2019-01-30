@@ -9,6 +9,8 @@
 public protocol SKFinalSubclass: SKSequence {
 
     /// The parent entity, or `nil` if this entity is a root.
+    ///
+    /// - Note: The parents are not compared for equality.
     var parent: Self? { get set }
     /// The entity children contained in the particular entity (sub-classes, references, etc.).
     var children: SKChildren<Self>? { get set }

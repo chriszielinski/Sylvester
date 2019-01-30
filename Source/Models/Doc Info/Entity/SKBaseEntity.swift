@@ -148,9 +148,6 @@ open class SKBaseEntity: NSObject, SKSequence {
             && inherits == rhs.inherits
             && genericRequirements == rhs.genericRequirements
             && genericParameters == rhs.genericParameters
-            && index == rhs.index
-            && filePath == rhs.filePath
-            && internalParent == rhs.internalParent
             && internalChildren == rhs.internalChildren
     }
 

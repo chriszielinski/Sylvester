@@ -151,10 +151,6 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         XCTAssertEqual(count, 2)
         try SylvesterAssert(response, equalsTestFixture: .viewControllerDocInfoMustache, filePath: path)
 
-        XCTAssertNotEqual(classEntity?.parent, classEntity)
-        classEntity?.parent = classEntity
-        XCTAssertEqual(classEntity?.parent, classEntity)
-
         XCTAssertNotNil(classEntity?.children)
         classEntity?.children = nil
         XCTAssertNil(classEntity?.children)
@@ -163,6 +159,10 @@ class SKDocInfoRequestTests: SylvesterTestCase {
         XCTAssertNotNil(byteRange)
         XCTAssertEqual(byteRange!.location, classEntity?.offset)
         XCTAssertEqual(byteRange!.length, classEntity?.length)
+
+        XCTAssertNotEqual(classEntity?.parent, classEntity)
+        classEntity?.parent = classEntity
+        XCTAssertTrue(classEntity?.parent === classEntity)
     }
 
     func testPlaceholdersDocInfoRequest() throws {
