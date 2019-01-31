@@ -3,6 +3,9 @@ osx_image: xcode10.1
 addons:
     sonarcloud:
         organization: chriszielinski-github
+before_install:
+    - brew update
+    - brew outdated carthage || brew upgrade carthage
 before_script:
     - ./Scripts/add_key.sh
     - 'gem install xcpretty-travis-formatter'
