@@ -28,6 +28,7 @@ Sylvester 😼
 	</a>
     <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
     <br>
+    <br>
     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/header.png?raw=true" alt="Header">
     <br>
     <br>
@@ -76,6 +77,8 @@ Installation
 
 Using [CocoaPods](http://cocoapods.org/)
 ----------------------------------------
+
+> 🐞 **Bug:** Requires CocoaPods version >= _1.6.0_ (Current pre-release, _1.6.0.rc.2_)
 
 > 📣 **Important:** The XPC service (and/or the `SylvesterXPC` module) is currently unavailable for CocoaPods installations.
 

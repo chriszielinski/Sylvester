@@ -6,16 +6,18 @@ addons:
 before_script:
     - ./Scripts/add_key.sh
     - 'gem install xcpretty-travis-formatter'
+    - 'gem install jazzy'
+    - 'gem install cocoapods --pre'
 script:
     - "if [ \"$TRAVIS_PULL_REQUEST\" != \"false\" ]; then bash ./Scripts/run_on_pull_requests.sh;\nfi"
     - "if [ \"$TRAVIS_PULL_REQUEST\" = \"false\" ]; then bash ./Scripts/run_on_non_pull_requests.sh;\nfi"
+    - 'pod --version'
     - 'pod lib lint'
     - 'make swiftlint'
     - sonar-scanner
 after_script:
     - ./Scripts/remove_key.sh
 after_success:
-    - 'gem install jazzy'
     - 'make generate-docs'
 before_deploy:
     - 'carthage build --platform macOS --no-skip-current'
