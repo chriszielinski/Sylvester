@@ -35,9 +35,20 @@ open class SKGenericDocInfo<Entity: SKBaseEntity>: NSObject, Codable {
     /// - Note: This key is only present if a diagnostic was emitted
     public let diagnostics: [SKDiagnostic]?
 
-    // MARK: - Private Initializers
+    // MARK: - Public Initializers
 
-    private init(file: File?, moduleName: String?, compilerArguments: [String]) throws {
+    /// Creates a new synchronous _SourceKit_ doc info request.
+    ///
+    /// - Warning: The request is sent synchronously, so ensure this initializer is not called on the main thread.
+    ///
+    /// - Note: Ensure this initializer is only called with either a `file` or a `moduleName`, **not both**.
+    ///
+    /// - Parameters:
+    ///   - file: The source file to gather documentation for.
+    ///   - moduleName: The module name to gather documentation for.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk", "/path/to/sdk"]`).
+    /// - Throws: A `SKError`, if an error occurs.
+    public init(file: File?, moduleName: String?, compilerArguments: [String]) throws {
         let sharedInterface = SylvesterInterface.shared
         let response: SKGenericDocInfo<Entity> = try sharedInterface.docInfo(file: file,
                                                                              moduleName: moduleName,
@@ -52,8 +63,6 @@ open class SKGenericDocInfo<Entity: SKBaseEntity>: NSObject, Codable {
 
         resolve(from: file?.path)
     }
-
-    // MARK: - Public Initializers
 
     /// Creates a new synchronous _SourceKit_ doc info request.
     ///
