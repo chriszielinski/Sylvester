@@ -3,10 +3,6 @@ osx_image: xcode10.1
 addons:
     sonarcloud:
         organization: chriszielinski-github
-before_install:
-    - brew update
-    - brew outdated carthage || brew upgrade carthage
-    - carthage version
 before_script:
     - ./Scripts/add_key.sh
     - 'gem install xcpretty-travis-formatter'
@@ -16,15 +12,13 @@ script:
     - "if [ \"$TRAVIS_PULL_REQUEST\" != \"false\" ]; then bash ./Scripts/run_on_pull_requests.sh;\nfi"
     - "if [ \"$TRAVIS_PULL_REQUEST\" = \"false\" ]; then bash ./Scripts/run_on_non_pull_requests.sh;\nfi"
     - 'pod --version'
-    - 'pod lib lint'
+    - 'pod lib lint --fail-fast'
     - 'make swiftlint'
     - sonar-scanner
 after_script:
     - ./Scripts/remove_key.sh
 after_success:
     - 'make generate-docs'
-before_deploy:
-    - 'carthage build --platform macOS --archive'
 deploy:
     - provider: pages
       skip-cleanup: true
@@ -32,17 +26,8 @@ deploy:
       local-dir: docs
       on:
           branch: master
-    - provider: releases
-      api_key: $GITHUB_ACCESS_TOKEN
-      file: "Sylvester.framework.zip"
-      skip_cleanup: true
-      on:
-          repo: chriszielinski/Sylvester
-          tags: true
-          branch: master
 env:
     global:
-        - FRAMEWORK_NAME=Sylvester
         - secure: kEc/tVkvtbX020gS/M6Uq4ewufL3xGMDo9piAaXXHof0E/yUQz9GQbYAImHhhdudyqECjlv4owN9nv3JsJJ9nq0Pe+663WXjOIZg2xZJ9NtnsLnqvfubGClTQyPRSR3L3aTiBP5vNe7+p1UqTxfomVjudhDrOc3RUijHpCDL7Q90zkY3bibukzlz+ZqA0osOTbmgxyy+PmA7U/WNL22iHxvMJefJNHUT7YPAMx/4tG/AYsO3+3af5ALtnG6i06ydMSWiHuvkqp58ELQfhNv+EAMaJtaz3dvQpffCld+CJ/pi2jBth2TF6b3l/MuWBSxsj4pVpZ7RovtA1zjVQ2qzbg2J2K0CEpe4UGPuCA/YAjkAzWiPzXIkK0dyBiQRhL6BNr4AFUjegxxtglimFKdb+75SqyMcQzNrIm4YRnpEiiShvVBsYfp24PEOK7DlONbo+//0/0PXFucMJMrPO7yB4X0gI8TJ8MtZk6D5RI3yhLLjG1NIlHkOx7q3Ea95pk1m2/5k88cW3nST1wa3z3bHwY0iUttdxgPjxpCD3mcl7KTy/PvnDgS5XCPqrDHN/4pZWqqOqXJjfC/jX6WhgeFVW+hFUvZtCOews96a9uyV34LuIDEItdX2c9yI1a5rrlV1yImM1MNKFWFsdabDsvWYftm+nSd11mnFHKVjDGUf09w=
         - secure: bRVkFBkI+NKR29eh0jDxNy/E+odunbksb5kTgPLrANXqg2RMyTQ4VJ5u74zrrRc6Lhl9sFrk6sZ/BbagTI0+dH2klsCEDHlhhESe7uY0f4dg2K7IclnQ+11fsVCYEFj7L26qfdbiuwrnxyap21Y4nd0NHRYPFtO6o5iMt5rdABtcAfjPfRja9HFZXsQYntsbhnCVO4+aqGgT170HTexSSYPaardQW087eXy5fcH6y4JHBEjE5NUqcAKTTrnV0G94rZfe0MAvhMPs0urXvXRIHs0Xj4rxSUAYyaxiptS0p02T03Eq+Whu+KZmhpq74jAUGgjqjeEs8xfod3ygeLGLbb/hoWQetbphW2qQsyNJDaGd7fHNPHxfRZVPhFJ2JciH7DZq/J6lzayYxJH2pCy/L3WciZ4XlAOyJtycMT3UjuiA/geiR7GxpMdiCjZBcBjeMDulUfy4/+ne6KJyNi+Vi8PW4Wumz6QP1XWxnA8tRkzzw4DunT6GR4N1ZgzpUkpIS8Ub5xB8dXqH5UypE2bta1evU3uRWRqvESMjxYWU8lxDpNSjW0nPUD8vXOFuH8E48VLGYI1lf2MCGb2Eob/bFr/SdMfqLmioo/6hviR8guo0v0ZziKcdPQqrlG7As3ZtQoAdcd9yOPP7Y9TQXH5BEz/3i/0EOd0lgO7nur7oOnA=
 
