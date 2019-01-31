@@ -6,6 +6,7 @@ addons:
 before_install:
     - brew update
     - brew outdated carthage || brew upgrade carthage
+    - carthage version
 before_script:
     - ./Scripts/add_key.sh
     - 'gem install xcpretty-travis-formatter'
@@ -23,8 +24,7 @@ after_script:
 after_success:
     - 'make generate-docs'
 before_deploy:
-    - 'carthage build --platform macOS --no-skip-current'
-    - 'carthage archive'
+    - 'carthage build --platform macOS --archive'
 deploy:
     - provider: pages
       skip-cleanup: true
