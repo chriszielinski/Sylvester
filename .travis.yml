@@ -9,6 +9,7 @@ before_script:
 script:
     - "if [ \"$TRAVIS_PULL_REQUEST\" != \"false\" ]; then bash ./Scripts/run_on_pull_requests.sh;\nfi"
     - "if [ \"$TRAVIS_PULL_REQUEST\" = \"false\" ]; then bash ./Scripts/run_on_non_pull_requests.sh;\nfi"
+    - 'pod lib lint'
     - 'make swiftlint'
     - sonar-scanner
 after_script:
