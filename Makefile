@@ -103,8 +103,8 @@ generate-boilerplate:
 	../../../Scripts/generate_boilerplate.swift
 
 generate-docs:
-	jazzy --clean --xcodebuild-arguments -scheme,SylvesterXPC
-	jazzy --xcodebuild-arguments -scheme,SylvesterCommon,-configuration,Debug,SWIFT_ACTIVE_COMPILATION_CONDITIONS=XPC --output docs/SylvesterCommon
+	jazzy --clean --module SylvesterXPC --xcodebuild-arguments -scheme,SylvesterXPC
+	jazzy --module SylvesterCommon --xcodebuild-arguments -scheme,SylvesterCommon,-configuration,Debug,SWIFT_ACTIVE_COMPILATION_CONDITIONS=XPC --output docs/SylvesterCommon
 	./Scripts/generate_docs.swift `pwd`/docs
 
 swiftlint:
