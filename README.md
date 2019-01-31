@@ -2,6 +2,12 @@ Sylvester 😼
 ===========
 
 <p align="center">
+    <a href="https://github.com/Carthage/Carthage" style="text-decoration:none" target="_blank">
+        <img alt="Carthage compatible" src ="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"/>
+    </a>
+    <a href="https://cocoapods.org/pods/Sylvester" style="text-decoration:none" target="_blank">
+        <img alt="Pod Version" src ="https://img.shields.io/cocoapods/v/Sylvester.svg?style=flat"/>
+    </a>
     <a href="https://travis-ci.org/chriszielinski/Sylvester" style="text-decoration:none" target="_blank">
 		<img src="https://travis-ci.org/chriszielinski/Sylvester.svg?branch=master">
 	</a>
@@ -47,17 +53,6 @@ Features
 - [x] Comprehensive test suite.
 
 
-Installation
-============
-`Sylvester` is available for installation using Carthage.
-
-
-### Using [Carthage](https://github.com/Carthage/Carthage)
-
-```ruby
-github "chriszielinski/Sylvester"
-```
-
 Requirements
 ============
 
@@ -75,8 +70,28 @@ The `Sylvester` framework has two build configurations that differ in their meth
  > 📌 **Note:** The XPC service itself cannot be sandboxed (due to inherent dependencies: xcrun, xcodebuild, sourcekitd), and requires an additional [code signing step](#code-signing).
 
 
-Dependencies
+Installation
 ============
+`Sylvester` is available for installation using Carthage or CocoaPods.
+
+Using [CocoaPods](http://cocoapods.org/)
+----------------------------------------
+
+> 📣 **Important:** The XPC service (and/or the `SylvesterXPC` module) is currently unavailable for CocoaPods installations.
+
+```ruby
+pod "Sylvester"
+```
+
+Using [Carthage](https://github.com/Carthage/Carthage)
+------------------------------------------------------
+
+```ruby
+github "chriszielinski/Sylvester"
+```
+
+
+### Dependencies
 
 `Sylvester`/`SylvesterXPC` depends on the following frameworks/libraries, so ensure they are also embedded in the _Embed Frameworks_ phase:
 
@@ -88,6 +103,21 @@ Dependencies
  <p align="center">
      <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/embed-frameworks.png?raw=true" alt="Embed Frameworks Phase">
  </p>
+
+ 
+### Code Signing
+
+If you decide to use the `SylvesterXPC` module, you will need to add a _Run Script_ phase before embedding the _SylvesterXPC.framework_ (i.e. before the _Embed Frameworks_ phase). Ensure the shell launch path is `/bin/sh` (default). Then for Carthage installations, execute the `code_sign_carthage.sh` shell script in the repository's _Scripts_ directory.
+
+```shell
+"$SRCROOT/Carthage/Checkouts/Sylvester/Scripts/code_sign_carthage.sh"
+```
+
+<p align="center">
+     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/code-sign.png?raw=true" alt="Code Sign Phase">
+ </p>
+
+For other installations, modify the script's paths as neccessary.
 
 
 Supported Requests
@@ -186,22 +216,6 @@ An example of a `SKModule` subclass utilizing the `BetterSwiftDocs` and `BetterS
 ```swift
 class BetterModule: SKGenericModule<BetterSubstructureSubclass, BetterSwiftDocs> {}
 ```
-
-
-Code Signing
-============
-
-If you decide to use the `SylvesterXPC` module, you will need to add a _Run Script_ phase before embedding the _SylvesterXPC.framework_ (i.e. before the _Embed Frameworks_ phase). Ensure the shell launch path is `/bin/sh` (default). Then for Carthage installations, execute the `code_sign_carthage.sh` shell script in the repository's _Scripts_ directory.
-
-```shell
-"$SRCROOT/Carthage/Checkouts/Sylvester/Scripts/code_sign_carthage.sh"
-```
-
-<p align="center">
-     <img src="https://github.com/chriszielinski/Sylvester/blob/master/.readme-assets/code-sign.png?raw=true" alt="Code Sign Phase">
- </p>
-
-For other installations, modify the script's paths as neccessary.
 
 
 Documentation
