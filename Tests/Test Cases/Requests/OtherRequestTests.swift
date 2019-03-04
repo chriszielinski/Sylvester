@@ -46,6 +46,9 @@ class OtherRequestTests: XCTestCase {
 
         let extractedComment = try SKEditorExtractTextFromComment(sourceText)
         XCTAssertEqual(extractedComment.sourceText, expectedResponseText)
+
+        let differentExtractedComment = try SKEditorExtractTextFromComment("// Different")
+        XCTAssertNotEqual(extractedComment, differentExtractedComment)
     }
 
     func testEditorExtractTextFromMultilineComment() throws {

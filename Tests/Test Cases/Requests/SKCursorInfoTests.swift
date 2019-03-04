@@ -33,4 +33,13 @@ class SKCursorInfoTests: SylvesterTestCase {
                             filePath: viewControllerFilePath)
     }
 
+    func testAnnotatedDeclarationEquatable() {
+        let testAnnotatedDeclaration = SKAnnotatedDeclaration(annotatedDeclaration: "test")
+        let anotherTestAnnotatedDeclaration = SKAnnotatedDeclaration(annotatedDeclaration: "test")
+        let differentAnnotatedDeclaration = SKAnnotatedDeclaration(annotatedDeclaration: "test-different")
+
+        XCTAssertEqual(testAnnotatedDeclaration, anotherTestAnnotatedDeclaration)
+        XCTAssertNotEqual(testAnnotatedDeclaration, differentAnnotatedDeclaration)
+    }
+
 }
