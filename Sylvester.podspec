@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name             = 'Sylvester'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = '😼 A type-safe, XPC-available SourceKitten (SourceKit) interface with some sugar.'
   s.homepage         = 'https://github.com/chriszielinski/Sylvester'
   s.screenshots     = 'https://raw.githubusercontent.com/chriszielinski/Sylvester/master/.readme-assets/header.png'
