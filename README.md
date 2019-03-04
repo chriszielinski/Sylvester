@@ -130,8 +130,11 @@ Supported Requests
 | -------------:|:------------- |
 | Code Completion | [`SKCodeCompletion`](https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletion.html) |
 | Code Completion Session | [`SKCodeCompletionSession`](https://chriszielinski.github.io/Sylvester/Classes/SKCodeCompletionSession.html) |
+| Cursor Info | [`SKCursorInfo`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC9SKCursorInfoC) |
 | Documentation Info | [`SKDocInfo`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC9SKDocInfoC) |
 | Editor Open | [`SKEditorOpen`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC12SKEditorOpenC) |
+| Editor Extract Text From Comment | [`SKEditorExtractTextFromComment`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC12SKEditorExtractTextFromCommentC) |
+| Convert Markup To XML | [`SKConvertMarkupToXML`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC12SKConvertMarkupToXMLC) |
 | Module Info | [`SKModule`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC8SKModuleC)|
 | Swift Documentation | [`SKSwiftDocs`](https://chriszielinski.github.io/Sylvester/Classes.html#/s:12SylvesterXPC11SKSwiftDocsC) |
 | Syntax Map | [`SKSyntaxMap`](https://chriszielinski.github.io/Sylvester/Classes/SKSyntaxMap.html) |
