@@ -17,6 +17,69 @@ class OtherRequestTests: XCTestCase {
 
     // MARK: - Test Methods
 
+    func testEditorExtractTextFromComment() throws {
+        let sourceText = """
+                          /// Partially applies a binary operator.
+                          ///
+                          /// - Parameters:
+                          ///   - a: The left-hand side to partially apply.
+                          ///   - combine: A binary operator.
+                          ///     - Parameters:
+                          ///       - lhs: The left-hand side of the operator
+                          ///       - rhs: The right-hand side of the operator
+                          ///     - Returns: A result.
+                          ///     - Throws: Nothing.
+                          """
+        let expectedResponseText = """
+                                   Partially applies a binary operator.
+
+                                   - Parameters:
+                                     - a: The left-hand side to partially apply.
+                                     - combine: A binary operator.
+                                       - Parameters:
+                                         - lhs: The left-hand side of the operator
+                                         - rhs: The right-hand side of the operator
+                                       - Returns: A result.
+                                       - Throws: Nothing.
+
+                                   """
+
+        let extractedComment = try SKEditorExtractTextFromComment(sourceText)
+        XCTAssertEqual(extractedComment.sourceText, expectedResponseText)
+    }
+
+    func testEditorExtractTextFromMultilineComment() throws {
+        let sourceText = """
+                         /**
+                           Brief.
+
+                           This is not a code block.
+                         */
+                         """
+        let expectedResponseText = """
+                                   Brief.
+
+                                   This is not a code block.
+
+                                   """
+
+        let extractedComment = try SKEditorExtractTextFromComment(sourceText)
+        XCTAssertEqual(extractedComment.sourceText, expectedResponseText)
+    }
+
+    func testMarkupToXML() throws {
+        let sourceText = """
+                         Brief.
+
+                         _This_ is not a `code` block.
+                         """
+        // swiftlint:disable:next line_length
+        let expectedResponseText = "<Abstract><Para>Brief.</Para></Abstract><Discussion><Para><emphasis>This</emphasis> is not a <codeVoice>code</codeVoice> block.</Para></Discussion>"
+
+        let markupXML = try SKConvertMarkupToXML(markup: sourceText)
+        XCTAssertEqual(markupXML.sourceText, expectedResponseText)
+    }
+
     func testXCRun() {
         continueAfterFailure = false
 

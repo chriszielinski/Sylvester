@@ -33,8 +33,7 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
         }
     }
 
-    func moduleDocs(module: SKModuleWrapper,
-                    with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
+    func moduleDocs(module: SKModuleWrapper, with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
         do {
             reply(try SourceKittenAdapter.moduleDocs(module: module.xpcModule()), nil)
         } catch {
@@ -44,8 +43,7 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
 
     // MARK: - Editor Methods
 
-    func editorOpen(file: SKFileWrapper,
-                    with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
+    func editorOpen(file: SKFileWrapper, with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
         do {
             reply(try SourceKittenAdapter.editorOpen(file: file.file), nil)
         } catch {
@@ -53,10 +51,17 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
         }
     }
 
+    func editorExtractTextFromComment(sourceText: String, with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
+        do {
+            reply(try SourceKittenAdapter.editorExtractTextFromComment(sourceText: sourceText), nil)
+        } catch {
+            reply(nil, error.toSKXPCError())
+        }
+    }
+
     // MARK: - Syntax Methods
 
-    func syntaxMap(file: SKFileWrapper,
-                   with reply: (SKSyntaxMapWrapper?, SKXPCError?) -> Void) {
+    func syntaxMap(file: SKFileWrapper, with reply: (SKSyntaxMapWrapper?, SKXPCError?) -> Void) {
         do {
             reply(SKSyntaxMapWrapper(syntaxMap: try SourceKittenAdapter.syntaxMap(file: file.file)), nil)
         } catch {
@@ -143,6 +148,36 @@ extension SylvesterXPCService: SylvesterXPCProtocol {
         }
 
         reply(nil)
+    }
+
+    // MARK: - Cursor Methods
+
+    // swiftlint:disable:next function_parameter_count
+    func cursorInfo(file: SKFileWrapper,
+                    offset: Int,
+                    usr: String,
+                    compilerArguments: [String],
+                    cancelOnSubsequentRequest: Bool,
+                    with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
+        do {
+            reply(try SourceKittenAdapter.cursorInfo(file: file.file,
+                                                     offset: offset == -1 ? nil : offset,
+                                                     usr: usr.isEmpty ? nil : usr,
+                                                     compilerArguments: compilerArguments,
+                                                     cancelOnSubsequentRequest: cancelOnSubsequentRequest), nil)
+        } catch {
+            reply(nil, error.toSKXPCError())
+        }
+    }
+
+    // MARK: - Markup Methods
+
+    func convertMarkupToXML(sourceText: String, with reply: (SKDataWrapper?, SKXPCError?) -> Void) {
+        do {
+            reply(try SourceKittenAdapter.convertMarkupToXML(sourceText: sourceText), nil)
+        } catch {
+            reply(nil, error.toSKXPCError())
+        }
     }
 
     // MARK: - Custom Request Methods

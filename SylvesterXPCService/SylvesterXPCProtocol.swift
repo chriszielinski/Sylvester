@@ -24,6 +24,7 @@ public protocol SylvesterXPCProtocol {
     // MARK: - Editor Methods
 
     func editorOpen(file: SKFileWrapper, with reply: (SKDataWrapper?, SKXPCError?) -> Void)
+    func editorExtractTextFromComment(sourceText: String, with reply: (SKDataWrapper?, SKXPCError?) -> Void)
 
     // MARK: - Syntax Methods
 
@@ -55,6 +56,20 @@ public protocol SylvesterXPCProtocol {
                               options: SKDataWrapper,
                               with reply: (SKDataWrapper?, SKXPCError?) -> Void)
     func codeCompletionClose(name: String, offset: Int, with reply: (SKXPCError?) -> Void)
+
+    // MARK: - Cursor Methods
+
+    // swiftlint:disable:next function_parameter_count
+    func cursorInfo(file: SKFileWrapper,
+                    offset: Int,
+                    usr: String,
+                    compilerArguments: [String],
+                    cancelOnSubsequentRequest: Bool,
+                    with reply: (SKDataWrapper?, SKXPCError?) -> Void)
+
+    // MARK: - Markup Methods
+
+    func convertMarkupToXML(sourceText: String, with reply: (SKDataWrapper?, SKXPCError?) -> Void)
 
     // MARK: - Custom Request Methods
 

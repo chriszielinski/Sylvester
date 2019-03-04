@@ -26,6 +26,15 @@ public extension Request {
         return compilerArguments
     }
 
+    // MARK: - Editor Requests
+
+    public static func editorExtractTextFromComment(sourceText: String) -> SourceKitObject {
+        return [
+            "key.request": UID("source.request.editor.extract.comment"),
+            "key.sourcetext": sourceText
+        ]
+    }
+
     // MARK: - Documentation Requests
 
     static func docInfo(file: File?, moduleName: String?, compilerArguments: [String]) -> SourceKitObject {
@@ -129,6 +138,42 @@ public extension Request {
             "key.request": UID("source.request.codecomplete.close"),
             "key.offset": Int64(offset),
             "key.name": name
+        ]
+    }
+
+    // MARK: - Cursor Info Requests
+
+    static func cursorInfo(file: File,
+                           offset: Int?,
+                           usr: String?,
+                           compilerArguments: [String],
+                           cancelOnSubsequentRequest: Bool) -> SourceKitObject {
+        let request: SourceKitObject = [
+            "key.request": UID("source.request.cursorinfo"),
+            "key.sourcefile": file.sourceKitPath,
+            "key.compilerargs": compilerArguments,
+            "key.cancel_on_subsequent_request": cancelOnSubsequentRequest.toInt
+        ]
+
+        if file.path == nil {
+            request.updateValue(file.contents, forKey: "key.sourcetext")
+        }
+
+        if let offset = offset {
+            request.updateValue(offset, forKey: "key.offset")
+        } else if let usr = usr {
+            request.updateValue(usr, forKey: "key.usr")
+        }
+
+        return request
+    }
+
+    // MARK: Markup Requests
+
+    public static func convertMarkupToXML(sourceText: String) -> SourceKitObject {
+        return [
+            "key.request": UID("source.request.convert.markup.xml"),
+            "key.sourcetext": sourceText
         ]
     }
 

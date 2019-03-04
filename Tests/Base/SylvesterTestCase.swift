@@ -57,6 +57,8 @@ class SylvesterTestCase: XCTestCase {
             case docSupportInputsMainEditorOpenMustache = "doc-support-inputs-main-editor-open.mustache"
             case docSupportInputsMainSwiftDocsMustache = "doc-support-inputs-main-swift-documentation.mustache"
             case docSupportInputsMainDocInfoMustache = "doc-support-inputs-main-doc-info.mustache"
+
+            case viewControllerCursorInfoMustache = "view-controller-cursor-info.mustache"
         }
 
         enum JSON: String {
@@ -254,7 +256,8 @@ class SylvesterTestCase: XCTestCase {
                 sourceFile = .appDelegate
             case .viewControllerEditorOpenMustache,
                  .viewControllerSwiftDocsMustache,
-                 .viewControllerDocInfoMustache:
+                 .viewControllerDocInfoMustache,
+                 .viewControllerCursorInfoMustache:
                 sourceFile = .viewController
             case .placeholdersEditorOpenMustache,
                  .placeholdersSwiftDocsMustache,

@@ -44,6 +44,18 @@ public class SourceKittenAdapter {
         return try SKDataWrapper(responseDictionary)
     }
 
+    public static func editorExtractTextFromComment(sourceText: String) throws -> SKDataWrapper {
+        let editorExtractTextFromCommentRequest = Request.editorExtractTextFromComment(sourceText: sourceText)
+
+        do {
+            return try SKDataWrapper(customRequest(object: editorExtractTextFromCommentRequest))
+        } catch let error as Request.Error {
+            throw SKError.sourceKitRequestFailed(error)
+        } catch {
+            throw SKError.unknown(error: error)
+        }
+    }
+
     // MARK: - Syntax Methods
 
     public static func syntaxMap(file: File) throws -> SyntaxMap {
@@ -110,6 +122,40 @@ public class SourceKittenAdapter {
     public static func codeCompletionClose(name: String, offset: Int) throws {
         let closeRequest = Request.codeCompletionClose(name: name, offset: offset)
         _ = try customRequest(object: closeRequest)
+    }
+
+    // MARK: - Cursor Methods
+
+    public static func cursorInfo(file: File,
+                                  offset: Int?,
+                                  usr: String?,
+                                  compilerArguments: [String],
+                                  cancelOnSubsequentRequest: Bool) throws -> SKDataWrapper? {
+        let cursorInfoRequest = Request.cursorInfo(file: file,
+                                                   offset: offset,
+                                                   usr: usr,
+                                                   compilerArguments: compilerArguments,
+                                                   cancelOnSubsequentRequest: cancelOnSubsequentRequest)
+        let responseDictionary = try customRequest(object: cursorInfoRequest)
+
+        guard !responseDictionary.isEmpty
+            else { return nil }
+
+        return try SKDataWrapper(responseDictionary)
+    }
+
+    // MARK: Markup Methods
+
+    public static func convertMarkupToXML(sourceText: String) throws -> SKDataWrapper {
+        let convertMarkupToXMLRequest = Request.convertMarkupToXML(sourceText: sourceText)
+
+        do {
+            return try SKDataWrapper(customRequest(object: convertMarkupToXMLRequest))
+        } catch let error as Request.Error {
+            throw SKError.sourceKitRequestFailed(error)
+        } catch {
+            throw SKError.unknown(error: error)
+        }
     }
 
     // MARK: - Custom Request Methods

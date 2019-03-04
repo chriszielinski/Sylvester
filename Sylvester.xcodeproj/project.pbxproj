@@ -81,6 +81,10 @@
 		142A52C121E0104200325A71 /* JSONDebugStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A52BF21E00E5700325A71 /* JSONDebugStringConvertible.swift */; };
 		142D93A921EFE01C0014CFC2 /* SKGenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D93A821EFE01C0014CFC2 /* SKGenericResponse.swift */; };
 		142D93AA21EFE01C0014CFC2 /* SKGenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D93A821EFE01C0014CFC2 /* SKGenericResponse.swift */; };
+		1431B0152218CF3C009B36DA /* SKCursorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431B0142218CF3C009B36DA /* SKCursorInfo.swift */; };
+		1431B0162218CF3C009B36DA /* SKCursorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431B0142218CF3C009B36DA /* SKCursorInfo.swift */; };
+		1431B0182218D4E1009B36DA /* SKCursorInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431B0172218D4E1009B36DA /* SKCursorInfoTests.swift */; };
+		1431B0192218D4E1009B36DA /* SKCursorInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431B0172218D4E1009B36DA /* SKCursorInfoTests.swift */; };
 		1438196721D6F1EE00F58A0F /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438196621D6F1EE00F58A0F /* TypeAlias.swift */; };
 		1438C33B21C8353200081C02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33A21C8353200081C02 /* Constants.swift */; };
 		1438C33D21C8449200081C02 /* SKCodeCompletionSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */; };
@@ -185,6 +189,12 @@
 		149ABB5421DEEBDA00CE0351 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		149ABB5521DEEBDA00CE0351 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43E21B211B300D0C19F /* SWXMLHash.framework */; };
 		149ABB5621DEEBDA00CE0351 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED44021B211B300D0C19F /* Yams.framework */; };
+		14A7C1E5222DA0B60070BDFA /* SKAnnotatedDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C1E4222DA0B60070BDFA /* SKAnnotatedDeclaration.swift */; };
+		14A7C1E6222DA0B60070BDFA /* SKAnnotatedDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C1E4222DA0B60070BDFA /* SKAnnotatedDeclaration.swift */; };
+		14A7C1E8222DABE60070BDFA /* SKConvertMarkupToXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C1E7222DABE60070BDFA /* SKConvertMarkupToXML.swift */; };
+		14A7C1E9222DABE60070BDFA /* SKConvertMarkupToXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C1E7222DABE60070BDFA /* SKConvertMarkupToXML.swift */; };
+		14A7C1EB222DABFF0070BDFA /* SKEditorExtractTextFromComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C1EA222DABFF0070BDFA /* SKEditorExtractTextFromComment.swift */; };
+		14A7C1EC222DABFF0070BDFA /* SKEditorExtractTextFromComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C1EA222DABFF0070BDFA /* SKEditorExtractTextFromComment.swift */; };
 		14ADDFA521F79B23009C42D6 /* SKSubprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */; };
 		14ADDFA621F7ABD0009C42D6 /* SylvesterXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411B15521DEE58700CA071D /* SylvesterXPC.framework */; };
 		14ADDFA921F7C8A6009C42D6 /* SylvesterCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF6C3521BC4FB5006EAB11 /* SylvesterCommon.framework */; };
@@ -242,6 +252,8 @@
 		14D8383421CF088600996DF1 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED43F21B211B300D0C19F /* SourceKittenFramework.framework */; };
 		14E0A5DE21BAC8DC00BDCED2 /* SKByteRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0A5DD21BAC8DC00BDCED2 /* SKByteRange.swift */; };
 		14E4290821DD716000CEDF61 /* SKGenericModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4290721DD716000CEDF61 /* SKGenericModule.swift */; };
+		14E6CCD42225C7FF005554E3 /* SKSourceTextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6CCD32225C7FF005554E3 /* SKSourceTextResponse.swift */; };
+		14E6CCD52225C7FF005554E3 /* SKSourceTextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6CCD32225C7FF005554E3 /* SKSourceTextResponse.swift */; };
 		14FB49E221B44EF4008C02EB /* SylvesterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB49E121B44EF4008C02EB /* SylvesterTestCase.swift */; };
 		14FB4A0C21B49C5E008C02EB /* SKSourceKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A0B21B49C5D008C02EB /* SKSourceKind.swift */; };
 		14FB4A0E21B4A6E3008C02EB /* SKCodeCompletionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB4A0D21B4A6E3008C02EB /* SKCodeCompletionContext.swift */; };
@@ -362,6 +374,8 @@
 		1420E25421C0A5EB00BEF13C /* SKFileWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKFileWrapper.swift; sourceTree = "<group>"; };
 		142A52BF21E00E5700325A71 /* JSONDebugStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDebugStringConvertible.swift; sourceTree = "<group>"; };
 		142D93A821EFE01C0014CFC2 /* SKGenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericResponse.swift; sourceTree = "<group>"; };
+		1431B0142218CF3C009B36DA /* SKCursorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCursorInfo.swift; sourceTree = "<group>"; };
+		1431B0172218D4E1009B36DA /* SKCursorInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCursorInfoTests.swift; sourceTree = "<group>"; };
 		1438196621D6F1EE00F58A0F /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		1438C33A21C8353200081C02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1438C33C21C8449200081C02 /* SKCodeCompletionSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCodeCompletionSessionResponse.swift; sourceTree = "<group>"; };
@@ -454,6 +468,9 @@
 		1493780021D5C92500632B76 /* SKParagraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKParagraph.swift; sourceTree = "<group>"; };
 		1493780221D5D51700632B76 /* KeyedDecodingContainer+SylvesterCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+SylvesterCommon.swift"; sourceTree = "<group>"; };
 		149ABB5D21DEEBDA00CE0351 /* SylvesterXPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SylvesterXPCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A7C1E4222DA0B60070BDFA /* SKAnnotatedDeclaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAnnotatedDeclaration.swift; sourceTree = "<group>"; };
+		14A7C1E7222DABE60070BDFA /* SKConvertMarkupToXML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKConvertMarkupToXML.swift; sourceTree = "<group>"; };
+		14A7C1EA222DABFF0070BDFA /* SKEditorExtractTextFromComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKEditorExtractTextFromComment.swift; sourceTree = "<group>"; };
 		14ADDFA421F79B23009C42D6 /* SKSubprocess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSubprocess.swift; sourceTree = "<group>"; };
 		14ADDFAE21F7E0D9009C42D6 /* generate_docs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generate_docs.swift; sourceTree = "<group>"; };
 		14B1803F21EFC68D001E272A /* CustomSubstructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubstructure.swift; sourceTree = "<group>"; };
@@ -483,6 +500,7 @@
 		14D8382C21CF083700996DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E0A5DD21BAC8DC00BDCED2 /* SKByteRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKByteRange.swift; sourceTree = "<group>"; };
 		14E4290721DD716000CEDF61 /* SKGenericModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGenericModule.swift; sourceTree = "<group>"; };
+		14E6CCD32225C7FF005554E3 /* SKSourceTextResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSourceTextResponse.swift; sourceTree = "<group>"; };
 		14FB49E121B44EF4008C02EB /* SylvesterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SylvesterTestCase.swift; sourceTree = "<group>"; };
 		14FB4A0921B49B17008C02EB /* generate_boilerplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = generate_boilerplate.swift; sourceTree = "<group>"; };
 		14FB4A0B21B49C5D008C02EB /* SKSourceKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSourceKind.swift; sourceTree = "<group>"; };
@@ -602,6 +620,7 @@
 				1401286221CDDAB200141F44 /* OtherRequestTests.swift */,
 				1488977221B70D22007F6C17 /* SKCodeCompletionSessionTests.swift */,
 				144ED42C21B2105E00D0C19F /* SKCodeCompletionTests.swift */,
+				1431B0172218D4E1009B36DA /* SKCursorInfoTests.swift */,
 				148BFE8A21FF8AED00DBE3DD /* SKDocInfoRequestTests.swift */,
 				1484CB0221B5DE7000EF8F09 /* SKEditorOpenTests.swift */,
 				148CB86421C1A9C9002928DD /* SKModuleTests.swift */,
@@ -659,6 +678,14 @@
 				142D93A821EFE01C0014CFC2 /* SKGenericResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		1431B0132218CF23009B36DA /* Cursor Info */ = {
+			isa = PBXGroup;
+			children = (
+				14A7C1E4222DA0B60070BDFA /* SKAnnotatedDeclaration.swift */,
+			);
+			path = "Cursor Info";
 			sourceTree = "<group>";
 		};
 		143CF01A2201118900D26630 /* Convertibles */ = {
@@ -761,6 +788,7 @@
 		144ED43821B2108D00D0C19F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1431B0132218CF23009B36DA /* Cursor Info */,
 				14D1017821ED0A14002FF8D2 /* Code Completion */,
 				148BFE8D21FF956600DBE3DD /* Doc Info */,
 				143CF02222014C5800D26630 /* Iterators */,
@@ -769,6 +797,7 @@
 				14E0A5DD21BAC8DC00BDCED2 /* SKByteRange.swift */,
 				143CF01E220127A100D26630 /* SKGenericKindEntity.swift */,
 				144ED49B21B23D8700D0C19F /* Substructure */,
+				14E6CCD32225C7FF005554E3 /* SKSourceTextResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -861,6 +890,9 @@
 				148BFEA921FFFF3200DBE3DD /* Doc Info */,
 				14B1804821EFC9B3001E272A /* Editor Open */,
 				14E4290921DD71B500CEDF61 /* Module */,
+				14A7C1E7222DABE60070BDFA /* SKConvertMarkupToXML.swift */,
+				1431B0142218CF3C009B36DA /* SKCursorInfo.swift */,
+				14A7C1EA222DABFF0070BDFA /* SKEditorExtractTextFromComment.swift */,
 				1484CB0421B5E1CD00EF8F09 /* SKSyntaxMap.swift */,
 				14D0CEDA21BF47D00000CB82 /* SKYAMLRequest.swift */,
 				14B1804421EFC85F001E272A /* Swift Docs */,
@@ -1530,12 +1562,16 @@
 				1411B12521DEE58700CA071D /* String+Sylvester.swift in Sources */,
 				142A52C121E0104200325A71 /* JSONDebugStringConvertible.swift in Sources */,
 				1411B12621DEE58700CA071D /* SKParagraph.swift in Sources */,
+				14A7C1E9222DABE60070BDFA /* SKConvertMarkupToXML.swift in Sources */,
 				148BFE9021FF959A00DBE3DD /* SKDiagnostic.swift in Sources */,
 				1411B12721DEE58700CA071D /* SKElementKind.swift in Sources */,
 				1411B12821DEE58700CA071D /* SKAttributeKind.swift in Sources */,
+				14E6CCD52225C7FF005554E3 /* SKSourceTextResponse.swift in Sources */,
 				1411B12921DEE58700CA071D /* SKPreOrderDFSIterator.swift in Sources */,
 				1411B12A21DEE58700CA071D /* SKSourceKind.swift in Sources */,
 				1404D31A2202100500B98824 /* DispatchedValue.swift in Sources */,
+				14A7C1EC222DABFF0070BDFA /* SKEditorExtractTextFromComment.swift in Sources */,
+				1431B0162218CF3C009B36DA /* SKCursorInfo.swift in Sources */,
 				1411B12B21DEE58700CA071D /* Stack.swift in Sources */,
 				1411B12C21DEE58700CA071D /* SKModule.swift in Sources */,
 				143CF020220127A100D26630 /* SKGenericKindEntity.swift in Sources */,
@@ -1562,6 +1598,7 @@
 				148BFEAC21FFFF5000DBE3DD /* SKGenericDocInfo.swift in Sources */,
 				1411B13721DEE58700CA071D /* Constants.swift in Sources */,
 				1411B13821DEE58700CA071D /* SKDiagnosticStage.swift in Sources */,
+				14A7C1E6222DA0B60070BDFA /* SKAnnotatedDeclaration.swift in Sources */,
 				148BFE9321FF968000DBE3DD /* SKDiagnosticSeverity.swift in Sources */,
 				1411B13921DEE58700CA071D /* SKInheritedType.swift in Sources */,
 				147B1BA921EE7C0F00000842 /* SKSyntaxKind.swift in Sources */,
@@ -1600,12 +1637,16 @@
 				14BEB8D921B9A0C600C7B052 /* String+Sylvester.swift in Sources */,
 				142A52C021E00E5700325A71 /* JSONDebugStringConvertible.swift in Sources */,
 				1493780121D5C92500632B76 /* SKParagraph.swift in Sources */,
+				14A7C1E8222DABE60070BDFA /* SKConvertMarkupToXML.swift in Sources */,
 				148BFE8F21FF959A00DBE3DD /* SKDiagnostic.swift in Sources */,
 				1409B2D321B8411C00938856 /* SKElementKind.swift in Sources */,
 				1409B2D421B8411C00938856 /* SKAttributeKind.swift in Sources */,
+				14E6CCD42225C7FF005554E3 /* SKSourceTextResponse.swift in Sources */,
 				144ED49F21B23D8700D0C19F /* SKPreOrderDFSIterator.swift in Sources */,
 				14FB4A0C21B49C5E008C02EB /* SKSourceKind.swift in Sources */,
 				1404D3192202100500B98824 /* DispatchedValue.swift in Sources */,
+				14A7C1EB222DABFF0070BDFA /* SKEditorExtractTextFromComment.swift in Sources */,
+				1431B0152218CF3C009B36DA /* SKCursorInfo.swift in Sources */,
 				144ED4A221B23E8B00D0C19F /* Stack.swift in Sources */,
 				148CB86121C19D5B002928DD /* SKModule.swift in Sources */,
 				143CF01F220127A100D26630 /* SKGenericKindEntity.swift in Sources */,
@@ -1632,6 +1673,7 @@
 				148BFEAB21FFFF5000DBE3DD /* SKGenericDocInfo.swift in Sources */,
 				1438C33B21C8353200081C02 /* Constants.swift in Sources */,
 				14FB4A1221B4FA5F008C02EB /* SKDiagnosticStage.swift in Sources */,
+				14A7C1E5222DA0B60070BDFA /* SKAnnotatedDeclaration.swift in Sources */,
 				148BFE9221FF968000DBE3DD /* SKDiagnosticSeverity.swift in Sources */,
 				1409B2E121B8A63E00938856 /* SKInheritedType.swift in Sources */,
 				147B1BA721EE7A4700000842 /* SKSyntaxKind.swift in Sources */,
@@ -1676,6 +1718,7 @@
 				1420E24E21C0857300BEF13C /* OtherTests.swift in Sources */,
 				14724CFE21CEA2E7005CD5C9 /* SKWrapperTests.swift in Sources */,
 				1488977321B70D22007F6C17 /* SKCodeCompletionSessionTests.swift in Sources */,
+				1431B0182218D4E1009B36DA /* SKCursorInfoTests.swift in Sources */,
 				144ED42D21B2105E00D0C19F /* SKCodeCompletionTests.swift in Sources */,
 				14724D0021CEA3CC005CD5C9 /* SylvesterSecureCodingTestCase.swift in Sources */,
 			);
@@ -1719,6 +1762,7 @@
 				14B1F19121DF068100ED3420 /* SKSubstructureTests.swift in Sources */,
 				14B1F19221DF068100ED3420 /* SKWrapperTests.swift in Sources */,
 				14B1F19321DF068100ED3420 /* OtherRequestTests.swift in Sources */,
+				1431B0192218D4E1009B36DA /* SKCursorInfoTests.swift in Sources */,
 				14B1F19421DF068100ED3420 /* SourceKitUIDProtocolTests.swift in Sources */,
 				14B1F19521DF068100ED3420 /* SylvesterSecureCodingTestCase.swift in Sources */,
 			);

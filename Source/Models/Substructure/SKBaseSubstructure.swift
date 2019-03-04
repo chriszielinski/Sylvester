@@ -120,25 +120,53 @@ open class SKBaseSubstructure: NSObject, SKSequence {
     public let bodyOffset: Int?
     /// The byte length of the substructure's body inside the source contents.
     public let bodyLength: Int?
-    /// The column where the token's declaration begins (Int64).
+    /// The column where the token's declaration begins (`Int64`).
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request. Mileage may vary.
+    ///
     public let docColumn: Int?
     /// The documentation comment.
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request. Mileage may vary.
+    ///
     public let docComment: String?
     /// The declaration of documented token.
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request. Mileage may vary.
+    ///
     public let docDeclaration: String?
     /// The file where the documented token is located.
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request. Mileage may vary.
+    ///
     public let docFile: String?
     /// The XML representing the substructure and its documentation.
     ///
     /// Only present when the substructure is documented.
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request.
+    ///
     public let docFullAsXML: String?
     /// The line where the token's declaration begins (Int64).
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request. Mileage may vary.
+    ///
     public let docLine: Int?
     /// The name of the documented token (String).
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request. Mileage may vary.
+    ///
     public let docName: String?
     /// The parameters of the documented token.
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request. Mileage **will** vary.
+    ///   Not recommended for use.
+    ///
     public let docParameters: [DocumentationParameter]?
     /// The type of the documented token.
+    ///
+    /// - Note: Resolved by `SourceKitten` for a _SwiftDocs_ request. Mileage may vary.
+    ///
     public let docType: String?
     /// The byte offset of the substructure's documentation inside the source contents.
     public let docOffset: Int?

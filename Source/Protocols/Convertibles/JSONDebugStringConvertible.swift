@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol JSONDebugStringConvertible: Encodable, CustomDebugStringConvertible {
+public protocol JSONDebugStringConvertible: Encodable, CustomDebugStringConvertible {
 
     var jsonDebugDescription: String { get }
 
@@ -16,7 +16,7 @@ protocol JSONDebugStringConvertible: Encodable, CustomDebugStringConvertible {
 
 extension JSONDebugStringConvertible {
 
-    var jsonDebugDescription: String {
+    public var jsonDebugDescription: String {
         do {
             let encoder = JSONEncoder()
             encoder.outputFormatting = .prettyPrinted

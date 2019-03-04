@@ -24,7 +24,7 @@ public struct SKInherit {
     // MARK: - Public Stored Properties
 
     /// The displayed name for the entity.
-    public let name: String
+    public let name: String?
     /// The UID for the declaration or reference kind (function, class, etc.).
     public let kind: Kind
     /// The Unified Symbol Resolution (USR) string for the entity.

@@ -6,6 +6,8 @@
 //  Copyright © 2018 Big Z Labs. All rights reserved.
 //
 
+import SylvesterCommon
+
 public struct SKParagraph {
 
     // MARK: - Internal Declarations
@@ -18,6 +20,20 @@ public struct SKParagraph {
 
     /// The paragraph text contents.
     public let paragraph: String
+
+    public init(paragraph: String) {
+        self.paragraph = paragraph
+    }
+
+    public init(from decoder: Decoder) throws {
+        do {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            paragraph = try container.decode(forKey: .paragraph)
+        } catch {
+            Utilities.print(error: error)
+            paragraph = ""
+        }
+    }
 
 }
 

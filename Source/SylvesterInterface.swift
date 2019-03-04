@@ -133,6 +133,29 @@ open class SylvesterInterface {
         return try dataWrapper.decodeData()
     }
 
+    /// A _SourceKit_ editor text extraction request.
+    ///
+    /// - Parameter sourceText: The raw comment to extract the text from.
+    /// - Returns: The text extracted from a source comment.
+    /// - Throws: A `SKError`, if an error occurs.
+    public func editorExtractTextFromComment(sourceText: String) throws -> SKSourceTextResponse {
+        #if XPC
+        var response: SKDataWrapper?
+        var responseError: SKXPCError?
+
+        synchronousProxy.editorExtractTextFromComment(sourceText: sourceText) { (dataWrapper, error) in
+            response = dataWrapper
+            responseError = error
+        }
+
+        let dataWrapper = try handleXPC(response: response, error: responseError)
+        #else
+        let dataWrapper = try SourceKittenAdapter.editorExtractTextFromComment(sourceText: sourceText)
+        #endif
+
+        return try dataWrapper.decodeData()
+    }
+
     // MARK: Syntax Methods
 
     /// A _SourceKitten_ syntax map request.
@@ -358,6 +381,81 @@ open class SylvesterInterface {
         #endif
 
         return SKCodeCompletionSession.Response(kind: .close, options: nil, codeCompletion: nil)
+    }
+
+    // MARK: Cursor Info
+
+    /// A _SourceKit_ cursor info request.
+    ///
+    /// - Important: The cursor info request requires a valid source file path.
+    ///
+    /// - Parameters:
+    ///   - file: The source file.
+    ///   - offset: The byte offset of the code point inside the source contents.
+    ///   - usr: The Unified Symbol Resolutions (USR) string for the entity.
+    ///   - compilerArguments: The compiler arguments used to build the module (e.g `["-sdk",
+    ///     "/path/to/sdk"]`). These must include the path to the file.
+    ///   - cancelOnSubsequentRequest: Whether this request should be canceled if a new cursor-info request is
+    ///     made that uses the same AST. This behavior is a workaround for not having first-class cancelation.
+    /// - Returns: The resulting `SKCursorInfo`, or `nil` if an invalid `offset` or `usr` was provided.
+    /// - Throws: A `SKError`, if an error occurs.
+    public func cursorInfo(file: File,
+                           offset: Int?,
+                           usr: String?,
+                           compilerArguments: [String],
+                           cancelOnSubsequentRequest: Bool) throws -> SKCursorInfo? {
+        assert(file.path != nil, "The cursor info request requires a valid source file path.")
+
+        #if XPC
+        var dataWrapper: SKDataWrapper?
+        var responseError: SKXPCError?
+
+        synchronousProxy.cursorInfo(file: SKFileWrapper(file: file),
+                                    offset: offset ?? -1,
+                                    usr: usr ?? "",
+                                    compilerArguments: compilerArguments,
+                                    cancelOnSubsequentRequest: cancelOnSubsequentRequest) { (response, error) in
+            dataWrapper = response
+            responseError = error
+        }
+
+        if let responseError = responseError {
+            throw responseError.bridge
+        }
+        #else
+        let dataWrapper = try SourceKittenAdapter.cursorInfo(file: file,
+                                                             offset: offset,
+                                                             usr: usr,
+                                                             compilerArguments: compilerArguments,
+                                                             cancelOnSubsequentRequest: cancelOnSubsequentRequest)
+        #endif
+
+        return try dataWrapper?.decodeData()
+    }
+
+    // MARK: - Markup Requests
+
+    /// A _SourceKit_ Markup parsing request.
+    ///
+    /// - Parameter sourceText: The extracted Markup to parse.
+    /// - Returns: The Markup parse tree in xml format.
+    /// - Throws: A `SKError`, if an error occurs.
+    public func convertMarkupToXML(sourceText: String) throws -> SKSourceTextResponse {
+        #if XPC
+        var response: SKDataWrapper?
+        var responseError: SKXPCError?
+
+        synchronousProxy.convertMarkupToXML(sourceText: sourceText) { (dataWrapper, error) in
+            response = dataWrapper
+            responseError = error
+        }
+
+        let dataWrapper = try handleXPC(response: response, error: responseError)
+        #else
+        let dataWrapper = try SourceKittenAdapter.convertMarkupToXML(sourceText: sourceText)
+        #endif
+
+        return try dataWrapper.decodeData()
     }
 
     // MARK: Custom Request Methods

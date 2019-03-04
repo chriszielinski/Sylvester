@@ -100,5 +100,10 @@ class ALoadModule: SylvesterTestCase {
                          name: .aProtocolDocInfoMustache)
         writeJSONFixture(for: try SKDocInfo(file: docSupportInputsMainFile, sdkPath: sdkPath, target: target),
                          name: .docSupportInputsMainDocInfoMustache)
+
+        writeJSONFixture(for: try SKCursorInfo(file: viewControllerFile,
+                                               offset: 293,
+                                               compilerArguments: testModuleCompilerArguments),
+                         name: .viewControllerCursorInfoMustache)
     }
 }
