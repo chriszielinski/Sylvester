@@ -113,8 +113,8 @@ open class SKBaseSubstructure: NSObject, SKSequence {
     ///
     /// The attributes include prefixed keywords such as `override`.
     ///
-    /// - Note: The attributes are ordered by decreasing byte offset (i.e. the first attribute in the source
-    ///         is the last element in the array).
+    /// - Note: The attributes are ordered by increasing byte offset (i.e. the first attribute in the source
+    ///         is the first element in the array).
     public let attributes: SKSortedEntities<Attribute>?
     /// The byte offset of the substructure's body inside the source contents.
     public let bodyOffset: Int?
@@ -311,8 +311,16 @@ open class SKBaseSubstructure: NSObject, SKSequence {
 
     /// The byte range encompassing the entire substructure content, including any attributes.
     open lazy var contentByteRange: NSRange = {
-        let startingOffset = attributes?.first?.offset ?? offset
-        return NSRange(location: startingOffset, length: (offset + length) - startingOffset)
+        let startingOffset: Offset
+        if let attributeOffset = attributes?.first?.offset {
+            // In the case of a structure like `static public func`, `offset` identifies the position of `static`
+            // whereas the first attribute identifies the position of `public`. Thus, we need to use the minimum.
+            startingOffset = min(attributeOffset, offset)
+        } else {
+            startingOffset = offset
+        }
+
+        return NSRange(startingOffset..<(offset + length))
     }()
 
     /// Whether the substructure is a function-kind and has a return type.
