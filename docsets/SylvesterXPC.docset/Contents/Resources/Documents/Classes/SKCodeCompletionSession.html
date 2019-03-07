@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SKCodeCompletionSession Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SKCodeCompletionSession" class="dashAnchor"></a>
+    <a title="SKCodeCompletionSession Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SylvesterXPC Docs</a> (79% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SylvesterXPC Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SKCodeCompletionSession Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DispatchedValue.html">DispatchedValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKAnnotation.html">SKAnnotation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKAttribute.html">SKAttribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseEntity.html">SKBaseEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseEntity/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC14SKBaseResponseC">SKBaseResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseSubstructure.html">SKBaseSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseSubstructure/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKByteRange.html">SKByteRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKChildren.html">SKChildren</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKCodeCompletion.html">SKCodeCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKConvertMarkupToXML.html">SKConvertMarkupToXML</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKCursorInfo.html">SKCursorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC9SKDocInfoC">SKDocInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKEditorExtractTextFromComment.html">SKEditorExtractTextFromComment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC12SKEditorOpenC">SKEditorOpen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKElement.html">SKElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKEntity.html">SKEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericDocInfo.html">SKGenericDocInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericEditorOpen.html">SKGenericEditorOpen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericKindEntity.html">SKGenericKindEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericModule.html">SKGenericModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericResponse.html">SKGenericResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericSwiftDocs.html">SKGenericSwiftDocs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC8SKModuleC">SKModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKPreOrderDFSIterator.html">SKPreOrderDFSIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSourceTextResponse.html">SKSourceTextResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSubstructure.html">SKSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSyntaxMap.html">SKSyntaxMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKYAMLRequest.html">SKYAMLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SylvesterInterface.html">SylvesterInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SKAccessLevel.html">SKAccessLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKAttributeKind.html">SKAttributeKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKCodeCompletionContext.html">SKCodeCompletionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKDeclarationKind.html">SKDeclarationKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKDiagnosticSeverity.html">SKDiagnosticSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKDiagnosticStage.html">SKDiagnosticStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKElementKind.html">SKElementKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKSourceKind.html">SKSourceKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKSyntaxKind.html">SKSyntaxKind</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSString.html">NSString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SyntaxToken.html">SyntaxToken</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ByteRangeConvertible.html">ByteRangeConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DispatchedValueWrapper.html">DispatchedValueWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONDebugStringConvertible.html">JSONDebugStringConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OptionalByteRangeConvertible.html">OptionalByteRangeConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SKFinalSubclass.html">SKFinalSubclass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SKSequence.html">SKSequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SourceKitUID.html">SourceKitUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ThreadSafeValueWrapper.html">ThreadSafeValueWrapper</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SKAnnotatedDeclaration.html">SKAnnotatedDeclaration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionItem.html">SKCodeCompletionItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSessionResponse.html">SKCodeCompletionSessionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSessionResponse/Kind.html">– Kind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSubstructure.html">SKCodeCompletionSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKDiagnostic.html">SKDiagnostic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKDocumentationParameter.html">SKDocumentationParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKGenericParameter.html">SKGenericParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKGenericRequirement.html">SKGenericRequirement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKInherit.html">SKInherit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKInheritedType.html">SKInheritedType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKOverride.html">SKOverride</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKParagraph.html">SKParagraph</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKSortedEntities.html">SKSortedEntities</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Stack.html">Stack</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SylvesterXPC12SKSubprocessa">SKSubprocess</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SKCodeCompletionSession</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKCodeCompletionSession</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a <em>SourceKit</em> code completion session, which can be filtered using update requests.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Type%20Aliases"></a>
+                <a name="//apple_ref/swift/Section/Public Type Aliases" class="dashAnchor"></a>
+                <a href="#/Public%20Type%20Aliases">
+                  <h3 class="section-name">Public Type Aliases</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC0D7Handlera"></a>
+                    <a name="//apple_ref/swift/Alias/CompletionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC0D7Handlera">CompletionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">CompletionHandler</span> <span class="o">=</span> <span class="p">(</span><span class="kt">SKCodeCompletionSession</span><span class="p">,</span> <span class="kt"><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC8Responsea">Response</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC12ErrorHandlera"></a>
+                    <a name="//apple_ref/swift/Alias/ErrorHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC12ErrorHandlera">ErrorHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">ErrorHandler</span> <span class="o">=</span> <span class="p">(</span><span class="kt">SKCodeCompletionSession</span><span class="p">,</span> <span class="kt"><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC8Responsea">Response</a></span><span class="p">,</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC7Optionsa"></a>
+                    <a name="//apple_ref/swift/Alias/Options" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC7Optionsa">Options</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Options</span> <span class="o">=</span> <span class="kt"><a href="https://chriszielinski.github.io/Sylvester/SylvesterCommon/Structs/SKCodeCompletionSessionOptions.html">SKCodeCompletionSessionOptions</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC8Responsea"></a>
+                    <a name="//apple_ref/swift/Alias/Response" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC8Responsea">Response</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Response</span> <span class="o">=</span> <span class="kt"><a href="../Structs/SKCodeCompletionSessionResponse.html">SKCodeCompletionSessionResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Stored%20Properties">
+                  <h3 class="section-name">Public Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC4file21SourceKittenFramework4FileCvp"></a>
+                    <a name="//apple_ref/swift/Property/file" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC4file21SourceKittenFramework4FileCvp">file</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The session source file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">File</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC6offsetSivp"></a>
+                    <a name="//apple_ref/swift/Property/offset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC6offsetSivp">offset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte offset of the code completion point inside the session&rsquo;s source contents.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC7options0A6Common0cdE7OptionsVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/options" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC7options0A6Common0cdE7OptionsVSgvp">options</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The mutable code completion session options.</p>
+
+<p>These options can (should) be modified before sending an <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC6updateyyF">update()</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">SKCodeCompletionSession</span><span class="o">.</span><span class="kt"><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC7Optionsa">Options</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC25cancelOnSubsequentRequestSbvp"></a>
+                    <a name="//apple_ref/swift/Property/cancelOnSubsequentRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC25cancelOnSubsequentRequestSbvp">cancelOnSubsequentRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether previous requests should be canceled if a new request is made that uses different <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC7options0A6Common0cdE7OptionsVSgvp">options</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The previous requests are not actually canceled (because they are asynchronous, and
+    that ship has sailed); however, the completion handler will only be called with the
+    response of the most recently sent request.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cancelOnSubsequentRequest</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC17completionHandleryAC_AA0cdE8ResponseVtcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/completionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC17completionHandleryAC_AA0cdE8ResponseVtcSgvp">completionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A closure that receives the code completion request responses.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kt">SKCodeCompletionSession</span><span class="o">.</span><span class="kt"><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC0D7Handlera">CompletionHandler</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC12errorHandleryAC_AA0cdE8ResponseV0A6Common7SKErrorOtcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/errorHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC12errorHandleryAC_AA0cdE8ResponseV0A6Common7SKErrorOtcSgvp">errorHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A closure that receives any code completion request errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">errorHandler</span><span class="p">:</span> <span class="kt">SKCodeCompletionSession</span><span class="o">.</span><span class="kt"><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC12ErrorHandlera">ErrorHandler</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC6isOpenSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isOpen" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC6isOpenSbvp">isOpen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the session is open.</p>
+
+<p>This boolean indicates whether the session has been opened (<code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a></code>) and not closed (<code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC5closeyyF">close()</a></code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">isOpen</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC14latestResponseAA0cdeG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/latestResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC14latestResponseAA0cdeG0VSgvp">latestResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The most recent request response received in the session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">latestResponse</span><span class="p">:</span> <span class="kt">SKCodeCompletionSession</span><span class="o">.</span><span class="kt"><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC8Responsea">Response</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Computed Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Computed%20Properties">
+                  <h3 class="section-name">Public Computed Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC8isActiveSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isActive" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC8isActiveSbvp">isActive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether there are any outstanding session requests awaiting completion.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC8isClosedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isClosed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC8isClosedSbvp">isClosed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the session has been closed (<code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC5closeyyF">close()</a></code>).</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This property will also be <code>false</code> if the session has not yet been opened (<code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a></code>).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isClosed</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC17queueRequestCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/queueRequestCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC17queueRequestCountSivp">queueRequestCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of outstanding session requests awaiting completion.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">queueRequestCount</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Initializers"></a>
+                <a name="//apple_ref/swift/Section/Public Initializers" class="dashAnchor"></a>
+                <a href="#/Public%20Initializers">
+                  <h3 class="section-name">Public Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC4file6offset17compilerArgumentsAC21SourceKittenFramework4FileC_SiSaySSGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(file:offset:compilerArguments:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC4file6offset17compilerArgumentsAC21SourceKittenFramework4FileC_SiSaySSGtcfc">init(file:offset:compilerArguments:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new <em>SourceKit</em> code completion session object.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This request needs to be opened (via the <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a></code> method).</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">file</span><span class="p">:</span> <span class="kt">File</span><span class="p">,</span>
+            <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">,</span>
+            <span class="nv">compilerArguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The source file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of the code completion point inside the source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>compilerArguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The compiler arguments used to build the module.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC4file6offset7sdkPath6targetAC21SourceKittenFramework4FileC_SiS2SSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(file:offset:sdkPath:target:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC4file6offset7sdkPath6targetAC21SourceKittenFramework4FileC_SiS2SSgtcfc">init(file:offset:sdkPath:target:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new <em>SourceKit</em> code completion session object.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This request needs to be opened (via the <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a></code> method).</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">file</span><span class="p">:</span> <span class="kt">File</span><span class="p">,</span>
+                        <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">,</span>
+                        <span class="nv">sdkPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The source file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The source code byte offset to use in the SourceKit request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sdkPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to the SDK to compile against.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target (triple) architecture to generate completions for (e.g. <code>&quot;arm64-apple-ios12.1&quot;</code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC8filePath6offset17compilerArgumentsACSS_SiSaySSGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(filePath:offset:compilerArguments:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC8filePath6offset17compilerArgumentsACSS_SiSaySSGtcfc">init(filePath:offset:compilerArguments:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new <em>SourceKit</em> code completion session object.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This request needs to be opened (via the <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a></code> method).</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">filePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">,</span>
+                        <span class="nv">compilerArguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The file path of the source file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of code completion point inside the source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>compilerArguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The compiler arguments used to build the module.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC8contents6offset17compilerArgumentsACSS_SiSaySSGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(contents:offset:compilerArguments:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC8contents6offset17compilerArgumentsACSS_SiSaySSGtcfc">init(contents:offset:compilerArguments:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new <em>SourceKit</em> code completion session object.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This request needs to be opened (via the <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a></code> method).</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">contents</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">,</span>
+                        <span class="nv">compilerArguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contents</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The source code contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of code completion point inside the source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>compilerArguments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The compiler arguments used to build the module.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC8filePath6offset03sdkG06targetACSS_SiS2SSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(filePath:offset:sdkPath:target:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC8filePath6offset03sdkG06targetACSS_SiS2SSgtcfc">init(filePath:offset:sdkPath:target:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new <em>SourceKit</em> code completion session object.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This request needs to be opened (via the <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a></code> method).</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">filePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">,</span>
+                        <span class="nv">sdkPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The file path of the source file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of code completion point inside the source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sdkPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to the SDK to compile against.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target (triple) architecture to generate completions for (e.g. <code>&quot;arm64-apple-ios12.1&quot;</code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC8contents6offset7sdkPath6targetACSS_SiS2SSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(contents:offset:sdkPath:target:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC8contents6offset7sdkPath6targetACSS_SiS2SSgtcfc">init(contents:offset:sdkPath:target:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new <em>SourceKit</em> code completion session object.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This request needs to be opened (via the <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a></code> method).</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">contents</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">,</span>
+                        <span class="nv">sdkPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contents</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte offset of code completion point inside the source contents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sdkPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to the SDK to compile against.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target (triple) architecture to generate completions for (e.g. <code>&quot;arm64-apple-ios12.1&quot;</code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Request%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Public Request Methods" class="dashAnchor"></a>
+                <a href="#/Public%20Request%20Methods">
+                  <h3 class="section-name">Public Request Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF"></a>
+                    <a name="//apple_ref/swift/Method/open()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC4openyyF">open()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens the code completion session for the <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC4file21SourceKittenFramework4FileCvp">file</a></code> at the byte <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC6offsetSivp">offset</a></code> with the specified <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC7options0A6Common0cdE7OptionsVSgvp">options</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC6updateyyF"></a>
+                    <a name="//apple_ref/swift/Method/update()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC6updateyyF">update()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an open code completion session with the specified <code><a href="../Classes/SKCodeCompletionSession.html#/s:12SylvesterXPC23SKCodeCompletionSessionC7options0A6Common0cdE7OptionsVSgvp">options</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">update</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC23SKCodeCompletionSessionC5closeyyF"></a>
+                    <a name="//apple_ref/swift/Method/close()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC23SKCodeCompletionSessionC5closeyyF">close()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Closes an opened code completion session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">close</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/chriszielinski/Sylvester" target="_blank" rel="external">chriszielinski</a>. All rights reserved. (Last updated: 2019-03-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

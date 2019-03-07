@@ -1,0 +1,572 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Enumerations/SKError.swift",
+      "line": 11,
+      "symbol": "SKError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Enumerations/SKError.swift",
+      "line": 37,
+      "symbol": "SKError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/File+SylvesterCommon.swift",
+      "line": 18,
+      "symbol": "File.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Module+SylvesterCommon.swift",
+      "line": 18,
+      "symbol": "Module.sdkPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Module+SylvesterCommon.swift",
+      "line": 22,
+      "symbol": "Module.target",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Module+SylvesterCommon.swift",
+      "line": 26,
+      "symbol": "Module.value(of:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 15,
+      "symbol": "Request.createCompilerArguments(sdkPath:target:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 31,
+      "symbol": "Request.editorExtractTextFromComment(sourceText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 40,
+      "symbol": "Request.docInfo(file:moduleName:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 59,
+      "symbol": "Request.codeCompletion(file:offset:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 87,
+      "symbol": "Request.codeCompletionOpen(file:offset:options:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 120,
+      "symbol": "Request.codeCompletionUpdate(name:offset:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 136,
+      "symbol": "Request.codeCompletionClose(name:offset:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 146,
+      "symbol": "Request.cursorInfo(file:offset:usr:compilerArguments:cancelOnSubsequentRequest:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/Request+SylvesterCommon.swift",
+      "line": 173,
+      "symbol": "Request.convertMarkupToXML(sourceText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/SwiftDocs+SylvesterCommon.swift",
+      "line": 11,
+      "symbol": "SwiftDocsCodingKey",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/SwiftDocs+SylvesterCommon.swift",
+      "line": 12,
+      "symbol": "SwiftDocsCodingKey.file",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Extensions/SwiftDocs+SylvesterCommon.swift",
+      "line": 13,
+      "symbol": "SwiftDocsCodingKey.response",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKCodeCompletionSessionOptions.swift",
+      "line": 96,
+      "symbol": "SKCodeCompletionSessionOptions.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKCodeCompletionSessionOptions.swift",
+      "line": 108,
+      "symbol": "SKCodeCompletionSessionOptions.sourcekitdObject",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKSubprocess.swift",
+      "line": 11,
+      "symbol": "SKSubprocess",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKSubprocess.swift",
+      "line": 63,
+      "symbol": "SKSubprocess.init(executableURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 12,
+      "symbol": "SKXPCError",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 36,
+      "symbol": "SKXPCError.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 48,
+      "symbol": "SKXPCError.bridge",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 114,
+      "symbol": "SKXPCError.init(error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 135,
+      "symbol": "SKXPCError.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 147,
+      "symbol": "SKXPCError.sourceKitRequestFailed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 151,
+      "symbol": "SKXPCError.jsonDecodingFailed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 155,
+      "symbol": "SKXPCError.jsonEncodingFailed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 159,
+      "symbol": "SKXPCError.jsonDataEncodingFailed()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 164,
+      "symbol": "SKXPCError.sourceKittenCrashed()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/SKXPCError.swift",
+      "line": 169,
+      "symbol": "SKXPCError.unknown(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKDataWrapper.swift",
+      "line": 12,
+      "symbol": "SKDataWrapper",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKDataWrapper.swift",
+      "line": 22,
+      "symbol": "SKDataWrapper.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKDataWrapper.swift",
+      "line": 28,
+      "symbol": "SKDataWrapper.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKDataWrapper.swift",
+      "line": 32,
+      "symbol": "SKDataWrapper.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKDataWrapper.swift",
+      "line": 36,
+      "symbol": "SKDataWrapper.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKDataWrapper.swift",
+      "line": 102,
+      "symbol": "SKDataWrapper.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKFileWrapper.swift",
+      "line": 12,
+      "symbol": "SKFileWrapper",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKFileWrapper.swift",
+      "line": 22,
+      "symbol": "SKFileWrapper.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKFileWrapper.swift",
+      "line": 28,
+      "symbol": "SKFileWrapper.file",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKFileWrapper.swift",
+      "line": 32,
+      "symbol": "SKFileWrapper.init(file:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKFileWrapper.swift",
+      "line": 36,
+      "symbol": "SKFileWrapper.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKFileWrapper.swift",
+      "line": 50,
+      "symbol": "SKFileWrapper.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKModuleWrapper.swift",
+      "line": 12,
+      "symbol": "SKModuleWrapper",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKModuleWrapper.swift",
+      "line": 16,
+      "symbol": "SKModuleWrapper.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKRequestErrorWrapper.swift",
+      "line": 12,
+      "symbol": "SKRequestErrorWrapper",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKRequestErrorWrapper.swift",
+      "line": 23,
+      "symbol": "SKRequestErrorWrapper.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKRequestErrorWrapper.swift",
+      "line": 29,
+      "symbol": "SKRequestErrorWrapper.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKRequestErrorWrapper.swift",
+      "line": 33,
+      "symbol": "SKRequestErrorWrapper.init(error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKRequestErrorWrapper.swift",
+      "line": 37,
+      "symbol": "SKRequestErrorWrapper.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKRequestErrorWrapper.swift",
+      "line": 57,
+      "symbol": "SKRequestErrorWrapper.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKSyntaxMapWrapper.swift",
+      "line": 12,
+      "symbol": "SKSyntaxMapWrapper",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKSyntaxMapWrapper.swift",
+      "line": 22,
+      "symbol": "SKSyntaxMapWrapper.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKSyntaxMapWrapper.swift",
+      "line": 28,
+      "symbol": "SKSyntaxMapWrapper.syntaxMap",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKSyntaxMapWrapper.swift",
+      "line": 32,
+      "symbol": "SKSyntaxMapWrapper.init(syntaxMap:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKSyntaxMapWrapper.swift",
+      "line": 36,
+      "symbol": "SKSyntaxMapWrapper.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Models/Wrappers/SKSyntaxMapWrapper.swift",
+      "line": 53,
+      "symbol": "SKSyntaxMapWrapper.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 11,
+      "symbol": "SourceKittenAdapter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 15,
+      "symbol": "SourceKittenAdapter.moduleInfo(xcodeBuildArguments:name:in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 23,
+      "symbol": "SourceKittenAdapter.moduleDocs(module:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 33,
+      "symbol": "SourceKittenAdapter.editorOpen(file:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 47,
+      "symbol": "SourceKittenAdapter.editorExtractTextFromComment(sourceText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 61,
+      "symbol": "SourceKittenAdapter.syntaxMap(file:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 73,
+      "symbol": "SourceKittenAdapter.swiftDocs(file:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 80,
+      "symbol": "SourceKittenAdapter.docInfo(file:moduleName:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 97,
+      "symbol": "SourceKittenAdapter.codeCompletion(file:offset:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 104,
+      "symbol": "SourceKittenAdapter.codeCompletionOpen(file:offset:options:compilerArguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 115,
+      "symbol": "SourceKittenAdapter.codeCompletionUpdate(name:offset:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 122,
+      "symbol": "SourceKittenAdapter.codeCompletionClose(name:offset:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 129,
+      "symbol": "SourceKittenAdapter.cursorInfo(file:offset:usr:compilerArguments:cancelOnSubsequentRequest:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 149,
+      "symbol": "SourceKittenAdapter.convertMarkupToXML(sourceText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 163,
+      "symbol": "SourceKittenAdapter.customYAML(yaml:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 189,
+      "symbol": "SourceKittenAdapter.xcRun(arguments:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 195,
+      "symbol": "SourceKittenAdapter.xcodeBuild(arguments:currentDirectoryURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 208,
+      "symbol": "SourceKittenAdapter.executeBash(_:currentDirectoryURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/SourceKittenAdapter.swift",
+      "line": 215,
+      "symbol": "SourceKittenAdapter.launch(subprocess:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Utilities.swift",
+      "line": 9,
+      "symbol": "Utilities",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Utilities.swift",
+      "line": 11,
+      "symbol": "Utilities.print(error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/chriszielinski/Sylvester/SylvesterCommon/Utilities.swift",
+      "line": 15,
+      "symbol": "Utilities.errorMessage(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/chriszielinski/Sylvester"
+}

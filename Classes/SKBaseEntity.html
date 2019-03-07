@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SKBaseEntity Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SKBaseEntity" class="dashAnchor"></a>
+    <a title="SKBaseEntity Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SylvesterXPC Docs</a> (79% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SylvesterXPC Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SKBaseEntity Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DispatchedValue.html">DispatchedValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKAnnotation.html">SKAnnotation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKAttribute.html">SKAttribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseEntity.html">SKBaseEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseEntity/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC14SKBaseResponseC">SKBaseResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseSubstructure.html">SKBaseSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKBaseSubstructure/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKByteRange.html">SKByteRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKChildren.html">SKChildren</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKCodeCompletion.html">SKCodeCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKCodeCompletionSession.html">SKCodeCompletionSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKConvertMarkupToXML.html">SKConvertMarkupToXML</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKCursorInfo.html">SKCursorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC9SKDocInfoC">SKDocInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKEditorExtractTextFromComment.html">SKEditorExtractTextFromComment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC12SKEditorOpenC">SKEditorOpen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKElement.html">SKElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKEntity.html">SKEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericDocInfo.html">SKGenericDocInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericEditorOpen.html">SKGenericEditorOpen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericKindEntity.html">SKGenericKindEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericModule.html">SKGenericModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericResponse.html">SKGenericResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKGenericSwiftDocs.html">SKGenericSwiftDocs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC8SKModuleC">SKModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKPreOrderDFSIterator.html">SKPreOrderDFSIterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSourceTextResponse.html">SKSourceTextResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSubstructure.html">SKSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12SylvesterXPC11SKSwiftDocsC">SKSwiftDocs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKSyntaxMap.html">SKSyntaxMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SKYAMLRequest.html">SKYAMLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SylvesterInterface.html">SylvesterInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SKAccessLevel.html">SKAccessLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKAttributeKind.html">SKAttributeKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKCodeCompletionContext.html">SKCodeCompletionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKDeclarationKind.html">SKDeclarationKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKDiagnosticSeverity.html">SKDiagnosticSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKDiagnosticStage.html">SKDiagnosticStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKElementKind.html">SKElementKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKSourceKind.html">SKSourceKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SKSyntaxKind.html">SKSyntaxKind</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSString.html">NSString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SyntaxToken.html">SyntaxToken</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ByteRangeConvertible.html">ByteRangeConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DispatchedValueWrapper.html">DispatchedValueWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONDebugStringConvertible.html">JSONDebugStringConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OptionalByteRangeConvertible.html">OptionalByteRangeConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SKFinalSubclass.html">SKFinalSubclass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SKSequence.html">SKSequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SourceKitUID.html">SourceKitUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ThreadSafeValueWrapper.html">ThreadSafeValueWrapper</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SKAnnotatedDeclaration.html">SKAnnotatedDeclaration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionItem.html">SKCodeCompletionItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSessionResponse.html">SKCodeCompletionSessionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSessionResponse/Kind.html">– Kind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKCodeCompletionSubstructure.html">SKCodeCompletionSubstructure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKDiagnostic.html">SKDiagnostic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKDocumentationParameter.html">SKDocumentationParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKGenericParameter.html">SKGenericParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKGenericRequirement.html">SKGenericRequirement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKInherit.html">SKInherit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKInheritedType.html">SKInheritedType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKOverride.html">SKOverride</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKParagraph.html">SKParagraph</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SKSortedEntities.html">SKSortedEntities</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Stack.html">Stack</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SylvesterXPC7SKErrora">SKError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SylvesterXPC12SKSubprocessa">SKSubprocess</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SKBaseEntity</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKBaseEntity</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/SKSequence.html">SKSequence</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a structure of symbols (a class has its methods as sub-entities, etc.).</p>
+
+<p>This includes the function parameters and their types as entities. Each entity refers to the range of the
+original text via <code>offset + length</code> entries.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20Declarations"></a>
+                <a name="//apple_ref/swift/Section/Internal Declarations" class="dashAnchor"></a>
+                <a href="#/Internal%20Declarations">
+                  <h3 class="section-name">Internal Declarations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC10CodingKeysO"></a>
+                    <a name="//apple_ref/swift/Enum/CodingKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC10CodingKeysO">CodingKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/SKBaseEntity/CodingKeys.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CodingKeys</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CodingKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Type%20Aliases"></a>
+                <a name="//apple_ref/swift/Section/Public Type Aliases" class="dashAnchor"></a>
+                <a href="#/Public%20Type%20Aliases">
+                  <h3 class="section-name">Public Type Aliases</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC4Kinda"></a>
+                    <a name="//apple_ref/swift/Alias/Kind" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC4Kinda">Kind</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Kind</span> <span class="o">=</span> <span class="kt"><a href="../Enums/SKDeclarationKind.html">SKDeclarationKind</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC7Inherita"></a>
+                    <a name="//apple_ref/swift/Alias/Inherit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC7Inherita">Inherit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Inherit</span> <span class="o">=</span> <span class="kt"><a href="../Structs/SKInherit.html">SKInherit</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC18GenericRequirementa"></a>
+                    <a name="//apple_ref/swift/Alias/GenericRequirement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC18GenericRequirementa">GenericRequirement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">GenericRequirement</span> <span class="o">=</span> <span class="kt"><a href="../Structs/SKGenericRequirement.html">SKGenericRequirement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC16GenericParametera"></a>
+                    <a name="//apple_ref/swift/Alias/GenericParameter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC16GenericParametera">GenericParameter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">GenericParameter</span> <span class="o">=</span> <span class="kt"><a href="../Structs/SKGenericParameter.html">SKGenericParameter</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC17DecodingContainera"></a>
+                    <a name="//apple_ref/swift/Alias/DecodingContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC17DecodingContainera">DecodingContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">DecodingContainer</span> <span class="o">=</span> <span class="kt">KeyedDecodingContainer</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SKBaseEntity/CodingKeys.html">CodingKeys</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Stored%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Stored Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Stored%20Properties">
+                  <h3 class="section-name">Public Stored Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC4kindAA17SKDeclarationKindOvp"></a>
+                    <a name="//apple_ref/swift/Property/kind" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC4kindAA17SKDeclarationKindOvp">kind</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The UID for the declaration or reference kind (function, class, etc.).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">kind</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseEntity.html#/s:12SylvesterXPC12SKBaseEntityC4Kinda">Kind</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC4nameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC4nameSSSgvp">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The displayed name for the entity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC7keywordSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/keyword" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC7keywordSSSgvp">keyword</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The keyword identifying the entity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">keyword</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC3usrSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/usr" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC3usrSSSgvp">usr</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Unified Symbol Resolution (USR) string for the entity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">usr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC6offsetSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/offset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC6offsetSiSgvp">offset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the byte location of the entity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12SylvesterXPC6Offseta">Offset</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC6lengthSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/length" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC6lengthSiSgvp">length</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The byte length of the entity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC25fullyAnnotatedDeclarationSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fullyAnnotatedDeclaration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC25fullyAnnotatedDeclarationSSSgvp">fullyAnnotatedDeclaration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The XML representing the entity, its Unified Symbol Resolution (USR), etc.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fullyAnnotatedDeclaration</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC12docFullAsXMLSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/docFullAsXML" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC12docFullAsXMLSSSgvp">docFullAsXML</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The XML representing the entity and its documentation.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only present when the entity is documented.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">docFullAsXML</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC8inheritsSayAA9SKInheritVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/inherits" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC8inheritsSayAA9SKInheritVGSgvp">inherits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The entities the entity inherits from.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">inherits</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SKBaseEntity.html#/s:12SylvesterXPC12SKBaseEntityC7Inherita">Inherit</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC19genericRequirementsSayAA20SKGenericRequirementVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/genericRequirements" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC19genericRequirementsSayAA20SKGenericRequirementVGSgvp">genericRequirements</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The entity&rsquo;s generic requirements.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">genericRequirements</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SKBaseEntity.html#/s:12SylvesterXPC12SKBaseEntityC18GenericRequirementa">GenericRequirement</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC17genericParametersSayAA18SKGenericParameterVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/genericParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC17genericParametersSayAA18SKGenericParameterVGSgvp">genericParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The entity&rsquo;s generic parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">genericParameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SKBaseEntity.html#/s:12SylvesterXPC12SKBaseEntityC16GenericParametera">GenericParameter</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/SKSequence%20Protocol"></a>
+                <a name="//apple_ref/swift/Section/SKSequence Protocol" class="dashAnchor"></a>
+                <a href="#/SKSequence%20Protocol">
+                  <h3 class="section-name">SKSequence Protocol</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC10SKSequenceP5indexSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/index" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC10SKSequenceP5indexSiSgvp">index</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC10SKSequenceP8filePathSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/filePath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC10SKSequenceP8filePathSSSgvp">filePath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">filePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC10SKSequenceP14internalParent15SequenceElementQzSgvp"></a>
+                    <a name="//apple_ref/swift/Property/internalParent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC10SKSequenceP14internalParent15SequenceElementQzSgvp">internalParent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">internalParent</span><span class="p">:</span> <span class="kt">SKBaseEntity</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC10SKSequenceP16internalChildrenSay15SequenceElementQzGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/internalChildren" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC10SKSequenceP16internalChildrenSay15SequenceElementQzGSgvp">internalChildren</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">internalChildren</span><span class="p">:</span> <span class="p">[</span><span class="kt">SKBaseEntity</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Initializers"></a>
+                <a name="//apple_ref/swift/Section/Public Initializers" class="dashAnchor"></a>
+                <a href="#/Public%20Initializers">
+                  <h3 class="section-name">Public Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/SKSequence%20Protocol%20Methods"></a>
+                <a name="//apple_ref/swift/Section/SKSequence Protocol Methods" class="dashAnchor"></a>
+                <a href="#/SKSequence%20Protocol%20Methods">
+                  <h3 class="section-name">SKSequence Protocol Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC10SKSequenceP13iteratorClassAA21SKPreOrderDFSIteratorCyqd__GmyAaBRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/iteratorClass()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC10SKSequenceP13iteratorClassAA21SKPreOrderDFSIteratorCyqd__GmyAaBRd__lFZ">iteratorClass()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="n">iteratorClass</span><span class="o">&lt;</span><span class="kt">Entity</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SKPreOrderDFSIterator.html">SKPreOrderDFSIterator</a></span><span class="o">&lt;</span><span class="kt">Entity</span><span class="o">&gt;.</span><span class="k">Type</span> <span class="k">where</span> <span class="kt">Entity</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SKSequence.html">SKSequence</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Children%20Decoding%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Children Decoding Methods" class="dashAnchor"></a>
+                <a href="#/Children%20Decoding%20Methods">
+                  <h3 class="section-name">Children Decoding Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC14decodeChildren_4fromSayxGSgxm_s22KeyedDecodingContainerVyAC10CodingKeysOGtKACRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/decodeChildren(_:from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC14decodeChildren_4fromSayxGSgxm_s22KeyedDecodingContainerVyAC10CodingKeysOGtKACRbzlF">decodeChildren(_:from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience method for decoding children entities of a specified type from a decoding container.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code>DecodingError</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">decodeChildren</span><span class="o">&lt;</span><span class="kt">Entity</span><span class="p">:</span> <span class="kt">SKBaseEntity</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Entity</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseEntity.html#/s:12SylvesterXPC12SKBaseEntityC17DecodingContainera">DecodingContainer</a></span><span class="p">)</span> <span class="k">throws</span>
+                                                <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Entity</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The child type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The decoding container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The children substructures decoded as a specified type.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SylvesterXPC12SKBaseEntityC14decodeChildren4fromSayACGSgs22KeyedDecodingContainerVyAC10CodingKeysOG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/decodeChildren(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SylvesterXPC12SKBaseEntityC14decodeChildren4fromSayACGSgs22KeyedDecodingContainerVyAC10CodingKeysOG_tKF">decodeChildren(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decodes the children entities from a decoding container.</p>
+
+<p>If using a <code>SKBaseEntity</code> subclass, override this method and return the decoded children
+entities by calling <code><a href="../Classes/SKBaseEntity.html#/s:12SylvesterXPC12SKBaseEntityC14decodeChildren_4fromSayxGSgxm_s22KeyedDecodingContainerVyAC10CodingKeysOGtKACRbzlF">decodeChildren(_:from:)</a></code> with the respective subclass.</p>
+
+<p>For example:</p>
+<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">DecodingContainer</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SKBaseEntity</span><span class="p">]?</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">try</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="kt">MyEntitySubclass</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">container</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code>DecodingError</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">decodeChildren</span><span class="p">(</span><span class="n">from</span> <span class="nv">container</span><span class="p">:</span> <span class="kt"><a href="../Classes/SKBaseEntity.html#/s:12SylvesterXPC12SKBaseEntityC17DecodingContainera">DecodingContainer</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">SKBaseEntity</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>container</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The decoding container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The children entities decoded as a specified type.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overridden%20NSObject%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Overridden NSObject Methods" class="dashAnchor"></a>
+                <a href="#/Overridden%20NSObject%20Methods">
+                  <h3 class="section-name">Overridden NSObject Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SylvesterXPC@objc(cs)SKBaseEntity(im)isEqual:"></a>
+                    <a name="//apple_ref/swift/Method/isEqual(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SylvesterXPC@objc(cs)SKBaseEntity(im)isEqual:">isEqual(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">isEqual</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/chriszielinski/Sylvester" target="_blank" rel="external">chriszielinski</a>. All rights reserved. (Last updated: 2019-03-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
